@@ -1,0 +1,60 @@
+
+[Request:1]- (www.snapfish.com) GET / HTTP/1.0
+ --> 0.484 secs 
+
+[Request:6]- (static.snapfish.com) GET /MD5=3ca873f2bdd12c869dd39c5c34390fb3/default/javascript/util/common.js HTTP/1.0
+ --> 0.845 secs 
+
+[Request:2]- (www.snapfish.com) GET /snapfish/welcome HTTP/1.0
+ --> 1.754 secs 
+
+[Request:12]- (dgsc2.snapfish.com) GET /snapfish/fe/js/bundle/cs=e66627d0c7c8fedb05e24b5bae91db7b/yui3-core/ HTTP/1.0
+ --> 0.61 secs 
+
+[Request:11]- (static.snapfish.com) GET /MD5=e66627d0c7c8fedb05e24b5bae91db7b/default/ClientLibraries/InfoscopicWeb/dhtml/Dialog/Dialog.css HTTP/1.0
+ --> 1.241 secs 
+
+[Request:8]- (static.snapfish.com) GET /MD5=e66627d0c7c8fedb05e24b5bae91db7b/default/javascript/omniture/s_code.js HTTP/1.0
+ --> 3.6 secs 
+
+[Request:14]- (dgsc2.snapfish.com) GET /snapfish/fe/l=en_US/s=SNAPFISH/w=SNAPFISH_US/css/file/cs=3d2cb755302233412d25348032091cf4_1/shared/old/p/assets/global.css/ HTTP/1.0
+ --> 2.429 secs 
+
+[Request:19]- (dgsc2.snapfish.com) GET /snapfish/fe/js/bundle/cs=e66627d0c7c8fedb05e24b5bae91db7b/yahoo-dom-event/ HTTP/1.0
+ --> 0.8 secs 
+
+[Request:20]- (dgsc2.snapfish.com) GET /snapfish/fe/js/file/cs=8370df24ecdf547d0acc96b76707c433/shared/javascript/legacy/util.js/ HTTP/1.0
+ --> 0.447 secs 
+
+[Request:21]- (dgsc2.snapfish.com) GET /snapfish/fe/l=en_US/s=SNAPFISH/w=SNAPFISH_US/js/cm/body/cr=true/cs=e66627d0c7c8fedb05e24b5bae91db7b/p/component/swift/core/ HTTP/1.0
+ --> 1.035 secs 
+
+[Request:26]- (dgsc2.snapfish.com) GET /snapfish/fe/js/file/cs=e66627d0c7c8fedb05e24b5bae91db7b/yui_2.8.0r4/container/container.js/ HTTP/1.0
+ --> 0.813 secs 
+
+[Request:23]- (dgsc2.snapfish.com) GET /snapfish/fe/l=en_US/s=SNAPFISH/w=SNAPFISH_US/js/cm/body/cs=de64eff191342b3dd64fa6cb1361af40/p/component/globalnav/headers/ HTTP/1.0
+ --> 3.411 secs 
+
+[Request:17]- (dgsc2.snapfish.com) GET /snapfish/fe/c=SNAPFISH/l=en_US/s=SNAPFISH/w=SNAPFISH_US/image/file/cs=e66627d0c7c8fedb05e24b5bae91db7b_1/components/globalnav/headers/GlobalHeader/assets/p/shadow-left.png/ HTTP/1.0
+ --> 4.902 secs 
+
+[Request:27]- (static.snapfish.com) GET /MD5=e66627d0c7c8fedb05e24b5bae91db7b/default/images/homeredesign/button_sign_up.gif HTTP/1.0
+ --> 1.943 secs 
+
+[Request:25]- (dgsc2.snapfish.com) GET /snapfish/fe/c=SNAPFISH/l=en_US/s=SNAPFISH/w=SNAPFISH_US/image/file/cs=e66627d0c7c8fedb05e24b5bae91db7b_1/components/globalnav/headers/GlobalHeader/assets/p/dropdown_gradient.png/ HTTP/1.0
+ --> 3.609 secs 
+
+[Request:30]- (dgsc2.snapfish.com) GET /snapfish/fe/l=en_US/s=SNAPFISH/w=SNAPFISH_US/image/file/cs=e66627d0c7c8fedb05e24b5bae91db7b_1/components/globalnav/footers/GlobalFooter/p/assets/marketing-differentiator.gif/ HTTP/1.0
+ --> 4.047 secs 
+
+[Request:38]- (static.snapfish.com) GET /MD5=e66627d0c7c8fedb05e24b5bae91db7b/default/images/popups/inline/dialog-bl.gif HTTP/1.0
+ --> 60.391 secs 
+
+[Request:37]- (static.snapfish.com) GET /MD5=e66627d0c7c8fedb05e24b5bae91db7b/default/images/popups/inline/dialog-bottom.gif HTTP/1.0
+ --> 60.647 secs 
+
+[Request:36]- (static.snapfish.com) GET /MD5=e66627d0c7c8fedb05e24b5bae91db7b/default/images/popups/inline/dialog-tr.gif HTTP/1.0
+ --> 60.646 secs 
+
+[Request:31]- (dgsc2.snapfish.com) GET /snapfish/fe/l=en_US/s=SNAPFISH/w=SNAPFISH_US/image/file/cs=8660151191499ad14b9ac1c6a5dac52e_1/components/globalnav/footers/GlobalFooter/p/assets/twitter.gif/ HTTP/1.0
+ --> 65.109 secs 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Layout</title>
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.5.2/build/reset/reset-min.css"> 	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script> 
+
+	<style type="text/css" media="screen">
+		body 			{ width: 100%; }
+		div.col			{ width: 33%; float: left; }
+		#col-1 { background: #ffcccc; }
+		#col-2 { background: #ccffcc; }
+		#col-3 { background: #ccccff; }
+		body.narrow div.col	{ width: 100%; float: none; }
+		body.medium div.col	{ width: 50%; }
+		body.medium div#col-2	{ float: right; }
+		body.medium div#col-3	{ float: right }
+	</style>
+
+	<script>
+		var LayoutMgr = {
+			doLayout: function() {		
+				var width = $(document).width();
+				if(width !== this.lastWidth) {
+					var bodyClass = 'narrow';
+					if(width > 800) 
+						bodyClass = 'wide'; 
+					else if(width >= 600 && width <= 800) 
+						bodyClass = 'medium';
+
+					$('body').removeClass();
+					$('body').addClass(bodyClass);
+					this.lastWidth = width;
+				}
+			},
+			lastWidth: null
+		};
+
+		$(window).load(LayoutMgr.doLayout);
+		$(window).resize(LayoutMgr.doLayout);
+
+	</script>
+</head>
+<body>
+	<div id="col-1" class="col">
+		The 2008 Summer Olympic Games, officially known as the Games of the XXIX Olympiad, is a major international multi-sport event which is being celebrated in Beijing, People's Republic of China, from August 8 (with football starting on August 6) to August 24, 2008 and followed by the 2008 Summer Paralympics from September 6 to September 17. 10,500 athletes are expected to compete in 302 events in 28 sports, one event more than was on the schedule of the 2004 games. The 2008 Beijing Olympics will also mark the third time that Olympic events will have been held in the territories of two different National Olympic Committees (NOC), with the equestrian events to be held in Hong Kong.
+	</div>
+	<div id="col-2" class="col">
+		The Olympic games were awarded to Beijing after an exhaustive ballot of the International Olympic Committee (IOC) on July 13, 2001. The official logo of the games, titled \"Dancing Beijing,\" features a stylised calligraphic character jīng (京, meaning capital), referencing the host city. The mascots of Beijing 2008 are the five Fuwa, each representing both a colour of the Olympic rings and a symbol of Chinese culture. The Olympic slogan, One World, One Dream, calls upon the world to unite in the Olympic spirit. Several new NOCs have also been recognised by the IOC.
+	</div>
+	<div id="col-3" class="col">
+		The Chinese government has promoted the games to highlight China's emergence on the world stage and has invested heavily in new facilities and transportation systems. A total of 37 venues will be used to host the events including 12 newly constructed venues. Earlier in 2007, former IOC president Juan Antonio Samaranch had said that he believes that the Beijing games will be \"the best in Olympic history,\" and current president Jacques Rogge asserts that the IOC has \"absolutely no regrets\" in choosing Beijing to host the 2008 games.
+	</div>
+</body>
+</html>

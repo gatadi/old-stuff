@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Functional Scoping</title>
+
+	<script type="text/javascript">
+		
+		foo = "morning";				
+
+		function someFunction() {
+			
+			foo = "afternoon";			
+			
+			if(false) {
+				var foo = "evening";
+			}
+			
+			alert(this.foo);
+			alert(foo);
+		}
+	
+		someFunction();
+		
+		alert(foo);
+		
+	</script>
+</head>
+
+<body>
+
+</body>
+</html>

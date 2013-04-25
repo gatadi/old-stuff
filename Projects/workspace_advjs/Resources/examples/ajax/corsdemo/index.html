@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Movie Finder</title>
+		<link type="text/css" href="main.css" rel="stylesheet"></link>
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
+		<script type="text/javascript" src="movie.js"></script>
+		
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<form id="searchForm">
+				<span>
+					<label>Netflix Movie Search: <input type="text" id="searchField" /></label>
+					<input id="submit" type="submit" value="Movie Search"></input>
+				</span>
+			</form>
+			<div id="searchResults"></div>
+			
+			<script type="text/javascript">
+			
+				$(function(){
+					
+					var searchField = $('#searchField'), cache = {};
+					
+					
+					$('#searchForm').submit(function(evt){
+						evt.preventDefault();
+						searchStr = searchField.val();
+						if (searchStr == '') return;
+						
+						searchField.css('background', '#ff7777');  // red
+						
+						if (typeof cache[searchStr.toLowerCase()] !== 'undefined') {
+							myCallback(cache[searchStr.toLowerCase()]);
+							return false;
+						}
+						
+						$.ajax({ 
+							  url : "http://odata.netflix.com/Catalog/Titles?$format=json&$filter=substringof('" + escape(searchStr) + "',Name)",
+						      headers : { "Origin" : "http://localhost:8080" },
+							  dataType : 'json',
+						      success : myCallback
+						});  
+					});
+				
+					
+					function myCallback(data){
+						try {
+							var results = data.d.results,
+							    movies = [];
+							
+							$.each(results, function(idx, m){
+								var mv = new Movie(m.Name, m.Synopsis, m.ReleaseYear, m.AverageRating, m.Rating, m.Url);
+								movies.push(mv);
+								// override the htmlTemplate of a movie to display it differently if desired
+								// mv.htmlTemplate = '<h4>Your movie: {title} ({releaseYear})</h4>';
+							});
+							
+							cache[searchStr.toLowerCase()] = data;
+							update(movies);
+						}
+						catch(error) {
+							alert("There was a problem parsing search results.\n" + error);
+				   			return;
+						}
+					}
+					
+					
+					function update(movies) {
+						var resultsDiv = $('#searchResults'), 
+						    len = movies.length;
+						
+						resultsDiv.text("");
+						
+						if (len <= 0) {
+							resultsDiv.text("No results found.");
+							searchField.css('background', '#ffff77');
+						}
+						else {
+							$.each(movies, function(idx, movieObj){
+								resultsDiv.append($('<div>').addClass('movie').html(movieObj.getHTML()));
+							});
+							searchField.css('background', '#77ff77');
+						} 
+					}
+					
+				});
+				
+			</script>
+		</div>
+	</body>
+</html>

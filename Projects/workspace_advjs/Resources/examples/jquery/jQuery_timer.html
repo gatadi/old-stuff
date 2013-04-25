@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<script type="text/javascript" src="jquery.js" ></script>
+		<script type="text/javascript" src="jquery.timer.js" ></script>
+		
+		<style type="text/css">
+			p { margin: 0; }
+		</style>
+	</head>
+	
+	<body>
+		<div id="myDiv"></div>
+		<script type="text/javascript">
+		  
+			f.count = 0;
+	
+			var t = $.timer(f);
+			t.set({ time : 1000, autostart : true });
+	
+			function f(){
+			   if (f.count === 3) timer.stop();
+			   f.count++;
+			   $('#myDiv').append('<p>jQuery-timer message</p>');
+			}
+   
+     
+		</script>	
+	</body>
+</html>

@@ -1,0 +1,464 @@
+
+<HTML>
+	<HEAD>
+		<title>TTServices Express DropBox Application</title>
+		<meta content="Microsoft Visual Studio 6.0" name="GENERATOR">
+		<script>history.forward();</script>
+		<SCRIPT language="JAVASCRIPT" src="Include/Validations.js"></SCRIPT>
+		<LINK href="MyStyles.css" type="text/css" rel="stylesheet">
+		<script language="JAVASCRIPT">
+		<!--
+			function window_onload() 
+			{
+				window.document.frmContact.txtcont_phone1.focus();
+			}
+			
+			function Checkfields1()
+			{	
+				if (window.document.frmContact.txtcont_phone1.value.length == 0  || window.document.frmContact.txtcont_phone2.value.length == 0  || window.document.frmContact.txtcont_phone3.value.length == 0  || window.document.frmContact.txtcont_email.value.length == 0  || window.document.frmContact.txtOccupation.value.length == 0 || window.document.frmContact.txtcont_usname.value.length == 0  || window.document.frmContact.txtcont_usphone1.value.length == 0  || window.document.frmContact.txtcont_usphone2.value.length == 0  || window.document.frmContact.txtcont_usphone3.value.length == 0 || window.document.frmContact.txtEmpName.value.length == 0 )
+				{
+					alert('Please complete all these fields, If you do not have the information then please complete it using the words NIL or NONE. Do not leave the fields blank');
+					return false;
+				}
+				var temp = window.document.frmContact.txtcont_phone1.value;
+				if (!isPhone(temp))
+				{
+					var temp1= temp.toLowerCase();
+					if (!((temp1 == 'nil') || (temp1 == 'none')))
+					{
+						alert('Check the Contact Home Phone number!');
+						window.document.frmContact.txtcont_phone1.focus();
+						window.document.frmContact.txtcont_phone1.select();
+						return false;		
+					}
+				}
+				var b;
+				for (b=0 ; b < temp.length;b++)
+				{
+					if ((temp.charCodeAt(b)== 40) ||  (temp.charCodeAt(b)== 41))
+					{
+						alert('Only Numbers are allowed in phone number	fields');
+						window.document.frmContact.txtcont_phone1.focus();
+						window.document.frmContact.txtcont_phone1.select();
+						return false;		
+					}
+				}
+
+				var temp = window.document.frmContact.txtcont_phone2.value;
+				if (!isPhone(temp))
+				{
+					var temp1= temp.toLowerCase();
+					if (!((temp1 == 'nil') || (temp1 == 'none')))
+					{
+						alert('Check the Contact work Phone number!');
+						window.document.frmContact.txtcont_phone2.focus();
+						window.document.frmContact.txtcont_phone2.select();
+						//args.IsValid = false;
+						return false;		
+					}
+				}
+				var b;
+				for (b=0 ; b < temp.length;b++)
+				{
+					if ((temp.charCodeAt(b)== 40) ||  (temp.charCodeAt(b)== 41))
+					{
+						alert('Only Numbers are allowed in phone number	fields');
+						window.document.frmContact.txtcont_phone2.focus();
+						window.document.frmContact.txtcont_phone2.select();
+						return false;		
+					}
+				}
+				
+				var temp = window.document.frmContact.txtcont_phone3.value;
+				if (!isPhone(temp))
+				{
+					var temp1= temp.toLowerCase();
+					if (!((temp1 == 'nil') || (temp1 == 'none')))
+					{
+						alert('Check the Contact other Phone number!');
+						window.document.frmContact.txtcont_phone3.focus();
+						window.document.frmContact.txtcont_phone3.select();
+						//args.IsValid = false;
+						return false;		
+					}
+				}
+				var b;
+				for (b=0 ; b < temp.length;b++)
+				{
+					if ((temp.charCodeAt(b)== 40) ||  (temp.charCodeAt(b)== 41))
+					{
+						alert('Only Numbers are allowed in phone number	fields');
+						window.document.frmContact.txtcont_phone3.focus();
+						window.document.frmContact.txtcont_phone3.select();
+						return false;		
+					}
+				}
+					
+				var val = window.document.frmContact.txtcont_email.value;
+				if (!(val.length == 0))
+				{
+					if (!CheckIsmail(val))
+					{
+						var temp1= val.toLowerCase();
+						if (!((temp1 == 'nil') || (temp1 == 'none')))
+						{
+							alert('Check the entered Email Address!');
+							window.document.frmContact.txtcont_email.focus();
+							window.document.frmContact.txtcont_email.select();
+							return false;
+						}
+					}
+				}
+				
+				var temp = window.document.frmContact.txtOccupation.value;
+				if (temp.length == 0)
+				{
+					return false;
+				}
+				
+				var i;
+				for (i = 0; i < temp.length; i++)
+				{
+				if (!((temp.charCodeAt(i) > 47 && temp.charCodeAt(i) < 58) || (temp.charCodeAt(i) > 64 && temp.charCodeAt(i) < 91) || (temp.charCodeAt(i) > 96 && temp.charCodeAt(i) < 123)|| (temp.charCodeAt(i)== 32) || (temp.charCodeAt(i)== 45)))
+					{	
+						alert('Check the Occupation Name');
+						window.document.frmContact.txtOccupation.focus();
+						window.document.frmContact.txtOccupation.select();
+						return false;
+					}
+				}
+				
+				var temp = window.document.frmContact.txtEmpName.value;
+				if (temp.length == 0)
+				{
+					return false;
+				}
+				
+				var i;
+				for (i = 0; i < temp.length; i++)
+				{
+				if (!((temp.charCodeAt(i) > 47 && temp.charCodeAt(i) < 58) || (temp.charCodeAt(i) > 64 && temp.charCodeAt(i) < 91) || (temp.charCodeAt(i) > 96 && temp.charCodeAt(i) < 123)|| (temp.charCodeAt(i)== 32) || (temp.charCodeAt(i)== 45)))
+					
+					{	
+						alert('Check the Employer Name');
+						window.document.frmContact.txtEmpName.focus();
+						window.document.frmContact.txtEmpName.select();
+						return false;
+					}
+				}
+							
+				temp = window.document.frmContact.txtcont_usname.value;
+				var i;
+				for (i = 0; i < temp.length; i++)
+				{
+					//alert(temp.charCodeAt(i));
+					if (!((temp.charCodeAt(i) > 47 && temp.charCodeAt(i) < 58) || (temp.charCodeAt(i) > 64 && temp.charCodeAt(i) < 91) || (temp.charCodeAt(i) > 96 && temp.charCodeAt(i) < 123)|| (temp.charCodeAt(i)== 32) || (temp.charCodeAt(i)== 45)))
+					{	
+						alert('Check the US Contact Name');
+						window.document.frmContact.txtcont_usname.focus();
+						window.document.frmContact.txtcont_usname.select();
+						return false;
+					}
+				}
+				
+				
+				var temp = window.document.frmContact.txtcont_usphone1.value;
+				if (!isPhone(temp))
+				{
+					var temp1= temp.toLowerCase();
+					if (!((temp1 == 'nil') || (temp1 == 'none')))
+					{
+						alert('Check the Contact US Home Phone number!');
+						window.document.frmContact.txtcont_usphone1.focus();
+						window.document.frmContact.txtcont_usphone1.select();
+						//args.IsValid = false;
+						return false;		
+					}
+				}
+				var b;
+				for (b=0 ; b < temp.length;b++)
+				{
+					if ((temp.charCodeAt(b)== 40) ||  (temp.charCodeAt(b)== 41))
+					{
+						alert('Only Numbers are allowed in phone number	fields');
+						window.document.frmContact.txtcont_usphone1.focus();
+						window.document.frmContact.txtcont_usphone1.select();
+						return false;		
+					}
+				}
+
+
+				var temp = window.document.frmContact.txtcont_usphone2.value;
+				if (!isPhone(temp))
+				{
+					var temp1= temp.toLowerCase();
+					if (!((temp1 == 'nil') || (temp1 == 'none')))
+					{
+						alert('Check the Contact US work Phone number!');
+						window.document.frmContact.txtcont_usphone2.focus();
+						window.document.frmContact.txtcont_usphone2.select();
+						//args.IsValid = false;
+						return false;		
+					}
+				}
+				var b;
+				for (b=0 ; b < temp.length;b++)
+				{
+					if ((temp.charCodeAt(b)== 40) ||  (temp.charCodeAt(b)== 41))
+					{
+						alert('Only Numbers are allowed in phone number	fields');
+						window.document.frmContact.txtcont_usphone2.focus();
+						window.document.frmContact.txtcont_usphone2.select();
+						return false;		
+					}
+				}
+					
+				var temp = window.document.frmContact.txtcont_usphone3.value;
+				if (!isPhone(temp))
+				{
+					var temp1= temp.toLowerCase();
+					if (!((temp1 == 'nil') || (temp1 == 'none')))
+					{
+						alert('Check the Contact US other Phone number!');
+						window.document.frmContact.txtcont_usphone3.focus();
+						window.document.frmContact.txtcont_usphone3.select();
+						//args.IsValid = false;
+						return false;		
+					}
+				}
+				var b;
+				for (b=0 ; b < temp.length;b++)
+				{
+					if ((temp.charCodeAt(b)== 40) ||  (temp.charCodeAt(b)== 41))
+					{
+						alert('Only Numbers are allowed in phone number	fields');
+						window.document.frmContact.txtcont_usphone3.focus();
+						window.document.frmContact.txtcont_usphone3.select();
+						return false;		
+					}
+				}
+				return true;
+			}
+		
+			/*	function checkemail(source,args)
+				{
+					if (!CheckIsmail(args.Value))
+					{
+						args.IsValid = false;
+						return false;		
+					}
+				}
+				function String(source,args)
+				{
+					var val = args.Value;
+					for (i = 0; i < val.length; i++)
+					{
+					if ((val.charCodeAt(i) < 65 || (val.charCodeAt(i) > 90 && val.charCodeAt(i) < 97) || val.charCodeAt(i) > 122) && val.charCodeAt(i) != 32)
+						{	
+							args.IsValid = false;
+						}
+					}
+				}
+			}*/
+		
+			function next()
+			{
+				if (Checkfields1())
+				{
+					return true;
+				}
+				return false;
+			}
+		
+			function finish()
+			{
+				if (Checkfields1())
+				{
+					return true;
+				} 
+				return false;
+			}
+		//-->
+		</script>
+	</HEAD>
+	<BODY language="javascript" text="#000000" vLink="#663366" aLink="#8888aa" link="#003399"
+		bgColor="#ffffff" leftMargin="0" onload="return window_onload()">
+		<noscript>
+			<h4 align="center"><font color="red" size="5"><b>Active Scripting Not Enabled</b></font><br>
+				Check your Browser settings
+			</h4>
+		</noscript>
+		<form name="frmContact" method="post" action="contact.aspx?PptPos=1" id="frmContact">
+<input type="hidden" name="__VIEWSTATE" value="dDw1OTIwMjI0MDI7dDw7bDxpPDE+Oz47bDx0PDtsPGk8MT47PjtsPHQ8O2w8aTwwPjs+O2w8dDw7bDxpPDA+Oz47bDx0PDtsPGk8MD47aTwxPjs+O2w8dDw7bDxpPDE+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPEVudGVyIHlvdXIgY29udGFjdCBkZXRhaWxzOz4+Oz47Oz47Pj47dDw7bDxpPDE+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPFRUIFNlcnZpY2VzIC0gV2ViIEFwcG9pbnRtZW50Oz4+Oz47Oz47Pj47Pj47Pj47Pj47Pj47Pj47Pg==" />
+
+			<TABLE height="26" cellSpacing="0" cellPadding="0" width="100%" border="0">
+				<tr>
+					<td><table id="UC1_Table1" cellspacing="0" cellpadding="0" width="100%" align="left" border="0" bgcolor="#003366">
+	<tr height="25">
+		<TD align="left" nowrap="nowrap" class="TopBar" height="25">
+			<span id="UC1_lblDesc" class="HeaderLable"><b><font face="Book Antiqua" color="White">Enter your contact details</font></b></span>
+		</TD>
+		<td align="right" nowrap="nowrap" class="TopBar" height="25">
+			<span id="UC1_lblTitle" class="HeaderLable"><b><font face="Book Antiqua" color="White">TT Services - Web Appointment</font></b></span>
+		</td>
+	</tr>
+</table>
+
+<br>
+</td>
+				</tr>
+			</TABLE>
+			<table width="100%" align="center">
+				<tr>
+					<td>
+							<font name="Verdana" size="2" ><b>Local and US Contact Information</b></font>
+							<br>
+							<font class="BodyInfo">
+							<ol>
+							<li>
+							Please complete all these fields, If you do not have the information then please complete it using the words NIL or NONE. Do not leave the fields blank
+							</li> 
+							<li>
+							If you are a famliy or a Group wanting to attend interview together please use the "Add Passport" button given below.(A maximum of 10 passports will be accepted)
+							</li> 
+							<li>
+							Every applicant including minors requiring to attend an interview, needs to have an appointment
+							</li> 							
+							</ol>
+							</font>
+							</td>
+				</tr>
+			</table>
+			
+			<table borderColor="black" cellSpacing="2" cellPadding="2" width="90%" align="center" border="0"
+				borderstyle="none">
+				<tr>
+					<td class="BodyFontText" align="left" colspan=2><B>Enter your Local contact details in India</B></td>
+				</tr>
+				<tr>
+					<td align="left"><span id="lblPhoneHome" class="BodyText">Phone - Home</span>
+					&nbsp;<font color="red" class="SmallFontText">*</font>
+					</td>
+					<td align="left"><input name="txtcont_phone1" type="text" maxlength="20" id="txtcont_phone1" tabindex="1" size="21" />
+					<br>
+					<font class="SmallFontText" color="blue">
+					(Please enter Phone number including STD code. This field accepts only numbers and hyphens. For example : 044-28112000.)
+					</font>
+					</td>
+				</tr>
+				<tr>
+					<td align="left"><span id="lblPhoneWork" class="BodyText">Phone - Work</span>
+					&nbsp;<font color="red" class="SmallFontText">*</font>
+					</td>
+					<td align="left"><input name="txtcont_phone2" type="text" maxlength="20" id="txtcont_phone2" tabindex="2" size="21" />
+					<br>
+					<font class="SmallFontText" color="blue">
+					(Please enter Phone number including STD code. This field accepts only numbers and hyphens. For example : 044-28112000.)					
+					</font>
+					</td>
+				</tr>
+				<tr>
+					<td align="left"><span id="lblPhoneOther" class="BodyText">Phone - Other (fax/cell/etc)</span>
+					&nbsp;<font color="red" class="SmallFontText">*</font>
+					</td>
+					<td align="left"><input name="txtcont_phone3" type="text" maxlength="20" id="txtcont_phone3" tabindex="3" size="21" />
+					<br>
+					<font class="SmallFontText" color="blue">
+					(Please enter Phone number including STD code. This field accepts only numbers and hyphens. For example : 044-28112000.)
+					</font>
+					</td>
+				</tr>
+				<tr>
+					<td align="left"><span id="lblEmail" class="BodyText">E-mail</span>
+					&nbsp;<font color="red" class="SmallFontText">*</font>
+					</td>
+					<td align="left"><input name="txtcont_email" type="text" maxlength="50" id="txtcont_email" tabindex="4" size="21" /></td>
+				</tr>
+				<tr>
+					<td align="left"><span id="lblOccupation" class="BodyText">Occupation</span>
+					&nbsp;<font color="red" class="SmallFontText">*</font>
+					</td>
+					<td align="left"><input name="txtOccupation" type="text" maxlength="20" id="txtOccupation" tabindex="5" size="21" />
+					<br>
+					<font class="SmallFontText" color="blue">
+					(This field only accepts letters, numbers, and hyphens.)
+					</font>
+					</td>
+				</tr>
+				<tr>
+					<td align="left"><span id="lblEmployer" class="BodyText">Name of Employer (company) or current school (if student)</span>
+					&nbsp;<font color="red" class="SmallFontText">*</font>
+					</td>
+					<td align="left"><input name="txtEmpName" type="text" maxlength="75" id="txtEmpName" tabindex="6" size="21" />
+					<br>
+					<font class="SmallFontText" color="blue">
+					(This field only accepts letters, numbers, and hyphens.)
+					</font>
+					</td>
+				</tr>
+				<tr><td>&nbsp;</td></tr>
+				<tr>
+					<td class="BodyFontText" align="left" colspan=2><B>Enter your US contact information</B></td> 
+				</tr>
+				<tr>
+					<td><span id="lblContName" class="BodyText">US Contact Name (company, school, or person)</span>
+					&nbsp;<font color="red" class="SmallFontText">*</font>
+					</td>
+					<td><input name="txtcont_usname" type="text" maxlength="40" id="txtcont_usname" tabindex="7" size="21" />
+					<br>
+					<font class="SmallFontText" color="blue">
+					(This field only accepts letters, numbers, and hyphens.)
+					</font>
+					</td>
+				</tr>
+				<tr>
+					<td><span id="lblPhoneHomeUS" class="BodyText">Phone - Home (US)</span>
+					&nbsp;<font color="red" class="SmallFontText">*</font>
+					</td>
+					<td><input name="txtcont_usphone1" type="text" maxlength="20" id="txtcont_usphone1" tabindex="8" size="21" />
+					<br>
+					<font class="SmallFontText" color="blue">
+					(Phone number fields accepts only numbers and hyphens. <br> For example : 202-555-1212.)
+					</font>					
+					</td>
+				</tr>
+				<tr>
+					<td><span id="lblPhoneWorkUS" class="BodyText">Phone - Work (US)</span>
+					&nbsp;<font color="red" class="SmallFontText">*</font>
+					</td>
+					<td><input name="txtcont_usphone2" type="text" maxlength="20" id="txtcont_usphone2" tabindex="9" size="21" />
+					<br>
+					<font class="SmallFontText" color="blue">
+					(Phone number fields accepts only numbers and hyphens. <br> For example : 202-555-1212.)
+					</font>					
+					</td>
+				</tr>
+				<tr>
+					<td><span id="lblPhoneOtherUS" class="BodyText">Phone - Other (US, fax/cell/etc)</span>
+					&nbsp;<font color="red" class="SmallFontText">*</font>
+					</td>
+					<td><input name="txtcont_usphone3" type="text" maxlength="20" id="txtcont_usphone3" tabindex="10" size="21" />
+					<br>
+					<font class="SmallFontText" color="blue">
+					(Phone number fields accepts only numbers and hyphens. <br> For example : 202-555-1212)					
+					</font>					
+					</td>
+				</tr>
+				<tr>
+					<td><font color="red" class="SmallFontText">* </font><font class="SmallFontText"><b>Required Entries</b></font></td>
+					<td></td>
+				</tr>
+				<tr><td></td><td></td>
+				</tr>
+				<tr>
+					<td align="right"><input type="submit" name="cmdAddPpt" value="Add Passport" id="cmdAddPpt" tabindex="11" class="FlatButton" onclick="javascript:return next();" />&nbsp;</td>
+					<td align="left">&nbsp;<input type="submit" name="cmdFinish" value="Finish" id="cmdFinish" tabindex="12" class="FlatButton" onclick="javascript:return finish();" /></td>
+				</tr>
+				
+			</table>
+			<br>
+			<table cellSpacing="0" cellPadding="0" width="30%" align="center">
+			</table>
+		</form>
+	</BODY>
+</HTML>

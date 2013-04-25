@@ -1,0 +1,87 @@
+body { color: #000; }
+
+.clearfix { zoom: 1; }
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#wrapper {
+	width: 80%;
+	min-width: 800px;
+	margin: 10px auto;
+}
+
+#header, #footer {
+	background-color: rgb(0, 125, 195);
+	height:100px;
+	position: relative;
+}
+
+h1 {
+	font: italic 48px Arial;
+	padding-top: 10px;
+	text-align: center;
+	color: hsla(0, 0, 0, 0.5);
+	background-color: hsla(20,50%, 50, 0.5);
+	position: absolute;
+	height: 70px;
+	width:500px;
+	bottom: 10px;
+	left: 30px;
+}
+
+#menu {
+	float:left;
+	width:200px;
+	padding: 10px;
+	background-color: rgb(0, 125, 195);
+}
+
+#results {
+	color: #fff;
+	margin: 15px auto;
+	text-align: center;
+}
+
+#results p {
+	margin-top: 15px;
+}
+
+#main { margin: 0 210px; padding: 10px 0; }
+#empGrid { margin: 0 auto; }
+
+#secondary {
+	float:right;
+	width:200px;
+	padding: 10px;
+	background-color: rgb(0, 125, 195);
+}
+
+#empDetails {
+	width: 80%;
+	margin: 0 auto;
+	font: normal 16px Arial;
+}
+
+#empDetails label, #empDetails input[type="text"] {
+	display: block;
+}
+
+#empDetails input[type="text"] {
+	margin-bottom: 15px;
+}
+
+#empDetails input[type="button"] {
+	font: bold 11px Arial;
+	padding: 2px;
+}
+
+#empSearch { 
+	padding: 15px; 
+	width: 450px;
+	height: 200px;
+	border: 3px solid #00f; 
+}
+

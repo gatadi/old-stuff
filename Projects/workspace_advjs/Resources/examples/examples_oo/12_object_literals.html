@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Objects</title>
+
+	<script type="text/javascript">
+		
+		var myObj1 = {}
+		        
+		var myObj2 = { name: "Bob" };
+		
+		var myObj3 = { name: "Bob", age: 35 };
+		
+		var myObj4 = { name:     "Bob", 
+		               age:      35,
+		               children: ["Sally", "Ron", "Eddie" ] 
+		};
+		
+		var myObj5 = { person : { name: "Tom" }, 
+		               showName: function() {     
+		                    alert(this.person.name); 
+		               }
+		};
+
+
+		myObj5.showName();
+
+	</script>
+  </head>
+
+  <body>
+  </body>
+</html>

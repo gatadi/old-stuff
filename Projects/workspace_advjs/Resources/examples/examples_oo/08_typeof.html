@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>typeof Example</title>
+
+	<script type="text/javascript">
+		
+		var xhrConfig;
+		
+		alert(xhrConfig == undefined);  	       	// true
+		alert(typeof xhrConfig == "undefined");  	// true
+		
+		// alert(xyz == undefined);  				// error!
+		                                        
+		xhrConfig = {};
+		
+		alert(xhrConfig.xyz == undefined); 			// true   
+		
+		
+		
+		Person = function() { }
+		alert(typeof {});							// object
+		alert(typeof []);							// object
+		alert(typeof new Person());					// object
+		alert(typeof Person);						// function
+		alert(typeof "Person");						// string
+		
+		alert({}.constructor == Object);			// true
+
+		alert([].constructor == Array);				// true
+		
+		Person = function() { }
+		alert(new Person().constructor == Person);	// true
+		
+		alert(Person.constructor == Function);		// true
+		
+		alert("Person".constructor== String);		// true
+		
+		var num = 55;
+		alert(num.constructor == Number);			// true
+
+	
+	</script>
+</head>
+
+<body>
+
+</body>
+</html>

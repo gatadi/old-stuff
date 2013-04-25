@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Object Context Example</title>
+		<script type="text/javascript">
+	
+			var person1 = {
+				name : "Jim",
+				showName : function() { alert(this.name); }
+			}
+			
+			var person2 = {name: "Fred"};
+			person2.showName = person1.showName;
+			
+			person1.showName();
+			person2.showName();
+			
+		</script>
+  </head>
+  <body>
+  
+  
+  </body>
+</html>

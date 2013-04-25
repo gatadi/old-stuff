@@ -1,0 +1,27 @@
+body {color:#000;background:#FFF;}
+body,div,h1,h2,h3,h4,h5,h6,form,input,p{margin:0;padding:0;}
+
+#wrapper { margin: 20px auto; width: 700px; font: normal 20px Arial; }
+#searchForm{ margin-top: 50px; text-align: center; }
+#searchField{ width:60%; font: bold 20px Arial; background: #ffff00; }
+
+#submit {   
+	background:orange;
+	color:#fff;
+	font:bold 120% verdana;
+	padding:0.2em 0.5em;
+}
+
+#searchResults{
+	margin-top: 30px;
+	text-align: left; 
+	font: normal 18px Arial;
+}
+
+.movie { margin-bottom: 20px; }
+.movie h3 { color: #3366ff; border-bottom: 2px inset #889988; }
+.movie .release { font: italic 75% Arial; color: #334433; }
+.movie div {font-size: 75%; color: #777777; }
+.movie .userRating { float: right; }
+.movie p { font-size: 85%; }
+.movie h6 a{ font-size: 90%; color: #990000; }

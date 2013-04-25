@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects</title>
+        <script type="text/javascript">
+            function MyObject(){
+                //no instance properties
+            }
+            
+            MyObject.prototype.year = 2007; 	//primitive value
+            
+            var o = new MyObject();
+            alert(o.year); 						//2007 – from prototype
+            alert(o.hasOwnProperty("year")); 	//false
+            
+			o.year = 2008;
+            alert(o.year); 						//2008 – from instance
+            alert(o.hasOwnProperty("year")); 	//true
+            
+			delete o.year;
+            alert(o.year); 						//2007 – from prototype
+            alert(o.hasOwnProperty("year")); 	//false
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

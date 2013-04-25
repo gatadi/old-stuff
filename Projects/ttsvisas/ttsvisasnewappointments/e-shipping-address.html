@@ -1,0 +1,356 @@
+<h4 align=center><br>You must atleast have Version-4 or above of  to browse this site.</h4>
+<HTML>
+	<HEAD>
+		<title>TTServices Express DropBox Application</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
+		<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<script>history.forward();</script>
+		<LINK href="MyStyles.css" type="text/css" rel="stylesheet">
+		<SCRIPT language="JAVASCRIPT" src="Include/Validations.js"></SCRIPT>
+		<script language="javascript">
+			function window_onload() 
+			{
+				window.document.frmConsignee.txtcompany_name.focus();
+			}
+			
+		</script>
+	</HEAD>
+	<BODY leftmargin="0" class="PageBgColor" onload="return window_onload()">
+		<NOSCRIPT>
+			<h4 align="center"><font color="red" size="5"><b>Active Scripting Not Enabled</b></font><br>
+				Check your Browser settings</h4>
+		</NOSCRIPT>
+		<form name="frmConsignee" method="post" action="Consignee.aspx?Type=EDB" id="frmConsignee">
+<input type="hidden" name="__VIEWSTATE" value="dDwyMzI4NjgwMzE7dDw7bDxpPDE+Oz47bDx0PDtsPGk8MT47aTwyMz47PjtsPHQ8O2w8aTwwPjs+O2w8dDw7bDxpPDA+Oz47bDx0PDtsPGk8MD47aTwxPjs+O2w8dDw7bDxpPDE+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPEVudGVyIHRoZSBzaGlwcGluZyBhZGRyZXNzOz4+Oz47Oz47Pj47dDw7bDxpPDE+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPFRUIFNlcnZpY2VzIC0gV2ViIEFwcG9pbnRtZW50Oz4+Oz47Oz47Pj47Pj47Pj47Pj47dDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+Pjs7Pjs+Pjs+Pjs+pKoOvAmxuswwAL9dCUTdYLPknTc=" />
+
+			<TABLE height="26" cellSpacing="0" cellPadding="0" width="100%" border="0">
+				<tr>
+					<td><table id="UC1_Table1" cellspacing="0" cellpadding="0" width="100%" align="left" border="0" bgcolor="#003366">
+	<tr height="25">
+		<TD align="left" nowrap="nowrap" class="TopBar" height="25">
+			<span id="UC1_lblDesc" class="HeaderLable"><b><font face="Book Antiqua" color="White">Enter the shipping address</font></b></span>
+		</TD>
+		<td align="right" nowrap="nowrap" class="TopBar" height="25">
+			<span id="UC1_lblTitle" class="HeaderLable"><b><font face="Book Antiqua" color="White">TT Services - Web Appointment</font></b></span>
+		</td>
+	</tr>
+</table>
+
+<br>
+</td>
+				</tr>
+			</TABLE>
+			<br>
+			<TABLE cellSpacing="0" cellPadding="0" width="0" align="center" border="0">
+				<tr>
+					<td class="BodyInfo">
+						<SPAN class="120522904-30042003">Please enter the full and correct address to which 
+							you would like your documents (Passport etc) despatched . Please note the 
+							documents are normally sent to you after the processing of visa application by 
+							the Consular office. T.T.Services is not responsible for documents shipped to 
+							incorrectly/incompletely entered addresses. TT Services will hand over 
+							passports and documents to its courier company for delivery to the consignee's 
+							address in India. In the event that the Courier Company does not service the 
+							consignee's address, TT Services will use speed post or registered post. </SPAN>
+					</td>
+				</tr>
+			</TABLE>
+			<br>
+			<table style="BORDER-COLLAPSE: collapse" borderColor="black" width="50%" align="center"
+				cellspacing="5" cellpadding="2">
+				<tr>
+					<td nowrap valign="top" class="BodyText">Company Name
+					</td>
+					<td>
+						<input name="txtcompany_name" type="text" maxlength="60" id="txtcompany_name" tabindex="1" size="35" />
+					</td>
+				</tr>
+				<tr>
+					<td nowrap valign="top" class="BodyText">First Name <font color="red">*</font>
+					</td>
+					<td><input name="txtship_fname" type="text" maxlength="33" id="txtship_fname" tabindex="2" size="23" />
+					</td>
+				</tr>
+				<tr>
+					<td nowrap valign="top" class="BodyText">Last Name <font color="red">*</font>
+					</td>
+					<td><input name="txtship_lname" type="text" maxlength="33" id="txtship_lname" tabindex="3" size="23" />
+					</td>
+				</tr>
+				<tr>
+					<td nowrap valign="top" class="BodyText">Address Line 1 <font color="red">*</font>
+					</td>
+					<td><input name="txtship_addr1" type="text" maxlength="50" id="txtship_addr1" tabindex="4" size="35" />
+					</td>
+				</tr>
+				<tr>
+					<td nowrap valign="top" class="BodyText">Address Line 2
+					</td>
+					<td><input name="txtship_addr2" type="text" maxlength="50" id="txtship_addr2" tabindex="5" size="35" />
+					</td>
+				</tr>
+				<tr>
+					<td nowrap valign="top" class="BodyText">City <font color="red">*</font>
+					</td>
+					<td><input name="txtship_city" type="text" maxlength="15" id="txtship_city" tabindex="6" size="23" />
+					</td>
+				</tr>
+				<tr>
+					<td nowrap valign="top" class="BodyText">State <font color="red">*</font>
+					</td>
+					<td><input name="txtship_state" type="text" maxlength="15" id="txtship_state" tabindex="7" />
+					</td>
+				</tr>
+				<tr>
+					<td nowrap valign="top" class="BodyText">ZIP/Pin Code <font color="red">*</font>
+					</td>
+					<td><input name="txtship_zip" type="text" maxlength="6" id="txtship_zip" tabindex="8" size="10" />
+					</td>
+				</tr>
+				<tr>
+					<td nowrap valign="top" class="BodyText">Phone <font color="red">*</font>
+					</td>
+					<td><input name="txtship_phone" type="text" maxlength="15" id="txtship_phone" tabindex="9" size="35" />
+						<br>
+						<font class="smallfonttext" color="blue">We may use the contact information to 
+							confirm the authenticity of appointments. Please ensure the contact details 
+							entered are genuine to avoid cancellation of appointments.</font>
+					</td>
+				</tr>
+				<tr>
+					<td nowrap valign="top" class="BodyText">Email <font color="red">*</font>
+					</td>
+					<td><input name="txtship_email" type="text" maxlength="60" id="txtship_email" tabindex="10" size="45" />
+						<br>
+						<font class="smallfonttext" color="blue">Your receipt number will be e-mailed to 
+							this address. This email address will be required incase you Modify your 
+							appointment.</font>
+					</td>
+				</tr>
+				<tr>
+					<td nowrap align="left"><font color="red" class="SmallFontText">* </font><font class="SmallFontText">
+							<b>Required Entries</b></font>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table align="center">
+				<tr>
+					<td>
+						
+					</td>
+					<TD>
+						<input type="submit" name="cmdAddPpt" value="Next" id="cmdAddPpt" tabindex="13" class="FlatButton" onclick="javascript:return cmdPpt_onclick()" />
+					</TD>
+				</tr>
+			</table>
+		</form>
+		<script language="JAVASCRIPT">
+			function cmdSamp_onclick()
+			<!--
+			{
+				myWindow = window.open("HelpConsignee.htm", "HelpCWindow", 'width=550,height=550') 
+				return false;
+			}
+			
+			function cmdHelp_onclick()
+			{
+				Hlpwindow = window.open("PetitionInfo.htm","PetInfoWindow",'width=400,height=450')
+			}
+
+			function Checkfields()
+			{
+				var val;
+				
+				val = Trim(window.document.frmConsignee.txtcompany_name.value);
+				if (ContainsSpecialChar(val))
+				{
+					alert('Company Name cannot contain <,> and "');
+					window.document.frmConsignee.txtcompany_name.focus();
+					window.document.frmConsignee.txtcompany_name.select();		
+					return false;
+				}
+				
+				window.document.frmConsignee.txtcompany_name.value = val;
+				
+				val = Trim(window.document.frmConsignee.txtship_fname.value);
+				if (val == "")
+				{
+					alert("Enter First Name")
+					window.document.frmConsignee.txtship_fname.focus()
+					return false;
+				}
+				if (!isAlphabetsOnly(val))
+				{
+					alert("Name can contain only characters and spaces");
+					window.document.frmConsignee.txtship_fname.focus();
+					window.document.frmConsignee.txtship_fname.select();		
+					return false;
+				}
+				
+				window.document.frmConsignee.txtship_fname.value = val;
+
+				val = Trim(window.document.frmConsignee.txtship_lname.value);
+				if (val == "")
+				{
+					alert("Enter Last Name")
+					window.document.frmConsignee.txtship_lname.focus()
+					return false;
+				}
+				if (!isAlphabetsOnly(val))
+				{
+					alert("Name can contain only characters and spaces");
+					window.document.frmConsignee.txtship_lname.focus();
+					window.document.frmConsignee.txtship_lname.select();		
+					return false;
+				}
+				window.document.frmConsignee.txtship_lname.value = val;
+				
+				val = Trim(window.document.frmConsignee.txtship_addr1.value);
+				if (val == "")
+				{
+					alert("Enter Address")
+					window.document.frmConsignee.txtship_addr1.focus()
+					return false;
+				}
+				if (ContainsSpecialChar(val))
+				{
+					alert('Address cannot contain <,> and "');
+					window.document.frmConsignee.txtship_addr1.focus();
+					window.document.frmConsignee.txtship_addr1.select();		
+					return false;
+				}
+				
+				window.document.frmConsignee.txtship_addr1.value = val;
+				
+				val = Trim(window.document.frmConsignee.txtship_addr2.value);
+				if (ContainsSpecialChar(val))
+				{
+					alert('Address cannot contain <,> and "');
+					window.document.frmConsignee.txtship_addr2.focus();
+					window.document.frmConsignee.txtship_addr2.select();		
+					return false;
+				}
+				
+				window.document.frmConsignee.txtship_addr2.value = val;
+				
+				val = Trim(window.document.frmConsignee.txtship_city.value);
+				if (val == "")
+				{
+					alert("Enter City")
+					window.document.frmConsignee.txtship_city.focus()
+					return false;
+				}
+				if (ContainsSpecialChar(val))
+				{
+					alert('City name cannot contain <,> and "');
+					window.document.frmConsignee.txtship_city.focus();
+					window.document.frmConsignee.txtship_city.select();		
+					return false;
+				}
+				window.document.frmConsignee.txtship_city.value = val;
+				
+				val = Trim(window.document.frmConsignee.txtship_state.value);
+				if (val == "")
+				{
+					alert("Enter State")
+					window.document.frmConsignee.txtship_state.focus()
+					return false;
+				}
+				if (ContainsSpecialChar(val))
+				{
+					alert('State name cannot contain <,> and "');
+					window.document.frmConsignee.txtship_state.focus();
+					window.document.frmConsignee.txtship_state.select();		
+					return false;
+				}
+				window.document.frmConsignee.txtship_state.value = val;
+				
+				val = Trim(window.document.frmConsignee.txtship_zip.value);
+				if (val == "")
+				{
+					alert("Enter Zip Code")
+					window.document.frmConsignee.txtship_zip.focus()
+					return false;
+				}
+				else
+				{
+					
+					if (!isNumber(val))
+					{
+						alert("Please enter valid pincode");
+						window.document.frmConsignee.txtship_zip.focus();
+						window.document.frmConsignee.txtship_zip.select();
+						return false;
+					}
+					else
+					{
+					if (!(isZipcode(val)))
+						{
+							alert ("Please enter a valid Zip Code");
+							window.document.frmConsignee.txtship_zip.focus();
+							window.document.frmConsignee.txtship_zip.select();
+							return false;
+						}
+					}
+				}
+				window.document.frmConsignee.txtship_zip.value = val;
+				
+				val = Trim(window.document.frmConsignee.txtship_phone.value);
+				if (val == "")
+				{
+					alert("Enter Phone Number")
+					window.document.frmConsignee.txtship_phone.focus()
+					return false;
+				}
+				if (!(val == ""))
+				{
+					if (!(isPhone(val)))
+						{
+							alert ("Please enter a valid Phone Code");
+							window.document.frmConsignee.txtship_phone.focus();
+							window.document.frmConsignee.txtship_phone.select();
+							return false;
+						}
+				}
+				window.document.frmConsignee.txtship_phone.value = val;
+				
+				val = Trim(window.document.frmConsignee.txtship_email.value);
+				if (val == "")
+				{
+					alert("Enter Email address")
+					window.document.frmConsignee.txtship_email.focus()
+					return false;
+				}
+				else
+				{
+					if (!CheckIsmail(val))
+					{
+						alert("Please enter a valid email address");
+						window.document.frmConsignee.txtship_email.focus();
+						window.document.frmConsignee.txtship_email.select();
+						return false;
+					}
+				}
+				window.document.frmConsignee.txtship_email.value = val;
+				window.document.frmConsignee.txtship_addr2.value = Trim(window.document.frmConsignee.txtship_addr2.value);
+				window.document.frmConsignee.txtship_lname.value = Trim(window.document.frmConsignee.txtship_lname.value);
+				window.document.frmConsignee.txtcompany_name.value = Trim(window.document.frmConsignee.txtcompany_name.value);
+				
+				return true;
+			}
+
+			function cmdPpt_onclick()
+			{
+				if (Checkfields())
+				{
+					return true;
+				}
+				return false;
+			}
+			//-->
+		</script>
+	</BODY>
+</HTML>

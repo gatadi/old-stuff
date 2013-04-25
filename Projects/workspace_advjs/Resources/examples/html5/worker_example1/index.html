@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+	<head>
+
+	</head>
+	<body>		
+				
+		<script type="text/javascript">
+		
+			(function(){
+			   var webWorker = new Worker('work.js');
+			   webWorker.onmessage = function(evt) {
+				document.body.innerHTML += 
+			                          "<div>Message from worker thread: " + 
+			                           evt.data + "</div>";
+			   };
+			})();
+
+				
+		</script>
+	</body>
+</html>

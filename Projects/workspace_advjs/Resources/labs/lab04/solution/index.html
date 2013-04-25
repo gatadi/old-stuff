@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lab04 - Constructors / Prototypes</title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">	
+			
+			function Car(carMake, carModel, carYear) {
+				this.make = carMake;
+				this.model = carModel;
+				this.year = carYear;
+			}
+			
+			Car.prototype = {
+				sayMake : function() { console.log(this.make); },
+				sayModel : function() { console.log(this.model); },
+				sayYear : function() { console.log(this.year); },
+				startEngine : function() { console.log("Vroom."); },
+				stopEngine : function() { console.log("....stopping...."); }
+			};
+			
+			var myCar = new Car("Toyota", "Celica", 2006);
+			myCar.sayMake(); 								//"Toyota"
+			myCar.sayModel(); 								//"Celica“
+			myCar.sayYear(); 								//2006
+			myCar.startEngine();
+			myCar.stopEngine();
+		</script>
+	</body>
+</html>

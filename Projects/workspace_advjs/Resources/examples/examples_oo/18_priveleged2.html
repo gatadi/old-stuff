@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Objects</title>
+
+        <script type="text/javascript">
+        
+        (function () {
+            var count = 10;
+            function displayResults() { console.log("count: " + count); }
+
+            Tracker = function (name) {
+                this.name = name;
+            };
+
+            Tracker.prototype.incrementCount = function () {
+                count++;
+                displayResults();
+            };
+        	 
+        })();
+
+	   	 var o1 = new Tracker('tracker1');
+		 o1.incrementCount();						 // 11
+		 var o2 = new Tracker('tracker2');
+		 o2.incrementCount();						 // 12	
+        
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

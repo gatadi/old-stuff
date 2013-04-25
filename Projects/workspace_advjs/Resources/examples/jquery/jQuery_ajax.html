@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<script type="text/javascript" src="jquery.js" ></script>
+		<style type="text/css">
+			#clickDiv { cursor: pointer; border: 1px solid black; margin: 5px; width: 300px; height: 50px; text-align: center; line-height: 50px; background: #ffcfff; }
+			#resultsDiv { border: 1px solid black; margin: 5px; width: 300px; height: 50px; text-align: center; background: #ffffcf; height: 50px; }
+		</style>
+	</head>
+	
+	<body>
+		<div id="clickDiv">Click me to make an AJAX request</div>
+		<div id="resultsDiv"></div>
+		
+		<script type="text/javascript">
+
+		   var makeRequest = function() {
+
+		      var xhrConfig = {
+		        url : "ajaxdemo.txt",
+		        type: 'GET',
+		        data: { 'address' : '123 Main St.' },
+				headers: { 'Accept': 'text/html' },
+				dataType: 'html',							// can be json, script, xml, html
+		        success: function(results) { 
+		            $("#resultsDiv").text(results);
+		         }
+		      };
+		      
+		      $.ajax(xhrConfig);
+		   };
+		   
+		   $('#clickDiv').click(makeRequest);
+		   
+		</script>
+	</body>
+</html>

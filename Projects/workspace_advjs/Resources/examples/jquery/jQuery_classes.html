@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<script type="text/javascript" src="jquery.js" ></script>
+	
+		<style type="text/css">
+			#myDiv { height: 100px; width: 300px; border-radius: 5px; border: 1px solid blue;
+	          		 box-shadow: 0px 5px 5px 0px #777; cursor: pointer;
+			         margin: 20px auto; padding: 5px; background-color: #ffffcc; 
+			         text-align: center; vertical-align: middle; font: normal 18px Arial; }
+			#myDiv span { line-height: 100px; }
+			
+			#classdemo .class1 { font-style: italic; background-color: #ccf;}
+			#classdemo .class2 { color: green; background-color: #fcc;}
+			#classdemo .class3 { text-decoration: underline; background-color: #cfc;}
+		</style>
+	</head>
+	
+	<body id="classdemo">
+		<div id="myDiv"><span>Click to add then remove classes</span></div>
+	
+		<script type="text/javascript">
+			$("#myDiv").click(function(e) { 
+				var el = $(this);
+				if (el.hasClass('class3')) el.removeClass();  // no params removes all classes
+				else if (el.hasClass('class2')) el.addClass('class3');
+				else if (el.hasClass('class1')) el.addClass('class2');
+				else el.addClass('class1');
+			});
+		</script>	
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Backbone.js jQuery Example, main2</title>
+  <script src="jquery-1.7.1.js"></script>
+  <script src="underscore.js"></script>
+  <script src="backbone.js"></script>
+  
+</head>
+<body>
+
+  <script>
+	  (function($){
+	    
+	    var MainView = Backbone.View.extend({    
+	      el: $('body'), 
+	      
+	      initialize: function(){
+	    	this.count = 0;
+	        this.render(); 
+	      },
+	      
+	      events: {
+	         'click div#main' : 'displayMessage'  
+	      },
+	
+	      render: function(){
+	        $(this.el).append("<div id='main'>Main app</div>");
+	      },
+	      
+	      displayMessage: function() { 
+	    	  this.count++; 
+	    	  $(this.el).append("<div>item clicked " + this.count + " times.</div>");
+	      }
+	    });
+	
+	    var mainView = new MainView();      
+	  })(jQuery);
+	  
+  </script>
+</body>
+</html>

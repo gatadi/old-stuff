@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ex 22</title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">	
+
+			var ArraySorter = (function(){
+				var _arr = null;
+				var _desc = false;
+				var _comparator = function(num1, num2) { if (_desc) 
+															return num1 - num2;
+														 else return num2 - num1; };
+				
+				function _sort() {
+					if(_arr.constructor !== Array) return;					
+					_arr.sort(_comparator);
+				}
+				
+				return {
+					init : function(comparator, desc) {
+						_desc = desc || false;
+						_comparator = comparator || _comparator;  // use default if not provided
+					},
+					
+					sort : function(arr) { 
+					    _arr = arr || _arr;
+					 	if(typeof _arr !== "undefined") {	
+							_sort();
+							return _arr; 
+						}
+					}
+				}
+				
+			})();
+			
+			var arr = [3 , 88 , 13, 8];
+			//alert(arr.sort());				// not properly sorted
+			alert(ArraySorter.sort(arr));   	// properly sorted
+			
+			ArraySorter.init(null, true);
+			alert(ArraySorter.sort());
+			
+		</script>
+	</body>
+</html>

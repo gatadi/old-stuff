@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Backbone.js jQuery Example</title>
+  <script src="jquery-1.7.1.js"></script>
+  <script src="underscore.js"></script>
+  <script src="backbone.js"></script>
+  
+</head>
+
+<body>
+	
+	<div id="test"> Make Ajax Request</div>
+	
+	<div id="results"> Backbone Example : View </div>
+	
+</body>
+
+<script type="text/javascript">
+
+/*
+	var xhr = null ;
+	if(window.XMLHttpRequst){
+		xhr = new XMLHttpRequest() ;
+	}
+	
+	xhr.onreadystatechange = function(){
+		if(xhr.readyState == 4 ){ //request is complete
+			if(xhr.status == 200 || xhr.status == 0){
+				document.getElementById("results").innerHTML=  xhr.responseText ;
+			}
+		}
+	}
+	*/
+	
+	foo = "morning" ;
+	
+	function someFunction()
+	{
+		foo = "afternoon" ;
+		if(true){
+			var foo="evening" ;
+		}
+		
+		alert(this.foo);
+		alert(foo);
+		
+	}
+  
+	//someFunction(); 	alert(foo);
+	
+	function increment(){
+		count = 0 ;
+		console.log(count++);
+	}
+	
+	increment.count = 1;
+
+	
+	var x = new increment() ; increment() ; increment() ;
+	console.log("x.count: " + x.count) ;
+	//window.setInterval(increment, 1000) ;
+	
+</script>
+
+
+</html>

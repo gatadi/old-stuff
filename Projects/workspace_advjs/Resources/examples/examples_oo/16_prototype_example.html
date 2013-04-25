@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Objects</title>
+        <script type="text/javascript">
+            
+            function MyObject(){}
+            
+            MyObject.prototype.year = 2007;
+            MyObject.prototype.colors = ["red", "blue"];
+            MyObject.prototype.sayYear = function(){
+            	console.log(this.year);
+            };
+			
+            var o1 = new MyObject();
+            console.log(o1.colors); 					//"red","blue"
+            o1.sayYear(); 								//2007
+            o1.colors.push("green");
+			
+            var o2 = new MyObject();
+            o2.year = 2008;
+            
+            console.log(o2.colors); 					//"red","blue","green"
+            o2.__proto__.year = 2010 ;
+            
+            MyObject.prototype.year = 2009;
+            console.log(o1.year);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

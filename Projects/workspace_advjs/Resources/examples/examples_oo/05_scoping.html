@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Scoping</title>
+
+	<script type="text/javascript">
+		
+		var x = 10;
+		
+		function someFunction() {
+			w = 20;
+			var z = 30;
+			var x = 40;
+			var y = 100;
+		}
+		
+		function anotherFunction() {
+			alert(x);
+			alert(w);
+			alert(z);
+		}
+		
+		someFunction();
+		anotherFunction();
+		
+	</script>
+</head>
+
+<body>
+	<div>Does this code execute fine?</div>
+</body>
+</html>

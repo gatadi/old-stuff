@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<script type="text/javascript" src="jquery.js" ></script>
+	
+		<style type="text/css">
+			#wrapper div { height: 100px; width: 300px; margin: 20px auto; background-color: #ffffcc; 
+			         text-align: center; vertical-align: middle; overflow: hidden; padding: 5px; }
+			p { font: normal 10px Arial; text-align: left; }
+		</style>
+	</head>
+	
+	<body>
+	   <div id="wrapper">
+			<div id="binding">
+				<a href="#">Click for binding demo</a>
+			</div>
+			
+			<div id="live">
+				<a href="#">Click for live demo</a>
+			</div>
+			
+			<div id="delegate">
+				<a href="#">Click for delegate demo</a>
+			</div>
+		</div>
+	   
+		<script type="text/javascript">
+
+			$('#binding').bind('click', function(evt) { 
+				$(evt.currentTarget).append('<p>Bind is like the individual methods (click/mouseover/etc)</p>')
+			});
+			
+			$('#live').live('click', function(evt) { 
+				$(evt.currentTarget).append('<p>Live is handled once at the document level.</p>')
+			});
+			
+			$('#delegate').delegate('a', 'click', function(evt) { 
+				$(evt.target).closest('div').append('<p>Delegate is handled at the div#wrapper level</p>')
+			});
+		</script>
+	
+	</body>
+</html>

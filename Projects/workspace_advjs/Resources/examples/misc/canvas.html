@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title>Canvas Example</title>
+		<script src="../jquery/jquery.js" type="text/javascript"></script>
+		<style>
+		
+			#drawCanvas {
+				border: 1px solid #ccc;
+				width: 400px;
+				height: 200px;
+				
+			}
+		
+		</style>
+	</head>
+
+	<body>
+		
+		<canvas id="drawCanvas"></canvas>
+		
+		<script>
+		
+		(function(){
+			
+			var x = 1, y = 1, dx = 2, dy = 4, width, height, canvasNode, ctx, animTimer;
+
+			function init() {
+				canvasNode = $('#drawCanvas')[0];
+			  ctx = canvasNode.getContext("2d");
+			  
+			  width  = $(canvasNode).width();
+			  height = $(canvasNode).height();
+			  
+			  return setInterval(draw, 10);
+			}
+
+			function circle(x,y,r) {
+			  ctx.beginPath();
+			  ctx.arc(x, y, r, 0, Math.PI*2, true);
+			  ctx.closePath();
+			  ctx.fill();
+			}
+
+			function rect(x,y,w,h) {
+			  ctx.beginPath();
+			  ctx.rect(x,y,w,h);
+			  ctx.closePath();
+			  ctx.fill();
+			}
+
+			function clear() {
+			  ctx.clearRect(0, 0, width, height);
+			}
+
+			function draw() {
+			  clear();
+			  circle(x, y, 10);
+			 
+			  if (x + dx > width || x + dx < 0)
+				    dx = -dx;
+			  
+			  if (y + dy > height || y + dy < 0)
+				    dy = -dy;
+			  
+			  x += dx;
+			  y += dy;
+			}
+
+			animTimer = init();
+			
+		})();
+		
+		</script>
+
+	</body>
+</html>

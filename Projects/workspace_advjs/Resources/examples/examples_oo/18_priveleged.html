@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects</title>
+    </head>
+    <body>
+    	<div id="myDiv"></div>
+    	
+    	<script type="text/javascript">
+        
+	        function Tracker(name, updElem) {
+	
+	        	if(typeof(updElem) === 'string') updElem = document.getElementById(updElem);
+	            this.name = name;
+	            var count = 10;
+	
+	            function displayResults() {
+	            	var msg = "count: " + count;
+	                if (typeof(updElem) !== 'undefined' && 'innerHTML' in updElem)
+	                	updElem.innerHTML += ('<p>' + msg + '</p>');
+	                else
+	                	console.log("count: " + count);
+	            }
+	
+	            this.incrementCount = function () {
+	                count++;
+	                displayResults();
+	            }; 
+	        }
+	
+	        var o1 = new Tracker('tracker1', 'myDiv');
+	        var o2 = new Tracker('tracker2', 'myDiv');
+	        o1.incrementCount();
+	        o2.incrementCount();
+
+        </script>
+    </body>
+</html>

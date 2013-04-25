@@ -1,0 +1,38 @@
+@ECHO OFF
+setlocal
+SET BRANCH=dev
+SET SPEC=vijayapplabsspec.pl
+SET HOST=gatadi
+
+if "%1" == "-b" SET BRANCH=%2%
+if "%1" == "-spec" SET SPEC=%2%
+if "%1" == "-host" SET HOST=%2%
+if "%1" == "-clean" rmdir /S /Q e:\apps\snapcat\webapps\ROOT\WEB-INF\classes
+
+if "%3" == "-b" SET BRANCH=%4%
+if "%3" == "-spec" SET SPEC=%4%
+if "%3" == "-host" SET HOST=%4%
+if "%3" == "-clean" rmdir /S /Q e:\apps\snapcat\webapps\ROOT\WEB-INF\classes
+
+if "%5" == "-b" SET BRANCH=%6%
+if "%5" == "-spec" SET SPEC=%6%
+if "%5" == "-host" SET HOST=%6%
+if "%5" == "-clean" rmdir /S /Q e:\apps\snapcat\webapps\ROOT\WEB-INF\classes
+if "%7" == "-clean" rmdir /S /Q e:\apps\snapcat\webapps\ROOT\WEB-INF\classes
+
+CD e:\development\snapfish\%BRANCH%\install
+rsync --recursive rsync://localhost/%BRANCH%.install //e/temp/install --verbose
+perl E:\Development\snapfish\%BRANCH%\install\bootstrap.pl -b %BRANCH% -q rsync://localhost %SPEC% %HOST%
+REM if exist e:\apps\snapcat\work del /S /F /Q e:\apps\snapcat\work
+
+@if errorlevel 1 goto end
+@if errorlevel 2 goto end
+
+:end
+
+endlocal
+
+
+
+
+

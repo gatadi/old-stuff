@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+	<head>
+		<style>
+			ul {
+				list-style-type: none;
+				text-shadow: 2px 2px 2px #888;
+			}
+		</style>
+	</head>
+	<body>
+				
+		<section>
+			<form>
+				<button id="retrieveRecord" >Retrieve One</button>
+				<button id="retrieveAll" >Retrieve All</button>
+				<button id="retrieveByEmail" >Retrieve By Email</button>
+			</form>
+			<ul id="messages"></ul>
+		</section>
+				
+		<script>
+			(function(){
+
+				document.getElementById('retrieveByEmail').onclick = function(e) {
+					e.preventDefault();
+					var objectStore = db.transaction(['contactStore']).objectStore('contactStore');
+
+					// multi values can use objectStore.index('name').openCursor().onsuccess = f()
+					
+					objectStore.index('emailIdx').get('rbrown@microsoft.com').onsuccess = function(evt) {
+						log("Retrieve record: " + JSON.stringify(evt.target.result));
+					};
+				};
+				
+				document.getElementById('retrieveAll').onclick = function(e) {
+					e.preventDefault();
+					var objectStore = db.transaction(['contactStore']).objectStore('contactStore');
+
+					objectStore.openCursor().onsuccess = function(evt) {
+					  var cursor = evt.target.result;
+					  if (cursor) {
+						  log("Retrieve record: " + cursor.key + " - " + JSON.stringify(cursor.value));
+					      cursor.continue();
+					  }
+					};
+				};
+				
+				document.getElementById('retrieveRecord').onclick = function(e) {
+					e.preventDefault();
+					db.transaction(['contactStore']).objectStore('contactStore').get('Green').onsuccess = function(evt) {
+						  log("Retrieve record: " + JSON.stringify(evt.target.result));
+					};
+				};
+				
+				function log(msg) {
+					document.getElementById('messages').innerHTML += ('<li>' + msg + '</li>');
+				}
+				
+				var indexedDB = window.indexedDB || window.mozIndexedDB || window.moz_indexedDB || window.webkitIndexedDB,
+					db, dbRequest;
+				
+				if(window.webkitIndexedDB)
+					window.IDBKeyRange = window.webkitIDBKeyRange;
+				
+				if(indexedDB) {
+		            dbRequest = indexedDB.open("ContactDB", "My Contact Database");
+		            dbRequest.onsuccess = function(evt){
+		                db = evt.target.result;
+		                log("Database Opened");
+		                
+		                // db is an instance of the database, now work with it...
+		                
+		                // this generic error handler receives all error evts that bubble up
+		                db.onerror = function(evt) {
+		                	log("DB Operation Error: " + evt.target.errorCode);  
+		                }
+		                
+		                if (db.version != '1.06') {
+		                	var vRequest = db.setVersion("1.06");
+		                	
+		                	vRequest.onsuccess = function(event) {
+		                	  // create object store to hold contact information, lastName will be the unique key
+		                	  var objectStore = db.createObjectStore('contactStore', { keyPath: 'lastName', autoIncrement: false });
+
+		                	  // an index allows for searching by email. We shouldn't have duplicates.
+		                	  objectStore.createIndex('emailIdx', 'email', { unique: true });
+
+		                	  // an index to search by lastName. We might have duplicates
+		                	  objectStore.createIndex('lastNameIdx', 'lastName', { unique: false });
+
+		                	  // Store values in the newly created objectStore if desired
+		                	  var data = [
+		                	  	{lastName: 'Smith', firstName: 'John', address: '111 Main St.', phone: [{number: '111-222-3333', type: 'office'}, {number: '222-333-4444', type: 'cell'}], email: 'jsmith@yahoo.com'},
+		                	  	{lastName: 'Jones', firstName: 'Edna', address: '333 Elm St.', phone: [{number: '444-555-6666', type: 'home'}, {number: '456-321-0987', type: 'cell'}], email: 'ejones@gmail.com'},
+		                	  	{lastName: 'Green', firstName: 'Earl', address: '444 Broad Ave.', phone: [{number: '777-888-9999', type: 'work'}], email: 'egreen@hotmail.com'},
+		                	  	{lastName: 'Brown', firstName: 'Roger', address: '5555 Oak Blvd.', phone: [{number: '123-456-7890', type: 'office'}, {number: '213-465-9087', type: 'cell'}], email: 'rbrown@microsoft.com'},
+		                	  	{lastName: 'Miller', firstName: 'Sally', address: '7777 Northern Ave.', phone: [{number: '987-654-3210', type: 'cel'}], email: 'smiller@rocketmail.com'}
+		                	  ];
+		                	  
+		                	  for (i in data)
+		                	  	objectStore.add(data[i]);
+		                	  log("Version " + db.version + " created");
+		                	  log(data.length + " records added");
+		                	};
+		                }
+		                
+		            };
+		            dbRequest.onerror = function(err){
+		            	log("User chose not to allow the DB: " + err);
+		            };
+				}
+				else
+					alert("IndexedDB is not supported on your browser.");
+			})();
+			
+            
+		</script>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Strict Mode</title>
+	
+	<script>
+		// test in both FF4 and Ch10 to see differences
+		
+		(function(){
+		   "use strict";
+		   //arguments = [];
+		   
+		   return arguments.callee;
+		   
+		}());
+		
+
+	</script>
+</head>
+
+<body>
+
+</body>
+</html>

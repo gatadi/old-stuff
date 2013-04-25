@@ -1,0 +1,720 @@
+compile_test:compiling C:\Workarea\JavaProjects\JavaTest\CProxyServer.java  ...
+execute:executing CProxyServer ...
+Usage : java CProxyServer listPort serverHost serverPort
+Listening on : 8088
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  [ 1 ]
+
+GET http://www1.snapfish.com/photolibrary/t_=500741 HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+Referer: http://www1.snapfish.com/home/t_=500741
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+If-Modified-Since: Tue, 06 Feb 2007 06:19:47 GMT; length=126031
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Host: www1.snapfish.com
+Proxy-Connection: Keep-Alive
+Cookie: s_vnum=1173381381046%26vn%3D5; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ01%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; L853=1.1170973595015; s_cc=true; s_invisit=true; s_sq=%5B%5BB%5D%5D; SF_SESSION_COOKIE.snapfish_us.prd=vachgheyvq%21%25RDHNYF%5E%21713%21%25AIC_FRC%5E%21heygbtbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj1.fancsvfu.pbz%2Fubzr%2Fg_%3D500741%21%25AIC_FRC%5E%21g%21%25RDHNYF%5E%211170742787000%21%25AIC_FRC%5E%21nhgupbqr%21%25RDHNYF%5E%211112388983707293%3A3s3o63r3r7298%3A1000%3Aivwnl%40fancsvfu.pbz%3A1000000%3AFSBCEQ01; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2007; JSESSIONID=41970094CD19328AB5F7CFC1A68A0439; BIGipServer=2819691530.16415.000; BIGipServersnf02-www1=2819691530.16415.0000
+
+
+
+
+
+HTTP/1.1 200 OK
+Date: Fri, 09 Feb 2007 21:04:52 GMT
+Expires: 0
+Pragma: no-cache
+Cache-Control: max-age=0,must-revalidate,proxy-revalidate
+P3P: CP="ALL DSP COR CONi OUR BUS PHY ONL PUR DEM STA"
+ETag: "1:500741:1170742787000"
+Last-Modified: Tue, 06 Feb 2007 06:19:47 GMT
+Content-Type: text/html;charset=UTF-8
+Vary: Accept-Encoding
+Content-length: 18068
+Connection: close
+Content-Encoding: gzip
+Set-Cookie: SF_CisForCookie=SF_ThatIsGoodEnoughForMe!; Domain=snapfish.com; Path=/; Secure
+Set-Cookie: SF_SESSION_COOKIE.snapfish_us.prd=vachgheyvq%21%25RDHNYF%5E%21958%21%25AIC_FRC%5E%21heygbtbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj1.fancsvfu.pbz%2Fcubgbyvoenel%2Fg_%3D500741%21%25AIC_FRC%5E%21g%21%25RDHNYF%5E%211170742787000%21%25AIC_FRC%5E%21nhgupbqr%21%25RDHNYF%5E%211112388983707293%3A3s3o63r3r7298%3A1000%3Aivwnl%40fancsvfu.pbz%3A1000000%3AFSBCEQ01; Domain=snapfish.com; Path=/
+Set-Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; Domain=snapfish.com; Expires=Sun, 11-Mar-2007 21:04:52 GMT; Path=/
+Set-Cookie: LIBRARY_SESSION_COOKIE_NAME.snapfish_us.prd=; Domain=snapfish.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
+Set-Cookie: default_select_album_cookie.snapfish_us.prd=; Domain=snapfish.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  [ 4 ]
+
+GET http://snapfish.112.2o7.net/b/ss/hpsnapfishprod/1/H.3-pdv-2/s17392909075409?[AQB]&ndh=1&t=9/1/2007%2013%3A4%3A54%205%20480&ce=UTF-8&ns=snapfish&pageName=US%3Aen%3ALibrary%3AOwned%3AShared&g=http%3A//www1.snapfish.com/photolibrary/t_%3D500741&r=http%3A//www1.snapfish.com/home/t_%3D500741&cc=USD&server=r2-bl7-3&c1=INT&v1=INT&c2=FUL&v2=FUL&c3=yes&v3=yes&c4=yes&v4=yes&c5=no&c6=yes&v6=500741&c7=snapfish_us&v7=snapfish_us&c8=SFOPRD01&v8=SFOPRD01&c9=no&c10=snapfish&c11=yes&v11=FDR&c13=yes&v13=snapfish&v14=yes&c15=5&s=1280x1024&c=32&j=1.3&v=Y&k=Y&bw=1106&bh=737&[AQE] HTTP/1.1
+Accept: */*
+Referer: http://www1.snapfish.com/photolibrary/t_=500741
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Host: snapfish.112.2o7.net
+Proxy-Connection: Keep-Alive
+Cookie: s_vi=[CS]v1|45C8D401000061E9-A290A7A0000002D[CE]; s_vi_bzbx7Bmfehkf=[CS]v4|45C9135D0000238C-A000AA6000012A3|45C9135A[CE]; s_vi_nvnwhg=[CS]v4|45C9135D0000238C-A000AA6000012A3|45C9135A[CE]; s_vi_dx7Cdx7Dx7Bx7Bdx7Cfcnx7F=[CS]v4|45C9135D0000238C-A000AA6000012A3|45C9135A[CE]; s_vi_leejfni=[CS]v4|45CA5AC2000063F1-A000B4900000C3D|45CA8CFE[CE]
+
+
+
+
+
+HTTP/1.1 200 OK
+Date: Fri, 09 Feb 2007 21:04:53 GMT
+X-C: ms-2.9
+Expires: Thu, 08 Feb 2007 21:04:53 GMT
+Last-Modified: Sat, 10 Feb 2007 21:04:53 GMT
+Cache-Control: no-cache, no-store, must-revalidate, max-age=0, proxy-revalidate, no-transform, private
+Pragma: no-cache
+ETag: "45CCE1F5-0560-08189382"
+Vary: *
+P3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR NID PSA OUR IND COM NAV STA"
+xserver: www121
+Content-Type: image/gif
+Transfer-encoding: chunked
+Connection: close
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  [ 5 ]
+
+GET http://www1.snapfish.com/default/jsp/include/adiframe.jsp?__snapfish_internal_ad__=library_top_ribbon&t_=1171055094734 HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+Referer: http://www1.snapfish.com/photolibrary/t_=500741
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Host: www1.snapfish.com
+Proxy-Connection: Keep-Alive
+Cookie: s_vnum=1173381381046%26vn%3D5; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ01%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; L853=1.1170973595015; s_cc=true; s_invisit=true; s_sq=%5B%5BB%5D%5D; SF_SESSION_COOKIE.snapfish_us.prd=vachgheyvq%21%25RDHNYF%5E%21958%21%25AIC_FRC%5E%21heygbtbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj1.fancsvfu.pbz%2Fcubgbyvoenel%2Fg_%3D500741%21%25AIC_FRC%5E%21g%21%25RDHNYF%5E%211170742787000%21%25AIC_FRC%5E%21nhgupbqr%21%25RDHNYF%5E%211112388983707293%3A3s3o63r3r7298%3A1000%3Aivwnl%40fancsvfu.pbz%3A1000000%3AFSBCEQ01; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2007; JSESSIONID=41970094CD19328AB5F7CFC1A68A0439; BIGipServer=2819691530.16415.000; BIGipServersnf02-www1=2819691530.16415.0000
+
+
+
+
+
+HTTP/1.1 200 OK
+Date: Fri, 09 Feb 2007 21:04:54 GMT
+Content-Type: text/html;charset=ISO-8859-1
+Vary: Accept-Encoding
+Content-length: 785
+Connection: close
+Content-Encoding: gzip
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  [ 6 ]
+
+GET http://www1.snapfish.com/default/jsp/include/adiframe.jsp?__snapfish_internal_ad__=library_right&t_=1171055094734 HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+Referer: http://www1.snapfish.com/photolibrary/t_=500741
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Host: www1.snapfish.com
+Proxy-Connection: Keep-Alive
+Cookie: s_vnum=1173381381046%26vn%3D5; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ01%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; L853=1.1170973595015; s_cc=true; s_invisit=true; s_sq=%5B%5BB%5D%5D; SF_SESSION_COOKIE.snapfish_us.prd=vachgheyvq%21%25RDHNYF%5E%21958%21%25AIC_FRC%5E%21heygbtbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj1.fancsvfu.pbz%2Fcubgbyvoenel%2Fg_%3D500741%21%25AIC_FRC%5E%21g%21%25RDHNYF%5E%211170742787000%21%25AIC_FRC%5E%21nhgupbqr%21%25RDHNYF%5E%211112388983707293%3A3s3o63r3r7298%3A1000%3Aivwnl%40fancsvfu.pbz%3A1000000%3AFSBCEQ01; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2007; JSESSIONID=41970094CD19328AB5F7CFC1A68A0439; BIGipServer=2819691530.16415.000; BIGipServersnf02-www1=2819691530.16415.0000
+
+
+
+
+
+HTTP/1.1 200 OK
+Date: Fri, 09 Feb 2007 21:04:54 GMT
+Content-Type: text/html;charset=ISO-8859-1
+Vary: Accept-Encoding
+Content-length: 668
+Connection: close
+Content-Encoding: gzip
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  [ 7 ]
+
+GET http://www1.snapfish.com/home/t_=500741 HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+Referer: http://www1.snapfish.com/photolibrary/t_=500741
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+If-Modified-Since: Tue, 06 Feb 2007 06:19:47 GMT; length=47316
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Host: www1.snapfish.com
+Proxy-Connection: Keep-Alive
+Cookie: s_vnum=1173381381046%26vn%3D5; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ01%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; L853=1.1170973595015; s_cc=true; s_invisit=true; s_sq=%5B%5BB%5D%5D; SF_SESSION_COOKIE.snapfish_us.prd=vachgheyvq%21%25RDHNYF%5E%21958%21%25AIC_FRC%5E%21heygbtbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj1.fancsvfu.pbz%2Fcubgbyvoenel%2Fg_%3D500741%21%25AIC_FRC%5E%21g%21%25RDHNYF%5E%211170742787000%21%25AIC_FRC%5E%21nhgupbqr%21%25RDHNYF%5E%211112388983707293%3A3s3o63r3r7298%3A1000%3Aivwnl%40fancsvfu.pbz%3A1000000%3AFSBCEQ01; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2007; JSESSIONID=41970094CD19328AB5F7CFC1A68A0439; BIGipServer=2819691530.16415.000; BIGipServersnf02-www1=2819691530.16415.0000
+
+
+
+
+
+HTTP/1.1 304 Not Modified
+Date: Fri, 09 Feb 2007 21:04:56 GMT
+ETag: "1:500741:1170742787000"
+Expires: 0
+Cache-Control: max-age=0,must-revalidate,proxy-revalidate
+Connection: close
+Set-Cookie: SF_CisForCookie=SF_ThatIsGoodEnoughForMe!; Domain=snapfish.com; Path=/; Secure
+Set-Cookie: SF_SESSION_COOKIE.snapfish_us.prd=vachgheyvq%21%25RDHNYF%5E%21713%21%25AIC_FRC%5E%21heygbtbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj1.fancsvfu.pbz%2Fubzr%2Fg_%3D500741%21%25AIC_FRC%5E%21g%21%25RDHNYF%5E%211170742787000%21%25AIC_FRC%5E%21nhgupbqr%21%25RDHNYF%5E%211112388983707293%3A3s3o63r3r7298%3A1000%3Aivwnl%40fancsvfu.pbz%3A1000000%3AFSBCEQ01; Domain=snapfish.com; Path=/
+Set-Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; Domain=snapfish.com; Expires=Sun, 11-Mar-2007 21:04:56 GMT; Path=/
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  [ 8 ]
+
+GET http://snapfish.112.2o7.net/b/ss/hpsnapfishprod/1/H.3-pdv-2/s1811232734095?[AQB]&ndh=1&t=9/1/2007%2013%3A4%3A58%205%20480&ce=UTF-8&ns=snapfish&pageName=US%3Aen%3A%20Home&g=http%3A//www1.snapfish.com/home/t_%3D500741&r=http%3A//www1.snapfish.com/photolibrary/t_%3D500741&cc=USD&server=r2-bl7-3&c1=INT&v1=INT&c2=FUL&v2=FUL&c3=yes&v3=yes&c4=yes&v4=yes&c5=no&c6=yes&v6=500741&c7=snapfish_us&v7=snapfish_us&c8=SFOPRD01&v8=SFOPRD01&c9=no&c10=snapfish&c11=yes&v11=FDR&c13=yes&v13=snapfish&v14=yes&c15=5&s=1280x1024&c=32&j=1.3&v=Y&k=Y&bw=1106&bh=737&[AQE] HTTP/1.1
+Accept: */*
+Referer: http://www1.snapfish.com/home/t_=500741
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Host: snapfish.112.2o7.net
+Proxy-Connection: Keep-Alive
+Cookie: s_vi=[CS]v1|45C8D401000061E9-A290A7A0000002D[CE]; s_vi_bzbx7Bmfehkf=[CS]v4|45C9135D0000238C-A000AA6000012A3|45C9135A[CE]; s_vi_nvnwhg=[CS]v4|45C9135D0000238C-A000AA6000012A3|45C9135A[CE]; s_vi_dx7Cdx7Dx7Bx7Bdx7Cfcnx7F=[CS]v4|45C9135D0000238C-A000AA6000012A3|45C9135A[CE]; s_vi_leejfni=[CS]v4|45CA5AC2000063F1-A000B4900000C3D|45CA8CFE[CE]
+
+
+
+
+
+HTTP/1.1 200 OK
+Date: Fri, 09 Feb 2007 21:04:57 GMT
+X-C: ms-2.9
+Expires: Thu, 08 Feb 2007 21:04:57 GMT
+Last-Modified: Sat, 10 Feb 2007 21:04:57 GMT
+Cache-Control: no-cache, no-store, must-revalidate, max-age=0, proxy-revalidate, no-transform, private
+Pragma: no-cache
+ETag: "45CCE1F9-3F4A-2AC23D4A"
+Vary: *
+P3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR NID PSA OUR IND COM NAV STA"
+xserver: www152
+Content-Type: image/gif
+Transfer-encoding: chunked
+Connection: close
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  [ 9 ]
+
+GET http://www1.snapfish.com/gettnurl?a_=151399535&u_=500741&n_=SFOPRD01&subscribername=SNAPFISH HTTP/1.1
+Accept: */*
+Referer: http://www1.snapfish.com/home/t_=500741
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Host: www1.snapfish.com
+Proxy-Connection: Keep-Alive
+Cookie: s_vnum=1173381381046%26vn%3D5; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ01%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; L853=1.1170973595015; s_cc=true; s_invisit=true; s_sq=%5B%5BB%5D%5D; SF_SESSION_COOKIE.snapfish_us.prd=vachgheyvq%21%25RDHNYF%5E%21713%21%25AIC_FRC%5E%21heygbtbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj1.fancsvfu.pbz%2Fubzr%2Fg_%3D500741%21%25AIC_FRC%5E%21g%21%25RDHNYF%5E%211170742787000%21%25AIC_FRC%5E%21nhgupbqr%21%25RDHNYF%5E%211112388983707293%3A3s3o63r3r7298%3A1000%3Aivwnl%40fancsvfu.pbz%3A1000000%3AFSBCEQ01; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2007; JSESSIONID=41970094CD19328AB5F7CFC1A68A0439; BIGipServer=2819691530.16415.000; BIGipServersnf02-www1=2819691530.16415.0000
+
+
+
+
+
+HTTP/1.1 302 Moved Temporarily
+Date: Fri, 09 Feb 2007 21:04:57 GMT
+Location: http://images1.snapfish.com/3494289%3C4%7Ffp373%3Evq%3D3232%3E732%3E973%3EWSNRCG%3D323559%3A%3A79856vq0mrj
+Content-Type: text/plain; charset=UTF-8
+Content-length: 0
+Connection: close
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  [ 10 ]
+
+GET http://www1.snapfish.com/euploadalert/t_=500741 HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+Referer: http://www1.snapfish.com/home/t_=500741
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Host: www1.snapfish.com
+Proxy-Connection: Keep-Alive
+Cookie: s_vnum=1173381381046%26vn%3D5; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ01%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; L853=1.1170973595015; s_cc=true; s_invisit=true; s_sq=%5B%5BB%5D%5D; SF_SESSION_COOKIE.snapfish_us.prd=vachgheyvq%21%25RDHNYF%5E%21713%21%25AIC_FRC%5E%21heygbtbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj1.fancsvfu.pbz%2Fubzr%2Fg_%3D500741%21%25AIC_FRC%5E%21g%21%25RDHNYF%5E%211170742787000%21%25AIC_FRC%5E%21nhgupbqr%21%25RDHNYF%5E%211112388983707293%3A3s3o63r3r7298%3A1000%3Aivwnl%40fancsvfu.pbz%3A1000000%3AFSBCEQ01; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2007; JSESSIONID=41970094CD19328AB5F7CFC1A68A0439; BIGipServer=2819691530.16415.000; BIGipServersnf02-www1=2819691530.16415.0000
+
+
+
+
+
+HTTP/1.1 200 OK
+Date: Fri, 09 Feb 2007 21:04:57 GMT
+Expires: 0
+Pragma: no-cache
+Cache-Control: no-cache,must-revalidate,proxy-revalidate
+P3P: CP="ALL DSP COR CONi OUR BUS PHY ONL PUR DEM STA"
+Content-Type: text/plain; charset=UTF-8
+Content-length: 0
+Connection: close
+Set-Cookie: SF_CisForCookie=SF_ThatIsGoodEnoughForMe!; Domain=snapfish.com; Path=/; Secure
+Set-Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; Domain=snapfish.com; Expires=Sun, 11-Mar-2007 21:04:57 GMT; Path=/
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  [ 11 ]
+
+GET http://www1.snapfish.com/gettnurl?a_=151377519&u_=500741&n_=SFOPRD01&subscribername=SNAPFISH HTTP/1.1
+Accept: */*
+Referer: http://www1.snapfish.com/home/t_=500741
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Host: www1.snapfish.com
+Proxy-Connection: Keep-Alive
+Cookie: s_vnum=1173381381046%26vn%3D5; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ01%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; L853=1.1170973595015; s_cc=true; s_invisit=true; s_sq=%5B%5BB%5D%5D; SF_SESSION_COOKIE.snapfish_us.prd=vachgheyvq%21%25RDHNYF%5E%21713%21%25AIC_FRC%5E%21heygbtbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj1.fancsvfu.pbz%2Fubzr%2Fg_%3D500741%21%25AIC_FRC%5E%21g%21%25RDHNYF%5E%211170742787000%21%25AIC_FRC%5E%21nhgupbqr%21%25RDHNYF%5E%211112388983707293%3A3s3o63r3r7298%3A1000%3Aivwnl%40fancsvfu.pbz%3A1000000%3AFSBCEQ01; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2007; JSESSIONID=41970094CD19328AB5F7CFC1A68A0439; BIGipServer=2819691530.16415.000; BIGipServersnf02-www1=2819691530.16415.0000
+
+
+
+
+
+HTTP/1.1 302 Moved Temporarily
+Date: Fri, 09 Feb 2007 21:04:57 GMT
+Location: http://images1.snapfish.com/3494289%3C4%7Ffp37%3A%3Evq%3D3232%3E732%3E973%3EWSNRCG%3D32355998%3C9546vq0mrj
+Content-Type: text/plain; charset=UTF-8
+Content-length: 0
+Connection: close
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  [ 12 ]
+
+GET http://www1.snapfish.com/gettnurl?a_=151375077&u_=500741&n_=SFOPRD01&subscribername=SNAPFISH HTTP/1.1
+Accept: */*
+Referer: http://www1.snapfish.com/home/t_=500741
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Host: www1.snapfish.com
+Proxy-Connection: Keep-Alive
+Cookie: s_vnum=1173381381046%26vn%3D5; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ01%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; L853=1.1170973595015; s_cc=true; s_invisit=true; s_sq=%5B%5BB%5D%5D; SF_SESSION_COOKIE.snapfish_us.prd=vachgheyvq%21%25RDHNYF%5E%21713%21%25AIC_FRC%5E%21heygbtbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj1.fancsvfu.pbz%2Fubzr%2Fg_%3D500741%21%25AIC_FRC%5E%21g%21%25RDHNYF%5E%211170742787000%21%25AIC_FRC%5E%21nhgupbqr%21%25RDHNYF%5E%211112388983707293%3A3s3o63r3r7298%3A1000%3Aivwnl%40fancsvfu.pbz%3A1000000%3AFSBCEQ01; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2007; JSESSIONID=41970094CD19328AB5F7CFC1A68A0439; BIGipServer=2819691530.16415.000; BIGipServersnf02-www1=2819691530.16415.0000
+
+
+
+
+
+HTTP/1.1 302 Moved Temporarily
+Date: Fri, 09 Feb 2007 21:04:57 GMT
+Location: http://images1.snapfish.com/3494289%3C4%7Ffp376%3Evq%3D3232%3E732%3E973%3EWSNRCG%3D3235599835497vq0mrj
+Content-Type: text/plain; charset=UTF-8
+Content-length: 0
+Connection: close
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  [ 13 ]
+
+GET http://www1.snapfish.com/getsavedorders/t_=500741 HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+Referer: http://www1.snapfish.com/home/t_=500741
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Host: www1.snapfish.com
+Proxy-Connection: Keep-Alive
+Cookie: s_vnum=1173381381046%26vn%3D5; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ01%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; L853=1.1170973595015; s_cc=true; s_invisit=true; s_sq=%5B%5BB%5D%5D; SF_SESSION_COOKIE.snapfish_us.prd=vachgheyvq%21%25RDHNYF%5E%21713%21%25AIC_FRC%5E%21heygbtbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj1.fancsvfu.pbz%2Fubzr%2Fg_%3D500741%21%25AIC_FRC%5E%21g%21%25RDHNYF%5E%211170742787000%21%25AIC_FRC%5E%21nhgupbqr%21%25RDHNYF%5E%211112388983707293%3A3s3o63r3r7298%3A1000%3Aivwnl%40fancsvfu.pbz%3A1000000%3AFSBCEQ01; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2007; JSESSIONID=41970094CD19328AB5F7CFC1A68A0439; BIGipServer=2819691530.16415.000; BIGipServersnf02-www1=2819691530.16415.0000
+
+
+
+
+
+HTTP/1.1 200 OK
+Date: Fri, 09 Feb 2007 21:04:58 GMT
+Expires: 0
+Pragma: no-cache
+Cache-Control: no-cache,must-revalidate,proxy-revalidate
+P3P: CP="ALL DSP COR CONi OUR BUS PHY ONL PUR DEM STA"
+Content-Type: text/html;charset=UTF-8
+Vary: Accept-Encoding
+Content-length: 1587
+Connection: close
+Content-Encoding: gzip
+Set-Cookie: SF_CisForCookie=SF_ThatIsGoodEnoughForMe!; Domain=snapfish.com; Path=/; Secure
+Set-Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; Domain=snapfish.com; Expires=Sun, 11-Mar-2007 21:04:58 GMT; Path=/
+ž†Ó~¿/¦?°¦¢ÏõŒaØ³úÃßä.ìü)•}vpu5k¾=ØôßZÁÑZs?_–™Ð{?	Ç—Jkº?ô¨7?´’×ncÙ’ãË[méíƒ-§I¸¹P½ƒé÷Õ Ô,®†`(í¥6'? ÛUx¿ÍWá6e)(ëÞ?¡b?Ps‹¡Ó¨½hXðmæ%T?ÓŠ¦‡’I•K*µuÂýøC½¶?¹Å‰ë`8a%çn}f±€J£â?“ß8v±’~›ƒH=&‹u}'óËÜ^øøç”]Š_±?Ð3uû¿Vû»
+¾t~~­—!XÀ‹…€[Op&àÚ²¬Æ–U³7pÈŠ0/Ãš*¸¬N¬”d·ºÓ|¬¤j–a’ó
+ø¥®÷%kR&ñ¿¥ÖF«ÞøN¾2=Xöûé?ýõèÁÃîæŒpN¦ÔÚ×0†a_X·ÓÜEvÕÞArKî¢=r=ûG+Ñƒ‡Áv=Èm¾‹ôöoÒƒTï‡ÒƒƒÞá‰U·6ÿct`¥ƒ÷?<?lnªõF«‘Ñ?9Ìÿv:?726ðX†)îp‹iª¯±Ô?‚ºœö¢¼¥ÖIY÷ã“Æ‹]ÞxÉvÝì©ûPH3ÇÔÍ-—à„Ñk?I½ysh=Ãåúúú(joÖCz‚1H¤|V|Q‘¢´±eÚVcQéì-3'ÖœLø.ý¥Þ¹¯CÕyZ©|Ò¶«£Ð?REéá:*õ*œ´âGt–ú?µä-ë
+.V*;+åj­ÞÄ+kk~1|Ìšùh©oQì½nf5D?BÓqÑH~žÿI‘g½7k>#?Å!'³EAŽ×ŸÁúÅ^{Ú¯zÂMÆjàSù’S5Ü?zëF¼x¹Ë&Æ³ªÖ©ÿ#ádê·ÿ‘@M1«s[Cw_ÿzRhðwÂ›!pA<Ç(sÊ€MXíRŸéþâ3hvW  
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  [ 14 ]
+
+GET http://www1.snapfish.com/getAlbumsWithNewComments/t_=500741 HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+Referer: http://www1.snapfish.com/home/t_=500741
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Host: www1.snapfish.com
+Proxy-Connection: Keep-Alive
+Cookie: s_vnum=1173381381046%26vn%3D5; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ01%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; L853=1.1170973595015; s_cc=true; s_invisit=true; s_sq=%5B%5BB%5D%5D; SF_SESSION_COOKIE.snapfish_us.prd=vachgheyvq%21%25RDHNYF%5E%21713%21%25AIC_FRC%5E%21heygbtbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj1.fancsvfu.pbz%2Fubzr%2Fg_%3D500741%21%25AIC_FRC%5E%21g%21%25RDHNYF%5E%211170742787000%21%25AIC_FRC%5E%21nhgupbqr%21%25RDHNYF%5E%211112388983707293%3A3s3o63r3r7298%3A1000%3Aivwnl%40fancsvfu.pbz%3A1000000%3AFSBCEQ01; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2007; JSESSIONID=41970094CD19328AB5F7CFC1A68A0439; BIGipServer=2819691530.16415.000; BIGipServersnf02-www1=2819691530.16415.0000
+
+
+
+
+
+HTTP/1.1 200 OK
+Date: Fri, 09 Feb 2007 21:04:58 GMT
+Expires: 0
+Pragma: no-cache
+Cache-Control: no-cache,must-revalidate,proxy-revalidate
+P3P: CP="ALL DSP COR CONi OUR BUS PHY ONL PUR DEM STA"
+Content-Type: text/html;charset=UTF-8
+Vary: Accept-Encoding
+Content-length: 702
+Connection: close
+Content-Encoding: gzip
+Set-Cookie: SF_CisForCookie=SF_ThatIsGoodEnoughForMe!; Domain=snapfish.com; Path=/; Secure
+Set-Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; Domain=snapfish.com; Expires=Sun, 11-Mar-2007 21:04:58 GMT; Path=/
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  [ 15 ]
+
+GET http://www1.snapfish.com/default/jsp/include/adiframe.jsp?__snapfish_internal_ad__=homepage_special_offer_1&t_=1171055098812 HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+Referer: http://www1.snapfish.com/home/t_=500741
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Host: www1.snapfish.com
+Proxy-Connection: Keep-Alive
+Cookie: s_vnum=1173381381046%26vn%3D5; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ01%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; L853=1.1170973595015; s_cc=true; s_invisit=true; s_sq=%5B%5BB%5D%5D; SF_SESSION_COOKIE.snapfish_us.prd=vachgheyvq%21%25RDHNYF%5E%21713%21%25AIC_FRC%5E%21heygbtbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj1.fancsvfu.pbz%2Fubzr%2Fg_%3D500741%21%25AIC_FRC%5E%21g%21%25RDHNYF%5E%211170742787000%21%25AIC_FRC%5E%21nhgupbqr%21%25RDHNYF%5E%211112388983707293%3A3s3o63r3r7298%3A1000%3Aivwnl%40fancsvfu.pbz%3A1000000%3AFSBCEQ01; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2007; JSESSIONID=41970094CD19328AB5F7CFC1A68A0439; BIGipServer=2819691530.16415.000; BIGipServersnf02-www1=2819691530.16415.0000
+
+
+
+
+
+HTTP/1.1 200 OK
+Date: Fri, 09 Feb 2007 21:04:58 GMT
+Content-Type: text/html;charset=ISO-8859-1
+Vary: Accept-Encoding
+Content-length: 778
+Connection: close
+Content-Encoding: gzip
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  [ 16 ]
+
+GET http://www1.snapfish.com/default/jsp/include/adiframe.jsp?__snapfish_internal_ad__=homepage_special_offer_2&t_=1171055098828 HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+Referer: http://www1.snapfish.com/home/t_=500741
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Host: www1.snapfish.com
+Proxy-Connection: Keep-Alive
+Cookie: s_vnum=1173381381046%26vn%3D5; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ01%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; L853=1.1170973595015; s_cc=true; s_invisit=true; s_sq=%5B%5BB%5D%5D; SF_SESSION_COOKIE.snapfish_us.prd=vachgheyvq%21%25RDHNYF%5E%21713%21%25AIC_FRC%5E%21heygbtbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj1.fancsvfu.pbz%2Fubzr%2Fg_%3D500741%21%25AIC_FRC%5E%21g%21%25RDHNYF%5E%211170742787000%21%25AIC_FRC%5E%21nhgupbqr%21%25RDHNYF%5E%211112388983707293%3A3s3o63r3r7298%3A1000%3Aivwnl%40fancsvfu.pbz%3A1000000%3AFSBCEQ01; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2007; JSESSIONID=41970094CD19328AB5F7CFC1A68A0439; BIGipServer=2819691530.16415.000; BIGipServersnf02-www1=2819691530.16415.0000
+
+
+
+
+
+HTTP/1.1 200 OK
+Date: Fri, 09 Feb 2007 21:04:58 GMT
+Content-Type: text/html;charset=ISO-8859-1
+Vary: Accept-Encoding
+Content-length: 670
+Connection: close
+Content-Encoding: gzip
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  [ 17 ]
+
+GET http://www1.snapfish.com/default/jsp/include/adiframe.jsp?__snapfish_internal_ad__=homepage_internal_4&t_=1171055098828 HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+Referer: http://www1.snapfish.com/home/t_=500741
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Host: www1.snapfish.com
+Proxy-Connection: Keep-Alive
+Cookie: s_vnum=1173381381046%26vn%3D5; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ01%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; L853=1.1170973595015; s_cc=true; s_invisit=true; s_sq=%5B%5BB%5D%5D; SF_SESSION_COOKIE.snapfish_us.prd=vachgheyvq%21%25RDHNYF%5E%21713%21%25AIC_FRC%5E%21heygbtbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj1.fancsvfu.pbz%2Fubzr%2Fg_%3D500741%21%25AIC_FRC%5E%21g%21%25RDHNYF%5E%211170742787000%21%25AIC_FRC%5E%21nhgupbqr%21%25RDHNYF%5E%211112388983707293%3A3s3o63r3r7298%3A1000%3Aivwnl%40fancsvfu.pbz%3A1000000%3AFSBCEQ01; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2007; JSESSIONID=41970094CD19328AB5F7CFC1A68A0439; BIGipServer=2819691530.16415.000; BIGipServersnf02-www1=2819691530.16415.0000
+
+
+
+
+
+HTTP/1.1 200 OK
+Date: Fri, 09 Feb 2007 21:04:58 GMT
+Content-Type: text/html;charset=ISO-8859-1
+Vary: Accept-Encoding
+Content-length: 786
+Connection: close
+Content-Encoding: gzip
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  [ 18 ]
+
+GET http://www1.snapfish.com/default/jsp/include/adiframe.jsp?__snapfish_internal_ad__=homepage_internal_1&t_=1171055098843 HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+Referer: http://www1.snapfish.com/home/t_=500741
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Host: www1.snapfish.com
+Proxy-Connection: Keep-Alive
+Cookie: s_vnum=1173381381046%26vn%3D5; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ01%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; L853=1.1170973595015; s_cc=true; s_invisit=true; s_sq=%5B%5BB%5D%5D; SF_SESSION_COOKIE.snapfish_us.prd=vachgheyvq%21%25RDHNYF%5E%21713%21%25AIC_FRC%5E%21heygbtbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj1.fancsvfu.pbz%2Fubzr%2Fg_%3D500741%21%25AIC_FRC%5E%21g%21%25RDHNYF%5E%211170742787000%21%25AIC_FRC%5E%21nhgupbqr%21%25RDHNYF%5E%211112388983707293%3A3s3o63r3r7298%3A1000%3Aivwnl%40fancsvfu.pbz%3A1000000%3AFSBCEQ01; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2007; JSESSIONID=41970094CD19328AB5F7CFC1A68A0439; BIGipServer=2819691530.16415.000; BIGipServersnf02-www1=2819691530.16415.0000
+
+
+
+
+
+HTTP/1.1 200 OK
+Date: Fri, 09 Feb 2007 21:04:58 GMT
+Content-Type: text/html;charset=ISO-8859-1
+Vary: Accept-Encoding
+Content-length: 785
+Connection: close
+Content-Encoding: gzip
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  [ 19 ]
+
+GET http://www1.snapfish.com/default/jsp/include/adiframe.jsp?__snapfish_internal_ad__=homepage_internal_2&t_=1171055098843 HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+Referer: http://www1.snapfish.com/home/t_=500741
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Host: www1.snapfish.com
+Proxy-Connection: Keep-Alive
+Cookie: s_vnum=1173381381046%26vn%3D5; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ01%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; L853=1.1170973595015; s_cc=true; s_invisit=true; s_sq=%5B%5BB%5D%5D; SF_SESSION_COOKIE.snapfish_us.prd=vachgheyvq%21%25RDHNYF%5E%21713%21%25AIC_FRC%5E%21heygbtbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj1.fancsvfu.pbz%2Fubzr%2Fg_%3D500741%21%25AIC_FRC%5E%21g%21%25RDHNYF%5E%211170742787000%21%25AIC_FRC%5E%21nhgupbqr%21%25RDHNYF%5E%211112388983707293%3A3s3o63r3r7298%3A1000%3Aivwnl%40fancsvfu.pbz%3A1000000%3AFSBCEQ01; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2007; JSESSIONID=41970094CD19328AB5F7CFC1A68A0439; BIGipServer=2819691530.16415.000; BIGipServersnf02-www1=2819691530.16415.0000
+
+
+
+
+
+HTTP/1.1 200 OK
+Date: Fri, 09 Feb 2007 21:04:59 GMT
+Content-Type: text/html;charset=ISO-8859-1
+Vary: Accept-Encoding
+Content-length: 782
+Connection: close
+Content-Encoding: gzip
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  [ 20 ]
+
+GET http://www1.snapfish.com/default/jsp/include/adiframe.jsp?__snapfish_internal_ad__=homepage_internal_3&t_=1171055098859 HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+Referer: http://www1.snapfish.com/home/t_=500741
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Host: www1.snapfish.com
+Proxy-Connection: Keep-Alive
+Cookie: s_vnum=1173381381046%26vn%3D5; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ01%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; L853=1.1170973595015; s_cc=true; s_invisit=true; s_sq=%5B%5BB%5D%5D; SF_SESSION_COOKIE.snapfish_us.prd=vachgheyvq%21%25RDHNYF%5E%21713%21%25AIC_FRC%5E%21heygbtbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj1.fancsvfu.pbz%2Fubzr%2Fg_%3D500741%21%25AIC_FRC%5E%21g%21%25RDHNYF%5E%211170742787000%21%25AIC_FRC%5E%21nhgupbqr%21%25RDHNYF%5E%211112388983707293%3A3s3o63r3r7298%3A1000%3Aivwnl%40fancsvfu.pbz%3A1000000%3AFSBCEQ01; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2007; JSESSIONID=41970094CD19328AB5F7CFC1A68A0439; BIGipServer=2819691530.16415.000; BIGipServersnf02-www1=2819691530.16415.0000
+
+
+
+
+
+HTTP/1.1 200 OK
+Date: Fri, 09 Feb 2007 21:04:59 GMT
+Content-Type: text/html;charset=ISO-8859-1
+Vary: Accept-Encoding
+Content-length: 796
+Connection: close
+Content-Encoding: gzip
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  [ 21 ]
+
+GET http://www1.snapfish.com/photolibrary/t_=500741 HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+Referer: http://www1.snapfish.com/home/t_=500741
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+If-Modified-Since: Tue, 06 Feb 2007 06:19:47 GMT; length=126031
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Host: www1.snapfish.com
+Proxy-Connection: Keep-Alive
+Cookie: s_vnum=1173381381046%26vn%3D5; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ01%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; L853=1.1170973595015; s_cc=true; s_invisit=true; s_sq=%5B%5BB%5D%5D; SF_SESSION_COOKIE.snapfish_us.prd=vachgheyvq%21%25RDHNYF%5E%21713%21%25AIC_FRC%5E%21heygbtbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj1.fancsvfu.pbz%2Fubzr%2Fg_%3D500741%21%25AIC_FRC%5E%21g%21%25RDHNYF%5E%211170742787000%21%25AIC_FRC%5E%21nhgupbqr%21%25RDHNYF%5E%211112388983707293%3A3s3o63r3r7298%3A1000%3Aivwnl%40fancsvfu.pbz%3A1000000%3AFSBCEQ01; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2007; JSESSIONID=41970094CD19328AB5F7CFC1A68A0439; BIGipServer=2819691530.16415.000; BIGipServersnf02-www1=2819691530.16415.0000
+
+
+
+
+
+HTTP/1.1 200 OK
+Date: Fri, 09 Feb 2007 21:05:02 GMT
+Expires: 0
+Pragma: no-cache
+Cache-Control: max-age=0,must-revalidate,proxy-revalidate
+P3P: CP="ALL DSP COR CONi OUR BUS PHY ONL PUR DEM STA"
+ETag: "1:500741:1170742787000"
+Last-Modified: Tue, 06 Feb 2007 06:19:47 GMT
+Content-Type: text/html;charset=UTF-8
+Vary: Accept-Encoding
+Content-length: 18068
+Connection: close
+Content-Encoding: gzip
+Set-Cookie: SF_CisForCookie=SF_ThatIsGoodEnoughForMe!; Domain=snapfish.com; Path=/; Secure
+Set-Cookie: SF_SESSION_COOKIE.snapfish_us.prd=vachgheyvq%21%25RDHNYF%5E%21958%21%25AIC_FRC%5E%21heygbtbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj1.fancsvfu.pbz%2Fcubgbyvoenel%2Fg_%3D500741%21%25AIC_FRC%5E%21g%21%25RDHNYF%5E%211170742787000%21%25AIC_FRC%5E%21nhgupbqr%21%25RDHNYF%5E%211112388983707293%3A3s3o63r3r7298%3A1000%3Aivwnl%40fancsvfu.pbz%3A1000000%3AFSBCEQ01; Domain=snapfish.com; Path=/
+Set-Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; Domain=snapfish.com; Expires=Sun, 11-Mar-2007 21:05:02 GMT; Path=/
+Set-Cookie: LIBRARY_SESSION_COOKIE_NAME.snapfish_us.prd=; Domain=snapfish.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
+Set-Cookie: default_select_album_cookie.snapfish_us.prd=; Domain=snapfish.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  [ 24 ]
+
+GET http://snapfish.112.2o7.net/b/ss/hpsnapfishprod/1/H.3-pdv-2/s13284548098290?[AQB]&ndh=1&t=9/1/2007%2013%3A5%3A3%205%20480&ce=UTF-8&ns=snapfish&pageName=US%3Aen%3ALibrary%3AOwned%3AShared&g=http%3A//www1.snapfish.com/photolibrary/t_%3D500741&r=http%3A//www1.snapfish.com/home/t_%3D500741&cc=USD&server=r2-bl7-3&c1=INT&v1=INT&c2=FUL&v2=FUL&c3=yes&v3=yes&c4=yes&v4=yes&c5=no&c6=yes&v6=500741&c7=snapfish_us&v7=snapfish_us&c8=SFOPRD01&v8=SFOPRD01&c9=no&c10=snapfish&c11=yes&v11=FDR&c13=yes&v13=snapfish&v14=yes&c15=5&s=1280x1024&c=32&j=1.3&v=Y&k=Y&bw=1106&bh=737&[AQE] HTTP/1.1
+Accept: */*
+Referer: http://www1.snapfish.com/photolibrary/t_=500741
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Host: snapfish.112.2o7.net
+Proxy-Connection: Keep-Alive
+Cookie: s_vi=[CS]v1|45C8D401000061E9-A290A7A0000002D[CE]; s_vi_bzbx7Bmfehkf=[CS]v4|45C9135D0000238C-A000AA6000012A3|45C9135A[CE]; s_vi_nvnwhg=[CS]v4|45C9135D0000238C-A000AA6000012A3|45C9135A[CE]; s_vi_dx7Cdx7Dx7Bx7Bdx7Cfcnx7F=[CS]v4|45C9135D0000238C-A000AA6000012A3|45C9135A[CE]; s_vi_leejfni=[CS]v4|45CA5AC2000063F1-A000B4900000C3D|45CA8CFE[CE]
+
+
+
+
+
+HTTP/1.1 200 OK
+Date: Fri, 09 Feb 2007 21:05:02 GMT
+X-C: ms-2.9
+Expires: Thu, 08 Feb 2007 21:05:02 GMT
+Last-Modified: Sat, 10 Feb 2007 21:05:02 GMT
+Cache-Control: no-cache, no-store, must-revalidate, max-age=0, proxy-revalidate, no-transform, private
+Pragma: no-cache
+ETag: "45CCE1FE-022D-6390CA76"
+Vary: *
+P3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR NID PSA OUR IND COM NAV STA"
+xserver: www121
+Content-Type: image/gif
+Transfer-encoding: chunked
+Connection: close
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  [ 25 ]
+
+GET http://www1.snapfish.com/default/jsp/include/adiframe.jsp?__snapfish_internal_ad__=library_top_ribbon&t_=1171055103921 HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+Referer: http://www1.snapfish.com/photolibrary/t_=500741
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Host: www1.snapfish.com
+Proxy-Connection: Keep-Alive
+Cookie: s_vnum=1173381381046%26vn%3D5; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ01%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; L853=1.1170973595015; s_cc=true; s_invisit=true; s_sq=%5B%5BB%5D%5D; SF_SESSION_COOKIE.snapfish_us.prd=vachgheyvq%21%25RDHNYF%5E%21958%21%25AIC_FRC%5E%21heygbtbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj1.fancsvfu.pbz%2Fcubgbyvoenel%2Fg_%3D500741%21%25AIC_FRC%5E%21g%21%25RDHNYF%5E%211170742787000%21%25AIC_FRC%5E%21nhgupbqr%21%25RDHNYF%5E%211112388983707293%3A3s3o63r3r7298%3A1000%3Aivwnl%40fancsvfu.pbz%3A1000000%3AFSBCEQ01; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2007; JSESSIONID=41970094CD19328AB5F7CFC1A68A0439; BIGipServer=2819691530.16415.000; BIGipServersnf02-www1=2819691530.16415.0000
+
+
+
+
+
+HTTP/1.1 200 OK
+Date: Fri, 09 Feb 2007 21:05:03 GMT
+Content-Type: text/html;charset=ISO-8859-1
+Vary: Accept-Encoding
+Content-length: 785
+Connection: close
+Content-Encoding: gzip
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  [ 26 ]
+
+GET http://www1.snapfish.com/default/jsp/include/adiframe.jsp?__snapfish_internal_ad__=library_right&t_=1171055103937 HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+Referer: http://www1.snapfish.com/photolibrary/t_=500741
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Host: www1.snapfish.com
+Proxy-Connection: Keep-Alive
+Cookie: s_vnum=1173381381046%26vn%3D5; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ01%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; L853=1.1170973595015; s_cc=true; s_invisit=true; s_sq=%5B%5BB%5D%5D; SF_SESSION_COOKIE.snapfish_us.prd=vachgheyvq%21%25RDHNYF%5E%21958%21%25AIC_FRC%5E%21heygbtbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj1.fancsvfu.pbz%2Fcubgbyvoenel%2Fg_%3D500741%21%25AIC_FRC%5E%21g%21%25RDHNYF%5E%211170742787000%21%25AIC_FRC%5E%21nhgupbqr%21%25RDHNYF%5E%211112388983707293%3A3s3o63r3r7298%3A1000%3Aivwnl%40fancsvfu.pbz%3A1000000%3AFSBCEQ01; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2007; JSESSIONID=41970094CD19328AB5F7CFC1A68A0439; BIGipServer=2819691530.16415.000; BIGipServersnf02-www1=2819691530.16415.0000
+
+
+
+
+
+HTTP/1.1 200 OK
+Date: Fri, 09 Feb 2007 21:05:03 GMT
+Content-Type: text/html;charset=ISO-8859-1
+Vary: Accept-Encoding
+Content-length: 668
+Connection: close
+Content-Encoding: gzip
+
+
+
+
+Terminate batch job (Y/N)? 

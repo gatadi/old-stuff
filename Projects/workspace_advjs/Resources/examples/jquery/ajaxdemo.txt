@@ -1,0 +1,2 @@
+This is a sample Ajax message.  
+It may report an access is denied error in some browsers.

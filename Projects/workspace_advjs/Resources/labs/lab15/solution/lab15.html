@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+	<head>
+		<title>Lab 15 Solution</title>
+		
+	</head>
+	<body>
+		
+		<script>
+		
+		(function(){
+			"use strict";
+			
+			var myCarPrototype = {
+				toString: function() { return this.make + ' ' + this.model + ' ' + this.year },
+                start   : function() { console.log("Vrroooom!"); },
+				stop    : function() { console.log("Screech!"); }
+			};
+			
+			var myCar = Object.create( myCarPrototype, 
+				    {
+				    	year:  { value: 97, writable: true },
+				    	make : { value: 'Ford',  writable: true, 
+				    		     enumerable: true, configurable: true},
+				    	model: { value:'F150'}
+				    } 
+			);
+	
+			var myCar2 = Object.create(myCarPrototype, 
+					{
+				    	year:  { value: 2011 },
+				    	make : { value: 'Honda',  writable: false, 
+				    		     enumerable: true, configurable: true},
+				    	model: { value:'Civic'}
+				    }
+			);
+			
+			console.log(myCar);
+			myCar.year = 2001;
+			myCar.make = 'GM';
+			console.log(myCar);
+			
+			Object.freeze(myCar);
+			myCar.make = 'Dodge';
+			console.log(myCar);
+		})();
+		</script>
+	</body>
+</html>

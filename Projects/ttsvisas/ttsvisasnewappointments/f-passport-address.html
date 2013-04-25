@@ -1,0 +1,1163 @@
+
+<HTML>
+	<HEAD>
+		<title>TTServices - Enter Passport Details</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
+		<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<script>history.forward();</script>
+		<LINK href="mystyles.css" type="text/css" rel="stylesheet">
+		<SCRIPT language="JAVASCRIPT" src="Include/Validations.js">	</SCRIPT>
+		<script language="javascript">
+		function CitySelected()
+		{
+			var CityId, CityDesc
+			CityId=window.document.frmPassport.ddlIssueCity.options[window.document.frmPassport.ddlIssueCity.selectedIndex].value
+			CityDesc=window.document.frmPassport.ddlIssueCity.options[window.document.frmPassport.ddlIssueCity.selectedIndex].text
+			if (CityId!=0)
+			{
+				window.document.frmPassport.txtpptcity.value=CityDesc + ' INDIA'
+				window.document.frmPassport.txtpptcity.onfocus = window.document.frmPassport.txtpptcity.blur
+			}
+			else
+			{
+				window.document.frmPassport.txtpptcity.value=''
+				window.document.frmPassport.txtpptcity.onfocus = ''
+				window.document.frmPassport.txtpptcity.focus();
+			}
+		}
+		
+		function StateSelected()
+		{
+			var StateId, StateDesc
+			StateId=window.document.frmPassport.ddlState.options[window.document.frmPassport.ddlState.selectedIndex].value
+			StateDesc=window.document.frmPassport.ddlState.options[window.document.frmPassport.ddlState.selectedIndex].text
+			window.document.frmPassport.txtState.value=StateDesc
+			if (StateId!=0)
+			{
+				window.document.frmPassport.txtState.value=StateDesc
+				window.document.frmPassport.txtState.onfocus = window.document.frmPassport.txtState.blur
+			}
+			else
+			{
+				window.document.frmPassport.txtState.value=''
+				window.document.frmPassport.txtState.onfocus = ''
+				window.document.frmPassport.txtState.focus();
+			}
+		}
+		
+		var optType
+		function openCountryPage(loptType)
+		{
+			optType=loptType
+			window.open("SelectCountry.aspx?optType=" + optType,"IssuanceCountry","height=75,width=400,status=no,toolbar=no,menubar=no,location=no");
+		}
+		
+		function setCountry(CountryId,Country)
+		{		
+				if(optType=="SelNat")
+				{
+					window.document.frmPassport.hidNationality.value=CountryId
+					window.document.frmPassport.hidIssuance.value=CountryId
+					window.document.frmPassport.lblNationality.value=Country
+				}	
+				else if(optType=="SelCount")	
+				{
+					window.document.frmPassport.hidCountry.value=CountryId
+					window.document.frmPassport.lblCountry.value=Country
+				}	
+				else if(optType=="SelPOB")		
+				{
+					window.document.frmPassport.hidPOB.value=CountryId
+					window.document.frmPassport.lblPOB.value=Country
+				}	
+		}
+		function CheckFields()
+		{
+			
+			val=Trim(window.document.frmPassport.txtPassportNo.value);
+			if (val == "") 
+			{
+				alert("Passport Number field cannot be left blank");
+				document.frmPassport.txtPassportNo.value = "";
+				document.frmPassport.txtPassportNo.focus();
+				return false;
+			}
+			if (!isPassportNo(val))
+			{
+					alert("Please check the passport number you have entered");
+					document.frmPassport.txtPassportNo.focus();
+					document.frmPassport.txtPassportNo.select();
+					return false;
+			}
+			window.document.frmPassport.txtPassportNo.value = val;	
+			
+			if (window.document.frmPassport.cboPptIssDay.value == 0) 
+				{
+					alert("Choose a day of Passport Issuance");
+					window.document.frmPassport.cboPptIssDay.focus();
+					return false;
+				}
+			if (window.document.frmPassport.cboPptIssMon.value == 0) 
+				{
+					alert("Choose a month of Passport Issuance");
+					window.document.frmPassport.cboPptIssMon.focus();
+					return false;
+				}
+			if (window.document.frmPassport.cboPptIssYr.value == 0) 
+				{
+					alert("Choose a year of Passport Issuance");
+					window.document.frmPassport.cboPptIssYr.focus();
+					return false;
+				}
+
+			val=window.document.frmPassport.cboPptIssMon[window.document.frmPassport.cboPptIssMon.selectedIndex].value + "/" + window.document.frmPassport.cboPptIssDay[window.document.frmPassport.cboPptIssDay.selectedIndex].value + "/" + window.document.frmPassport.cboPptIssYr[window.document.frmPassport.cboPptIssYr.selectedIndex].value;
+			
+			if (!ForceDate(val))
+				{
+					alert("Enter Date in specified format");
+					document.frmPassport.cboPptIssDay.focus();
+					return false;
+				}
+						
+			if (!isLater(val))
+				{
+					alert("The Passport issuance date cannot be greater than the Current Date");
+					document.frmPassport.cboPptIssDay.focus();
+					return false;
+				} 
+			
+			
+			if (window.document.frmPassport.cboPptExpDay.value == 0) 
+				{
+					alert("Choose a day of Passport Expiry");
+					window.document.frmPassport.cboPptExpDay.focus();
+					return false;
+				}
+			if (window.document.frmPassport.cboPptExpMon.value == 0) 
+				{
+					alert("Choose a month of Passport Expiry");
+					window.document.frmPassport.cboPptExpMon.focus();
+					return false;
+				}
+			if (window.document.frmPassport.cboPptExpYr.value == 0) 
+				{
+					alert("Choose a year of Passport Expiry");
+					window.document.frmPassport.cboPptExpYr.focus();
+					return false;
+				}
+
+			val=window.document.frmPassport.cboPptExpMon[window.document.frmPassport.cboPptExpMon.selectedIndex].value + "/" + window.document.frmPassport.cboPptExpDay[window.document.frmPassport.cboPptExpDay.selectedIndex].value + "/" + window.document.frmPassport.cboPptExpYr[window.document.frmPassport.cboPptExpYr.selectedIndex].value;
+			
+			if(!ForceDate(val))
+				{
+					alert("Enter date in specified format");
+					window.document.frmPassport.cboPptExpDay.focus();
+					return false;
+				}
+				
+				if(isLater(val))
+				{
+					alert("The Passport expiry date cannot be earlier than or equal to current date");
+					window.document.frmPassport.cboPptExpDay.focus();
+					return false;
+				}
+					
+			val=Trim(window.document.frmPassport.txtpptcity.value);
+			if (val=="")
+				{
+					alert("Passport Issuance City cannot be left blank");
+					document.frmPassport.txtpptcity.value = "";
+					document.frmPassport.txtpptcity.focus();
+					return false;
+				}
+			
+			val=Trim(window.document.frmPassport.txtpptcity.value);
+			if (!isAlphabetsOnly(val))
+				{
+					alert("Enter a valid Passport Issuance city name");
+					document.frmPassport.txtpptcity.value = val;
+					document.frmPassport.txtpptcity.focus();
+					return false;
+				}	
+					
+			val=Trim(window.document.frmPassport.txtFamilyName.value);
+			if (val == "") 
+				{
+					alert("Family Name field cannot be left blank");
+					document.frmPassport.txtFamilyName.value = "";
+					document.frmPassport.txtFamilyName.focus();
+					return false;
+				}
+			if (!isAlphabetsOnly(val))
+				{
+					alert("Name can contain only characters and spaces");
+					window.document.frmPassport.txtFamilyName.focus();
+					window.document.frmPassport.txtFamilyName.select();		
+					return false;
+				}
+			window.document.frmPassport.txtFamilyName.value = val;
+					
+			val=Trim(window.document.frmPassport.txtGivenName.value);
+			if (val == "") 
+				{
+					alert("Given Name field cannot be left blank");
+					document.frmPassport.txtGivenName.value = "";
+					document.frmPassport.txtGivenName.focus();
+					return false;
+				}
+			if (!isAlphabetsOnly(val))
+				{
+					alert("Name can contain only characters and spaces");
+					window.document.frmPassport.txtGivenName.focus();
+					window.document.frmPassport.txtGivenName.select();		
+					return false;
+				}
+			window.document.frmPassport.txtGivenName.value = val;		
+			
+			if ((window.document.frmPassport.Sex[0].checked==false) && (window.document.frmPassport.Sex[1].checked==false))
+				{
+					alert("Choose a Sex");
+					window.document.frmPassport.Sex[0].focus();	
+					return false;
+				}
+			
+			if (window.document.frmPassport.cboDay.value == 0) 
+				{
+					alert("Choose a day of birth");
+					window.document.frmPassport.cboDay.focus();
+					return false;
+				}
+			if (window.document.frmPassport.cboMonth.value == 0) 
+				{
+					alert("Choose a month of birth");
+					window.document.frmPassport.cboMonth.focus();
+					return false;
+				}
+			if (window.document.frmPassport.cboYear.value == 0) 
+				{
+					alert("Choose a year of birth");
+					window.document.frmPassport.cboYear.focus();
+					return false;
+				}
+
+			val=window.document.frmPassport.cboMonth[window.document.frmPassport.cboMonth.selectedIndex].value + "/" + window.document.frmPassport.cboDay[window.document.frmPassport.cboDay.selectedIndex].value + "/" + window.document.frmPassport.cboYear[window.document.frmPassport.cboYear.selectedIndex].value;
+			
+			if(!isDate(val))
+				{
+					alert("Please enter a valid Date of Birth");
+					window.document.frmPassport.cboDay.focus();
+					return false;
+				}
+			
+			val=Trim(window.document.frmPassport.txtBirthCity.value);
+			if (val=="")
+				{
+					alert("City of Birth cannot be left blank");
+					document.frmPassport.txtBirthCity.value = "";
+					document.frmPassport.txtBirthCity.focus();
+					return false;
+				}
+			
+			val=Trim(window.document.frmPassport.txtBirthCity.value);
+			if (!isAlphabetsOnly(val))
+				{
+					alert("Enter a valid city of Birth");
+					document.frmPassport.txtBirthCity.value = val;
+					document.frmPassport.txtBirthCity.focus();
+					return false;
+				}	
+			
+				
+			val=Trim(window.document.frmPassport.txtAddress1.value);
+				if (val == "") 
+				{
+					alert("Address field cannot be left blank");
+					document.frmPassport.txtAddress1.value = "";
+					document.frmPassport.txtAddress1.focus();
+					return false;
+				}
+				
+				var b;
+				for (b=0;b<val.length;b++)
+					{
+						if (!((val.charCodeAt(b)== 39) || 
+							(val.charCodeAt(b)== 45) || 
+							(val.charCodeAt(b)== 46) || 
+							(val.charCodeAt(b)== 36) ||
+							(val.charCodeAt(b) > 47 && val.charCodeAt(b) < 58) || 
+							(val.charCodeAt(b) > 64 && val.charCodeAt(b) < 91) || 
+							(val.charCodeAt(b) > 96 && val.charCodeAt(b) < 123)|| 
+							(val.charCodeAt(b)== 32)))
+						{				
+							alert('Address cannot contain special characters other than \' - . $');
+							window.document.frmPassport.txtAddress1.focus();
+							window.document.frmPassport.txtAddress1.select();		
+							return false;
+						}
+					}
+				
+				window.document.frmPassport.txtAddress1.value = val;
+				
+				
+				val=Trim(window.document.frmPassport.txtAddress2.value);
+				var b;
+					for (b=0;b<val.length;b++)
+					{
+						if (!((val.charCodeAt(b)== 39) || 
+							(val.charCodeAt(b)== 45) || 
+							(val.charCodeAt(b)== 46) || 
+							(val.charCodeAt(b)== 36) ||
+							(val.charCodeAt(b) > 47 && val.charCodeAt(b) < 58) || 
+							(val.charCodeAt(b) > 64 && val.charCodeAt(b) < 91) || 
+							(val.charCodeAt(b) > 96 && val.charCodeAt(b) < 123)|| 
+							(val.charCodeAt(b)== 32)))
+						{				
+							alert('Address cannot contain special characters other than \' - . $');
+							window.document.frmPassport.txtAddress2.focus();
+							window.document.frmPassport.txtAddress2.select();		
+							return false;
+						}
+					}
+				
+				window.document.frmPassport.txtAddress2.value = val;
+				
+				val=Trim(window.document.frmPassport.txtCity.value);
+					if (val == "") 
+					{
+						alert("City field cannot be left blank");
+						document.frmPassport.txtCity.value = "";
+						document.frmPassport.txtCity.focus();
+						return false;
+					}
+					var b;
+					for (b=0;b<val.length;b++)
+					{
+						if (!((val.charCodeAt(b)== 39) || 
+							(val.charCodeAt(b)== 45) || 
+							(val.charCodeAt(b)== 46) || 
+							(val.charCodeAt(b)== 36) ||
+							(val.charCodeAt(b) > 47 && val.charCodeAt(b) < 58) || 
+							(val.charCodeAt(b) > 64 && val.charCodeAt(b) < 91) || 
+							(val.charCodeAt(b) > 96 && val.charCodeAt(b) < 123)|| 
+							(val.charCodeAt(b)== 32)))
+						{				
+							alert('City cannot contain special characters other than  ,  .  -  $');
+							window.document.frmPassport.txtCity.focus();
+							window.document.frmPassport.txtCity.select();		
+							return false;
+						}
+					}
+				
+				window.document.frmPassport.txtCity.value = val;
+				val=Trim(window.document.frmPassport.txtState.value);
+					if (val == "") 
+					{
+						alert("State field cannot be left blank");
+						document.frmPassport.txtState.value="";
+						document.frmPassport.txtState.focus();
+						return false;
+					}
+					var b;
+					for (b=0;b<val.length;b++)
+					{
+						if (!((val.charCodeAt(b)== 39) || 
+							(val.charCodeAt(b)== 45) || 
+							(val.charCodeAt(b)== 46) || 
+							(val.charCodeAt(b)== 36) ||
+							(val.charCodeAt(b) > 47 && val.charCodeAt(b) < 58) || 
+							(val.charCodeAt(b) > 64 && val.charCodeAt(b) < 91) || 
+							(val.charCodeAt(b) > 96 && val.charCodeAt(b) < 123)|| 
+							(val.charCodeAt(b)== 32)))
+						{				
+							alert('State cannot contain special characters other than  ,  .  -  $');
+							window.document.frmPassport.txtState.focus();
+							window.document.frmPassport.txtState.select();		
+							return false;
+						}
+					}
+					
+				window.document.frmPassport.txtState.value = val;
+				
+				val=Trim(window.document.frmPassport.txtPinCode.value);
+					if (val == "") 
+					{
+						alert("Pincode field cannot be left blank");
+						document.frmPassport.txtPinCode.value = "";
+						document.frmPassport.txtPinCode.focus();
+						return false;
+					}
+					if (!(isZipcode(val)))
+					{
+						alert ("Please enter a valid Zip Code");
+						document.frmPassport.txtPinCode.focus();
+						document.frmPassport.txtPinCode.select();
+						return false;
+					}
+				window.document.frmPassport.txtPinCode.value = val;
+				window.document.frmPassport.txtAddress2.value = Trim(window.document.frmPassport.txtAddress2.value);
+
+			return true;			
+		}
+
+function cmdBack_onclick()
+{
+	if ((isEmpty(window.document.frmPassport.txtPassportNo.value)) || (CheckFields()))
+	{
+		return true;
+	}
+	return false;
+}
+
+function window_onload()
+{
+	window.document.frmPassport.txtPassportNo.focus();
+	//window.document.frmPassport.txtpptcity.onfocus = window.document.frmPassport.txtpptcity.blur
+	//window.document.frmPassport.txtState.onfocus = window.document.frmPassport.txtState.blur
+	
+}
+	
+		</script>
+	</HEAD>
+	<body leftMargin="0" onload="window_onload()">
+		<form name="frmPassport" method="post" action="Passport.aspx?oper=finish&amp;PptPos=1" id="frmPassport">
+<input type="hidden" name="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" value="dDwtNDI5OTAyMDI2O3Q8O2w8aTwxPjs+O2w8dDw7bDxpPDE+O2k8NT47aTw2PjtpPDc+O2k8OT47aTwxMD47aTwxMT47aTwxMz47aTwyOD47aTwyOT47aTwzMD47aTw0ND47aTw1ND47aTw1Nj47PjtsPHQ8O2w8aTwwPjs+O2w8dDw7bDxpPDA+Oz47bDx0PDtsPGk8MD47aTwxPjs+O2w8dDw7bDxpPDE+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPFBsZWFzZSBFbnRlciB0aGUgcGFzc3BvcnQgZGV0YWlscy47Pj47Pjs7Pjs+Pjt0PDtsPGk8MT47PjtsPHQ8cDxwPGw8VGV4dDs+O2w8VFQgU2VydmljZXMgLSBXZWIgQXBwb2ludG1lbnQ7Pj47Pjs7Pjs+Pjs+Pjs+Pjs+Pjt0PHQ8O3A8bDxpPDA+O2k8MT47aTwyPjtpPDM+O2k8ND47aTw1PjtpPDY+O2k8Nz47aTw4PjtpPDk+O2k8MTA+O2k8MTE+O2k8MTI+O2k8MTM+O2k8MTQ+O2k8MTU+O2k8MTY+O2k8MTc+O2k8MTg+O2k8MTk+O2k8MjA+O2k8MjE+O2k8MjI+O2k8MjM+O2k8MjQ+O2k8MjU+O2k8MjY+O2k8Mjc+O2k8Mjg+O2k8Mjk+O2k8MzA+O2k8MzE+Oz47bDxwPFxlO1xlPjtwPDE7MT47cDwyOzI+O3A8MzszPjtwPDQ7ND47cDw1OzU+O3A8Njs2PjtwPDc7Nz47cDw4Ozg+O3A8OTs5PjtwPDEwOzEwPjtwPDExOzExPjtwPDEyOzEyPjtwPDEzOzEzPjtwPDE0OzE0PjtwPDE1OzE1PjtwPDE2OzE2PjtwPDE3OzE3PjtwPDE4OzE4PjtwPDE5OzE5PjtwPDIwOzIwPjtwPDIxOzIxPjtwPDIyOzIyPjtwPDIzOzIzPjtwPDI0OzI0PjtwPDI1OzI1PjtwPDI2OzI2PjtwPDI3OzI3PjtwPDI4OzI4PjtwPDI5OzI5PjtwPDMwOzMwPjtwPDMxOzMxPjs+Pjs+Ozs+O3Q8dDw7cDxsPGk8MD47aTwxPjtpPDI+O2k8Mz47aTw0PjtpPDU+O2k8Nj47aTw3PjtpPDg+O2k8OT47aTwxMD47aTwxMT47aTwxMj47PjtsPHA8XGU7XGU+O3A8SmFuOzE+O3A8RmViOzI+O3A8TWFyOzM+O3A8QXByOzQ+O3A8TWF5OzU+O3A8SnVuOzY+O3A8SnVsOzc+O3A8QXVnOzg+O3A8U2VwOzk+O3A8T2N0OzEwPjtwPE5vdjsxMT47cDxEZWM7MTI+Oz4+Oz47Oz47dDx0PDtwPGw8aTwwPjtpPDE+O2k8Mj47aTwzPjtpPDQ+O2k8NT47aTw2PjtpPDc+O2k8OD47aTw5PjtpPDEwPjtpPDExPjtpPDEyPjtpPDEzPjtpPDE0PjtpPDE1PjtpPDE2PjtpPDE3PjtpPDE4PjtpPDE5PjtpPDIwPjtpPDIxPjtpPDIyPjtpPDIzPjtpPDI0PjtpPDI1PjtpPDI2PjtpPDI3PjtpPDI4PjtpPDI5PjtpPDMwPjtpPDMxPjtpPDMyPjtpPDMzPjtpPDM0PjtpPDM1PjtpPDM2PjtpPDM3PjtpPDM4PjtpPDM5PjtpPDQwPjtpPDQxPjtpPDQyPjtpPDQzPjtpPDQ0PjtpPDQ1PjtpPDQ2PjtpPDQ3PjtpPDQ4PjtpPDQ5PjtpPDUwPjtpPDUxPjtpPDUyPjtpPDUzPjtpPDU0PjtpPDU1PjtpPDU2PjtpPDU3PjtpPDU4PjtpPDU5PjtpPDYwPjtpPDYxPjtpPDYyPjtpPDYzPjtpPDY0PjtpPDY1PjtpPDY2PjtpPDY3PjtpPDY4PjtpPDY5PjtpPDcwPjtpPDcxPjtpPDcyPjtpPDczPjtpPDc0PjtpPDc1PjtpPDc2PjtpPDc3PjtpPDc4PjtpPDc5PjtpPDgwPjtpPDgxPjtpPDgyPjtpPDgzPjtpPDg0PjtpPDg1PjtpPDg2PjtpPDg3PjtpPDg4PjtpPDg5PjtpPDkwPjtpPDkxPjtpPDkyPjtpPDkzPjtpPDk0PjtpPDk1PjtpPDk2PjtpPDk3PjtpPDk4PjtpPDk5PjtpPDEwMD47aTwxMDE+Oz47bDxwPFxlO1xlPjtwPDIwMDQ7MjAwND47cDwyMDAzOzIwMDM+O3A8MjAwMjsyMDAyPjtwPDIwMDE7MjAwMT47cDwyMDAwOzIwMDA+O3A8MTk5OTsxOTk5PjtwPDE5OTg7MTk5OD47cDwxOTk3OzE5OTc+O3A8MTk5NjsxOTk2PjtwPDE5OTU7MTk5NT47cDwxOTk0OzE5OTQ+O3A8MTk5MzsxOTkzPjtwPDE5OTI7MTk5Mj47cDwxOTkxOzE5OTE+O3A8MTk5MDsxOTkwPjtwPDE5ODk7MTk4OT47cDwxOTg4OzE5ODg+O3A8MTk4NzsxOTg3PjtwPDE5ODY7MTk4Nj47cDwxOTg1OzE5ODU+O3A8MTk4NDsxOTg0PjtwPDE5ODM7MTk4Mz47cDwxOTgyOzE5ODI+O3A8MTk4MTsxOTgxPjtwPDE5ODA7MTk4MD47cDwxOTc5OzE5Nzk+O3A8MTk3ODsxOTc4PjtwPDE5Nzc7MTk3Nz47cDwxOTc2OzE5NzY+O3A8MTk3NTsxOTc1PjtwPDE5NzQ7MTk3ND47cDwxOTczOzE5NzM+O3A8MTk3MjsxOTcyPjtwPDE5NzE7MTk3MT47cDwxOTcwOzE5NzA+O3A8MTk2OTsxOTY5PjtwPDE5Njg7MTk2OD47cDwxOTY3OzE5Njc+O3A8MTk2NjsxOTY2PjtwPDE5NjU7MTk2NT47cDwxOTY0OzE5NjQ+O3A8MTk2MzsxOTYzPjtwPDE5NjI7MTk2Mj47cDwxOTYxOzE5NjE+O3A8MTk2MDsxOTYwPjtwPDE5NTk7MTk1OT47cDwxOTU4OzE5NTg+O3A8MTk1NzsxOTU3PjtwPDE5NTY7MTk1Nj47cDwxOTU1OzE5NTU+O3A8MTk1NDsxOTU0PjtwPDE5NTM7MTk1Mz47cDwxOTUyOzE5NTI+O3A8MTk1MTsxOTUxPjtwPDE5NTA7MTk1MD47cDwxOTQ5OzE5NDk+O3A8MTk0ODsxOTQ4PjtwPDE5NDc7MTk0Nz47cDwxOTQ2OzE5NDY+O3A8MTk0NTsxOTQ1PjtwPDE5NDQ7MTk0ND47cDwxOTQzOzE5NDM+O3A8MTk0MjsxOTQyPjtwPDE5NDE7MTk0MT47cDwxOTQwOzE5NDA+O3A8MTkzOTsxOTM5PjtwPDE5Mzg7MTkzOD47cDwxOTM3OzE5Mzc+O3A8MTkzNjsxOTM2PjtwPDE5MzU7MTkzNT47cDwxOTM0OzE5MzQ+O3A8MTkzMzsxOTMzPjtwPDE5MzI7MTkzMj47cDwxOTMxOzE5MzE+O3A8MTkzMDsxOTMwPjtwPDE5Mjk7MTkyOT47cDwxOTI4OzE5Mjg+O3A8MTkyNzsxOTI3PjtwPDE5MjY7MTkyNj47cDwxOTI1OzE5MjU+O3A8MTkyNDsxOTI0PjtwPDE5MjM7MTkyMz47cDwxOTIyOzE5MjI+O3A8MTkyMTsxOTIxPjtwPDE5MjA7MTkyMD47cDwxOTE5OzE5MTk+O3A8MTkxODsxOTE4PjtwPDE5MTc7MTkxNz47cDwxOTE2OzE5MTY+O3A8MTkxNTsxOTE1PjtwPDE5MTQ7MTkxND47cDwxOTEzOzE5MTM+O3A8MTkxMjsxOTEyPjtwPDE5MTE7MTkxMT47cDwxOTEwOzE5MTA+O3A8MTkwOTsxOTA5PjtwPDE5MDg7MTkwOD47cDwxOTA3OzE5MDc+O3A8MTkwNjsxOTA2PjtwPDE5MDU7MTkwNT47cDwxOTA0OzE5MDQ+Oz4+Oz47Oz47dDx0PDtwPGw8aTwwPjtpPDE+O2k8Mj47aTwzPjtpPDQ+O2k8NT47aTw2PjtpPDc+O2k8OD47aTw5PjtpPDEwPjtpPDExPjtpPDEyPjtpPDEzPjtpPDE0PjtpPDE1PjtpPDE2PjtpPDE3PjtpPDE4PjtpPDE5PjtpPDIwPjtpPDIxPjtpPDIyPjtpPDIzPjtpPDI0PjtpPDI1PjtpPDI2PjtpPDI3PjtpPDI4PjtpPDI5PjtpPDMwPjtpPDMxPjs+O2w8cDxcZTtcZT47cDwxOzE+O3A8MjsyPjtwPDM7Mz47cDw0OzQ+O3A8NTs1PjtwPDY7Nj47cDw3Ozc+O3A8ODs4PjtwPDk7OT47cDwxMDsxMD47cDwxMTsxMT47cDwxMjsxMj47cDwxMzsxMz47cDwxNDsxND47cDwxNTsxNT47cDwxNjsxNj47cDwxNzsxNz47cDwxODsxOD47cDwxOTsxOT47cDwyMDsyMD47cDwyMTsyMT47cDwyMjsyMj47cDwyMzsyMz47cDwyNDsyND47cDwyNTsyNT47cDwyNjsyNj47cDwyNzsyNz47cDwyODsyOD47cDwyOTsyOT47cDwzMDszMD47cDwzMTszMT47Pj47Pjs7Pjt0PHQ8O3A8bDxpPDA+O2k8MT47aTwyPjtpPDM+O2k8ND47aTw1PjtpPDY+O2k8Nz47aTw4PjtpPDk+O2k8MTA+O2k8MTE+O2k8MTI+Oz47bDxwPFxlO1xlPjtwPEphbjsxPjtwPEZlYjsyPjtwPE1hcjszPjtwPEFwcjs0PjtwPE1heTs1PjtwPEp1bjs2PjtwPEp1bDs3PjtwPEF1Zzs4PjtwPFNlcDs5PjtwPE9jdDsxMD47cDxOb3Y7MTE+O3A8RGVjOzEyPjs+Pjs+Ozs+O3Q8dDw7cDxsPGk8MD47aTwxPjtpPDI+O2k8Mz47aTw0PjtpPDU+O2k8Nj47aTw3PjtpPDg+O2k8OT47aTwxMD47aTwxMT47aTwxMj47aTwxMz47aTwxND47aTwxNT47aTwxNj47aTwxNz47aTwxOD47aTwxOT47aTwyMD47aTwyMT47aTwyMj47aTwyMz47aTwyND47aTwyNT47aTwyNj47aTwyNz47aTwyOD47aTwyOT47aTwzMD47aTwzMT47aTwzMj47aTwzMz47aTwzND47aTwzNT47aTwzNj47aTwzNz47aTwzOD47aTwzOT47aTw0MD47aTw0MT47aTw0Mj47aTw0Mz47aTw0ND47aTw0NT47aTw0Nj47aTw0Nz47aTw0OD47aTw0OT47aTw1MD47aTw1MT47aTw1Mj47aTw1Mz47aTw1ND47aTw1NT47aTw1Nj47aTw1Nz47aTw1OD47aTw1OT47aTw2MD47aTw2MT47aTw2Mj47aTw2Mz47aTw2ND47aTw2NT47aTw2Nj47aTw2Nz47aTw2OD47aTw2OT47aTw3MD47aTw3MT47aTw3Mj47aTw3Mz47aTw3ND47aTw3NT47aTw3Nj47aTw3Nz47aTw3OD47aTw3OT47aTw4MD47aTw4MT47aTw4Mj47aTw4Mz47aTw4ND47aTw4NT47aTw4Nj47aTw4Nz47aTw4OD47aTw4OT47aTw5MD47aTw5MT47aTw5Mj47aTw5Mz47aTw5ND47aTw5NT47aTw5Nj47aTw5Nz47aTw5OD47aTw5OT47aTwxMDA+O2k8MTAxPjs+O2w8cDxcZTtcZT47cDwyMDA0OzIwMDQ+O3A8MjAwNTsyMDA1PjtwPDIwMDY7MjAwNj47cDwyMDA3OzIwMDc+O3A8MjAwODsyMDA4PjtwPDIwMDk7MjAwOT47cDwyMDEwOzIwMTA+O3A8MjAxMTsyMDExPjtwPDIwMTI7MjAxMj47cDwyMDEzOzIwMTM+O3A8MjAxNDsyMDE0PjtwPDIwMTU7MjAxNT47cDwyMDE2OzIwMTY+O3A8MjAxNzsyMDE3PjtwPDIwMTg7MjAxOD47cDwyMDE5OzIwMTk+O3A8MjAyMDsyMDIwPjtwPDIwMjE7MjAyMT47cDwyMDIyOzIwMjI+O3A8MjAyMzsyMDIzPjtwPDIwMjQ7MjAyND47cDwyMDI1OzIwMjU+O3A8MjAyNjsyMDI2PjtwPDIwMjc7MjAyNz47cDwyMDI4OzIwMjg+O3A8MjAyOTsyMDI5PjtwPDIwMzA7MjAzMD47cDwyMDMxOzIwMzE+O3A8MjAzMjsyMDMyPjtwPDIwMzM7MjAzMz47cDwyMDM0OzIwMzQ+O3A8MjAzNTsyMDM1PjtwPDIwMzY7MjAzNj47cDwyMDM3OzIwMzc+O3A8MjAzODsyMDM4PjtwPDIwMzk7MjAzOT47cDwyMDQwOzIwNDA+O3A8MjA0MTsyMDQxPjtwPDIwNDI7MjA0Mj47cDwyMDQzOzIwNDM+O3A8MjA0NDsyMDQ0PjtwPDIwNDU7MjA0NT47cDwyMDQ2OzIwNDY+O3A8MjA0NzsyMDQ3PjtwPDIwNDg7MjA0OD47cDwyMDQ5OzIwNDk+O3A8MjA1MDsyMDUwPjtwPDIwNTE7MjA1MT47cDwyMDUyOzIwNTI+O3A8MjA1MzsyMDUzPjtwPDIwNTQ7MjA1ND47cDwyMDU1OzIwNTU+O3A8MjA1NjsyMDU2PjtwPDIwNTc7MjA1Nz47cDwyMDU4OzIwNTg+O3A8MjA1OTsyMDU5PjtwPDIwNjA7MjA2MD47cDwyMDYxOzIwNjE+O3A8MjA2MjsyMDYyPjtwPDIwNjM7MjA2Mz47cDwyMDY0OzIwNjQ+O3A8MjA2NTsyMDY1PjtwPDIwNjY7MjA2Nj47cDwyMDY3OzIwNjc+O3A8MjA2ODsyMDY4PjtwPDIwNjk7MjA2OT47cDwyMDcwOzIwNzA+O3A8MjA3MTsyMDcxPjtwPDIwNzI7MjA3Mj47cDwyMDczOzIwNzM+O3A8MjA3NDsyMDc0PjtwPDIwNzU7MjA3NT47cDwyMDc2OzIwNzY+O3A8MjA3NzsyMDc3PjtwPDIwNzg7MjA3OD47cDwyMDc5OzIwNzk+O3A8MjA4MDsyMDgwPjtwPDIwODE7MjA4MT47cDwyMDgyOzIwODI+O3A8MjA4MzsyMDgzPjtwPDIwODQ7MjA4ND47cDwyMDg1OzIwODU+O3A8MjA4NjsyMDg2PjtwPDIwODc7MjA4Nz47cDwyMDg4OzIwODg+O3A8MjA4OTsyMDg5PjtwPDIwOTA7MjA5MD47cDwyMDkxOzIwOTE+O3A8MjA5MjsyMDkyPjtwPDIwOTM7MjA5Mz47cDwyMDk0OzIwOTQ+O3A8MjA5NTsyMDk1PjtwPDIwOTY7MjA5Nj47cDwyMDk3OzIwOTc+O3A8MjA5ODsyMDk4PjtwPDIwOTk7MjA5OT47cDwyMTAwOzIxMDA+O3A8MjEwMTsyMTAxPjtwPDIxMDI7MjEwMj47cDwyMTAzOzIxMDM+O3A8MjEwNDsyMTA0Pjs+Pjs+Ozs+O3Q8dDxwPDtwPGw8b25DaGFuZ2U7PjtsPGphdmFzY3JpcHQ6Q2l0eVNlbGVjdGVkKCk7Pj4+O3A8bDxpPDA+O2k8MT47aTwyPjtpPDM+O2k8ND47aTw1PjtpPDY+O2k8Nz47aTw4PjtpPDk+O2k8MTA+O2k8MTE+O2k8MTI+O2k8MTM+O2k8MTQ+O2k8MTU+O2k8MTY+O2k8MTc+O2k8MTg+O2k8MTk+O2k8MjA+O2k8MjE+O2k8MjI+O2k8MjM+O2k8MjQ+O2k8MjU+O2k8MjY+O2k8Mjc+O2k8Mjg+O2k8Mjk+O2k8MzA+Oz47bDxwPE5vdCBMaXN0ZWQ7MD47cDxBaG1lZGFiYWQ7MT47cDxCYW5nYWxvcmU7Mj47cDxCYXJlaWxseTszPjtwPEJob3BhbDs0PjtwPEJodWJhbmVzaHdhcjs1PjtwPENoYW5kaWdhcmg7OD47cDxDaGVubmFpOzE5PjtwPENvY2hpbjs5PjtwPERlbGhpOzEwPjtwPEdoYXppYWJhZDsxMT47cDxHdXdhaGF0aTsxMj47cDxIeWRlcmFiYWQ7MTM+O3A8SmFpcHVyOzE0PjtwPEphbGxhbmRoYXI7MTU+O3A8SmFtbXU7MTY+O3A8S29sa2F0YTs3PjtwPEtvemhpa29kZTsxNz47cDxMdWNrbm93OzE4PjtwPE11bWJhaTs2PjtwPE5hZ3B1cjsyMD47cDxQYW5hamk7MjE+O3A8UGF0bmE7MjI+O3A8UHVuZTsyMz47cDxSYW5jaGk7MjY+O3A8U3JpbmFnYXI7MjQ+O3A8U3VyYXQ7MzA+O3A8VGhhbmU7MjU+O3A8VGlydWNoaXJhcHBhbGk7Mjc+O3A8VHJpdmFuZHJ1bTsyOD47cDxWaXNoYWtoYXBhdG5hbTsyOT47Pj47Pjs7Pjt0PHQ8O3A8bDxpPDA+O2k8MT47aTwyPjtpPDM+O2k8ND47aTw1PjtpPDY+O2k8Nz47aTw4PjtpPDk+O2k8MTA+O2k8MTE+O2k8MTI+O2k8MTM+O2k8MTQ+O2k8MTU+O2k8MTY+O2k8MTc+O2k8MTg+O2k8MTk+O2k8MjA+O2k8MjE+O2k8MjI+O2k8MjM+O2k8MjQ+O2k8MjU+O2k8MjY+O2k8Mjc+O2k8Mjg+O2k8Mjk+O2k8MzA+O2k8MzE+Oz47bDxwPFxlO1xlPjtwPDE7MT47cDwyOzI+O3A8MzszPjtwPDQ7ND47cDw1OzU+O3A8Njs2PjtwPDc7Nz47cDw4Ozg+O3A8OTs5PjtwPDEwOzEwPjtwPDExOzExPjtwPDEyOzEyPjtwPDEzOzEzPjtwPDE0OzE0PjtwPDE1OzE1PjtwPDE2OzE2PjtwPDE3OzE3PjtwPDE4OzE4PjtwPDE5OzE5PjtwPDIwOzIwPjtwPDIxOzIxPjtwPDIyOzIyPjtwPDIzOzIzPjtwPDI0OzI0PjtwPDI1OzI1PjtwPDI2OzI2PjtwPDI3OzI3PjtwPDI4OzI4PjtwPDI5OzI5PjtwPDMwOzMwPjtwPDMxOzMxPjs+Pjs+Ozs+O3Q8dDw7cDxsPGk8MD47aTwxPjtpPDI+O2k8Mz47aTw0PjtpPDU+O2k8Nj47aTw3PjtpPDg+O2k8OT47aTwxMD47aTwxMT47aTwxMj47PjtsPHA8XGU7XGU+O3A8SmFuOzE+O3A8RmViOzI+O3A8TWFyOzM+O3A8QXByOzQ+O3A8TWF5OzU+O3A8SnVuOzY+O3A8SnVsOzc+O3A8QXVnOzg+O3A8U2VwOzk+O3A8T2N0OzEwPjtwPE5vdjsxMT47cDxEZWM7MTI+Oz4+Oz47Oz47dDx0PDtwPGw8aTwwPjtpPDE+O2k8Mj47aTwzPjtpPDQ+O2k8NT47aTw2PjtpPDc+O2k8OD47aTw5PjtpPDEwPjtpPDExPjtpPDEyPjtpPDEzPjtpPDE0PjtpPDE1PjtpPDE2PjtpPDE3PjtpPDE4PjtpPDE5PjtpPDIwPjtpPDIxPjtpPDIyPjtpPDIzPjtpPDI0PjtpPDI1PjtpPDI2PjtpPDI3PjtpPDI4PjtpPDI5PjtpPDMwPjtpPDMxPjtpPDMyPjtpPDMzPjtpPDM0PjtpPDM1PjtpPDM2PjtpPDM3PjtpPDM4PjtpPDM5PjtpPDQwPjtpPDQxPjtpPDQyPjtpPDQzPjtpPDQ0PjtpPDQ1PjtpPDQ2PjtpPDQ3PjtpPDQ4PjtpPDQ5PjtpPDUwPjtpPDUxPjtpPDUyPjtpPDUzPjtpPDU0PjtpPDU1PjtpPDU2PjtpPDU3PjtpPDU4PjtpPDU5PjtpPDYwPjtpPDYxPjtpPDYyPjtpPDYzPjtpPDY0PjtpPDY1PjtpPDY2PjtpPDY3PjtpPDY4PjtpPDY5PjtpPDcwPjtpPDcxPjtpPDcyPjtpPDczPjtpPDc0PjtpPDc1PjtpPDc2PjtpPDc3PjtpPDc4PjtpPDc5PjtpPDgwPjtpPDgxPjtpPDgyPjtpPDgzPjtpPDg0PjtpPDg1PjtpPDg2PjtpPDg3PjtpPDg4PjtpPDg5PjtpPDkwPjtpPDkxPjtpPDkyPjtpPDkzPjtpPDk0PjtpPDk1PjtpPDk2PjtpPDk3PjtpPDk4PjtpPDk5PjtpPDEwMD47aTwxMDE+Oz47bDxwPFxlO1xlPjtwPDIwMDQ7MjAwND47cDwyMDAzOzIwMDM+O3A8MjAwMjsyMDAyPjtwPDIwMDE7MjAwMT47cDwyMDAwOzIwMDA+O3A8MTk5OTsxOTk5PjtwPDE5OTg7MTk5OD47cDwxOTk3OzE5OTc+O3A8MTk5NjsxOTk2PjtwPDE5OTU7MTk5NT47cDwxOTk0OzE5OTQ+O3A8MTk5MzsxOTkzPjtwPDE5OTI7MTk5Mj47cDwxOTkxOzE5OTE+O3A8MTk5MDsxOTkwPjtwPDE5ODk7MTk4OT47cDwxOTg4OzE5ODg+O3A8MTk4NzsxOTg3PjtwPDE5ODY7MTk4Nj47cDwxOTg1OzE5ODU+O3A8MTk4NDsxOTg0PjtwPDE5ODM7MTk4Mz47cDwxOTgyOzE5ODI+O3A8MTk4MTsxOTgxPjtwPDE5ODA7MTk4MD47cDwxOTc5OzE5Nzk+O3A8MTk3ODsxOTc4PjtwPDE5Nzc7MTk3Nz47cDwxOTc2OzE5NzY+O3A8MTk3NTsxOTc1PjtwPDE5NzQ7MTk3ND47cDwxOTczOzE5NzM+O3A8MTk3MjsxOTcyPjtwPDE5NzE7MTk3MT47cDwxOTcwOzE5NzA+O3A8MTk2OTsxOTY5PjtwPDE5Njg7MTk2OD47cDwxOTY3OzE5Njc+O3A8MTk2NjsxOTY2PjtwPDE5NjU7MTk2NT47cDwxOTY0OzE5NjQ+O3A8MTk2MzsxOTYzPjtwPDE5NjI7MTk2Mj47cDwxOTYxOzE5NjE+O3A8MTk2MDsxOTYwPjtwPDE5NTk7MTk1OT47cDwxOTU4OzE5NTg+O3A8MTk1NzsxOTU3PjtwPDE5NTY7MTk1Nj47cDwxOTU1OzE5NTU+O3A8MTk1NDsxOTU0PjtwPDE5NTM7MTk1Mz47cDwxOTUyOzE5NTI+O3A8MTk1MTsxOTUxPjtwPDE5NTA7MTk1MD47cDwxOTQ5OzE5NDk+O3A8MTk0ODsxOTQ4PjtwPDE5NDc7MTk0Nz47cDwxOTQ2OzE5NDY+O3A8MTk0NTsxOTQ1PjtwPDE5NDQ7MTk0ND47cDwxOTQzOzE5NDM+O3A8MTk0MjsxOTQyPjtwPDE5NDE7MTk0MT47cDwxOTQwOzE5NDA+O3A8MTkzOTsxOTM5PjtwPDE5Mzg7MTkzOD47cDwxOTM3OzE5Mzc+O3A8MTkzNjsxOTM2PjtwPDE5MzU7MTkzNT47cDwxOTM0OzE5MzQ+O3A8MTkzMzsxOTMzPjtwPDE5MzI7MTkzMj47cDwxOTMxOzE5MzE+O3A8MTkzMDsxOTMwPjtwPDE5Mjk7MTkyOT47cDwxOTI4OzE5Mjg+O3A8MTkyNzsxOTI3PjtwPDE5MjY7MTkyNj47cDwxOTI1OzE5MjU+O3A8MTkyNDsxOTI0PjtwPDE5MjM7MTkyMz47cDwxOTIyOzE5MjI+O3A8MTkyMTsxOTIxPjtwPDE5MjA7MTkyMD47cDwxOTE5OzE5MTk+O3A8MTkxODsxOTE4PjtwPDE5MTc7MTkxNz47cDwxOTE2OzE5MTY+O3A8MTkxNTsxOTE1PjtwPDE5MTQ7MTkxND47cDwxOTEzOzE5MTM+O3A8MTkxMjsxOTEyPjtwPDE5MTE7MTkxMT47cDwxOTEwOzE5MTA+O3A8MTkwOTsxOTA5PjtwPDE5MDg7MTkwOD47cDwxOTA3OzE5MDc+O3A8MTkwNjsxOTA2PjtwPDE5MDU7MTkwNT47cDwxOTA0OzE5MDQ+Oz4+Oz47Oz47dDx0PHA8O3A8bDxvbkNoYW5nZTs+O2w8amF2YXNjcmlwdDpTdGF0ZVNlbGVjdGVkKCk7Pj4+O3A8bDxpPDA+O2k8MT47aTwyPjtpPDM+O2k8ND47aTw1PjtpPDY+O2k8Nz47aTw4PjtpPDk+O2k8MTA+O2k8MTE+O2k8MTI+O2k8MTM+O2k8MTQ+O2k8MTU+O2k8MTY+O2k8MTc+O2k8MTg+O2k8MTk+O2k8MjA+O2k8MjE+O2k8MjI+O2k8MjM+O2k8MjQ+O2k8MjU+O2k8MjY+O2k8Mjc+O2k8Mjg+O2k8Mjk+O2k8MzA+O2k8MzE+O2k8MzI+O2k8MzM+O2k8MzQ+O2k8MzU+Oz47bDxwPE5vdCBMaXN0ZWQ7MD47cDxBbmRhbWFuIE5pY29iYXI7Mjk+O3A8QW5kcmEgUHJhZGVzaDsxPjtwPEFydW5hY2hhbCBQcmFkZXNoOzI+O3A8QXNzYW07Mz47cDxCaWhhcjs0PjtwPENoYW5kaWdhcmg7MzA+O3A8Q2hoYXR0aXNnYXJoOzU+O3A8RGFkYXIgTmFnYXJoYXZlbGk7MzE+O3A8RGFtYW4gYW5kIERpdTszMj47cDxEZWxoaTszMz47cDxHb2E7Nj47cDxHdWphcmF0Ozc+O3A8SGFyeWFuYTs4PjtwPEhpbWFjaGFsIFByYWRlc2g7OT47cDxKYW1tdSBhbmQgS2FzaG1pcjsxMD47cDxKaGFya2hhbmQ7MTE+O3A8S2FybmF0YWthOzEyPjtwPEtlcmFsYTsxMz47cDxMYWtzaGFkZWVwOzM0PjtwPE1hZHlhIFByYWRlc2g7MTQ+O3A8TWFoYXJhc2h0cmE7MTU+O3A8TWFuaXB1cjsxNj47cDxNZWdoYWxheWE7MTc+O3A8TWl6b3JhbTsxOD47cDxOYWdhbGFuZDsxOT47cDxPcmlzc2E7MjA+O3A8UG9uZGljaGVycnk7MzU+O3A8UHVuamFiOzIxPjtwPFJhamFzdGhhbjsyMj47cDxTaWtraW07MjM+O3A8VGFtaWwgTmFkdTsyND47cDxUcmlwdXJhOzI1PjtwPFV0dGFyIFByYWRlc2g7Mjc+O3A8VXR0YXJhbmNoYWw7MjY+O3A8V2VzdCBCZW5nYWw7Mjg+Oz4+Oz47Oz47dDx0PHA8cDxsPERhdGFWYWx1ZUZpZWxkO0RhdGFUZXh0RmllbGQ7PjtsPFZpc2FUeXBlSWQ7VmlzYVR5cGU7Pj47Pjt0PGk8Mj47QDxGMTtGMjs+O0A8MTY7MTc7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPFZpZXcgQ29uc2lnbmVlIERldGFpbHM7Pj47Pjs7Pjs+Pjs+PjtsPFNleDE7U2V4MTtTZXgyO1NleDI7Pj5ez5umiy4pNrBS1kYrwgztTbvuTQ==" />
+
+<script language="javascript">
+<!--
+	function __doPostBack(eventTarget, eventArgument) {
+		var theform;
+		if (window.navigator.appName.toLowerCase().indexOf("netscape") > -1) {
+			theform = document.forms["frmPassport"];
+		}
+		else {
+			theform = document.frmPassport;
+		}
+		theform.__EVENTTARGET.value = eventTarget.split("$").join(":");
+		theform.__EVENTARGUMENT.value = eventArgument;
+		theform.submit();
+	}
+// -->
+</script>
+
+			<table width="100%">
+				<tr>
+					<td><table id="AppPgTitle_Table1" cellspacing="0" cellpadding="0" width="100%" align="left" border="0" bgcolor="#003366">
+	<tr height="25">
+		<TD align="left" nowrap="nowrap" class="TopBar" height="25">
+			<span id="AppPgTitle_lblDesc" class="HeaderLable"><b><font face="Book Antiqua" color="White">Please Enter the passport details.</font></b></span>
+		</TD>
+		<td align="right" nowrap="nowrap" class="TopBar" height="25">
+			<span id="AppPgTitle_lblTitle" class="HeaderLable"><b><font face="Book Antiqua" color="White">TT Services - Web Appointment</font></b></span>
+		</td>
+	</tr>
+</table>
+
+<br>
+</td>
+				</tr>
+			</table>
+			<font class="BodyText" color="red">Information you enter in this page will reflect 
+				on your visa. Any erroneous entry will delay the processing of your visa 
+				application. Enter your passport number, date of birth and other biographic 
+				information from your passport.</font>
+			<p></p>
+			<table style="BORDER-COLLAPSE: collapse" borderColor="black" width="90%" align="center" cellspacing=5 cellpadding=2>
+				<tr>
+					<td class="BodyText" vAlign="top" noWrap>Passport Number <font color="red">*</font>
+					</td>
+					<td><input name="txtPassportNo" type="text" maxlength="14" id="txtPassportNo" size="12" />
+						<br>
+						<font class="SmallFontText" color="blue">The passport number field will not accept 
+							hyphen ‘-‘ or space between characters. A correct example is A1234567</font>
+					</td>
+				</tr>
+				<tr>
+					<td class="BodyText" vAlign="top" noWrap>Passport Issuance Date <font color="red">*</font>
+					</td>
+					<td>
+						<select name="cboPptIssDay" id="cboPptIssDay" class="bodytext">
+	<option value=""></option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+	<option value="24">24</option>
+	<option value="25">25</option>
+	<option value="26">26</option>
+	<option value="27">27</option>
+	<option value="28">28</option>
+	<option value="29">29</option>
+	<option value="30">30</option>
+	<option value="31">31</option>
+
+</select><select name="cboPptIssMon" id="cboPptIssMon" class="bodytext">
+	<option value=""></option>
+	<option value="1">Jan</option>
+	<option value="2">Feb</option>
+	<option value="3">Mar</option>
+	<option value="4">Apr</option>
+	<option value="5">May</option>
+	<option value="6">Jun</option>
+	<option value="7">Jul</option>
+	<option value="8">Aug</option>
+	<option value="9">Sep</option>
+	<option value="10">Oct</option>
+	<option value="11">Nov</option>
+	<option value="12">Dec</option>
+
+</select><select name="cboPptIssYr" id="cboPptIssYr" class="bodytext">
+	<option value=""></option>
+	<option value="2004">2004</option>
+	<option value="2003">2003</option>
+	<option value="2002">2002</option>
+	<option value="2001">2001</option>
+	<option value="2000">2000</option>
+	<option value="1999">1999</option>
+	<option value="1998">1998</option>
+	<option value="1997">1997</option>
+	<option value="1996">1996</option>
+	<option value="1995">1995</option>
+	<option value="1994">1994</option>
+	<option value="1993">1993</option>
+	<option value="1992">1992</option>
+	<option value="1991">1991</option>
+	<option value="1990">1990</option>
+	<option value="1989">1989</option>
+	<option value="1988">1988</option>
+	<option value="1987">1987</option>
+	<option value="1986">1986</option>
+	<option value="1985">1985</option>
+	<option value="1984">1984</option>
+	<option value="1983">1983</option>
+	<option value="1982">1982</option>
+	<option value="1981">1981</option>
+	<option value="1980">1980</option>
+	<option value="1979">1979</option>
+	<option value="1978">1978</option>
+	<option value="1977">1977</option>
+	<option value="1976">1976</option>
+	<option value="1975">1975</option>
+	<option value="1974">1974</option>
+	<option value="1973">1973</option>
+	<option value="1972">1972</option>
+	<option value="1971">1971</option>
+	<option value="1970">1970</option>
+	<option value="1969">1969</option>
+	<option value="1968">1968</option>
+	<option value="1967">1967</option>
+	<option value="1966">1966</option>
+	<option value="1965">1965</option>
+	<option value="1964">1964</option>
+	<option value="1963">1963</option>
+	<option value="1962">1962</option>
+	<option value="1961">1961</option>
+	<option value="1960">1960</option>
+	<option value="1959">1959</option>
+	<option value="1958">1958</option>
+	<option value="1957">1957</option>
+	<option value="1956">1956</option>
+	<option value="1955">1955</option>
+	<option value="1954">1954</option>
+	<option value="1953">1953</option>
+	<option value="1952">1952</option>
+	<option value="1951">1951</option>
+	<option value="1950">1950</option>
+	<option value="1949">1949</option>
+	<option value="1948">1948</option>
+	<option value="1947">1947</option>
+	<option value="1946">1946</option>
+	<option value="1945">1945</option>
+	<option value="1944">1944</option>
+	<option value="1943">1943</option>
+	<option value="1942">1942</option>
+	<option value="1941">1941</option>
+	<option value="1940">1940</option>
+	<option value="1939">1939</option>
+	<option value="1938">1938</option>
+	<option value="1937">1937</option>
+	<option value="1936">1936</option>
+	<option value="1935">1935</option>
+	<option value="1934">1934</option>
+	<option value="1933">1933</option>
+	<option value="1932">1932</option>
+	<option value="1931">1931</option>
+	<option value="1930">1930</option>
+	<option value="1929">1929</option>
+	<option value="1928">1928</option>
+	<option value="1927">1927</option>
+	<option value="1926">1926</option>
+	<option value="1925">1925</option>
+	<option value="1924">1924</option>
+	<option value="1923">1923</option>
+	<option value="1922">1922</option>
+	<option value="1921">1921</option>
+	<option value="1920">1920</option>
+	<option value="1919">1919</option>
+	<option value="1918">1918</option>
+	<option value="1917">1917</option>
+	<option value="1916">1916</option>
+	<option value="1915">1915</option>
+	<option value="1914">1914</option>
+	<option value="1913">1913</option>
+	<option value="1912">1912</option>
+	<option value="1911">1911</option>
+	<option value="1910">1910</option>
+	<option value="1909">1909</option>
+	<option value="1908">1908</option>
+	<option value="1907">1907</option>
+	<option value="1906">1906</option>
+	<option value="1905">1905</option>
+	<option value="1904">1904</option>
+
+</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="BodyText" vAlign="top" noWrap>Passport Expiration Date <font color="red">*</font>
+					</td>
+					<td>
+						<select name="cboPptExpDay" id="cboPptExpDay" class="bodytext">
+	<option value=""></option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+	<option value="24">24</option>
+	<option value="25">25</option>
+	<option value="26">26</option>
+	<option value="27">27</option>
+	<option value="28">28</option>
+	<option value="29">29</option>
+	<option value="30">30</option>
+	<option value="31">31</option>
+
+</select><select name="cboPptExpMon" id="cboPptExpMon" class="bodytext">
+	<option value=""></option>
+	<option value="1">Jan</option>
+	<option value="2">Feb</option>
+	<option value="3">Mar</option>
+	<option value="4">Apr</option>
+	<option value="5">May</option>
+	<option value="6">Jun</option>
+	<option value="7">Jul</option>
+	<option value="8">Aug</option>
+	<option value="9">Sep</option>
+	<option value="10">Oct</option>
+	<option value="11">Nov</option>
+	<option value="12">Dec</option>
+
+</select><select name="cboPptExpYr" id="cboPptExpYr" class="bodytext">
+	<option value=""></option>
+	<option value="2004">2004</option>
+	<option value="2005">2005</option>
+	<option value="2006">2006</option>
+	<option value="2007">2007</option>
+	<option value="2008">2008</option>
+	<option value="2009">2009</option>
+	<option value="2010">2010</option>
+	<option value="2011">2011</option>
+	<option value="2012">2012</option>
+	<option value="2013">2013</option>
+	<option value="2014">2014</option>
+	<option value="2015">2015</option>
+	<option value="2016">2016</option>
+	<option value="2017">2017</option>
+	<option value="2018">2018</option>
+	<option value="2019">2019</option>
+	<option value="2020">2020</option>
+	<option value="2021">2021</option>
+	<option value="2022">2022</option>
+	<option value="2023">2023</option>
+	<option value="2024">2024</option>
+	<option value="2025">2025</option>
+	<option value="2026">2026</option>
+	<option value="2027">2027</option>
+	<option value="2028">2028</option>
+	<option value="2029">2029</option>
+	<option value="2030">2030</option>
+	<option value="2031">2031</option>
+	<option value="2032">2032</option>
+	<option value="2033">2033</option>
+	<option value="2034">2034</option>
+	<option value="2035">2035</option>
+	<option value="2036">2036</option>
+	<option value="2037">2037</option>
+	<option value="2038">2038</option>
+	<option value="2039">2039</option>
+	<option value="2040">2040</option>
+	<option value="2041">2041</option>
+	<option value="2042">2042</option>
+	<option value="2043">2043</option>
+	<option value="2044">2044</option>
+	<option value="2045">2045</option>
+	<option value="2046">2046</option>
+	<option value="2047">2047</option>
+	<option value="2048">2048</option>
+	<option value="2049">2049</option>
+	<option value="2050">2050</option>
+	<option value="2051">2051</option>
+	<option value="2052">2052</option>
+	<option value="2053">2053</option>
+	<option value="2054">2054</option>
+	<option value="2055">2055</option>
+	<option value="2056">2056</option>
+	<option value="2057">2057</option>
+	<option value="2058">2058</option>
+	<option value="2059">2059</option>
+	<option value="2060">2060</option>
+	<option value="2061">2061</option>
+	<option value="2062">2062</option>
+	<option value="2063">2063</option>
+	<option value="2064">2064</option>
+	<option value="2065">2065</option>
+	<option value="2066">2066</option>
+	<option value="2067">2067</option>
+	<option value="2068">2068</option>
+	<option value="2069">2069</option>
+	<option value="2070">2070</option>
+	<option value="2071">2071</option>
+	<option value="2072">2072</option>
+	<option value="2073">2073</option>
+	<option value="2074">2074</option>
+	<option value="2075">2075</option>
+	<option value="2076">2076</option>
+	<option value="2077">2077</option>
+	<option value="2078">2078</option>
+	<option value="2079">2079</option>
+	<option value="2080">2080</option>
+	<option value="2081">2081</option>
+	<option value="2082">2082</option>
+	<option value="2083">2083</option>
+	<option value="2084">2084</option>
+	<option value="2085">2085</option>
+	<option value="2086">2086</option>
+	<option value="2087">2087</option>
+	<option value="2088">2088</option>
+	<option value="2089">2089</option>
+	<option value="2090">2090</option>
+	<option value="2091">2091</option>
+	<option value="2092">2092</option>
+	<option value="2093">2093</option>
+	<option value="2094">2094</option>
+	<option value="2095">2095</option>
+	<option value="2096">2096</option>
+	<option value="2097">2097</option>
+	<option value="2098">2098</option>
+	<option value="2099">2099</option>
+	<option value="2100">2100</option>
+	<option value="2101">2101</option>
+	<option value="2102">2102</option>
+	<option value="2103">2103</option>
+	<option value="2104">2104</option>
+
+</select>
+					</td>
+				</tr>
+				<tr>
+					<td vAlign="top" noWrap><font class="BodyText">Passport Issuance City and Country</font>
+					</td>
+					<td><select name="ddlIssueCity" id="ddlIssueCity" onChange="javascript:CitySelected()">
+	<option value="0">Not Listed</option>
+	<option value="1">Ahmedabad</option>
+	<option value="2">Bangalore</option>
+	<option value="3">Bareilly</option>
+	<option value="4">Bhopal</option>
+	<option value="5">Bhubaneshwar</option>
+	<option value="8">Chandigarh</option>
+	<option value="19">Chennai</option>
+	<option value="9">Cochin</option>
+	<option value="10">Delhi</option>
+	<option value="11">Ghaziabad</option>
+	<option value="12">Guwahati</option>
+	<option value="13">Hyderabad</option>
+	<option value="14">Jaipur</option>
+	<option value="15">Jallandhar</option>
+	<option value="16">Jammu</option>
+	<option value="7">Kolkata</option>
+	<option value="17">Kozhikode</option>
+	<option value="18">Lucknow</option>
+	<option value="6">Mumbai</option>
+	<option value="20">Nagpur</option>
+	<option value="21">Panaji</option>
+	<option value="22">Patna</option>
+	<option value="23">Pune</option>
+	<option value="26">Ranchi</option>
+	<option value="24">Srinagar</option>
+	<option value="30">Surat</option>
+	<option value="25">Thane</option>
+	<option value="27">Tiruchirappali</option>
+	<option value="28">Trivandrum</option>
+	<option value="29">Vishakhapatnam</option>
+
+</select>&nbsp;
+						<input name="txtpptcity" type="text" maxlength="25" id="txtpptcity" size="18" /><br>
+						<font class="smallfonttext" color="blue">Please use the drop down list to input the 
+							information. If your passport was not issued in India, please use the 'Not 
+							Listed' option.<br>
+							(If you have chosen the 'Not Listed' option, please enter the City and country 
+							of Passport issuance as - e.g. New york USA(Please do not use comma or slash 
+							but use a blank space between the city and country.)<br>
+							Indian passport holders should indicate country of issuance as India even 
+							though the Indian passport may have been renewed/ extended at Indian embassy 
+							abroad. </font>
+					</td>
+				</tr>
+				<tr>
+					<td class="BodyText" vAlign="top" noWrap>SurName / Family Name <font color="red">*</font>
+					</td>
+					<td><input name="txtFamilyName" type="text" maxlength="33" id="txtFamilyName" size="17" /><br>
+						<font class="smallfonttext" color="blue">You must enter your Surname/Family name 
+							exactly as it appears in your passport. E.g.: Reddy(SURNAME/FAMILY NAME)</font>
+					</td>
+				</tr>
+				<tr>
+					<td class="BodyText" vAlign="top" noWrap>Given Name / First Name <font color="red">*</font>
+					</td>
+					<td><input name="txtGivenName" type="text" maxlength="33" id="txtGivenName" size="17" /><br>
+						<font class="smallfonttext" color="blue">You must enter your First/Given name 
+							exactly as it appears in your passport. E.g.: Rajashekar (GIVEN NAME/FIRST 
+							NAME).</font>
+					</td>
+				</tr>
+				<tr>
+					<td class="BodyText" vAlign="top" noWrap>Nationality <font color="red">*</font>
+					</td>
+					<td><input name="lblNationality" id="lblNationality" type="text" onfocus="this.blur()" size="17" value="INDIA" />
+						&nbsp;<a id="lnkSelNat" class="Verdana-8" href="javascript:openCountryPage('SelNat')" href="javascript:__doPostBack('lnkSelNat','')">Change</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="BodyText" vAlign="top" noWrap>Sex <font color="red">*</font>
+					</td>
+					<td><span class="BodyText"><input id="Sex1" type="radio" name="Sex" value="M" /><label for="Sex1">Male</label></span><span class="BodyText"><input id="Sex2" type="radio" name="Sex" value="F" /><label for="Sex2">Female</label></span></td>
+				</tr>
+				<tr>
+					<td class="BodyText" vAlign="top" noWrap>Date of Birth <font color="red">*</font>
+					</td>
+					<td><select name="cboDay" id="cboDay" class="bodytext">
+	<option value=""></option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+	<option value="24">24</option>
+	<option value="25">25</option>
+	<option value="26">26</option>
+	<option value="27">27</option>
+	<option value="28">28</option>
+	<option value="29">29</option>
+	<option value="30">30</option>
+	<option value="31">31</option>
+
+</select><select name="cboMonth" id="cboMonth" class="bodytext">
+	<option value=""></option>
+	<option value="1">Jan</option>
+	<option value="2">Feb</option>
+	<option value="3">Mar</option>
+	<option value="4">Apr</option>
+	<option value="5">May</option>
+	<option value="6">Jun</option>
+	<option value="7">Jul</option>
+	<option value="8">Aug</option>
+	<option value="9">Sep</option>
+	<option value="10">Oct</option>
+	<option value="11">Nov</option>
+	<option value="12">Dec</option>
+
+</select><select name="cboYear" id="cboYear" class="bodytext">
+	<option value=""></option>
+	<option value="2004">2004</option>
+	<option value="2003">2003</option>
+	<option value="2002">2002</option>
+	<option value="2001">2001</option>
+	<option value="2000">2000</option>
+	<option value="1999">1999</option>
+	<option value="1998">1998</option>
+	<option value="1997">1997</option>
+	<option value="1996">1996</option>
+	<option value="1995">1995</option>
+	<option value="1994">1994</option>
+	<option value="1993">1993</option>
+	<option value="1992">1992</option>
+	<option value="1991">1991</option>
+	<option value="1990">1990</option>
+	<option value="1989">1989</option>
+	<option value="1988">1988</option>
+	<option value="1987">1987</option>
+	<option value="1986">1986</option>
+	<option value="1985">1985</option>
+	<option value="1984">1984</option>
+	<option value="1983">1983</option>
+	<option value="1982">1982</option>
+	<option value="1981">1981</option>
+	<option value="1980">1980</option>
+	<option value="1979">1979</option>
+	<option value="1978">1978</option>
+	<option value="1977">1977</option>
+	<option value="1976">1976</option>
+	<option value="1975">1975</option>
+	<option value="1974">1974</option>
+	<option value="1973">1973</option>
+	<option value="1972">1972</option>
+	<option value="1971">1971</option>
+	<option value="1970">1970</option>
+	<option value="1969">1969</option>
+	<option value="1968">1968</option>
+	<option value="1967">1967</option>
+	<option value="1966">1966</option>
+	<option value="1965">1965</option>
+	<option value="1964">1964</option>
+	<option value="1963">1963</option>
+	<option value="1962">1962</option>
+	<option value="1961">1961</option>
+	<option value="1960">1960</option>
+	<option value="1959">1959</option>
+	<option value="1958">1958</option>
+	<option value="1957">1957</option>
+	<option value="1956">1956</option>
+	<option value="1955">1955</option>
+	<option value="1954">1954</option>
+	<option value="1953">1953</option>
+	<option value="1952">1952</option>
+	<option value="1951">1951</option>
+	<option value="1950">1950</option>
+	<option value="1949">1949</option>
+	<option value="1948">1948</option>
+	<option value="1947">1947</option>
+	<option value="1946">1946</option>
+	<option value="1945">1945</option>
+	<option value="1944">1944</option>
+	<option value="1943">1943</option>
+	<option value="1942">1942</option>
+	<option value="1941">1941</option>
+	<option value="1940">1940</option>
+	<option value="1939">1939</option>
+	<option value="1938">1938</option>
+	<option value="1937">1937</option>
+	<option value="1936">1936</option>
+	<option value="1935">1935</option>
+	<option value="1934">1934</option>
+	<option value="1933">1933</option>
+	<option value="1932">1932</option>
+	<option value="1931">1931</option>
+	<option value="1930">1930</option>
+	<option value="1929">1929</option>
+	<option value="1928">1928</option>
+	<option value="1927">1927</option>
+	<option value="1926">1926</option>
+	<option value="1925">1925</option>
+	<option value="1924">1924</option>
+	<option value="1923">1923</option>
+	<option value="1922">1922</option>
+	<option value="1921">1921</option>
+	<option value="1920">1920</option>
+	<option value="1919">1919</option>
+	<option value="1918">1918</option>
+	<option value="1917">1917</option>
+	<option value="1916">1916</option>
+	<option value="1915">1915</option>
+	<option value="1914">1914</option>
+	<option value="1913">1913</option>
+	<option value="1912">1912</option>
+	<option value="1911">1911</option>
+	<option value="1910">1910</option>
+	<option value="1909">1909</option>
+	<option value="1908">1908</option>
+	<option value="1907">1907</option>
+	<option value="1906">1906</option>
+	<option value="1905">1905</option>
+	<option value="1904">1904</option>
+
+</select></td>
+				</tr>
+				<tr>
+					<td class="BodyText" vAlign="top" noWrap>Place(Country) of Birth <font color="red">*</font>
+					</td>
+					<td><input name="lblPOB" id="lblPOB" type="text" onfocus="this.blur()" value="INDIA" />
+						&nbsp;<a id="lnkSelPOB" class="Verdana-8" href="javascript:openCountryPage('SelPOB')" href="javascript:__doPostBack('lnkSelPOB','')">Change</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="BodyText" vAlign="top" noWrap>City of Birth <font color="red">*</font></td>
+					<td><input name="txtBirthCity" type="text" maxlength="50" id="txtBirthCity" size="20" /></td>
+				</tr>
+				<tr>
+					<td class="BodyText" vAlign="top" noWrap>Present Residential Address Line 1 <font color="red">
+							*</font>
+					</td>
+					<td><input name="txtAddress1" type="text" maxlength="50" id="txtAddress1" size="20" /><br>
+						<font class="smallfonttext" color="blue">Enter your Present Residential Address. 
+							Kindly use hyphen in place of slash and blank space in place of comma while 
+							entering the address.</font>
+					</td>
+				</tr>
+				<tr>
+					<td class="BodyText" vAlign="top" noWrap>Present Residential Address Line 2
+					</td>
+					<td><input name="txtAddress2" type="text" maxlength="50" id="txtAddress2" size="20" /><br>
+						<font class="smallfonttext" color="blue">Enter your Present Residential Address. 
+							Kindly use hyphen in place of slash and blank space in place of comma while 
+							entering the address.</font>
+					</td>
+				</tr>
+				<tr>
+					<td class="BodyText" vAlign="top" noWrap>City of Present Residence <font color="red">*</font>
+					</td>
+					<td><input name="txtCity" type="text" maxlength="15" id="txtCity" size="10" /></td>
+				</tr>
+				<tr>
+					<td class="BodyText" vAlign="top" noWrap>State / Province of Present Residence <font color="red">
+							*</font>
+					</td>
+					<td><select name="ddlState" id="ddlState" onChange="javascript:StateSelected()">
+	<option value="0">Not Listed</option>
+	<option value="29">Andaman Nicobar</option>
+	<option value="1">Andra Pradesh</option>
+	<option value="2">Arunachal Pradesh</option>
+	<option value="3">Assam</option>
+	<option value="4">Bihar</option>
+	<option value="30">Chandigarh</option>
+	<option value="5">Chhattisgarh</option>
+	<option value="31">Dadar Nagarhaveli</option>
+	<option value="32">Daman and Diu</option>
+	<option value="33">Delhi</option>
+	<option value="6">Goa</option>
+	<option value="7">Gujarat</option>
+	<option value="8">Haryana</option>
+	<option value="9">Himachal Pradesh</option>
+	<option value="10">Jammu and Kashmir</option>
+	<option value="11">Jharkhand</option>
+	<option value="12">Karnataka</option>
+	<option value="13">Kerala</option>
+	<option value="34">Lakshadeep</option>
+	<option value="14">Madya Pradesh</option>
+	<option value="15">Maharashtra</option>
+	<option value="16">Manipur</option>
+	<option value="17">Meghalaya</option>
+	<option value="18">Mizoram</option>
+	<option value="19">Nagaland</option>
+	<option value="20">Orissa</option>
+	<option value="35">Pondicherry</option>
+	<option value="21">Punjab</option>
+	<option value="22">Rajasthan</option>
+	<option value="23">Sikkim</option>
+	<option value="24">Tamil Nadu</option>
+	<option value="25">Tripura</option>
+	<option value="27">Uttar Pradesh</option>
+	<option value="26">Uttaranchal</option>
+	<option value="28">West Bengal</option>
+
+</select>&nbsp;
+						<input name="txtState" type="text" maxlength="20" id="txtState" size="20" /><br>
+						<font class="smallfonttext" color="blue">Please use the drop down list to input the 
+							information. Incase the data is not available please use the 'Not Listed' 
+							option. If you have chosen the 'Not Listed' option, please enter the full name 
+							of the State. </font>
+					</td>
+				</tr>
+				<tr>
+					<td class="BodyText" vAlign="top" noWrap>Country of Present Residence <font color="red">
+							*</font>
+					</td>
+					<td><input name="lblCountry" id="lblCountry" type="text" onfocus="this.blur()" value="INDIA" />
+						&nbsp;<a id="lnkSelCountry" class="Verdana-8" href="javascript:openCountryPage('SelCount')" href="javascript:__doPostBack('lnkSelCountry','')">Change</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="BodyText" vAlign="top" noWrap>ZIP/Postal Code <font color="red">*</font>
+					</td>
+					<td><input name="txtPinCode" type="text" maxlength="6" id="txtPinCode" size="12" /><br>
+						<font class="smallfonttext" color="blue">(Please enter the correct pincode using 
+							only numbers. This field will not accept space or other characters.For example: 
+							100001, not 100 001.)</font>
+					</td>
+				</tr>
+				<tr>
+					<td class="BodyText" vAlign="top" noWrap>Visa Type <font color="red">*</font>
+					</td>
+					<td><select name="Visa_Type" id="Visa_Type">
+	<option value="16">F1</option>
+	<option value="17">F2</option>
+
+</select><br>
+						<font class="smallfonttext" color="blue">(Please choose the visa type you are 
+							applying for)</font>
+					</td>
+				</tr>
+				<tr>
+				<td nowrap align=left><font color="red" class="SmallFontText">* </font><font class="SmallFontText"><b>Required Entries</b></font></td>
+				</tr>
+				<tr>
+					<td colspan=2>&nbsp;</td>
+				</tr>
+				<tr>
+					<td align=right><input type="submit" name="cmdBack" value="View Consignee Details" id="cmdBack" class="FlatButton" onclick="javascript:return cmdBack_onclick()" /></td>
+					<td align=left><input type="submit" name="cmdNext" value="Next" id="cmdNext" class="FlatButton" onclick="javascript:return CheckFields()" /></td>
+				</tr>
+			</table>
+			<input name="hidNationality" id="hidNationality" type="hidden" value="85" /> <input name="hidIssuance" id="hidIssuance" type="hidden" value="85" />
+			<input name="hidPOB" id="hidPOB" type="hidden" value="112" /> <input name="hidCountry" id="hidCountry" type="hidden" value="85" />
+		</form>
+	</body>
+</HTML>

@@ -1,0 +1,10 @@
+txtcompany_name=
+txtship_fname=K
+txtship_lname=Kavitha
+txtship_addr1=5-9/3/2
+txtship_addr2=X-Road
+txtship_city=HYDERABAD
+txtship_state=A.P.
+txtship_zip=500033
+txtship_phone=9440037890
+txtship_email=vkgatadi@yahoo.com

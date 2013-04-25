@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<?Snapfish_External_API version="1.0"?>
+<SOAP-ENV:Envelope
+SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><SOAP-ENV:Body>
+<m:ShareAlbums xmlns:m="Snapfish External API"> <authcode xsi:type="xsd:string">1112315499963439:3f3a5236456df:1000:fredab@comcast
+.net:SFOPRD06</authcode>
+<sourcecode xsi:type="xsd:string">PSC</sourcecode>
+<reshare xsi:type="xsd:boolean" xsi:use="xsd:optional">1</reshare>
+<Albums SOAP-ENC:arrayType="xsd:ur-type[1]" xsi:type="SOAP-ENC:Array"> <id xsi:type="xsd:int">22440451</id> </Albums> <Subject xsi:type="xsd:string" xsi:use="xsd:optional">"Some photos for you!"</Subject> <Message xsi:type="xsd:string" xsi:use="xsd:optional">"Sam, Most of these are the photos I took for Sue's "Flat Susan" album.
+However &amp; &lt; &gt; there is a picture of the flowers you sent and pictures of Grany  Pop-pop, another of the You/Me frame. Hope that serves to help your students understand our looks a little. If you want more let me know.
+Love you much, Mom"</Message>
+<Emails SOAP-ENC:arrayType="xsd:ur-type[1]" xsi:type="SOAP-ENC:Array"> <email xsi:type="xsd:string">little.moonbeam@gmail.com</email>
+</Emails>
+</m:ShareAlbums>
+</SOAP-ENV:Body></SOAP-ENV:Envelope>

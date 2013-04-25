@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="jquery.js" type="text/javascript"></script>
+		<style type="text/css">
+			body { font: 36px Arial bold; }
+			ul {list-style: none; width: 350px; }
+			p { cursor: pointer; }
+			li { background-color: #ffffaa; margin: 10px; padding: 5px; border: 1px solid blue; cursor: pointer; }
+		</style>
+	</head>
+	<body>
+		<div id="results">
+			<p>Click here to add a new &lt;li&gt; element</p>
+			<ul id='list'>
+				<li>Click to remove (0)</li>
+				<li>Click to remove (1)</li>
+			</ul>
+		</div>
+		
+		<script type="text/javascript">
+			function addListItem(){
+				$('#list').append('<li>Click to remove ('+ (++addListItem.count) +')</li>');
+			};
+			addListItem.count = 1;
+			
+			$('p').click(addListItem);
+			
+			//this line is the same as the bind version
+			//$('li').click(function(){$(this).remove();});
+			
+			//$('li').bind('click', function(){$(this).remove();});
+			
+			// comment the line above and use live instead and retry
+			$('li').live('click', function(){$(this).remove();});
+		</script>
+		
+	</body>
+</html>

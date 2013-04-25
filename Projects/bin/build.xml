@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<project name="Snapfish" default="all">
+
+<target name="all" depends="compilejava" />
+
+<target name="compilejava">
+  <echo message="Compiling ...${FILE_JAVA}" />
+    <ant antfile="e:/development/snapfish/dev/build/build.xml" target="donothing" inheritAll="false" inheritRefs="true">
+    </ant>
+    <echo message="${classpath.base}"/>
+      <exec>
+
+        <arg line="-d e:/workare/javaproject/javatest ${FILE_JAVA}" />
+      </exec>
+  </target>
+
+<target name="compilejava1">
+  <echo message="Compiling ...${FILE_JAVA}" />
+  <echo message="Copying compiled file to ...${SNAPCAT}" />
+  <exec executable="javaC" failonerror="true">
+    <arg line="-d e:/workare/javaproject/javatest ${FILE_JAVA}" />
+  </exec>
+</target>
+
+
+</project>

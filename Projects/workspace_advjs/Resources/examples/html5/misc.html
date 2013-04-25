@@ -1,0 +1,108 @@
+<! doctype html>
+<html>
+	<head>
+		<style>
+			h1 { text-shadow: 0.2em 0.2em 5px #777; padding: 10px; border: 1px solid black; width: 200px; text-align: center; 
+				 
+				 -moz-border-radius: 10px;
+				 -webkit-border-radius: 10px;
+				 border-radius: 10px; 
+				 
+				 color: #000000;
+				 font-size: xx-large;
+				 -webkit-transition: all 3s linear; 
+			}
+			
+			h1:hover {
+				color: #ffffff;
+				font-size: small;
+			}
+			
+			article { -moz-column-count: 3; 
+					  -webkit-column-count: 3; 
+					  -moz-column-gap: 10px; 
+					  -webkit-column-count: 10px; 
+					  -moz-column-rule: 1px dotted #00f; 
+					  -webkit-column-rule: 1px dotted #00f; 
+			}
+			
+			.myanimation {
+				-webkit-animation-name: bounce;
+				-webkit-animation-duration: 3s;
+				-webkit-animation-iteration-count: 5;
+				-webkit-animation-direction: alternate;
+				-moz-animation-name: bounce;
+				-moz-animation-duration: 3s;
+				-moz-animation-iteration-count: 5;
+				-moz-animation-direction: alternate;
+				position: relative;
+				left: 0px;
+			}
+			
+			@-webkit-keyframes bounce {
+				from {
+					left: 0px;
+				}
+				to {
+					left: 400px; 
+				}
+			}
+			
+			/*
+			div {
+				width: 100px; height: 100px; background: #0f0; 
+				position: absolute;
+				bottom:50px; left: 50px;
+				-webkit-transform: rotate(45deg);
+			}
+			*/
+			
+		</style>
+		
+		<script>
+		   var node = document.getElementById('example');
+		   var context = node.getContext('2d');
+		   context.fillStyle = "rgb(0, 255,0)";
+		   context.fillRect(150, 30, 250, 50); 
+		</script>
+		
+	</head>
+	<body>
+
+		<h1>Welcome!</h1>
+		<form method="GET">
+			<input type="email" required autofocus placeholder="Enter your email" title="Need this!"></input>
+			<input type="number" pattern="^[0-9]+$" min="0" max="10"></input>
+			<input type="month" min="2010-01" max="2010-12" required></input>
+			<input type="email" data-allowedDomains="yahoo google"></input>
+			<input type="submit" />
+		</form>
+
+		<ol reversed>
+			<li>red</li>
+			<li>white</li>
+			<li>blue</li>
+		</ol>
+
+		<article contenteditable class="myanimation">
+			People have trouble reading text if lines are too long; 
+			if it takes too long for the eyes to move from the end 
+			of the one line to the beginning of the next, they lose 
+			track of which line they were on. Therefore, to make maximum 
+			use of a large screen, authors should have limited-width 
+			columns of text placed side by side, just as newspapers do. 
+			Unfortunately this is impossible to do with CSS and HTML 
+			without forcing column breaks at fixed positions, or severely 
+			restricting the markup allowed in the text, or using heroic 
+			scripting.
+		</article>
+
+		<div></div>
+		
+		<canvas id="canvasApp" width="200" height="200">
+			This text is displayed if your browser does not support HTML5 Canvas.
+		</canvas>
+		
+
+	</body>
+</html>

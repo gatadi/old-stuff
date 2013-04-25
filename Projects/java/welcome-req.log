@@ -1,0 +1,976 @@
+GET http://us.sfstg8.qa.snapfish.com/snapfish/welcome HTTP/1.1
+Host: us.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.stg=funerirefvbainyhr%21%25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=
+funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; mbox=PC#1282870672285-539900.20#1287005387|session#1285795070826-715526#1285797647|check#true#1285795847; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; BIGipServerstg8-pod1-snapcat=2684883722.16415.0000
+
+
+GET http://us1.sfstg8.qa.snapfish.com/snapfish/welcome HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.stg=funerirefvbainyhr%21%25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.st
+g=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; mbox=PC#1282870672285-539900.20#1287005387|session#1285795070826-715526#1285797647|check#true#1285795847; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish
+
+
+
+[Request:2]- (us.sfstg8.qa.snapfish.com) GET / HTTP/1.1
+ --> 2.153 secs 
+GET http://images1.sfstg8.qa.snapfish.com/default/ClientLibraries/InfoscopicWeb/core/InfoscopicWeb.js HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: mbox=PC#1282870672285-539900.20#1287005387|session#1285795070826-715526#1285797647|check#true#1285795847; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish
+
+
+
+[Request:5]- (us1.sfstg8.qa.snapfish.com) GET /snapfish/fe/l=en_US/css/bundle/cs=305dc8de42edbab3/loc=head/core HTTP/1.1
+ --> 0.577 secs 
+GET http://images1.sfstg8.qa.snapfish.com/default/ClientLibraries/InfoscopicWeb/dhtml/Dialog/Dialog.css HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: mbox=PC#1282870672285-539900.20#1287005387|session#1285795070826-715526#1285797647|check#true#1285795847; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish
+
+
+GET http://images1.sfstg8.qa.snapfish.com/default/ClientLibraries/InfoscopicWeb/dhtml/Dialog/Dialog.js HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: mbox=PC#1282870672285-539900.20#1287005387|session#1285795070826-715526#1285797647|check#true#1285795847; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish
+
+
+GET http://images1.sfstg8.qa.snapfish.com/default/styles/snapfish/inline_popup.css HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: mbox=PC#1282870672285-539900.20#1287005387|session#1285795070826-715526#1285797647|check#true#1285795847; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish
+
+
+
+[Request:6]- (us1.sfstg8.qa.snapfish.com) GET /snapfish/fe/l=en_US/js/bundle/cs=b1f19ea267653e/loc=head/core HTTP/1.1
+ --> 0.952 secs 
+GET http://us1.sfstg8.qa.snapfish.com/default/icons/snapfish/snapfish.ico HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Cookie: mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; BIGipServer=2668106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000
+
+
+GET http://images1.sfstg8.qa.snapfish.com/default/styles/snapfish/DynamicTicker.css HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: mbox=PC#1282870672285-539900.20#1287005387|session#1285795070826-715526#1285797647|check#true#1285795847; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish
+
+
+GET http://images1.sfstg8.qa.snapfish.com/232323232%7Ffp33237%3Eju%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Ds%3Dstrfxewcgubohidfuqsfryqaicon5242b33243%3B68236%3E340mrj HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish
+
+
+GET http://images1.sfstg8.qa.snapfish.com/default/styles/snapfish/snapfish_us/util/layer.css HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish
+
+
+GET http://images1.sfstg8.qa.snapfish.com/232323232%7Ffp33237%3Eju%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Du%3DUWZaKguqbPhyVkwgbHdno4333aIkqcoa42334%3A7%3B327%3D431lsi HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish
+
+
+GET http://images1.sfstg8.qa.snapfish.com/default/images/spacer.gif HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish
+
+
+GET http://images1.sfstg8.qa.snapfish.com/default/images/homeredesign/get-started.gif HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish
+
+
+GET http://us1.sfstg8.qa.snapfish.com/snapfish/fe/l=en_US/file/components/globalnav/footers/GlobalFooter/p/assets/sell-with-snapfish-publisher.png/ HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; sha
+re_version.snapfish_us.stg=funerirefvbainyhr%21%25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; JSESSIONID=EB2CE5B278312E0E9D3B0DF28C47EA6D; mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobr
+and_Name.snapfish_us.stg=snapfish; BIGipServer=2668106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000
+
+
+GET http://us1.sfstg8.qa.snapfish.com/snapfish/fe/l=en_US/file/components/globalnav/footers/GlobalFooter/p/assets/marketing-differentiator.gif/ HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_v
+ersion.snapfish_us.stg=funerirefvbainyhr%21%25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; JSESSIONID=EB2CE5B278312E0E9D3B0DF28C47EA6D; mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_
+Name.snapfish_us.stg=snapfish; BIGipServer=2668106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000
+
+
+GET http://us1.sfstg8.qa.snapfish.com/snapfish/fe/l=en_US/file/components/globalnav/footers/GlobalFooter/p/assets/twitter.gif/ HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_u
+s.stg=funerirefvbainyhr%21%25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; JSESSIONID=EB2CE5B278312E0E9D3B0DF28C47EA6D; mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.
+stg=snapfish; BIGipServer=2668106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000
+
+
+GET http://images1.sfstg8.qa.snapfish.com/default/javascript/user.js HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish
+
+
+GET http://us1.sfstg8.qa.snapfish.com/snapfish/fe/l=en_US/file/components/globalnav/footers/GlobalFooter/p/assets/facebook.gif/ HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_
+us.stg=funerirefvbainyhr%21%25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; JSESSIONID=EB2CE5B278312E0E9D3B0DF28C47EA6D; mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us
+.stg=snapfish; BIGipServer=2668106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000
+
+
+GET http://us1.sfstg8.qa.snapfish.com/snapfish/fe/l=en_US/file/components/globalnav/footers/GlobalFooter/p/assets/truste.gif/ HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us
+.stg=funerirefvbainyhr%21%25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; JSESSIONID=EB2CE5B278312E0E9D3B0DF28C47EA6D; mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.s
+tg=snapfish; BIGipServer=2668106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000
+
+
+GET http://us1.sfstg8.qa.snapfish.com/snapfish/fe/l=en_US/file/components/globalnav/footers/GlobalFooter/p/assets/visa.gif/ HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.s
+tg=funerirefvbainyhr%21%25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; JSESSIONID=EB2CE5B278312E0E9D3B0DF28C47EA6D; mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg
+=snapfish; BIGipServer=2668106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000
+
+
+GET http://us1.sfstg8.qa.snapfish.com/snapfish/fe/l=en_US/file/components/globalnav/footers/GlobalFooter/p/assets/master.gif/ HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us
+.stg=funerirefvbainyhr%21%25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; JSESSIONID=EB2CE5B278312E0E9D3B0DF28C47EA6D; mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.s
+tg=snapfish; BIGipServer=2668106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000
+
+
+GET http://us1.sfstg8.qa.snapfish.com/snapfish/fe/l=en_US/file/components/globalnav/footers/GlobalFooter/p/assets/amex.gif/ HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.s
+tg=funerirefvbainyhr%21%25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; JSESSIONID=EB2CE5B278312E0E9D3B0DF28C47EA6D; mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg
+=snapfish; BIGipServer=2668106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000
+
+
+GET http://us1.sfstg8.qa.snapfish.com/snapfish/fe/l=en_US/file/components/globalnav/footers/GlobalFooter/p/assets/paypal.gif/ HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us
+.stg=funerirefvbainyhr%21%25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; JSESSIONID=EB2CE5B278312E0E9D3B0DF28C47EA6D; mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.s
+tg=snapfish; BIGipServer=2668106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000
+
+
+GET http://us1.sfstg8.qa.snapfish.com/snapfish/fe/l=en_US/file/components/globalnav/footers/GlobalFooter/p/assets/snapfishww.gif/ HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfis
+h_us.stg=funerirefvbainyhr%21%25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; JSESSIONID=EB2CE5B278312E0E9D3B0DF28C47EA6D; mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_
+us.stg=snapfish; BIGipServer=2668106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000
+
+
+GET http://us1.sfstg8.qa.snapfish.com/snapfish/fe/l=en_US/file/components/globalnav/footers/GlobalFooter/p/assets/bullet.gif/ HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us
+.stg=funerirefvbainyhr%21%25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; JSESSIONID=EB2CE5B278312E0E9D3B0DF28C47EA6D; mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.s
+tg=snapfish; BIGipServer=2668106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000
+
+
+GET http://us1.sfstg8.qa.snapfish.com/snapfish/fe/l=en_US/file/shared/old/p/assets/loading-animation.gif/ HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.stg=funerirefvbainy
+hr%21%25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; JSESSIONID=EB2CE5B278312E0E9D3B0DF28C47EA6D; mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; BIGipSe
+rver=2668106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000
+
+
+GET http://images1.sfstg8.qa.snapfish.com/default/javascript/core/CLinkManager.js HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish
+
+
+GET http://images1.sfstg8.qa.snapfish.com/default/javascript/flex/flashdetect.js HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish
+
+
+GET http://images1.sfstg8.qa.snapfish.com/default/javascript/snapfish_mtagconfig.js HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish
+
+
+GET http://us1.sfstg8.qa.snapfish.com/snapfish/fe/file/cs=1284158378000/shared/assets/sprites/seasonal-image.png/ HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/fe/l=en_US/css/bundle/cs=305dc8de42edbab3/loc=head/core
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5
+E%21ra_HF; share_version.snapfish_us.stg=funerirefvbainyhr%21%25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; JSESSIONID=EB2CE5B278312E0E9D3B0DF28C47EA6D; mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; 
+SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; BIGipServer=2668106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000
+
+
+GET http://us1.sfstg8.qa.snapfish.com/snapfish/fe/c=SNAPFISH/l=en_US/s=SNAPFISH/w=SNAPFISH_US/file/cs=1284158377000_1/shared/assets/sprites/p/header-sprite.png/ HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/fe/l=en_US/css/bundle/cs=305dc8de42edbab3/loc=head/core
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF
+_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.stg=funerirefvbainyhr%21%25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; JSESSIONID=EB2CE5B278312E0E9D3B0DF28C47EA6D; mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s
+_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; BIGipServer=2668106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000
+
+
+GET http://images1.sfstg8.qa.snapfish.com/default/javascript/util/layer.js HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish
+
+
+GET http://images1.sfstg8.qa.snapfish.com/default/javascript/core/CCookie.js HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish
+
+
+GET http://us1.sfstg8.qa.snapfish.com/default/images/homeredesign/button-login.gif HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; BIGipServer=2668106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000
+
+
+GET http://us.sfstg8.qa.snapfish.com/snapfish/snappost?__internal_post__=welcome_ad1_960&t_=1285796010834 HTTP/1.1
+Host: us.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.sn
+apfish_us.stg=funerirefvbainyhr%21%25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; JSESSIONID=9DC1634D0BA1CA1015DD712ED744C7DA; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; BIGipServerstg8-pod1-snapca
+t=2684883722.16415.0000; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; BIGipServer=2684883722.16415.000
+
+
+GET http://us.sfstg8.qa.snapfish.com/snapfish/snappost?__internal_post__=welcome_ad2_960&t_=1285796010835 HTTP/1.1
+Host: us.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.sn
+apfish_us.stg=funerirefvbainyhr%21%25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; JSESSIONID=9DC1634D0BA1CA1015DD712ED744C7DA; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; BIGipServerstg8-pod1-snapca
+t=2684883722.16415.0000; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; BIGipServer=2684883722.16415.000
+
+
+GET http://us.sfstg8.qa.snapfish.com/snapfish/snappost?__internal_post__=welcome_product_C_960&t_=1285796010838 HTTP/1.1
+Host: us.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_vers
+ion.snapfish_us.stg=funerirefvbainyhr%21%25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; JSESSIONID=9DC1634D0BA1CA1015DD712ED744C7DA; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; BIGipServerstg8-pod1-
+snapcat=2684883722.16415.0000; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; BIGipServer=2684883722.16415.000
+
+
+GET http://us1.sfstg8.qa.snapfish.com/default/images/homeredesign/home-tab-right.gif HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; BIGipServer=2668106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000
+
+
+GET http://us.sfstg8.qa.snapfish.com/snapfish/snappost?__internal_post__=welcome_product_A_960&t_=1285796010836 HTTP/1.1
+Host: us.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_vers
+ion.snapfish_us.stg=funerirefvbainyhr%21%25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; JSESSIONID=9DC1634D0BA1CA1015DD712ED744C7DA; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; BIGipServerstg8-pod1-
+snapcat=2684883722.16415.0000; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; BIGipServer=2684883722.16415.000
+
+
+GET http://us.sfstg8.qa.snapfish.com/snapfish/snappost?__internal_post__=welcome_product_B_960&t_=1285796010837 HTTP/1.1
+Host: us.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_vers
+ion.snapfish_us.stg=funerirefvbainyhr%21%25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; JSESSIONID=9DC1634D0BA1CA1015DD712ED744C7DA; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; BIGipServerstg8-pod1-
+snapcat=2684883722.16415.0000; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; BIGipServer=2684883722.16415.000
+
+
+GET http://us1.sfstg8.qa.snapfish.com/default/images/homeredesign/home-tab-left.gif HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; BIGipServer=2668106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000
+
+
+GET http://us1.sfstg8.qa.snapfish.com/snapfish/fe/c=SNAPFISH/l=en_US/s=SNAPFISH/w=SNAPFISH_US/file/cs=1284158415000_1/components/globalnav/footers/GlobalFooter/assets/p/footer-gradient.png/ HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/fe/l=en_US/css/bundle/cs=305dc8de42edbab3/loc=head/core
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivr
+j!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.stg=funerirefvbainyhr%21%25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; JSESSIONID=EB2CE5B278312E0E9D3B0DF28C47EA6D; mbox=PC#1282870672285-539900.20#1287005612|session#1285795070826-715526#1285797872|check#true#1285796072; s_vnum=1285796749494%26vn%3D20; s_vn
+um=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; BIGipServer=2668106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000
+
+
+GET http://snapfish.112.2o7.net/b/ss/hpsnapfishstage/1/H.17/s57936196434675?AQB=1&ndh=1&t=29/8/2010%2014%3A33%3A36%203%20420&ce=UTF-8&ns=snapfish&pageName=US%3Aen%3ALogged%20out%3A%20Home%3A%20Returning&g=http%3A//us1.sfstg8.qa.snapfish.com/snapfish/welcome&cc=USD&server=qa1-bc9&c5=no&c6=no&c7=snapfish_us&v7=snapfish_us&c9=no&c10=snapfish&c11=yes&v11=FDR&v13=snapfish&v14=yes&c15=20&s=1600x1200&c=24&j=1.7&v=N&k=Y&bw=1275&bh=727&p=Adobe%20Acrobat%3BMozilla%20Default%20Plug-in%3BGoogle%20Update%3BBrowserPlus%20%28from%20Yahoo%21%29%20v2.9.8%3BShockwave%20Flash%3BShockwave%20for%20Director%3BYahoo%20Application%20State%20Plugin%3BSilverlight%20Plug-In%3BRIM%20Handheld%20Application%20Loader%3B&AQE=1 HTTP/1.1
+Host: snapfish.112.2o7.net
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Conne
+ction: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: s_vi=[CS]v1|263B86CA8514B5C6-4000016800253C19[CE]; s_vi_pfkx60uit=[CS]v4|263FF204050130D4-60000103A000BBA3|4C7FE409[CE]
+
+
+GET http://us.sfstg8.qa.snapfish.com/snapfish/precache HTTP/1.1
+Host: us.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.stg=funerirefvbainyhr%21%25RDHNYF%5E%210.
+9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; JSESSIONID=9DC1634D0BA1CA1015DD712ED744C7DA; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; mbox=PC#1282870672285-539900.20#1287005617|session#1285795070826-715526#1285797877|check#true#1285796077; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; BIGipServerstg8-pod1-snapcat=2684883722.16415.0000; SF_Master_Cobrand_Name.sna
+pfish_us.stg=snapfish; BIGipServer=2684883722.16415.000; s_cc=true; s_sq=%5B%5BB%5D%5D
+
+
+GET http://us1.sfstg8.qa.snapfish.com/snapfish/fe/l=en_US/js/bundle/cs=486b41599dbf26b8/loc=body/core HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.stg=funerirefvbainyhr%21%25RDHNYF%5E%210.948619188603
+8575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; JSESSIONID=EB2CE5B278312E0E9D3B0DF28C47EA6D; mbox=PC#1282870672285-539900.20#1287005617|session#1285795070826-715526#1285797877|check#true#1285796077; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; BIGipServer=2668106506.16415.000; BIGipSe
+rverstg8-pod1-snapcat=2668106506.16415.0000; s_cc=true; s_sq=%5B%5BB%5D%5D
+
+
+GET http://us1.sfstg8.qa.snapfish.com/snapfish/fe/l=en_US/js/page/cs=825ed8f148/loc=body/component/util/legacy/HeadDependencies HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.stg=funerirefvbainyhr%21%25
+RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; JSESSIONID=EB2CE5B278312E0E9D3B0DF28C47EA6D; mbox=PC#1282870672285-539900.20#1287005617|session#1285795070826-715526#1285797877|check#true#1285796077; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; BIGipServer=266
+8106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000; s_cc=true; s_sq=%5B%5BB%5D%5D
+
+
+GET http://us1.sfstg8.qa.snapfish.com/snapfish/fe/l=en_US/js/page/cs=825ed8f148/loc=body/component/globalnav/headers/GlobalHeader HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.stg=funerirefvbainyhr%21%
+25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; JSESSIONID=EB2CE5B278312E0E9D3B0DF28C47EA6D; mbox=PC#1282870672285-539900.20#1287005617|session#1285795070826-715526#1285797877|check#true#1285796077; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; BIGipServer=2
+668106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000; s_cc=true; s_sq=%5B%5BB%5D%5D
+
+
+GET http://us1.sfstg8.qa.snapfish.com/snapfish/fe/l=en_US/js/page/cs=825ed8f148/loc=body/component/globalnav/footers/GlobalFooter HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.stg=funerirefvbainyhr%21%
+25RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; JSESSIONID=EB2CE5B278312E0E9D3B0DF28C47EA6D; mbox=PC#1282870672285-539900.20#1287005617|session#1285795070826-715526#1285797877|check#true#1285796077; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; BIGipServer=2
+668106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000; s_cc=true; s_sq=%5B%5BB%5D%5D
+
+
+GET http://us1.sfstg8.qa.snapfish.com/snapfish/fe/l=en_US/js/page/cs=825ed8f148/loc=body/component/shared/WaitPanel HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.stg=funerirefvbainyhr%21%25RDHNYF%5E%21
+0.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; JSESSIONID=EB2CE5B278312E0E9D3B0DF28C47EA6D; mbox=PC#1282870672285-539900.20#1287005617|session#1285795070826-715526#1285797877|check#true#1285796077; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; BIGipServer=2668106506.1641
+5.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000; s_cc=true; s_sq=%5B%5BB%5D%5D
+
+
+GET http://us1.sfstg8.qa.snapfish.com/snapfish/fe/l=en_US/js/page/cs=825ed8f148/loc=body/component/util/legacy/BodyDependencies HTTP/1.1
+Host: us1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.prd=funerirefvbainyhr%21%25RDHNYF%5E%210.10192830070377468; loggedouthome.snapfish_us.prd=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.11813392646570509; mrbcookieval.snapfish_us.prd=zeopbbxvriny%21%25RDHNYF%5E%210.9115648864580437; default_library_view_cookie.snapfish_us.prd=bjarq_ivrj!%25RDHNYF%5E!bjarq_2009; SF_PC_060100.snapfish_us.stg=ybpnyr%21%25RDHNYF%5E%21ra_HF; share_version.snapfish_us.stg=funerirefvbainyhr%21%25
+RDHNYF%5E%210.9486191886038575; default_library_view_cookie.snapfish_us.stg=funerq_ivrj!%25RDHNYF%5E!seaq_2010; __sf__lsc__.snapfish_us.stg=ABQR_ANZR%21%25RDHNYF%5E%21DNCEQ4%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%2110001531004%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; loggedouthome.snapfish_us.stg=ybttrqbhgubzrerqverpginyhr%21%25RDHNYF%5E%210.9972160141757792; __sf__lsc__.snapfish_us.prd=ABQR_ANZR%21%25RDHNYF%5E%21FSBCEQ17%21%25AIC_FRC%5E%21HFRE_BVQ%21%25RDHNYF%5E%21500741%21%25AIC_FRC%5E%21rznvynqqerff%21%25RDHNYF%5E%21ivwnl%40fancsvfu.pbz; SF_SESSION_COOKIE.snapfish_us.stg=jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000; JSESSIONID=EB2CE5B278312E0E9D3B0DF28C47EA6D; mbox=PC#1282870672285-539900.20#1287005617|session#1285795070826-715526#1285797877|check#true#1285796077; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_vnum=1285796749494%26vn%3D20; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; BIGipServer=266
+8106506.16415.000; BIGipServerstg8-pod1-snapcat=2668106506.16415.0000; s_cc=true; s_sq=%5B%5BB%5D%5D
+
+
+
+[Request:12]- (images1.sfstg8.qa.snapfish.com) GET /default/javascript/util/common.js HTTP/1.1
+ --> 5.179 secs 
+
+[Request:9]- (images1.sfstg8.qa.snapfish.com) GET /default/javascript/omniture/s_code.js HTTP/1.1
+ --> 5.772 secs 
+
+[Request:13]- (images1.sfstg8.qa.snapfish.com) GET /default/ClientLibraries/Console/Ticker/ticker.js HTTP/1.1
+ --> 4.914 secs 
+
+[Request:11]- (media.fastclick.net) GET /w/tre?ad_id=18637&evt=9937&cat1=10006&cat2=10007 HTTP/1.1
+ --> 5.834 secs 
+
+[Request:7]- (images1.sfstg8.qa.snapfish.com) GET /default/styles/snapfish/snapfish_us/global.css HTTP/1.1
+ --> 6.022 secs 
+GET http://images1.sfstg8.qa.snapfish.com/default/javascript/core/CMath.js HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us.sfstg8.qa.snapfish.com/snapfish/precache
+Cookie: mbox=PC#1282870672285-539900.20#1287005617|session#1285795070826-715526#1285797877|check#true#1285796077; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; s_cc=true; s_sq=%5B%5BB%5D%5D
+
+
+GET http://images1.sfstg8.qa.snapfish.com/default/javascript/album/selectalbum.js HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us.sfstg8.qa.snapfish.com/snapfish/precache
+Cookie: mbox=PC#1282870672285-539900.20#1287005617|session#1285795070826-715526#1285797877|check#true#1285796077; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; s_cc=true; s_sq=%5B%5BB%5D%5D
+
+
+GET http://images1.sfstg8.qa.snapfish.com/default/javascript/upload/upload.js HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us.sfstg8.qa.snapfish.com/snapfish/precache
+Cookie: mbox=PC#1282870672285-539900.20#1287005617|session#1285795070826-715526#1285797877|check#true#1285796077; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; s_cc=true; s_sq=%5B%5BB%5D%5D
+
+
+GET http://images1.sfstg8.qa.snapfish.com/default/javascript/album_order.js HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us.sfstg8.qa.snapfish.com/snapfish/precache
+Cookie: mbox=PC#1282870672285-539900.20#1287005617|session#1285795070826-715526#1285797877|check#true#1285796077; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; s_cc=true; s_sq=%5B%5BB%5D%5D
+
+
+GET http://images1.sfstg8.qa.snapfish.com/default/javascript/upload/ddt_install_requirements.js HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us.sfstg8.qa.snapfish.com/snapfish/precache
+Cookie: mbox=PC#1282870672285-539900.20#1287005617|session#1285795070826-715526#1285797877|check#true#1285796077; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; s_cc=true; s_sq=%5B%5BB%5D%5D
+
+
+
+[Request:4]- (images1.sfstg8.qa.snapfish.com) GET /default/javascript/util/mbox.js HTTP/1.1
+ --> 8.174 secs 
+GET http://images1.sfstg8.qa.snapfish.com/default/javascript/album/comments/comments.js HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us.sfstg8.qa.snapfish.com/snapfish/precache
+Cookie: mbox=PC#1282870672285-539900.20#1287005617|session#1285795070826-715526#1285797877|check#true#1285796077; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; s_cc=true; s_sq=%5B%5BB%5D%5D
+
+
+GET http://images1.sfstg8.qa.snapfish.com/default/javascript/dojo/dojo.js HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us.sfstg8.qa.snapfish.com/snapfish/precache
+Cookie: mbox=PC#1282870672285-539900.20#1287005617|session#1285795070826-715526#1285797877|check#true#1285796077; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; s_cc=true; s_sq=%5B%5BB%5D%5D
+
+
+GET http://images1.sfstg8.qa.snapfish.com/default/images/popups/inline/dialog-tl.gif HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://images1.sfstg8.qa.snapfish.com/default/styles/snapfish/inline_popup.css
+Cookie: mbox=PC#1282870672285-539900.20#1287005617|session#1285795070826-715526#1285797877|check#true#1285796077; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; s_cc=true; s_sq=%5B%5BB%5D%5D
+
+
+GET http://images1.sfstg8.qa.snapfish.com/default/images/popups/inline/dialog-tr.gif HTTP/1.1
+Host: images1.sfstg8.qa.snapfish.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://images1.sfstg8.qa.snapfish.com/default/styles/snapfish/inline_popup.css
+Cookie: mbox=PC#1282870672285-539900.20#1287005617|session#1285795070826-715526#1285797877|check#true#1285796077; s_vnum=1285796749494%26vn%3D20; s_vnum=1285796749494%26vn%3D21; s_invisit=true; SF_Master_Cobrand_Name.snapfish_us.stg=snapfish; s_cc=true; s_sq=%5B%5BB%5D%5D
+
+
+GET http://sales.liveperson.net/hcp/html/mTag.js?site=36005843 HTTP/1.1
+Host: sales.liveperson.net
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: LivePersonID=LP i=4510146821850,d=1282870684; HumanClickACTIVE=1285795794888; ASPSESSIONIDCQCTCDDB=MJHMMLHDOCFPHBFNOKDOPNMP
+
+
+GET http://sales.liveperson.net/hc/36005843/?&site=36005843&cmd=mTagKnockPage&lpCallId=322711015506-1537263342&protV=20&lpjson=1&id=9891180421&javaSupport=false&visitorStatus=INSITE_STATUS HTTP/1.1
+Host: sales.liveperson.net
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: LivePersonID=-4510146821850-1285795080:-1:-1:-1:-1; LivePersonID=LP i=4510146821850,d=1282870684; HumanClickACTIVE=1285795794888; ASPSESSIONIDCQCTCDDB=MJHMMLHDOCFPHBFNOKDOPNMP
+
+
+GET http://sales.liveperson.net/hc/36005843/?&site=36005843&cmd=mTagStartPage&lpCallId=73110500088-2054680748&protV=20&lpjson=1&page=http%3A//us1.sfstg8.qa.snapfish.com/snapfish/welcome&id=9891180421&javaSupport=false&visitorStatus=INSITE_STATUS&defInvite=chat-snapfish-us-english&activePlugin=none&cobrowse=true&PV%21Country=us&PV%21unit=snapfish-us&PV%21PageName=US%3Aen%3ALogged%20out%3A%20Home%3A%20Returning&PV%21language=english&PV%21Country=us&PV%21pageLoadTime=9%20sec&PV%21visitorActive=1&SV%21language=english&VV%21VisitorType=&VV%21ImageActive=&VV%21Purchased=&title=Photo%20Books%2C%20Greeting%20Cards%2C%20Photo%20Cards%2C%20Photo%20Wedding%20Invitations%2C%20Cards%20by%20Snapfish%3A HTTP/1.1
+Host: sales.liveperson.net
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us
+1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: LivePersonID=-4510146821850-1285795080:-1:-1:-1:-1; HumanClickKEY=2787490426776866081; LivePersonID=LP i=4510146821850,d=1282870684; HumanClickACTIVE=1285796025387; ASPSESSIONIDCQCTCDDB=MJHMMLHDOCFPHBFNOKDOPNMP
+
+
+GET http://sales.liveperson.net/hc/36005843/?&site=36005843&cmd=mTagInPage&lpCallId=343575338730-5705852334&protV=20&lpjson=1&page=http%3A//us1.sfstg8.qa.snapfish.com/snapfish/welcome&id=9891180421&javaSupport=false&visitorStatus=INSITE_STATUS&defInvite=chat-snapfish-us-english&activePlugin=none&cobrowse=true HTTP/1.1
+Host: sales.liveperson.net
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Referer: http://us1.sfstg8.qa.snapfish.com/snapfish/welcome
+Cookie: LivePersonID=-4510146821850-1285796025:-1:-1:-1:-1; HumanClickKEY=2787490426776866081; HumanClickSiteContainerID_36005843=STANDALONE; LivePersonID=LP i=4510146821850,d=1282870684; HumanClickACTIVE=1285796025387; ASPSESSIONIDCQCTCDDB=MJHMMLHDOCFPHBFNOKDOPNMP
+
+
+POST http://safebrowsing.clients.google.com/safebrowsing/downloads?client=navclient-auto-ffox&appver=3.6.8&pver=2.2&wrkey=AKEgNitQc2-wvOMhYIW1TvofvNovteRH_oakNafs-EyIT-AmgLzCAQY4cwE2DfvoBb_GRIt_FYCujDgobKb2UNv0SE7m3XmbVw== HTTP/1.1
+Host: safebrowsing.clients.google.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Content-Length: 104
+Content-Type: text/plain
+Cookie: PREF=ID=3785938f478a7dab:U=68bcb889eff75240:TM=1283204707:LM=1283464169:S=KviUb1TheWdjXxFQ; NID=38=MXmK35XPo5hpOOWc3vpDf6btIatrRFuyTMs6NIdScwNjNbWVeKHB_ZgPYpmBMV6dOxClpMngfoLvS8l8Nycm0A5ZraFQmxM0n16gl73DNEHS4i3BL_UIRyNfC1djlrTX
+Pragma: no-cache
+Cache-Control: no-cache
+
+goog-malware-shavar;a:22088-25625:s:34157-38010:mac
+goog-phish-shavar;a:107122-113380:s:60389
+-62746:mac
+
+GET http://safebrowsing-cache.google.com/safebrowsing/rd/ChNnb29nLW1hbHdhcmUtc2hhdmFyEAEY-6gCIISpAioGfZQAAP8AMgV7lAAAAw HTTP/1.1
+Host: safebrowsing-cache.google.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Cookie: PREF=ID=3785938f478a7dab:U=68bcb889eff75240:TM=1283204707:LM=1283464169:S=KviUb1TheWdjXxFQ; NID=38=MXmK35XPo5hpOOWc3vpDf6btIatrRFuyTMs6NIdScwNjNbWVeKHB_ZgPYpmBMV6dOxClpMngfoLvS8l8Nycm0A5ZraFQmxM0n16gl73DNEHS4i3BL_UIRyNfC1djlrTX
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+GET http://safebrowsing-cache.google.com/safebrowsing/rd/ChNnb29nLW1hbHdhcmUtc2hhdmFyEAAYmsgBIJ7IASoFHGQAAAcyBRpkAAAD HTTP/1.1
+Host: safebrowsing-cache.google.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Cookie: PREF=ID=3785938f478a7dab:U=68bcb889eff75240:TM=1283204707:LM=1283464169:S=KviUb1TheWdjXxFQ; NID=38=MXmK35XPo5hpOOWc3vpDf6btIatrRFuyTMs6NIdScwNjNbWVeKHB_ZgPYpmBMV6dOxClpMngfoLvS8l8Nycm0A5ZraFQmxM0n16gl73DNEHS4i3BL_UIRyNfC1djlrTX
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+GET http://safebrowsing-cache.google.com/safebrowsing/rd/ChFnb29nLXBoaXNoLXNoYXZhchABGJXqAyCo6gMqBhz1AAD_HzIFFfUAAH8 HTTP/1.1
+Host: safebrowsing-cache.google.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Cookie: PREF=ID=3785938f478a7dab:U=68bcb889eff75240:TM=1283204707:LM=1283464169:S=KviUb1TheWdjXxFQ; NID=38=MXmK35XPo5hpOOWc3vpDf6btIatrRFuyTMs6NIdScwNjNbWVeKHB_ZgPYpmBMV6dOxClpMngfoLvS8l8Nycm0A5ZraFQmxM0n16gl73DNEHS4i3BL_UIRyNfC1djlrTX
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+GET http://safebrowsing-cache.google.com/safebrowsing/rd/ChFnb29nLXBoaXNoLXNoYXZhchAAGOX1BiD49QYqB-i6AQD__wEyBeW6AQAH HTTP/1.1
+Host: safebrowsing-cache.google.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Cookie: PREF=ID=3785938f478a7dab:U=68bcb889eff75240:TM=1283204707:LM=1283464169:S=KviUb1TheWdjXxFQ; NID=38=MXmK35XPo5hpOOWc3vpDf6btIatrRFuyTMs6NIdScwNjNbWVeKHB_ZgPYpmBMV6dOxClpMngfoLvS8l8Nycm0A5ZraFQmxM0n16gl73DNEHS4i3BL_UIRyNfC1djlrTX
+Pragma: no-cache
+Cache-Control: no-cache
+
+

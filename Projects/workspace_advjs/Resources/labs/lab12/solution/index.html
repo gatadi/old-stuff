@@ -1,0 +1,218 @@
+<!doctype html>
+<html  manifest="cache.manifest">
+	<head>
+		<link href="reset-min.css" rel="stylesheet" type="text/css">
+		<link href="ext-3.2/resources/css/ext-all.css" rel="stylesheet" type="text/css">
+		<link href="emp.css" rel="stylesheet" type="text/css">
+		<script src="jquery.js" type="text/javascript"></script>
+		<script src="ext-3.2/adapter/ext/ext-base.js" type="text/javascript"></script>
+		<script src="ext-3.2/ext-all.js" type="text/javascript"></script>
+		<script src="rest.js" type="text/javascript"></script>
+		
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+	</head>
+	<body>
+		<div id="wrapper">
+			<header><h1>Adv. JS &amp; HTML5</h1></header>
+			<div id="content" class="clearfix">
+				<nav id="menu">
+					<a id="empSearchLink" href="#">Employee Search</a>
+					<div id="results"></div>
+				</nav>
+				<aside id="secondary">
+					<div id="empDetails">
+						<form id="empDetailsForm">
+							<label for="empIdDetails">Employee ID</label>
+							<input type="text" id="empIdDetails" readonly="readonly">
+							<label for="firstNameDetails">First Name</label>
+							<input type="text" id="firstNameDetails">
+							<label for="lastNameDetails">Last Name</label>
+							<input type="text" id="lastNameDetails">
+							<label for="salaryDetails">Salary</label>
+							<input type="text" id="salaryDetails">
+							<input type="button" value="Create" id="createBtn">
+							<input type="button" value="Update" id="updateBtn">
+							<input type="button" value="Delete" id="deleteBtn">
+						</form>
+					</div>
+				</aside>
+				<section id="main"></section>
+			</div>
+			<footer></footer>
+		</div>
+		<div id="empSearch">
+			<form id="empSearchForm">
+				<label for="empId">Employee ID:</label>
+				<input type="text" id="empId" autofocus placeholder="Enter valid ID">
+				<input type="submit" value="Search">
+				<input type="button" value="Search (JSON)">
+			</form>
+			<a id="cancelSearch" href="#">Cancel</a>
+		</div>
+	
+		<script type="text/javascript">
+			
+			$(function() {
+			
+				var url = 'http://localhost:8080/advjs/rest/employee/',
+				
+				// the data store loads data from the URL supplied when the page first loads
+				empStore = new Ext.data.JsonStore({
+					root: 'empList',
+					autoLoad: true,
+					url: url,
+					fields: [ {name: 'empId', type: 'int'}, 'firstName', 'lastName', 
+					          {name: 'salary', type: 'float' } ],
+					sortInfo: { field: 'lastName', direction: 'ASC' }
+				}),
+				
+				
+				// the Employee GridPanel is automatically populated when the page
+				// loads
+				empGrid = new Ext.grid.GridPanel({
+					renderTo: 'main',
+					id: 'empGrid',
+					store: empStore,
+					columns: [{id: 'empId', header: 'Employee ID', sortable: true, 
+						       width: 100, dataIndex: 'empId'},
+						      {header: 'First Name', sortable: true, 
+							   width: 100, dataIndex: 'firstName'},
+							  {header: 'Last Name', sortable: true, 
+							   width: 100, dataIndex: 'lastName'},
+							  {header: 'Salary', sortable: true, 
+							   width: 100, dataIndex: 'salary'},
+					],
+					width: 405,
+					height: 400,
+					title: 'Employee Info',
+					stripeRows: true
+				});
+				
+				empGrid.getSelectionModel().on('rowselect', function(sm, idx, record){
+					$('#empIdDetails').val(record.data.empId);
+					$('#firstNameDetails').val(record.data.firstName);
+					$('#lastNameDetails').val(record.data.lastName);
+					$('#salaryDetails').val(record.data.salary);
+				});
+				
+				
+				
+				$('#empSearchForm').submit(function(evt){
+					evt.preventDefault();
+					var empId = $('#empId').val();
+					if (empId.length > 0)
+						RestClient.retrieve(url+empId, 'xml', handleXml);
+				});
+				
+				
+				
+				function handleXml(result) {
+					var empId     = $(result.documentElement).find('empId').text(),
+					    firstName = $(result.documentElement).find('firstName').text(), 
+					    lastName  = $(result.documentElement).find('lastName').text(),
+					    salary    = $(result.documentElement).find('salary').text(),
+					    empInfo   = 'No employee found.';
+					
+					if (empId !== "0") {
+						empInfo = firstName + ' ' + lastName + ' ('+ salary +')';
+						saveSearch('savedId', empId);
+					}
+					
+					$('#results').append('<p>' + empInfo + '</p>');
+					close();
+				}
+				
+				
+				$('#empSearchForm input[type="button"]').click(function(evt){
+					evt.preventDefault();
+					var empId = $('#empId').val();
+					if (empId.length > 0)
+						RestClient.retrieve(url+empId, 'json', handleJson);
+				});
+				
+				function handleJson(results) {
+					var empId     = results.emp.empId,
+					    firstName = results.emp.firstName,
+					    lastName  = results.emp.lastName,
+					    salary    = results.emp.salary,
+						empInfo   = 'No employee found.';
+					
+					if (empId !== 0) { 
+						empInfo = firstName + ' ' + lastName + ' ('+ salary +')';
+						saveSearch('savedId', empId);
+					}
+					
+					$('#results').append('<p>' + empInfo + '</p>');
+					close();
+				}
+				
+				
+				
+				function upsert(url){
+					
+					var firstName = $('#firstNameDetails').val(),
+					    lastName = $('#lastNameDetails').val(),
+					    salary = $('#salaryDetails').val(),
+					    
+						params = {'firstName': firstName, 'lastName': lastName, 'salary':salary };
+						if(firstName.length === 0 || lastName.length === 0 || salary.length === 0)
+							return;
+						
+						RestClient.update(url, params, function(){ empStore.load(); empGrid.render(); });
+				}
+				
+				$('#updateBtn').click(function(evt){
+					evt.preventDefault();
+					var empId = $('#empIdDetails').val()
+					upsert(url+empId);
+				});
+				
+				$('#createBtn').click(function(evt){
+					evt.preventDefault();
+					upsert(url);
+				});
+				
+				$('#deleteBtn').click(function(evt){
+					evt.preventDefault();
+					var empId = $('#empIdDetails').val();
+					if (empId.length > 0)
+						RestClient.del(url+empId, function(){empStore.load(); empGrid.render(); });
+				});
+				
+				$('#empSearchLink').click(function(evt){
+					evt.preventDefault();
+					var bodyWidth = $('body').width(),
+					    bodyHeight = $('body').height(),
+					    dialogWidth = $('#empSearch').width(),
+					    dialogHeight = $('#empSearch').height(),
+					    left = (bodyWidth - dialogWidth) / 2,
+					    top = (bodyHeight - dialogHeight) / 2;
+					    
+					$('#empSearch').css('left', left)
+								   .css('top', top)
+								   .show();
+					
+				});
+				
+				$('#cancelSearch').click(function(evt){ evt.preventDefault(); close(); });
+				function close() { $('#empSearch').hide(); }
+				
+				function saveSearch(key, value) {
+					if (window.localStorage) 
+						localStorage[key] = value;
+				}
+				
+				if (window.localStorage) {
+					var empIdInput = $('#empId'),
+					    savedId    = localStorage['savedId'];
+					if (savedId)
+						empIdInput.val(savedId)
+				}
+			});
+		
+		</script>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<script type="text/javascript" src="jquery.js" ></script>
+	
+	</head>
+	
+	<body>
+		<div id="myDiv">CSS Classes (click me)</div>
+	
+		<script type="text/javascript">
+			$("#myDiv").click(function(e) { 
+				console.log(this.innerHTML); 
+				console.log(e.target.innerHTML);
+			});
+		</script>
+	
+	</body>
+</html>

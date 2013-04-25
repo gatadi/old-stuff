@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<script type="text/javascript" src="jquery.js" ></script>
+	
+		<style type="text/css">
+			#myDiv { height: 60px; width: 200px; border-radius: 5px; border: 1px solid blue;
+	          		 box-shadow: 0px 5px 5px 0px #777; cursor: pointer;
+			         margin: 50px auto; padding: 5px; background-color: #cff; 
+			         text-align: center; vertical-align: middle; font: normal 18px Arial; }
+			#myDiv span { line-height: 60px; }
+		</style>
+	</head>
+	
+	<body>
+		<div id="myDiv"><span>Click</span></div>
+	
+		<script type="text/javascript">
+		  var foo = {
+		    bar : "hello",
+		    greet: function() {
+		      alert( this.bar );
+		      $('#myDiv').unbind('click', foo.greet);
+		    }
+		  };
+
+		  $("#myDiv").click( jQuery.proxy( foo, "greet" ) );
+		  // $('#myDiv').click(foo.greet);  					// won't work!
+		</script>	
+	</body>
+</html>

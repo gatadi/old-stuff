@@ -1,0 +1,44 @@
+body{
+	background-color: #FFFFFF;
+}
+
+header{		
+	background-color: #A7E1FF;
+	width: 600px;	
+	height : 50px ;
+	margin : 0 auto ;
+	border-top-left-radius : 20px;
+	border-top-right-radius : 20px;
+}
+
+footer{	
+	background-color: #A7E1FF;
+	width: 600px;	
+	height : 50px ;
+	margin : 0 auto ;
+	border-bottom-left-radius : 20px;
+	border-bottom-right-radius : 20px;
+}
+
+
+section{
+	background-color: #E6F6DE;
+	width: 600px;	
+	height : 400px ;
+	margin : 0 auto ;
+}
+
+#filelist{
+	opacity: 0.5;
+	font-size: 20px;	
+	width: 200px; 
+	height: 100px; 
+	cursor: pointer;
+}
+
+
+ .upload { overflow: hidden; position: relative; background: #598026; text-align: center; }
+ .upload, .upload_file { width: 200px; height: 50px; cursor: pointer; }
+ .upload_file { opacity: 0; filter: alpha(opacity=0); position: absolute; right: 0px; top: 0; font-size: 40px;  }
+ .upload span { color: white; line-height: 3em; }
+ 

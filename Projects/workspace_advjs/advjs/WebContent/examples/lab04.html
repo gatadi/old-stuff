@@ -1,0 +1,68 @@
+<html>
+<title>Lab 04 - Constructor/Prototype</title>
+
+<head>
+
+<script type="text/javascript">
+
+function Car(carMake, carModel, carYear)
+{
+	this.make = carMake ;
+	this.model = carModel ;
+	this.year = carYear ;
+}
+
+Car.prototype.sayMake = function(){
+	return this.make ;
+}
+
+Car.prototype.sayModel = function(){
+	return this.model ;
+}
+
+Car.prototype.sayYear = function(){
+	return this.year ;
+}
+
+Car.prototype.toString = function(){
+	return this.year + " " + this.make + " " + this.model ;
+}
+
+var carA = new Car("Toyota", "Celica", 2006) ;
+var carB = new Car("BMW", "530i", 2008) ;
+
+console.log(carA.sayMake());
+console.log(carA.sayModel());
+console.log(carA.sayYear());
+
+console.log(carB.sayMake());
+console.log(carB.sayModel());
+console.log(carB.sayYear());
+
+window.onload = function() {	
+	document.getElementById("showCarA").onclick = function(evt){
+		document.getElementById("results").innerHTML = carA.toString();
+	}
+	
+	document.getElementById("showCarB").onclick = function(evt){
+		document.getElementById("results").innerHTML = carB.toString();
+	}
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div id="showCarA"> Show Car A </div>
+
+<div id="showCarB"> Show Car B </div>
+
+<div id="results"  style="width : 300px ; border: 1px solid grey"> ....  </div>
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

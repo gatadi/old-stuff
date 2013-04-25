@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Objects</title>
+        <script type="text/javascript">
+            
+            function MyObject(color){
+                this.color = color; //primitive value
+                this.values = [1]; //reference value
+                this.sayColor = function(){
+                    alert(this.color);
+                };
+            }
+            
+            var o1 = new MyObject("red");
+            var o2 = new MyObject("blue");
+            o1.values.push(2);
+            o1.sayColor(); //"red"
+            o2.sayColor(); //"blue"
+            
+            alert(o1.values); //"1,2"
+            alert(o2.values); //"1"
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

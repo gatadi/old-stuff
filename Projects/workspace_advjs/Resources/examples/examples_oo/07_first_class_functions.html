@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Functions as First Class Objects</title>
+		<script type="text/javascript" src="jquery.js" ></script>
+		<script type="text/javascript" src="../jquery/jquery.timer.js" ></script>
+	
+		<style type="text/css">
+			#myDiv { height: 100px; width: 300px; border-radius: 5px; border: 1px solid blue;
+	          		 box-shadow: 0px 5px 5px 0px #777; cursor: pointer;
+			         margin: 20px auto; padding: 5px; background-color: #ffffcc; 
+			         text-align: center; vertical-align: middle; font: normal 18px Arial; }
+			#myDiv a { line-height: 100px; }
+		</style>
+	</head>
+	<body>
+		<div id="myDiv"><a href="#">Click to count</a></div>
+		<script type="text/javascript">
+		
+			// this timer simply updates the anchor 3 seconds AFTER a click
+			// if you click again, the timer resets
+			var timer = $.timer(function(){ $('#myDiv a').text(increment.msg); }, 3000, true);
+
+
+			function increment(evt){ 
+				evt.preventDefault();
+				increment.msg = 'Clicked '+ (++increment.count) +' time';
+				if (increment.count !== 1) increment.msg += 's';
+				timer.reset();
+			}
+			increment.msg = 'Clicked 0 times';
+			increment.count = 0;
+
+			$('#myDiv a').click(increment);
+
+	
+		</script>	
+	</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>Video Widget</title>
+		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?2.8.0/build/reset-fonts/reset-fonts.css">
+		
+		<style type="text/css">
+			
+			ul { list-style: none; }
+			body { font: 13px/1.231 arial; }
+			h2 { color: #0000cc; font-size: 150%; font-weight: bold; }
+			
+			#wrapper { margin: 50px; width: 400px; height: 350px; border: 1px solid black; }
+			
+			#main { height: 70%; text-align: center; }
+			#mainImage { margin-top: 10px; }
+			#main p { margin: 0 20px; text-align: left }
+			#footer { height: 30%; text-align: center; }
+			#footer ul li { text-align: center; width: 25%; float: left; background-color: #eeeeff; padding: 15px 0; }
+			#footer ul li a { display: block; }
+			#footer ul li span { font-size: 85%; }
+			
+			#statusbar div { margin-top: 1px; float: right; }
+			
+			#lb, #rb { width: 17px; height: 18px; display: block; float: left; }
+			#lb { background: transparent url("assets/lb.gif") no-repeat scroll 0 0; }
+			#rb { background: transparent url("assets/rb.gif") no-repeat scroll 0 0; }
+			
+			.cf { zoom: 1; }
+			.cf:after { content: ""; display: block; clear: both; }
+			
+			video {
+				-moz-transform: rotate(9deg);
+			}
+			
+		</style>
+		
+		<script type="text/javascript" src="labDOM.js"></script>
+		
+	</head>
+
+	<body>
+
+		<div id="wrapper">
+		
+			<video id="movie" poster="tron2.jpg" width="320" height="240" controls>
+		   		<source src="tron2.mp4">
+		   		<source src="tron2.webm">
+		   		<object type="application/x-shockwave-flash" data="player.swf" width="320" height="240">
+				    <param name="allowfullscreen" value="true">
+				    <param name="allowscriptaccess" value="always">
+				    <param name="flashvars" value="file=tron2.mp4">
+				    <!--[if IE]>
+				    	<param name="movie" value="player.swf">
+				    <![endif]-->
+				    <img src="video.jpg" width="320" height="240" alt="Video">
+				    <p>Get a better browser.  For now, download the video<a href="tron2.webm"></a>.</p>
+				</object>
+			</video>
+			
+		</div>
+		
+</body>
+</html>

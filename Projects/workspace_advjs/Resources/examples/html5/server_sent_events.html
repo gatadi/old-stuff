@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>SSE Example</title>
+	
+	<script src="http://yui.yahooapis.com/combo?3.3.0/build/yui/yui-min.js" ></script>
+	
+	<script>
+	
+	YUI({gallery: 'gallery-2010.11.17-21-32'}).use('gallery-eventsource', function(Y) {
+	 
+	    var ev_src = new Y.EventSource("/SSE_Demo/SSE_demo.jsp");
+	 
+	    ev_src.on("open", function(event){
+	        console.log("Connection opened!");
+	    });
+	 
+	    ev_src.on("message", function(event){
+	        console.log("Message received: " + event.data);
+	    });
+	 
+	    ev_src.on("error", function(event){
+	        console.log("Error!");
+	    });
+	});
+		
+	</script>
+</head>
+
+<body>
+
+</body>
+</html>

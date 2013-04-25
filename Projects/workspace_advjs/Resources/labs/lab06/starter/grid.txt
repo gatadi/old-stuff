@@ -1,0 +1,30 @@
+				// the data store loads data from the URL supplied when the page first loads
+				empStore = new Ext.data.JsonStore({
+					root: 'empList',
+					autoLoad: true,
+					url: url,
+					fields: [ {name: 'empId', type: 'int'}, 'firstName', 'lastName', 
+					          {name: 'salary', type: 'float' } ],
+					sortInfo: { field: 'lastName', direction: 'ASC' }
+				}),
+				
+				
+				// the Employee GridPanel is automatically populated when the page loads
+				empGrid = new Ext.grid.GridPanel({
+					renderTo: 'main',
+					id: 'empGrid',
+					store: empStore,
+					columns: [{id: 'empId', header: 'Employee ID', sortable: true, 
+						       width: 100, dataIndex: 'empId'},
+						      {header: 'First Name', sortable: true, 
+							   width: 100, dataIndex: 'firstName'},
+							  {header: 'Last Name', sortable: true, 
+							   width: 100, dataIndex: 'lastName'},
+							  {header: 'Salary', sortable: true, 
+							   width: 100, dataIndex: 'salary'},
+					],
+					width: 405,
+					height: 400,
+					title: 'Employee Info',
+					stripeRows: true
+				});

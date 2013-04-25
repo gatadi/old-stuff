@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <SOAP-ENV:Envelope>
+      <SOAP-ENV:Body>
+       <namesp1:Login>
+          <subscriberid xsi:type="xsd:string">1000000</subscriberid>
+        <email xsi:type="xsd:string">vijay.gatadi@hp.com</email>
+        <password xsi:type="xsd:string">vijay</password>
+        </namesp1:Login>
+      </SOAP-ENV:Body>
+    </SOAP-ENV:Envelope>

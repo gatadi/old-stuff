@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<title>File API Example</title>
+
+		<style>
+			  body { font: italic 16px Arial; }
+			  li { list-style: none; }
+			 
+			  .imgClass {
+			    height: 75px;
+			    width: 100px;
+			    border: 1px solid #000;
+			    margin: 10px 5px 10px 7px;
+          		box-shadow: 0px 0px 4px 0px #2f2f2f;
+          		border-radius: 10px;
+			  }
+			  
+			  /* clearfix on top-level li's */
+			  #imgList > li { 
+			  	zoom: 1;  
+			  	border: 1px solid black;
+    			margin-top: 15px;
+    			width: 400px;
+    		  }
+			  #imgList li:after {
+			  	clear: both;
+			  	content: '';
+			  	display: block;
+			  }
+			  
+			  #imgList li div:first-child {
+			  	float:left;
+			  }
+			  
+			  #imgList li div:last-child {
+			    margin-top: 10px; 
+			    line-height: 150%;
+			  	float:left;
+			  }
+			  
+		</style>
+	
+	</head>
+
+	<body>
+		<label>Drag images onto the input field</label>
+		<input type="file" id="fileInput" multiple />
+		<ul id="imgList"></ul>
+
+		<script type="text/javascript">
+		
+			(function() {
+	
+				function inputChangeHandler(evt) {
+					var files = evt.target.files, 												// obtain the files that were dropped
+					oneFile, reader;
+	
+					for ( var i = 0, f = files.length; i < f; i++) { 							// loop through the files that were dropped
+	
+						oneFile = files[i];
+	
+						if (oneFile.type.match('image/*')) { 									// only process image files
+	
+							reader = new FileReader();
+	
+							reader.onload = (function(fileObj) { 								// capture and hold the file info
+								return function(e) {
+	
+									var li = document.createElement('li'); // Render thumbnail
+									li.innerHTML = '<div><img class="imgClass" src="'
+											+ e.target.result
+											+ '" title="'
+											+ escape(fileObj.name) 
+											+ '"></div><div><ul><li> Filename: '
+											+ fileObj.name +'</li><li>File Type: '
+											+ fileObj.type +'</li><li>File size: '
+											+ fileObj.size +'</li></ul></div>';
+											
+									document.getElementById('imgList')
+											.appendChild(li);
+								};
+	
+							})(oneFile);
+	
+							reader.readAsDataURL(oneFile); // read in the file as a data URL
+						}
+					}
+				}
+	
+				document.getElementById('fileInput').addEventListener('change', inputChangeHandler, false);
+	
+			})();
+		</script>
+
+	</body>
+</html>

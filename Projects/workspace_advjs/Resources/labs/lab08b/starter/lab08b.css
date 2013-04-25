@@ -1,0 +1,29 @@
+
+#photos {
+    width:690px;
+}
+
+#photos ul {
+    background:#99c;
+    border:1px solid #000;
+    padding:10px 0;
+	height: 99px;
+}
+
+#photos li {
+    float:left; 
+    display:inline; /* IE: double margin bug */
+	background-color: #ccc;
+    border:1px solid #000;
+    margin-left:10px;
+    width:124px;
+}
+
+#photos li a {
+    display: block;
+    background:#ccc url("images/bass_lake_beach.jpg") no-repeat;
+    border:2px solid #00f;
+	width: 98px;
+	height: 73px;
+    margin:10px;
+}

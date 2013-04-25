@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Inheritance Exercise</title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">	
+
+			(function () {
+				
+				var Polygon = function (s) { 
+					this.sides = s; 
+				};
+				
+				Polygon.prototype.getArea = function () { console.log("No getArea provided."); };
+				Polygon.prototype.getSides = function() { return this.sides; };
+				
+				Triangle = function(base, height) { 
+					Polygon.call(this, 3);
+					this.base = base;
+					this.height = height; 
+				};
+				
+				Triangle.prototype = new Polygon();
+				
+				//var Temp = function() {};
+				//Temp.prototype=Polygon.prototype;  
+				//Triangle.prototype=new Temp();
+				
+				Triangle.prototype.getArea = function(){ return this.base * this.height * 0.5; };
+				
+				Rectangle = function(length, width) {
+					Polygon.call(this, 4);
+					this.length = length;
+					this.width = width;
+				};
+				
+				Rectangle.prototype = new Polygon();
+				Rectangle.prototype.getArea = function() { return this.length * this.width; };
+
+			})();
+				
+			var r = new Rectangle(5, 2);
+			console.log(r.getArea());
+			
+			var t = new Triangle(2, 3);
+			console.log(t.getArea());
+			
+			var p = new Polygon(0);
+			
+			
+			
+		</script>
+	</body>
+</html>

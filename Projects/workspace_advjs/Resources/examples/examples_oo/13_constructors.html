@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Objects</title>
+        <script type="text/javascript">
+            		
+            function MyObject(){
+            	this.year = 2007; 					//primitive
+            	this.colors = ["red", "blue"]; 		//reference
+            	this.sayYear = function () {
+            		alert(this.year);
+            	};
+            }
+            
+			var o1 = new MyObject();
+            var o2 = new MyObject();
+            o1.year = 2008;
+            o1.colors.push("green");
+            o1.sayYear(); 							//2008
+            o2.sayYear(); 							//2007
+            
+			alert(o1.values); 						//"red,blue,green"
+            alert(o2.values); 						//"red,blue"
+            
+            	
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

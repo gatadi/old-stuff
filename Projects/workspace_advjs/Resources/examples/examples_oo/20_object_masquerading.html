@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Object Masquerading</title>
+		
+		<script type="text/javascript">
+			
+			function SuperType() {
+				this.age = 28;
+				this.sayAge = function () {
+					alert(this.age);
+				};
+			}
+			
+			function SubType() {
+				SuperType.call(this);
+			}
+		
+			var o = new SubType();
+			o.sayAge(); 						//28	
+					
+		</script>
+  </head>
+  <body>
+  
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

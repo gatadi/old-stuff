@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+	<head>
+		<script type="text/javascript" src="../jquery.js" ></script>
+	</head>
+	<body>
+				
+		<form id="searchForm">
+			Enter movie search term: <input type="search" id="search" name="search" />
+			<input type="submit" value="Query" />
+		</form>		
+				
+		<div id="results"></div>		
+				
+		<script type="text/javascript">
+		
+			var worker = new Worker('worker.js');
+		
+			$('#searchForm').submit(function(evt) {
+				evt.preventDefault();
+				var url = 'http://odata.netflix.com/Catalog/Titles?$format=json&$filter=substringof(\'' + escape($('#search').val()) + '\',Name)&$callback=myFunc';
+				$('#results').text('');
+				worker.postMessage(url);
+			});
+					
+			worker.onmessage = function (evt) {
+				var results = evt.data.d.results;
+				$.each(results, function(idx, m){
+					var entry = '<h4>'+ m.Name +' (' + m.ReleaseYear + ')</h4>';
+					$('#results').append(entry);
+				});
+							
+			}
+				
+		</script>
+	</body>
+</html>

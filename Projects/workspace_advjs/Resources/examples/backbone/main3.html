@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Backbone.js jQuery Example, main3</title>
+  <script src="jquery-1.7.1.js"></script>
+  <script src="underscore.js"></script>
+  <script src="backbone.js"></script>
+  
+</head>
+<body>
+
+  <script>
+	  (function($){
+	    
+		// the model
+		var Message = Backbone.Model.extend({
+			defaults: {
+				text1: 'default msg ',
+				text2: ' times',
+				count: 0
+			}
+		});
+		
+		var MessageList = Backbone.Collection.extend({
+			model: Message
+		});
+		  
+		
+		// the view
+	    var MainView = Backbone.View.extend({    
+	      el: $('body'), 
+	      
+	      initialize: function(){
+	    	_.bindAll(this, 'render', 'addMessage', 'displayMessage')
+	    	this.count = 0;
+	    	this.collection = new MessageList();
+	    	this.collection.bind('add', this.displayMessage);
+	        this.render(); 
+	      },
+	      
+	      events: {
+	         'click div#main': 'addMessage'  
+	      },
+	
+	      render: function(){
+	        $(this.el).append("<div id='main'>Main app</div>");
+	      },
+	      
+	      // the controller (yes, its contained within the view)
+	      addMessage: function() {
+	    		var msg = new Message();
+	    		msg.set({count: ++this.count, text1: 'item clicked '});
+	    		this.collection.add(msg);
+	      },
+	      
+	      displayMessage: function(addedMsg) { 
+	    	  var msg = "<div>" + addedMsg.attributes.text1 + addedMsg.attributes.count + addedMsg.attributes.text2 + "</div>"
+	    	  $(this.el).append(msg);
+	      }
+	    });
+	
+	    var mainView = new MainView();      
+	  })(jQuery);
+	  
+  </script>
+</body>
+</html>

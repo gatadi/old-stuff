@@ -1,0 +1,65 @@
+	@RequestMapping(value="/{empId}", method=RequestMethod.POST)
+	public ModelAndView update(@PathVariable int empId, @RequestParam String firstName,
+							   @RequestParam String lastName, @RequestParam double salary) throws Exception {
+		
+		Employee emp = employeeJpaDao.find(empId);
+		emp.setFirstName(firstName);
+		emp.setLastName(lastName);
+		emp.setSalary(salary);
+		employeeJpaDao.update(emp);
+		
+		return new ModelAndView("xmlView", "emp", emp);
+	}
+	
+	
+	@RequestMapping(method=RequestMethod.POST)
+	public ModelAndView insert(@RequestParam String firstName,
+			   				   @RequestParam String lastName, @RequestParam double salary) throws Exception {
+		
+		Employee emp = new Employee();
+
+		try {
+			emp.setFirstName(firstName);
+			emp.setLastName(lastName);
+			emp.setSalary(salary);
+
+			Employee returnedEmp = (Employee) employeeJpaDao.insert(emp); 
+
+			emp = returnedEmp;
+		}
+		catch(Exception e) { 
+			emp = new Employee(0, "", "", 0.0);
+			System.err.println("Not inserted. Reason: " + e.getMessage());
+		}
+		
+		return new ModelAndView("xmlView", "emp", emp);
+	}
+	
+	
+	@RequestMapping(value="/{empId}", method=RequestMethod.DELETE)
+	public ModelAndView delete(@PathVariable int empId) throws Exception {
+		
+		Employee emp = employeeJpaDao.find(empId);
+		employeeJpaDao.remove(emp);
+		
+		return new ModelAndView("xmlView", "emp", emp); 
+	}
+	
+	
+	@SuppressWarnings("rawtypes")
+	@RequestMapping(method=RequestMethod.GET)
+	public ModelAndView getEmployeesJSON(HttpServletResponse resp) {
+		
+		resp.setContentType("application/json");
+		resp.setHeader("Access-Control-Allow-Origin", "*");
+		List empList = null;
+		try {
+			empList = employeeJpaDao.findAll();
+			System.out.println(empList);
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return new ModelAndView("jsonView", "empList", empList);
+	}

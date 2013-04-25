@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab01 - Using Chrome Dev Tools</title>
+	<style type="text/css">
+		#myForm { text-align: center; border: 1px solid black; margin: 5px; width: 300px; padding: 10px; line-height: 50px; background: #ffcfff; }
+		#resultsDiv { border: 1px solid black; margin: 5px; width: 300px; text-align: center; background: #ffffcf; height: 50px; }
+	</style>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+</head>
+
+<body>
+	<form id="myForm">		
+		<label for="myInput">Enter your message: </label>
+		<input id="myInput" placeholder="Enter a msg."></input><br/>
+		<input id="sub" type="submit" value="Send" />
+	</form>
+	<div id="resultsDiv"></div>
+	
+		<script type="text/javascript">
+		
+	
+		var options = {
+			url : "msg2.dat",
+			dataType: "html",
+			success: function(results){
+                $("#resultsDiv").text(results);
+            }
+		};
+		
+		$("#sub").click(function(evt){
+			evt.preventDefault();
+			var iVal = $("#myInput").val();  
+			options.url = iVal ;
+			$.ajax(options);
+			return false;
+		});
+	
+	
+	
+
+	
+	
+	</script>
+</body>
+</html>

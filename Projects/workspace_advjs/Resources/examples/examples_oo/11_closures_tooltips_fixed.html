@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Closures Example 2</title>
+		<style type="text/css">	
+			ul#items {
+				width: 200px;
+				font: normal 26px "Arial";
+				color: #3333ff;
+				list-style: none;
+			}
+			
+			ul#items li {
+				background: #f0f0fc; margin: 5px 0 5px 0;
+			}
+			
+			#tooltipDiv { 	
+				display: none; 
+				width: 200px; 
+				background: #ffffcc; 
+				border: 1px solid #3333ff; 
+				position: absolute;
+			}
+		</style>
+	
+		<script type="text/javascript">
+	
+			var toolTipData = [
+				{'id' : 'News', 'tip' : 'Visit the news page for the latest and greatest headlines'},
+				{'id' : 'Favorites', 'tip' : 'View your saved favorites'},
+				{'id' : 'Search', 'tip' : 'Perform a search using the whopper search engine'}
+			];
+	
+			function showTooltip(tip) {
+				
+				return function(evt){
+					evt = evt || event;
+					var x = 0, y = 0;
+					if (evt.pageX) {
+						x = evt.pageX;
+						y = evt.pageY;
+					}
+					else 
+						if (evt.clientX) {
+							x = evt.clientX + document.body.scrollLeft;
+							y = evt.clientY + document.body.scrollTop;
+						}
+					
+					// show the tooltip
+					var tooltipDiv = document.getElementById('tooltipDiv');
+					tooltipDiv.innerHTML = tip;
+					tooltipDiv.style.left = x + 10 + 'px';
+					tooltipDiv.style.top = y + 10 + 'px';
+					tooltipDiv.style.display = 'block';
+				};
+			}
+	
+			window.onload = function() { 
+				var tipDiv = document.getElementById('tooltipDiv');
+				
+				for (var i in toolTipData) {
+					var tip = toolTipData[i]['tip'];
+					var li = document.getElementById(toolTipData[i]['id'])
+					li.onmouseout=function(){tipDiv.style.display='none';}
+					li.onmousemove=showTooltip(tip);
+				} 
+			}
+				
+		</script>
+	</head>
+	<body>
+		<ul id="items">
+			<li id="News">News</li>
+			<li id="Favorites">Favorites</li>
+			<li id="Search">Search</li>
+		</ul>
+		<div id="tooltipDiv"></div>
+  	</body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Employee Info Page</title>
+		<script src="jquery.js" type="text/javascript"></script>
+		<script src="rest.js" type="text/javascript"></script>
+		
+		<style type="text/css">
+			
+			
+			
+			header, nav, section, aside, footer { display: block; }
+			
+			#wrapper { 
+				width: 80%; 
+				margin: 10px auto;
+				min-width: 800px;
+				border: 1px solid #00f;
+			}
+			
+			header, footer { 
+				height: 150px; 
+				background-color: #ffff77;
+			}
+			
+			#menu { background-color: hsl(120, 50%, 20%);  }
+			
+			
+			
+		</style>
+		
+	</head>
+	<body>
+	
+		<div id="wrapper">
+			<header></header>
+			<nav id="menu"></nav>
+			<section id="main"></section>
+			<aside id="secondary"></aside>
+			<footer></footer>
+		</div>
+	
+		<div id="empSearch">
+			<form id="empSearchForm">
+				<label for="empId">Employee ID:</label>
+				<input type="text" id="empId">
+				<input type="submit" value="Find By XML">
+				<input type="button" value="Find By Json">
+			</form>
+		</div>
+		<div id="results"></div>
+		
+		<script type="text/javascript">
+			$(function(){
+				
+				$('#empSearchForm').submit(function(evt){
+					evt.preventDefault();
+					var empId = $('#empId').val(),
+					    url = '/advjs/rest/employee/' + empId;
+					RestClient.retrieveXml(url, "GET", handleXmlRequest);
+				});
+				
+				function handleXmlRequest(results){
+					var firstName = $(results).find('firstName').text(),
+					    lastName = $(results).find('lastName').text(),
+					    salary = $(results).find('salary').text();
+					
+					$('#results').append('<p>' + firstName + ' ' + lastName + ' (' + salary + ') </p>');
+				}
+				
+				$('#empSearchForm input[type="button"]').click(function(evt){
+					evt.preventDefault();
+					var empId = $('#empId').val(),
+					    url = '/advjs/rest/employee/json/' + empId;
+					RestClient.retrieveJson(url, "GET", handleJsonRequest);
+				});
+				
+				function handleJsonRequest(results){
+					var firstName = results.emp.firstName,
+					    lastName  = results.emp.lastName,
+					    salary    = results.emp.salary;
+					
+					$('#results').append('<p>' + firstName + ' ' + lastName + ' (' + salary + ') </p>');
+				}
+				
+			});
+		
+		</script>
+		
+	</body>
+</html>

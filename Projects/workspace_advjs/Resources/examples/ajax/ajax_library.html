@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			#clickDiv { cursor: pointer; border: 1px solid black; margin: 5px; width: 300px; height: 50px; text-align: center; line-height: 50px; background: #ffcfff; }
+			#resultsDiv { border: 1px solid black; margin: 5px; width: 300px; height: 50px; text-align: center; background: #ffffcf; height: 50px; }
+		</style>
+		<script type="text/javascript" src="XHRequest.js"></script>
+	</head>
+	
+	<body>
+		<div id="clickDiv">Click me to make an AJAX request</div>
+		<div id="resultsDiv"></div>
+		
+		<script type="text/javascript">
+			
+			document.getElementById('clickDiv').onclick = function(){
+			
+				var xhrConfig = {
+					url: 'ajaxdemo.txt',
+					success: function(xhr){
+						document.getElementById('resultsDiv').innerHTML = xhr.responseText;
+					}
+				}
+				
+				XHRequest.createRequest(xhrConfig);
+			}
+			
+		</script>
+	</body>
+</html>

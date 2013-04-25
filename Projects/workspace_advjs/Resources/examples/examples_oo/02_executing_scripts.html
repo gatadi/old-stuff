@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Execution Order</title>
+
+	<script type="text/javascript">
+		
+		document.write("<h1>Hello World!</h1>");
+		
+	</script>
+</head>
+
+<body>
+	<div>
+		<p id="msg">Welcome to example 2!</p>
+	</div>
+	
+	<script type="text/javascript">
+		
+		alert(document.getElementById('msg').innerHTML);
+		
+	</script>
+	
+</body>
+</html>

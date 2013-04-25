@@ -1,0 +1,13 @@
+echo off
+
+rem p4 integ -o -n //depot/Patch/2008.21/%1%/... //depot/Snapfish/Releases/2008.21/...
+
+rem p4 integ -o -n //depot/Snapfish/Projects/ProductionPatch/... //depot/Snapfish/Releases/2008.22/...
+
+rem p4 changes -s submitted //depot/Patch/ProductionPatch/SNF0019141/...
+rem p4 describe -s 235813
+
+p4 integ -o -n //depot/Patch/ProductionPatch/%1%/... //depot/Snapfish/Projects/ProductionPatch/...
+
+
+rem p4 integ -o -n //depot/Snapfish/Projects/ProductionPatch/javasrc/com/snapfish/user/servlet/CLiteAutoReg.java //depot/Snapfish/Releases/2008.22/javasrc/com/snapfish/user/servlet/CLiteAutoReg.java

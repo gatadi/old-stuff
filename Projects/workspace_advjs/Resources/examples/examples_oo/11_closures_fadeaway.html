@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Closures - Fade Away Example</title>
+	<style>
+		div { width: 100px; height: 100px; background: black; }
+	</style>
+
+	<script type="text/javascript">
+
+		function fadeAway() {
+		    var element = this;
+		    var level = 1;
+
+		    function step () {
+		        var h = level.toString(16);
+		        element.style.backgroundColor = '#' + h + h + h + h + h + h;
+		        if (level < 15) {
+		            level += 1;
+		            setTimeout(step, 100);
+		        }
+		    }
+		    
+		    step();
+		}
+		
+		window.onload = function() { 
+			document.getElementById("myDiv").onclick = fadeAway;
+		};
+		
+		
+		
+	</script>
+  </head>
+  <body>
+  
+  <div id="myDiv"></div>
+  
+  </body>
+</html>

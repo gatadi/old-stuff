@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>jQuery Mixin-style Inheritance</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+	
+		function Person(name, age) {
+		  this.age  = age;
+		  this.name = name;
+		}
+		
+		Person.prototype.display = function() { alert(this.name + " " + this.age); } 
+	
+		
+		function Employee(name, age, salary) {
+		   Person.call(this, name, age);
+		   this.salary = salary;
+		}
+		
+		$.extend(Employee.prototype, Person.prototype, {showSalary: function(){alert(this.salary);} } );
+		
+		var p1 = new Person("Bob", 35);
+		var e1 = new Employee("Sally", 33, 50000.00);
+		
+		p1.display();
+		e1.display();
+		e1.showSalary();
+
+	</script>
+  </head>
+  <body>
+  
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

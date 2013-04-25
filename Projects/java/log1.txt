@@ -1,0 +1,3325 @@
+Usage : java CNewProxy serverPort proxyHost proxyPort
+Listening on : 3128
+GET http://www.snapfish.com/snapfish/welcome HTTP/1.0
+
+Accept: application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, application/x-shockwave-flash, */*
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+Cookie: SF_SESSION_COOKIE.snapfish_us.prd=heyGbTbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj.fancsvfu.pbz%2Ffancsvfu%2Ffgber%21%25AIC_FRC%5E%21vachgheyvq%21%25RDHNYF%5E%213296%21%25AIC_FRC%5E%21jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21erserfuhfre%21%25RDHNYF%5E%21gehr%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000%21%25AIC_FRC%5E%21heyGlcr%21%25RDHNYF%5E%21ABA-FJVSG; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; JSESSIONID=D1E8FE3DFDFAF803D4656239E2CAB0BF; BIGipServer=3607704074.16415.000; SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526ot%253DAREA%2526oi%253D58; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919310|session#1273709478445-731792#1273711570|check#true#1273709770; BIGipServersf3-scw-pod2=3607704074.16415.0000; SF_SESSION_COOKIE.snapfish_us.prd=heyGbTbonpx!%25RDHNYF%5E!uggc%3A%2F%2Fjjj.fancsvfu.pbz%2Ffancsvfu%2Ffgber!%25AIC_FRC%5E!vachgheyvq!%25RDHNYF%5E!3296!%25AIC_FRC%5E!jrofvgrBvq!%25RDHNYF%5E!1000000!%25AIC_FRC%5E!pboenaqBvq!%25RDHNYF%5E!1000!%25AIC_FRC%5E!heyGlcr!%25RDHNYF%5E!ABA-FJVSG
+Host: www.snapfish.com
+
+HTTP/1.1 200 OK
+Date: Thu, 13 May 2010 00:15:58 GMT
+Server: Apache-Coyote/1.1
+Expires: 0
+Pragma: no-cache
+Cache-Control: no-cache,must-revalidate,proxy-revalidate
+P3P: CP="ALL DSP COR CONi OUR BUS PHY ONL PUR DEM STA"
+Content-Type: text/html;charset=UTF-8
+Vary: Accept-Encoding
+Connection: close
+Set-Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; Domain=snapfish.com; Path=/
+Set-Cookie: SF_CisForCookie=SF_ThatIsGoodEnoughForMe!; Domain=snapfish.com; Path=/; Secure
+Set-Cookie: cms.snapfish_us.prd=""; Domain=snapfish.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/snapfish
+Set-Cookie: __sf__lsc__.snapfish_us.prd=""; Domain=snapfish.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/snapfish
+Set-Cookie: afc.snapfish_us.prd=""; Domain=snapfish.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/snapfish
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<link rel="stylesheet" type="text/css" href="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/styles/snapfish/snapfish_us/global.css" />
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<link rel="stylesheet" type="text/css" href="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/styles/snapfish/snapfish_us/global.css" />
+<html>
+<head>
+GET http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/styles/snapfish/snapfish_us/global.css HTTP/1.0
+
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/welcome
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:06:43 GMT
+If-None-Match: "6459-d3c576c0"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526ot%253DAREA%2526oi%253D58; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919310|session#1273709478445-731792#1273711570|check#true#1273709770
+
+<script type="text/javascript" src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/ClientLibraries/InfoscopicWeb/core/InfoscopicWeb.js" language="JavaScript"></script><link href="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/ClientLibraries/InfoscopicWeb/dhtml/Dialog/Dialog.css" rel="stylesheet" type="text/css"/><script type="text/javascript" src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/ClientLibraries/InfoscopicWeb/dhtml/Dialog/Dialog.js" language="JavaScript"></script><link href="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/styles/snapfish/inline_popup.css" rel="stylesheet" type="text/css"/><script type="text/javascript" src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/ClientLibraries/Console/Ticker/ticker.js" language="JavaScript"></script><link href="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/styles/snapfish/DynamicTicker.css" rel="stylesheet" type="text/css"/><title>Digital Photo Printing, Free Online Photo Albums & Digital Photo Sharing - Snapfish:</title>
+    <meta name="keywords" content="photo printing, digital photo printing, online digital photo, printin digital photos,  online photo albums, photo albums, photo print, photo sharing, snapfish, digital photo, digital photos, online photos, online photo, share pictures, digital photo album, free online photo album, digital photo sharing, sharing photos online, online photo sharing" />
+    <meta name="description" content="Your free Snapfish account gets you online digital photo printing, free online photo albums, free digital photo sharing services, and fun photo gifts." />
+    <meta name="google-site-verification" content="9vf60nvn7rTNt5CD5VU-UTHjTfuJ-LN7-aqLmR4eRuU" />
+<SCRIPT LANGUAGE="JAVASCRIPT">
+var __imageHost = 'http://static.snapfish.com';
+</SCRIPT>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="imagetoolbar" content="no" />
+<script language="javascript">
+
+    window.cookiedomain = "snapfish.com" ;
+
+    window.cookiesuffix = ".snapfish_us.prd" ;
+    window.cookienewpath = "/snapfish";
+	
+</script>
+
+<SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/javascript/util/mbox.js"></SCRIPT><LINK REL="SHORTCUT ICON" HREF="/default/icons/snapfish/snapfish.ico">
+<LINK REL="ICON" HREF="/default/icons/snapfish/snapfish.ico" />
+<script type="text/javascript">
+document.write('<SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=6c9ce738d1445d282bfcfa446ca66e21/default/javascript/util/common.js"><\/SCRIPT>');</script>
+
+
+<SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=6540d54f40a826482f1c92bbbaaa3186/default/javascript/user.js"></SCRIPT><SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=6c9ce738d1445d282bfcfa446ca66e21/default/javascript/util/common.js"></SCRIPT><SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=8109821fa6b9e8ee9f066bb23d625cf9/default/javascript/core/CLinkManager.js"></SCRIPT><SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/javascript/flex/flashdetect.js"></SCRIPT><style type="text/css">
+#gray-links a {color: #666666;}
+</style>
+
+<script language="javascript">
+
+  function gotoComcast()
+  {
+    window.open("https://acctmgt.comcast.net/Comcast/AcctMgt/forgotpwd.cmd");
+  }
+
+  function setImageIfNoFlash()
+  {
+    var hasProductInstall = detectFlashVersion(6,0,65); //check for the Flash Player (6.0r65) that has the ability to start playerProductInstall
+    if( !hasProductInstall )
+    {
+      document.getElementById("flashDiv").style.display = "none";
+      document.getElementById("imageDiv").style.display = "block";
+    }
+  }
+
+  function setTabArea(index)
+  {
+    
+        if(index < 5)
+        {
+          var tabNamesLength = 5;
+          for(var i=0; i<tabNamesLength; i++)
+          {
+            if(document.getElementById("tabMsgArea"+i) != null && document.getElementById("tabMsgArea"+i) != undefined
+                && document.getElementById("tabHeader"+i) != null && document.getElementById("tabHeader"+i) != undefined)
+            {
+              if(i == index)
+              {
+                document.getElementById("tabMsgArea"+i).style.display="block";
+                document.getElementById("tabHeader"+i).className="selected";
+              }
+              else
+              {
+                document.getElementById("tabMsgArea"+i).style.display="none";
+                document.getElementById("tabHeader"+i).className="";
+              }
+            }
+          }
+        }
+    
+  }
+
+</script>
+<link rel="stylesheet" type="text/css" href="http://static.snapfish.com/MD5=912e6aa68f87483fdaaf0ad2e80e76bb/default/styles/snapfish/snapfish_us/loggedout_home.css" />
+</head>
+
+<body bgcolor="#3399cc" onload="setImageIfNoFlash()" link="#0033cc" aLink="#ffcc00" vLink="#3399cc" text="#000000">
+<script language="Javascript">
+var sAccount = "hpsnapfishprod";
+var emiOmnAccount = "encoresfdev";
+
+emiOmnAccount = "encoresfprod";
+</script>
+<span style="display:none"><script src="http://static.snapfish.com/MD5=9f44b6c47645023430356b82de53411f/default/javascript/omniture/s_code.js"></script></span>
+<span style="display:none">
+<!-- SiteCatalyst code version: H.3.
+Copyright 1997-2005 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript"><!--
+var clickMapTimeOut = 200;
+
+s.currencyCode = "USD";
+
+s.pageNamePrefix = "US:en:" ;
+var pagePrefix = "US:en:" ;
+
+s.server = "sf3-fc5";
+
+    s.eVar14 = "no";
+  
+    s.pageName = s.pageNamePrefix+"Logged out: Home: New: B";    
+  
+    s.prop6 = "no";
+
+    s.prop5 = "no";
+
+  s.prop7 = "snapfish_us";
+  s.eVar7 = "snapfish_us";
+
+  s.prop9 = "no";
+
+s.prop10 = "snapfish";
+s.eVar11 = "FDR";
+s.eVar13 = "snapfish";
+
+  s.prop11 = "no";
+
+// latest cookie campaign
+
+
+if(((typeof doFlashTracking) != "undefined")
+    && (doFlashTracking == true)
+    && ((typeof theFlashVersion) != "undefined")
+    && (theFlashVersion != "")){
+  //flash detection done in album.jsp for Snapfish US and Snapfish UK
+  s.prop16 = theFlashVersion;
+  //alert("FlashVersion installed="+theFlashVersion);
+}
+//--></script>
+</span>
+
+<!-- Start Global mbox include -->
+<script type="text/javascript">
+    function setCampaignRecipeInfo(tntRecipe, tntCampaign)
+    {
+      var recipe = tntRecipe;
+      var campaign = tntCampaign;
+      if(typeof(s)!=undefined && s != null)
+      {
+        try
+        {
+          s.linkTrackVars='eVar24,eVar25';
+          /* Page Version */
+          /* TT Recipe */
+          if(typeof(recipe) != "undefined")
+          {
+            s.eVar24=recipe;
+          }
+          /* TT Iteration */
+          if(typeof(campaign) != "undefined")
+          {
+            s.eVar25=campaign;
+          }
+          s.tl(this,'o','link ID');
+        }
+        catch(e)
+        {
+        }
+      }
+    }    
+  </script>  
+  <!-- End Global mbox include -->
+
+<!-- Pixel Tracking code Generation starts -->
+ <IMG src="http://leadback.advertising.com/adcedge/lb?site=695501&srvc=1&betr=snapfh_cs=1&betq=5299=385254" WIDTH="1" HEIGHT="1" BORDER="0" STYLE="display:none"><IMG src="http://media.fastclick.net/w/tre?ad_id=18637&evt=9937&cat1=10006&cat2=10007" WIDTH="1" HEIGHT="1" BORDER="0" STYLE="display:none"><!-- Pixel Tracking code Generation ends -->
+<!-- Pixel Tracking related includes -->
+  <div class='headercontainer'>
+<div>
+<div>
+    <script language="javascript">
+  function trackNav(sObj, linkName)
+  {
+      
+        setTimeout(function(){trackOmnitureNTnT(sObj, linkName);}, 2000);
+      
+  }
+
+  function trackOmnitureNTnT(sObj, linkName)
+  {
+    s_objectID = linkName;
+      s.linkTrackVars='eVar26';
+    s.eVar26=s_objectID + "_" + s.pageName;
+    s.tl(sObj,'o',linkName);
+  }
+</script>
+<map name="tabs">
+<area id="homeTabId" shape="rect" coords="5,0,88,21" onClick="javascript:trackNav(this,'tab_home');"  href ="http://www.snapfish.com/snapfish/welcome"  alt = " home " >
+<area id="photoTabId" shape="rect" coords="90,0,170,21" onClick="javascript:trackNav(this,'tab_photos');"  href ="http://www.snapfish.com/snapfish/photolibrary"  alt = " photos " >
+<area id="storeTabId" shape="rect" coords="174,0,254,21" onClick="javascript:trackNav(this,'tab_store');"  href ="http://www.snapfish.com/snapfish/store"  alt = " store " >
+<area id="sharingTabId" shape="rect" coords="258,0,338,21" onClick="javascript:trackNav(this,'tab_tips');"  href ="http://www.snapfish.com/snapfish/photosharing"  alt = " sharing " >
+</map>
+<style type="text/css">
+a.header:link {color:#ffffff; text-decoration: none;}
+a.header:visited { text-decoration: none;}
+</style>
+<!--begin header include-->
+<div class="headercontainer">
+	<div id="layersDiv" name="layersDiv"></div>
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<link rel="stylesheet" type="text/css" href="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/styles/snapfish/snapfish_us/global.css" />
+<SCRIPT LANGUAGE="JAVASCRIPT">
+var __imageHost = 'http://static.snapfish.com';
+</SCRIPT>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="imagetoolbar" content="no" />
+<script language="javascript">
+
+    window.cookiedomain = "snapfish.com" ;
+
+    window.cookiesuffix = ".snapfish_us.prd" ;
+    window.cookienewpath = "/snapfish";
+	
+</script>
+
+<SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/javascript/util/mbox.js"></SCRIPT><LINK REL="SHORTCUT ICON" HREF="/default/icons/snapfish/snapfish.ico">
+<LINK REL="ICON" HREF="/default/icons/snapfish/snapfish.ico" />
+<script type="text/javascript">
+document.write('<SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=6c9ce738d1445d282bfcfa446ca66e21/default/javascript/util/common.js"><\/SCRIPT>');</script>
+
+
+<link rel="stylesheet" type="text/css" href="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/styles/snapfish/snapfish_us/util/layer.css" />
+<SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=6309c6dd2ddf6fb78a4cbf23761aecd4/default/javascript/util/layer.js"></SCRIPT><SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=8109821fa6b9e8ee9f066bb23d625cf9/default/javascript/core/CLinkManager.js"></SCRIPT><SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=9f5d4958d2b8229fc024a74de45028e5/default/javascript/core/CCookie.js"></SCRIPT><script language="javascript">
+
+
+var inputURL = "/snapfish/welcome";
+var cobrand = "snapfish";
+
+  function openRegOrLogin(url, clickLocation, params, showLayer)
+  {
+    var slCookie = CMultiNVPairCookie.getInstance("SF_SESSION_COOKIE");
+     if(slCookie.getValue("authcode") != null){
+        document.location.href = url;
+        return;
+      }
+    var hasParams = (arguments.length > 2 ? true : false);
+    var isRegLoginModule = "true";
+    if(arguments.length > 3)
+    {
+      isRegLoginModule = arguments[3];
+    }
+    var currentLM= CLinkManager.getInstance(url);
+    if(isRegLoginModule == "true")
+    {
+      currentLM.setURLParameter("module","true");
+      
+      if(url.indexOf('login',0) != -1)
+      {
+        if(hasParams)
+        {
+          params.type = 'iframe';
+          params.src = fixUrl(currentLM.getURL());
+          CLayer.openLayer('regLoginLayer', params);
+        }
+        else
+          CLayer.openLayer('regLoginLayer',{type:'iframe',src:fixUrl(currentLM.getURL()),width:'376',height:'285',isMovable:'true'});
+      }
+      else if(url.indexOf('registration',0) != -1)
+      {
+        
+        if(hasParams)
+        {
+          params.type = 'iframe';
+          params.src = fixUrl(currentLM.getURL());
+          CLayer.openLayer('regLoginLayer', params);
+        }
+        else
+        {
+        
+          CLayer.openLayer('regLoginLayer',{type:'iframe',src:fixUrl(currentLM.getURL()), width:'377',height:'390',isMovable:'true'});
+        
+        }
+      }
+      else
+      {
+           //opens layer in create product flow
+        
+          if(hasParams)
+          {
+            params.type = 'iframe';
+            params.src = fixUrl(currentLM.getURL());
+          CLayer.openLayer('regLoginLayer', params);
+          }
+          else
+            CLayer.openLayer('regLoginLayer',{type:'iframe',src:fixUrl(currentLM.getURL()),width:'376',height:'450',isMovable:'true'});
+        
+      }
+    }//end of if(isRegLoginModule == "true")
+    else
+    {
+      if(cobrand=="aarpmember"){
+        var targetURL = url+"/pns"+inputURL;
+        document.location.href=targetURL;
+        }else{
+      document.location.href=url;
+      }
+    }
+  }
+  
+  function fixUrl(url)
+  {
+    url = url.replace(/\/\//g, "/");
+    if(url.indexOf('://') == -1 && url.indexOf(':/') != -1)
+      url = url.replace(/:\//g, "://");
+  	return url;
+  }
+  
+  function onTileClick(url)
+    {
+    	openRegOrLogin(url);
+    }
+</script>
+<table  width="100%" bgcolor="#66cc33" cellPadding="0" cellSpacing="0" border="0">
+	  <tr>
+	    <td width="187" rowspan="2"><a href="http://www.snapfish.com/snapfish/welcome"><img src="http://static.snapfish.com/MD5=cce2be7de577b01acfb0077b7d09733d/default/images/header/logo-snappy.gif" width="214" height="58" border="0" alt=" snapfish by HP " /></a></td>
+	    <td width="380"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/header/logo-green.gif" border="0" alt=" snapfish by HP " /></td>
+	   <td align="right" rowspan="2">    
+	      <table cellPadding="0" cellSpacing="0" border="0">
+	        <tr>
+	          <td align="right"><font color="#ffffff">
+	           <a onClick="javascript:trackNav(this,'header_signup');" href="javascript:openRegOrLogin('http://www.snapfish.com/snapfish/registration','header_signup');"><font color="#ffffff">sign up!</font></a>
+						 
+	           &nbsp;|&nbsp;
+	           <a onClick="javascript:trackNav(this,'header_login');" href="javascript:openRegOrLogin('http://www.snapfish.com/snapfish/login','header_login')"><font color="#ffffff">log in</font></a>
+		        	   
+	           &nbsp;|&nbsp;
+	          <a onClick="javascript:trackNav(this,'header_help');" href="http://support.snapfish.com/cgi-bin/snapfish.cfg/php/xml_api/cci/answer_redirect.php?p_answer_label=helpindex&brand=3&brandHost=www2.snapfish.com"><font color="#ffffff">help</font></a>
+	           </td>
+	        </tr>
+	        <tr><td height="6"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/spacer.gif" width="1" height="1" border="0" alt="" /></td></tr>
+	      </table>
+	      
+	    </td>
+	    <td width="17" align="right" rowspan="2"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/header/header-right.gif" width="17" height="58" /></td>
+	  </tr>
+	  <tr><td><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/header/plain_us/tabs-home.gif" width="354" height="21" border="0" usemap="#tabs" /></td></tr>
+	</table>
+	</div>
+</div>
+  </div>
+
+  <!-- Main body text goes here -->
+
+  <div align="center" style="background-color:#fff;">
+    </div>
+
+  <!-- Main body text starts here -->
+	<div class='subcontainer'>
+    <!-- flasharea starts -->
+    <div>
+     <div class="flasharea">
+          <div class="swf" id="flashDiv" name="flashDiv"  style="display:block;">
+            <object width="746" height="250" data="http://static.snapfish.com/MD5=1cff57bab81694fb03e0622e40059011/default/images/homeredesign/snapfish_us/main_theme_us_2.swf" type="application/x-shockwave-flash">
+                <param name="allowScriptAccess" value="always" />
+                <param name="allowFullScreen" value="false" />
+                <param name="movie" value="http://static.snapfish.com/MD5=1cff57bab81694fb03e0622e40059011/default/images/homeredesign/snapfish_us/main_theme_us_2.swf" />
+                <param name="quality" value="high" />
+                <param name="wmode" value="transparent" />
+                <param name="FlashVars" value="" />
+                <embed src="http://static.snapfish.com/MD5=1cff57bab81694fb03e0622e40059011/default/images/homeredesign/snapfish_us/main_theme_us_2.swf" wmode="transparent" quality="high" width="746" height="250" name="cards_header" align="middle" allowScriptAccess="always" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" FlashVars=""  />
+            </object>
+         </div>
+         <div id="imageDiv" name="imageDiv" style="display:none;" class="swfgraphic">
+         <img src="http://static.snapfish.com/MD5=492b4b64894ad4ce84836ad312c4f8c0/default/images/homeredesign/snapfish_us/alt_main_theme.jpg" width="746" height="250" />
+         </div>
+         <div class="whyjoinbg"><img border="0" src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/spacer.gif" alt="" /></div>
+         <div class="whyjoin">
+          <div>
+                <img border="0" src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/homeredesign/why_join.gif" />
+                </div>
+           <ul>
+            <li><b>20 FREE 4x6 prints</b> with first upload</li>
+            <li>Unlimited photo storage</li>
+            <li>Mail-order & pick-up options available</li></ul>
+       <div><a onClick="trackNav(this,'button_sign up');" href="javascript:openRegOrLogin('http://www.snapfish.com/snapfish/registration', 'button_sign up')"><img border="0" src="http://static.snapfish.com/MD5=96276b6515ad1edc8919000e4939233b/default/images/homeredesign/button_sign_up.gif" title=" sign up " /></a></div>
+           <div class="smalltxt">It only takes 30 seconds!</div>
+          </div>
+         </div>
+        </div>
+
+    <!-- flasharea end -->
+    <div>
+     <div class="adspot1">
+                <div style="display:none;" id="_auto96233"></div><script type="text/javascript" language="JavaScript">Component.addOnLoadHandler(function() {
+var dialog = new Dialog({'dialogClass':'snapfish-dialog','title':'','reloadSrcOnShow':false,'contentElementId':'_auto96233','deferredLoading':true});Component.addComponent('CM:US:en:homepage-phase2-thin-msg1', dialog);dialog.addButton({'action':'close','label':''});}
+);</script><div style="text-align:left;"><a href="http://www.snapfish.com/snapfish/storecards2/upc=AddressLabel"><img width="373" height="40" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dw%3Dwg%7Bvdfbcgfugvuocegoub283333a%3A9%3B%3A339%3D30jki" border="0"></a></div></div>
+     <div class="adspot2">
+                <div style="display:none;" id="_auto96234"></div><script type="text/javascript" language="JavaScript">Component.addOnLoadHandler(function() {
+var dialog = new Dialog({'dialogClass':'snapfish-dialog','title':'','reloadSrcOnShow':false,'contentElementId':'_auto96234','deferredLoading':true});Component.addComponent('CM:US:en:homepage-phase2-thin-msg2', dialog);dialog.addButton({'action':'close','label':''});}
+);</script><map name="Map3" id="Map3">
+  <area shape="rect" coords="0,5,368,34" href="/snapfish/snapfish/fe/l=en_US/p/store/cards/BrowseStyle?upc=5x7+folded+cards+rev2&amp;category=fathersday" />
+</map><div style="text-align:left;"><img width="373" height="40" usemap="#Map3" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dw%3Dwg%7Bvdfbogc%7Cphyfcufggvkjpva374242b9%3A%3A%3C248%3E21ilh" border="0"></div></div>
+        </div>
+
+    <div>
+    <div class="bestsellers">
+      <div class="tabmenu">
+       <ul>
+        <li id="tabHeader0" name="tabHeader0" class="selected"><a href="javascript:void(0);" onclick="javascript:setTabArea('0');trackNav(this,'tab_create gifts');"><div class="tab-width"><span>create gifts</span></div></a></li>
+        <li id="tabHeader1" name="tabHeader1" class=""><a href="javascript:void(0);" onclick="javascript:setTabArea('1');trackNav(this,'tab_order prints');"><div class="tab-width"><span>order prints</span></div></a></li>
+        <li id="tabHeader2" name="tabHeader2" class=""><a href="javascript:void(0);" onclick="javascript:setTabArea('2');trackNav(this,'tab_share');"><div class="tab-width"><span>share</span></div></a></li>
+        <li id="tabHeader3" name="tabHeader3" class=""><a href="javascript:void(0);" onclick="javascript:setTabArea('3');trackNav(this,'tab_view & edit');"><div class="tab-width"><span>view & edit</span></div></a></li>
+        <li id="tabHeader4" name="tabHeader4" class=""><a href="javascript:void(0);" onclick="javascript:setTabArea('4');trackNav(this,'tab_upload');"><div class="tab-width"><span>upload</span></div></a></li>
+        </ul>
+      </div>
+       <div class="tabcontent">
+        <div id="tabMsgArea0" name="tabMsgArea0" style="display:block;">
+                <div style="display:none;" id="_auto96235"></div><script type="text/javascript" language="JavaScript">Component.addOnLoadHandler(function() {
+var dialog = new Dialog({'dialogClass':'snapfish-dialog','title':'','reloadSrcOnShow':false,'contentElementId':'_auto96235','deferredLoading':true});Component.addComponent('CM:US:en:homepage-phase2-tab1', dialog);dialog.addButton({'action':'close','label':''});}
+);</script><div style="text-align:left;"><a href="http://www.snapfish.com/snapfish/storepage/storePageId=storegraduation"><img width="497" height="198" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dq%3DQT34364aZPXaDfb9%3A6%3B248%3E21lsi" border="0"></a></div></div>
+        <div id="tabMsgArea1" name="tabMsgArea1" style="display:none;">
+                <div style="display:none;" id="_auto96236"></div><script type="text/javascript" language="JavaScript">Component.addOnLoadHandler(function() {
+var dialog = new Dialog({'dialogClass':'snapfish-dialog','title':'','reloadSrcOnShow':false,'contentElementId':'_auto96236','deferredLoading':true});Component.addComponent('CM:US:en:homepage-phase2-tab2', dialog);dialog.addButton({'action':'close','label':''});}
+);</script><map name="orderPrints">
+      <area shape=Rect Coords=170,131,239,150 title=" learn more " href="/snapfish/storeprints">
+      <area shape=Rect Coords=379,145,470,170 title=" get started " href="javascript:openRegOrLogin('/registration/pns/storeprints');">
+</map><div style="text-align:left;"><img width="480" height="190" usemap="#orderPrints" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dk%3Dkqpgbr5awceubrukqvva4%3A53339%3D30mrj" border="0" alt="print photos with snapfish"></div></div>
+        <div id="tabMsgArea2" name="tabMsgArea2" style="display:none;">
+                <div style="display:none;" id="_auto96237"></div><script type="text/javascript" language="JavaScript">Component.addOnLoadHandler(function() {
+var dialog = new Dialog({'dialogClass':'snapfish-dialog','title':'','reloadSrcOnShow':false,'contentElementId':'_auto96237','deferredLoading':true});Component.addComponent('CM:US:en:homepage-phase2-tab3', dialog);dialog.addButton({'action':'close','label':''});}
+);</script><map name="sharePhotos">
+      <area shape=Rect Coords=200,88,272,102 title=" group room " href="/snapfish/grouprooms">
+      <area shape=Rect Coords=219,109,284,125 title=" Snapshow " href="/snapfish/snapshowinfo">
+      <area shape=Rect Coords=13,132,79,149 title=" learn more " href="/snapfish/info108">
+      <area shape=Rect Coords=379,145,470,170 title=" get started " href="javascript:openRegOrLogin('/registration/pns/photolibrary');">
+</map><div style="text-align:left;"><img width="480" height="190" usemap="#sharePhotos" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dk%3Dkqpgbr5awceubukcugb3%3B45248%3E21lsi" border="0" alt="share photos on snapfish"></div></div>
+        <div id="tabMsgArea3" name="tabMsgArea3" style="display:none;">
+                        <div style="display:none;" id="_auto96238"></div><script type="text/javascript" language="JavaScript">Component.addOnLoadHandler(function() {
+var dialog = new Dialog({'dialogClass':'snapfish-dialog','title':'','reloadSrcOnShow':false,'contentElementId':'_auto96238','deferredLoading':true});Component.addComponent('CM:US:en:homepage-phase2-tab4', dialog);dialog.addButton({'action':'close','label':''});}
+);</script><map name="viewEdit">
+      <area shape=Rect Coords=12,131,77,148 title=" learn more " href="/snapfish/editphotos">
+      <area shape=Rect Coords=379,145,470,170 title=" get started " href="javascript:openRegOrLogin('/registration/pns/photolibrary');">
+    </map><div style="text-align:left;"><img width="480" height="190" usemap="#viewEdit" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dk%3Dkqpgbr5awceubxlgzggkwa4%3A55339%3D30mrj" border="0" alt="view &amp; edit photos with snapfish"></div></div>
+        <div id="tabMsgArea4" name="tabMsgArea4" style="display:none;">
+                        <div style="display:none;" id="_auto96239"></div><script type="text/javascript" language="JavaScript">Component.addOnLoadHandler(function() {
+var dialog = new Dialog({'dialogClass':'snapfish-dialog','title':'','reloadSrcOnShow':false,'contentElementId':'_auto96239','deferredLoading':true});Component.addComponent('CM:US:en:homepage-phase2-tab5', dialog);dialog.addButton({'action':'close','label':''});}
+);</script><map name="uploadPhotos">
+      <area shape=Rect Coords=383,66,467,82 title=" mobile phone " href="/snapfish/infosnapfishmobile">
+      <area shape=Rect Coords=172,114,238,131 title=" learn more " href="/snapfish/uploadphotos">
+      <area shape=Rect Coords=379,145,470,170 title=" get started " href="javascript:openRegOrLogin('/registration/pns/selectalbumupload');">
+    </map><div style="text-align:left;"><img width="480" height="190" usemap="#uploadPhotos" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dk%3Dkqpgbr5awceubwsnrcga4%3A56339%3D30mrj" border="0" alt="upload photos to snapfish"></div></div>
+       </div>
+      </div>
+
+     <div class="store">
+      <div class="our-store">
+        <div class="text-left"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/homeredesign/left_corner.gif" width="9" height="21"  /></div>
+        <div class="grey-background">
+          <div class="browse">shop our store </div>
+        </div>
+        <div class="text-right"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/homeredesign/right_corner.gif" width="9" height="21" /></div>
+      </div>
+      <div class="store-tabcontent">
+        <ul class="storelinks">
+		<li><a onClick="javascript:trackNav(this,'label_cards');" href="http://www.snapfish.com/snapfish/storecards2">cards</a>
+          <li><a onClick="javascript:trackNav(this,'label_photobooks');" href="http://www.snapfish.com/snapfish/storenewphotobooks">photo books</a>
+
+     <li>
+<a onClick="javascript:trackNav(this,'label_calendars');" href="http://www.snapfish.com/snapfish/storecalendars">calendars</a>
+ </li>
+          <li><a onClick="javascript:trackNav(this,'label_collagegifts');" href="/storepage/storePageId=storecollage">collage gifts</a>
+          <li><a onClick="javascript:trackNav(this,'label_prints&prepaids');" href="http://www.snapfish.com/snapfish/storeprints">prints & pre-paids</a>
+          <li><a onClick="javascript:trackNav(this,'label_posters');" href="http://www.snapfish.com/snapfish/posters">posters</a>
+          <li><a onClick="javascript:trackNav(this,'label_mugs');" href="http://www.snapfish.com/snapfish/storemugs">mugs</a>
+          <li class="linklast"><a onClick="javascript:trackNav(this,'label_seeallproducts');" href="http://www.snapfish.com/snapfish/store">see all products</a>
+		  
+	</ul>
+      </div>
+     </div>
+
+    </div>
+    <div style="height:30px;clear:both;padding:0px 0px 0px 0px; margin:0px 0px 0px 0px;"></div>
+	<div style="width:720px; border:0; padding:5px 0px 0px 0px; margin:0px 0px 10px 0px;">
+                      </div>
+                <div class="intro" style="margin:5px 0px 0px 0px;">
+      <p>Welcome to Snapfish, the home of online <a onClick="javascript:trackNav(this,'seo_digitalphotoprinting');" href="http://www.snapfish.com/snapfish/storeprints">digital photo printing</a>, photo sharing, and over 100 <a onClick="javascript:trackNav(this,'seo_personalizedphotogifts');" href="/snapfish/storeallimages">personalized photo gifts</a> that you can make from your photos. Create a free account today to start uploading and sharing your photos. Get high-quality <a onClick="javascript:trackNav(this,'seo_digitalphotoprints');" href="http://www.snapfish.com/snapfish/storeprints">digital photo prints</a> at low prices and unlimited, <a onClick="javascript:trackNav(this,'seo_freephotosharing');" href="http://www.snapfish.com/snapfish/photosharing">free photo sharing</a>. You can even use your digital photos to create <a onClick="javascript:trackNav(this,'seo_customphotobooksandgifts');" href="http://www.snapfish.com/snapfish/storenewphotobooks">custom photo books and gifts</a>.</p>
+      </div>
+
+    <div>
+     <div class="safesecure"><span class="boldBlue">safe, secure & private</span><br />Your photos and memories are safe with Snapfish. Snapfish is a service of HP, one of the most trusted brands in the world. <a href="javascript:setWindowProperties('scrollbars=yes,width=500,height=550,resizable=yes');openVerisignTrusteWindow('/snapfish/popupprivacypopup')">learn more</a></div>
+     <div class="logo">
+       <a href="javascript:setWindowProperties('scrollbars=yes,width=500,height=550,resizable=yes');openVerisignTrusteWindow('/snapfish/popupprivacypopup')"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/homeredesign/truste.gif" width="115" height="32" alt = " TRUSTe " /></a>
+       <a href="http://www.hp.com/" target="new"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/homeredesign/hp.gif" width="56" hspace="15" height="34" alt = " hp " /></a>
+       </a>
+     </div>
+    </div>
+   </div>
+   <!-- Main body text ends here -->
+
+
+
+  <div class="footer"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/homeredesign/bottom-curve.gif" width="766" height="11"  /></div>
+</div>
+<div align="center" class="homefooter">
+        <br />
+        <script type="text/javascript">
+
+
+function MRBAlert(targetURL)
+{
+  if(typeof(showAlertOverlay) == "function" )
+  {
+    enableExitWarning();
+    showAlertOverlay(targetURL);
+  }
+  else
+  {
+    document.location.href = targetURL;
+  }
+}
+</script>
+<style type="text/css">
+.linkwhite a
+{
+      color:#ffffff;
+}
+
+.linkwhite a:visited
+{
+      color:#ffffff;
+}
+
+.linkwhite a:active
+{
+      color:#ffffff;
+}
+
+.linkwhite a:link
+{
+      color:#ffffff;
+}
+A.greyFooterLink:visited, A.greyFooterLink:link, A.greyFooterLink:active {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #666666;
+}
+A.whiteFooterLink:visited, A.whiteFooterLink:link, A.whiteFooterLink:active {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #ffffff;
+}
+</style>
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" >
+  <tr>
+	  <td bgcolor="#3399cc" align="center">
+	  <div id="footer" class="linkwhite"><a href="http://www.snapfish.com/snapfish/store" class="linkwhite" onClick="javascript:trackNav(this,'footer_ourproducts');">our products</a> &nbsp;|&nbsp;
+	  <a href="http://www.snapfish.com/snapfish/howitworks" >how it works</a> &nbsp;|&nbsp;
+	  <a href="http://www.snapfish.com/snapfish/helppricing" >pricing</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	  <a href="/snapfish/infosnapfishmobile" >mobile</a> &nbsp;|&nbsp;
+	  <a href="http://www.snapfish.com/snapfish/termsAndConditions" >t&amp;c's</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	  <a href="http://www.snapfish.com/snapfish/privacy" >privacy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	  <a href="http://publisher.snapfish.com/ ">snapfish publisher</a><br />
+	  <a href="http://www.snapfish.com/snapfish/affiliate" >affiliate program</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	  <a href="http://www.snapfish.com/snapfish/siteindex" >site map</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	  <a onClick="javascript:trackNav(this,'footer_help');" class="linkwhite" href="http://support.snapfish.com/cgi-bin/snapfish.cfg/php/xml_api/cci/answer_redirect.php?p_answer_label=helpindex&brand=3&brandHost=www2.snapfish.com">help</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	  <a href="http://www.snapfish.com/snapfish/aboutUs" >about us</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	  <a href="http://www.snapfish.com/snapfish/customerservice" >customer service</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	  <a href="http://www.snapfish.com/snapfish/contact">contact us</a>
+	  </font>
+	  </div>
+	  </td>
+  </tr>
+  <tr><td bgcolor="#3399cc" height="12"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/spacer.gif" width="1" height="12" border="0" /></td></tr>
+
+</table>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+
+    window.previousOnLoad = window.onload;
+    window.onload = showDartScreens ;
+    var __isPageCompletlyInitialized = false ;
+    var __ins_sub_onload_triggered = false ;
+
+    //define this var in your jsp to true ,if want to check page
+    //completely loaded
+    if(typeof(checkPageCompletlyInitialized) != "undefined" && checkPageCompletlyInitialized == true){
+      if(typeof window.document.onmousedown == "function")
+      {
+          //It's handled in Drag-n-drop js file
+      }
+      else
+      {
+          //It's not handled, handle it here
+          window.document.onmousedown = __sub_pageLoad ;
+      }
+    }
+
+    function __sub_pageLoad()
+    {
+
+
+      if(! __isPageCompletlyInitialized)
+      {
+          if(__ins_sub_onload_triggered){
+            if( typeof(__sub_onload) == "function" || typeof(__sub_onload) == "object" ){
+                __sub_onload() ;
+            }
+          }
+          else{
+            //we will have to call this fn coz 'window.onload = showDartScreens' not working
+            //if we click before showDartScreens being called in IE.
+            showDartScreens();
+          }
+          //alert(" Wait till the page is completely loaded.");
+          return ;
+      }
+  }
+
+    function showDartScreens()
+    {
+        if (window.previousOnLoad)
+        {
+            window.previousOnLoad();
+        }
+
+    __ins_sub_onload_triggered = true ;
+
+    if( typeof(__sub_onload) == "function"
+            || typeof(__sub_onload) == "object" )
+        {
+            __sub_onload() ;
+        }
+        __isPageCompletlyInitialized = true ;
+
+    }   //end of showDartScreens()
+
+</SCRIPT>
+<span style="display:none">
+    <script type="text/JavaScript">
+	  <!--send the data into siteCatalyst-->
+      /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+      try
+      {
+        if(s)
+        {
+          var s_code=s.t();if(s_code)document.write(s_code);
+        }
+      } 
+	  catch(e){}
+    </script>
+    <!-- End SiteCatalyst code version: H.3. -->
+  </span>
+<br />
+        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<link rel="stylesheet" type="text/css" href="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/styles/snapfish/snapfish_us/global.css" />
+<script type="text/javascript">
+function changeCountryWithParam(websitename)
+{
+   var lm=CLinkManager.getInstance("http://www.snapfish.com/snapfish/changecountry");
+   lm.setURLParameter( "websiteInfo", websitename );
+   location.href = lm.getURL();
+}
+
+function MRBAlert(targetURL)
+{
+  if(typeof(showAlertOverlay) == "function")
+  {
+    enableExitWarning();
+    showAlertOverlay(targetURL);
+  }
+  else
+  {
+    document.location.href = targetURL;
+  }
+}
+</script>
+
+<table border="0" cellpadding="0" cellspacing="0" width="745" align="center" bgcolor="#3399cc">
+      <tr><td height="10"></td></tr>
+      <tr><td align="center">
+      <img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/homeredesign/worldwide_footer.gif" width="206" height="47" border="0" alt="" />
+      </td></tr>
+	    <tr><td height="10">&nbsp;</td></tr>
+	    <tr>
+	      <td align="center" width="753" colspan="3">	      
+	      	<div style='color:#ffffff'>
+	      <a href="http://www.snapfish.com.au/snapfishau/welcome" style='color:#ffffff'>
+				       Australia</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.be/snapfishbe/welcome/locale=nl_BE" style='color:#ffffff'>
+				       België - Nederlands</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.be/snapfishbe/welcome/locale=fr_BE" style='color:#ffffff'>
+				       Belgique - français</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.ca/snapfishca/welcome/locale=en_CA" style='color:#ffffff'>
+				       Canada - English</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.ca/snapfishca/welcome/locale=fr_CA" style='color:#ffffff'>
+				       Canada - français</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.dk/snapfishdk/welcome" style='color:#ffffff'>
+				       Danmark</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.de/snapfishde/welcome" style='color:#ffffff'>
+				       Deutschland</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.es/snapfishes/welcome" style='color:#ffffff'>
+				       España</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.fr/snapfishfr/welcome" style='color:#ffffff'>
+				       France</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.in/snapfishin/welcome" style='color:#ffffff'>
+				       India</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.ie/snapfishie/welcome" style='color:#ffffff'>
+				       Ireland</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.it/snapfishit/welcome" style='color:#ffffff'>
+				       Italia</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.nl/snapfishnl/welcome" style='color:#ffffff'>
+				       Nederland</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.co.nz/snapfishnz/welcome" style='color:#ffffff'>
+				       New Zealand</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.no/snapfishno/welcome" style='color:#ffffff'>
+				       Norge</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.at/snapfishat/welcome" style='color:#ffffff'>
+				       Österreich</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.pt/snapfishpt/welcome" style='color:#ffffff'>
+				       Portugal</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.ch/snapfishch/welcome/locale=de_CH" style='color:#ffffff'>
+				       Schweiz - Deutsch</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.com.sg/snapfishsg/welcome" style='color:#ffffff'>
+				       Singapore</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.ch/snapfishch/welcome/locale=fr_CH" style='color:#ffffff'>
+				       Suisse - français</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.se/snapfishse/welcome" style='color:#ffffff'>
+				       Sverige</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.ch/snapfishch/welcome/locale=it_CH" style='color:#ffffff'>
+				       Svizzera - italiano</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.co.uk/snapfishuk/welcome" style='color:#ffffff'>
+				       United Kingdom</a>
+		            
+		            &nbsp;|&nbsp;
+		        <b>
+		            United States</b>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.jp/snapfishjp/welcome" style='color:#ffffff'>
+				       デジカメプリント</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.kachayu.com/snapfishcn/welcome" style='color:#ffffff'>
+				       网上冲�?�</a>
+		            
+		            &nbsp;|&nbsp;
+		        </div></td>
+				    </tr>
+	        <tr><td height="20">&nbsp;</td></tr>
+    </table>
+  </div>
+<div><br /><br /></div>
+
+
+
+
+<iframe src="/snapfish/precache"
+  width="0" height="0"
+  scrolling="no"
+  frameborder="0"
+  border="0"
+  marginwidth="0"
+  marginheight="0"
+  hspace="0"
+  vspace="0"></iframe>
+</body>
+</html>
+
+
+
+GET http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/ClientLibraries/InfoscopicWeb/core/InfoscopicWeb.js HTTP/1.0
+
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/welcome
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 18:42:54 GMT
+If-None-Match: "912-7e98a780"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526ot%253DAREA%2526oi%253D58; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919310|session#1273709478445-731792#1273711570|check#true#1273709770
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 19:06:43 GMT
+ETag: "6459-d3c576c0"
+Accept-Ranges: bytes
+Content-Type: text/css
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9892
+
+GET http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/ClientLibraries/InfoscopicWeb/dhtml/Dialog/Dialog.css HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/welcome
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 18:42:55 GMT
+If-None-Match: "8be-7ea7e9c0"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526ot%253DAREA%2526oi%253D58; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919310|session#1273709478445-731792#1273711570|check#true#1273709770
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 18:42:55 GMT
+ETag: "8be-7ea7e9c0"
+Accept-Ranges: bytes
+Content-Type: text/css
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+HTTP/1.1 304 Not Modified
+Proxy-Connection: Keep-Alive
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Connection: Keep-Alive
+Last-Modified: Thu, 29 Apr 2010 18:42:54 GMT
+Age: 9893
+ETag: "912-7e98a780"
+
+Accept-Ranges: bytes
+Content-Type: application/x-javascript
+GET http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/ClientLibraries/InfoscopicWeb/dhtml/Dialog/Dialog.js HTTP/1.0
+Date: Wed, 12 May 2010 21:31:07 GMT
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/welcome
+Vary: Accept-Encoding
+Accept-Language: en-US
+Cache-Control: max-age=315360000
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 18:42:55 GMT
+Connection: Keep-Alive
+If-None-Match: "3158-7ea7e9c0"
+Age: 9893
+Host: static.snapfish.com
+
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526ot%253DAREA%2526oi%253D58; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919310|session#1273709478445-731792#1273711570|check#true#1273709770
+
+GET http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/styles/snapfish/inline_popup.css HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/welcome
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:06:40 GMT
+If-None-Match: "87f-d397b000"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526ot%253DAREA%2526oi%253D58; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919310|session#1273709478445-731792#1273711570|check#true#1273709770
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 18:42:55 GMT
+ETag: "3158-7ea7e9c0"
+Accept-Ranges: bytes
+Content-Type: application/x-javascript
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9893
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 19:06:40 GMT
+ETag: "87f-d397b000"
+Accept-Ranges: bytes
+Content-Type: text/css
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9893
+
+GET http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/ClientLibraries/Console/Ticker/ticker.js HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/welcome
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 18:42:53 GMT
+If-None-Match: "42c7-7e896540"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526ot%253DAREA%2526oi%253D58; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919310|session#1273709478445-731792#1273711570|check#true#1273709770
+
+GET http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/styles/snapfish/DynamicTicker.css HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/welcome
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:06:40 GMT
+If-None-Match: "170-d397b000"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526ot%253DAREA%2526oi%253D58; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919310|session#1273709478445-731792#1273711570|check#true#1273709770
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 19:06:40 GMT
+ETag: "170-d397b000"
+Accept-Ranges: bytes
+Content-Type: text/css
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9893
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 18:42:53 GMT
+ETag: "42c7-7e896540"
+Accept-Ranges: bytes
+Content-Type: application/x-javascript
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9893
+
+GET http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/javascript/util/mbox.js HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/welcome
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:03:30 GMT
+If-None-Match: "5b61-c8448480"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526ot%253DAREA%2526oi%253D58; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919310|session#1273709478445-731792#1273711570|check#true#1273709770
+
+GET http://static.snapfish.com/MD5=6540d54f40a826482f1c92bbbaaa3186/default/javascript/user.js HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/welcome
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:03:30 GMT
+If-None-Match: "317c-c8448480"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526ot%253DAREA%2526oi%253D58; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919310|session#1273709478445-731792#1273711570|check#true#1273709770
+
+HTTP/1.1 304 Not Modified
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 19:03:30 GMT
+Last-Modified: Thu, 29 Apr 2010 19:03:30 GMT
+ETag: "317c-c8448480"
+ETag: "5b61-c8448480"
+Accept-Ranges: bytes
+Accept-Ranges: bytes
+Content-Type: application/x-javascript
+Content-Type: application/x-javascript
+Date: Wed, 12 May 2010 20:49:08 GMT
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 20:49:08 GMT
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 12412
+
+Age: 9893
+
+GET http://static.snapfish.com/MD5=8109821fa6b9e8ee9f066bb23d625cf9/default/javascript/core/CLinkManager.js HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/welcome
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:02:39 GMT
+If-None-Match: "3544-c53a51c0"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526ot%253DAREA%2526oi%253D58; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919310|session#1273709478445-731792#1273711570|check#true#1273709770
+
+GET http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/javascript/flex/flashdetect.js HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/welcome
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:03:24 GMT
+If-None-Match: "d80-c7e8f700"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526ot%253DAREA%2526oi%253D58; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919310|session#1273709478445-731792#1273711570|check#true#1273709770
+
+HTTP/1.1 304 Not Modified
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 19:03:24 GMT
+Last-Modified: Thu, 29 Apr 2010 19:02:39 GMT
+ETag: "d80-c7e8f700"
+ETag: "3544-c53a51c0"
+Accept-Ranges: bytes
+Accept-Ranges: bytes
+Content-Type: application/x-javascript
+Content-Type: application/x-javascript
+Date: Wed, 12 May 2010 20:49:08 GMT
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 20:49:08 GMT
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 12412
+Age: 9893
+
+
+GET http://static.snapfish.com/MD5=912e6aa68f87483fdaaf0ad2e80e76bb/default/styles/snapfish/snapfish_us/loggedout_home.css HTTP/1.0
+GET http://static.snapfish.com/MD5=9f44b6c47645023430356b82de53411f/default/javascript/omniture/s_code.js HTTP/1.0
+Accept: */*
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/welcome
+Referer: http://www.snapfish.com/snapfish/welcome
+Accept-Language: en-US
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:06:45 GMT
+If-Modified-Since: Thu, 29 Apr 2010 19:03:25 GMT
+If-None-Match: "283f-d3e3fb40"
+If-None-Match: "6c41-c7f83940"
+Host: static.snapfish.com
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526ot%253DAREA%2526oi%253D58; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919310|session#1273709478445-731792#1273711570|check#true#1273709770
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526ot%253DAREA%2526oi%253D58; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919310|session#1273709478445-731792#1273711570|check#true#1273709770
+
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 19:03:25 GMT
+ETag: "6c41-c7f83940"
+Accept-Ranges: bytes
+Content-Type: application/x-javascript
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9894
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 19:06:45 GMT
+ETag: "283f-d3e3fb40"
+Accept-Ranges: bytes
+Content-Type: text/css
+Date: Wed, 12 May 2010 20:49:08 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 20:49:08 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 12413
+
+GET http://static.snapfish.com/MD5=6309c6dd2ddf6fb78a4cbf23761aecd4/default/javascript/util/layer.js HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/welcome
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:03:30 GMT
+GET http://static.snapfish.com/MD5=9f5d4958d2b8229fc024a74de45028e5/default/javascript/core/CCookie.js HTTP/1.0
+If-None-Match: "9bde-c8448480"
+Accept: */*
+Host: static.snapfish.com
+Referer: http://www.snapfish.com/snapfish/welcome
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526ot%253DAREA%2526oi%253D58; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919310|session#1273709478445-731792#1273711570|check#true#1273709770
+Accept-Language: en-US
+
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:02:39 GMT
+If-None-Match: "3052-c53a51c0"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526ot%253DAREA%2526oi%253D58; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919310|session#1273709478445-731792#1273711570|check#true#1273709770
+
+HTTP/1.1 304 Not Modified
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 19:03:30 GMT
+Last-Modified: Thu, 29 Apr 2010 19:02:39 GMT
+ETag: "9bde-c8448480"
+ETag: "3052-c53a51c0"
+Accept-Ranges: bytes
+Accept-Ranges: bytes
+Content-Type: application/x-javascript
+Content-Type: application/x-javascript
+Date: Wed, 12 May 2010 21:31:07 GMT
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9894
+Age: 9894
+
+
+GET http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/styles/snapfish/snapfish_us/util/layer.css HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/welcome
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:06:46 GMT
+If-None-Match: "e39-d3f33d80"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526ot%253DAREA%2526oi%253D58; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919310|session#1273709478445-731792#1273711570|check#true#1273709770
+
+GET http://static.snapfish.com/MD5=6c9ce738d1445d282bfcfa446ca66e21/default/javascript/util/common.js HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/welcome
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:03:30 GMT
+If-None-Match: "f7eb-c8448480"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526ot%253DAREA%2526oi%253D58; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919310|session#1273709478445-731792#1273711570|check#true#1273709770
+
+HTTP/1.1 304 Not Modified
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 19:03:30 GMT
+Last-Modified: Thu, 29 Apr 2010 19:06:46 GMT
+ETag: "f7eb-c8448480"
+ETag: "e39-d3f33d80"
+Accept-Ranges: bytes
+Accept-Ranges: bytes
+Content-Type: application/x-javascript
+Content-Type: text/css
+Date: Wed, 12 May 2010 21:31:09 GMT
+Vary: Accept-Encoding
+Date: Wed, 12 May 2010 21:31:07 GMT
+Cache-Control: max-age=315360000
+Vary: Accept-Encoding
+Expires: Sat, 09 May 2020 21:31:09 GMT
+Cache-Control: max-age=315360000
+Proxy-Connection: Keep-Alive
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Connection: Keep-Alive
+Proxy-Connection: Keep-Alive
+Age: 9892
+Connection: Keep-Alive
+
+Age: 9894
+
+GET http://media.fastclick.net/w/tre?ad_id=18637&evt=9937&cat1=10006&cat2=10007 HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/welcome
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+Host: media.fastclick.net
+Cookie: pluto2=029266265792; lyc=AgAAAATXQ+tLACAAAc1IIASgAAEXJ6AIIADgBRcBAAA=; pluto=029266265792
+
+GET http://www.snapfish.com/default/images//homeredesign/whyjoin.png HTTP/1.0
+Accept: */*
+Proxy-Connection: Keep-Alive
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+If-Modified-Since: Thu, 29 Apr 2010 18:47:02 GMT
+If-None-Match: "ef8-485648d60d580"
+Host: www.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526ot%253DAREA%2526oi%253D58; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919361|session#1273709478445-731792#1273711621|check#true#1273709821; BIGipServersf3-scw-pod2=3607704074.16415.0000; SF_SESSION_COOKIE.snapfish_us.prd=heyGbTbonpx!%25RDHNYF%5E!uggc%3A%2F%2Fjjj.fancsvfu.pbz%2Ffancsvfu%2Ffgber!%25AIC_FRC%5E!vachgheyvq!%25RDHNYF%5E!3296!%25AIC_FRC%5E!jrofvgrBvq!%25RDHNYF%5E!1000000!%25AIC_FRC%5E!pboenaqBvq!%25RDHNYF%5E!1000!%25AIC_FRC%5E!heyGlcr!%25RDHNYF%5E!ABA-FJVSG
+
+HTTP/1.1 304 Not Modified
+Date: Mon, 10 May 2010 19:12:18 GMT
+Server: Apache/2.2.11
+Last-Modified: Thu, 29 Apr 2010 18:47:02 GMT
+ETag: "ef8-485648d60d580"
+Accept-Ranges: bytes
+Cache-Control: max-age=86400
+Expires: Tue, 11 May 2010 19:12:18 GMT
+Content-Type: image/png
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 191023
+
+HTTP/1.1 200 OK
+Date: Thu, 13 May 2010 00:16:02 GMT
+P3P: CP='NOI DSP DEVo TAIo COR PSA OUR IND NAV'
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: 0
+Content-Type: image/gif
+Content-Length: 43
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Set-Cookie: lyc=AgAAAARwROtLACAAAc1IIASgAAEXJ6AIIADgBRcBAAA=; domain=.fastclick.net; path=/; expires=Sat, 12-May-2012 00:16:02 GMT
+Set-Cookie: pluto=029266265792; domain=.fastclick.net; path=/; expires=Sat, 12-May-2012 00:16:02 GMT
+
+GET http://snapfish.112.2o7.net/b/ss/hpsnapfishprod/1/H.17/s65482475370888?AQB=1&ndh=1&t=12/4/2010%2017%3A16%3A2%203%20420&ce=UTF-8&ns=snapfish&pageName=US%3Aen%3ALogged%20out%3A%20Home%3A%20New%3A%20B&g=http%3A//www.snapfish.com/snapfish/welcome&cc=USD&server=sf3-fc5&c5=no&c6=no&c7=snapfish_us&v7=snapfish_us&c9=no&c10=snapfish&c11=no&v11=FDR&v13=snapfish&v14=no&c15=1&s=1600x1200&c=32&j=1.5&v=Y&k=Y&bw=1298&bh=689&ct=lan&hp=N&AQE=1 HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/welcome
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+Host: snapfish.112.2o7.net
+Cookie: s_vi=[CS]v1|25F59BC30514B92C-4000016EA0123209[CE]
+
+HTTP/1.1 200 OK
+Date: Thu, 13 May 2010 00:16:02 GMT
+Server: Omniture DC/2.0.0
+X-C: ms-4.2.6
+Expires: Wed, 12 May 2010 00:16:02 GMT
+Last-Modified: Fri, 14 May 2010 00:16:02 GMT
+Cache-Control: no-cache, no-store, must-revalidate, max-age=0, proxy-revalidate, no-transform, private
+Pragma: no-cache
+ETag: "4BEB44C2-6E73-64D35929"
+Vary: *
+P3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR NID PSA OUR IND COM NAV STA"
+xserver: www335
+Content-Type: image/gif
+Content-Length: 43
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+
+GET http://www.snapfish.com/snapfish/store HTTP/1.0
+
+Accept: application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, application/x-shockwave-flash, */*
+Referer: http://www.snapfish.com/snapfish/welcome
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+Host: www.snapfish.com
+Cookie: SF_SESSION_COOKIE.snapfish_us.prd=heyGbTbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj.fancsvfu.pbz%2Ffancsvfu%2Ffgber%21%25AIC_FRC%5E%21vachgheyvq%21%25RDHNYF%5E%213296%21%25AIC_FRC%5E%21jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21erserfuhfre%21%25RDHNYF%5E%21gehr%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000%21%25AIC_FRC%5E%21heyGlcr%21%25RDHNYF%5E%21ABA-FJVSG; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; JSESSIONID=D1E8FE3DFDFAF803D4656239E2CAB0BF; BIGipServer=3607704074.16415.000; SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919361|session#1273709478445-731792#1273711621|check#true#1273709821; BIGipServersf3-scw-pod2=3607704074.16415.0000; SF_SESSION_COOKIE.snapfish_us.prd=heyGbTbonpx!%25RDHNYF%5E!uggc%3A%2F%2Fjjj.fancsvfu.pbz%2Ffancsvfu%2Ffgber!%25AIC_FRC%5E!vachgheyvq!%25RDHNYF%5E!3296!%25AIC_FRC%5E!jrofvgrBvq!%25RDHNYF%5E!1000000!%25AIC_FRC%5E!pboenaqBvq!%25RDHNYF%5E!1000!%25AIC_FRC%5E!heyGlcr!%25RDHNYF%5E!ABA-FJVSG
+
+HTTP/1.1 200 OK
+Date: Thu, 13 May 2010 00:16:03 GMT
+Server: Apache-Coyote/1.1
+Expires: 0
+Pragma: no-cache
+Cache-Control: no-cache,must-revalidate,proxy-revalidate
+P3P: CP="ALL DSP COR CONi OUR BUS PHY ONL PUR DEM STA"
+Content-Type: text/html;charset=UTF-8
+Vary: Accept-Encoding
+Connection: close
+Set-Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; Domain=snapfish.com; Path=/
+Set-Cookie: SF_CisForCookie=SF_ThatIsGoodEnoughForMe!; Domain=snapfish.com; Path=/; Secure
+Set-Cookie: cms.snapfish_us.prd=""; Domain=snapfish.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/snapfish
+Set-Cookie: afc.snapfish_us.prd=""; Domain=snapfish.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/snapfish
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<link rel="stylesheet" type="text/css" href="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/styles/snapfish/snapfish_us/global.css" />
+<SCRIPT LANGUAGE="JAVASCRIPT">
+var __imageHost = 'http://static.snapfish.com';
+</SCRIPT>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="imagetoolbar" content="no" />
+<script language="javascript">
+
+    window.cookiedomain = "snapfish.com" ;
+
+    window.cookiesuffix = ".snapfish_us.prd" ;
+    window.cookienewpath = "/snapfish";
+	
+</script>
+
+<SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/javascript/util/mbox.js"></SCRIPT><LINK REL="SHORTCUT ICON" HREF="/default/icons/snapfish/snapfish.ico">
+<LINK REL="ICON" HREF="/default/icons/snapfish/snapfish.ico" />
+<script type="text/javascript">
+document.write('<SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=6c9ce738d1445d282bfcfa446ca66e21/default/javascript/util/common.js"><\/SCRIPT>');</script>
+
+
+<html>
+  <head>
+    <link href="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dfuv%3Dv%3Dvhxubpdxbx6a42323%3A%3A%3D50fuv" rel="stylesheet" type="text/css"/>
+    <title>Snapfish:Give a Personalized Photo Gift from Snapfish</title>
+      <META NAME="KEYWORDS" CONTENT="photo gift, personalized photo gift, photo gifts, personalized photo gifts.">
+      <META NAME="DESCRIPTION" CONTENT="Create a personalized photo gift with Snapfish:  Make unique personalized photo gifts such as  photo books, gifts for him & her, posters & more.">
+<script type="text/javascript" src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/ClientLibraries/InfoscopicWeb/core/InfoscopicWeb.js" language="JavaScript"></script><link href="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/ClientLibraries/InfoscopicWeb/dhtml/Dialog/Dialog.css" rel="stylesheet" type="text/css"/><script type="text/javascript" src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/ClientLibraries/InfoscopicWeb/dhtml/Dialog/Dialog.js" language="JavaScript"></script><link href="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/styles/snapfish/inline_popup.css" rel="stylesheet" type="text/css"/><script type="text/javascript" src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/ClientLibraries/Console/Ticker/ticker.js" language="JavaScript"></script><link href="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/styles/snapfish/DynamicTicker.css" rel="stylesheet" type="text/css"/><SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/ClientLibraries/Console/StoreTiles/StoreTiles.js"></SCRIPT><SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=8109821fa6b9e8ee9f066bb23d625cf9/default/javascript/core/CLinkManager.js"></SCRIPT><script LANGUAGE="javascript">
+
+    var shareProductURL = "/snapfish/sharegiftpagepopup";
+
+    function showInlinePopup(src, title, width, clientHeight)
+  {
+    //try {
+      var dialog = Component.getComponent('storePopupDialog');
+      dialog.setSrc(src);
+      dialog.setTitle(title);
+      dialog.setWidth(width);
+      dialog.setClientHeight(clientHeight);
+      dialog.show(true);
+    //} catch(e) {}
+  }
+
+    function openSharePopup()
+    {
+        if ( shareWindow =="[object]"){
+            shareWindow.close();
+        }
+        var lm = null ;
+        if ( openSharePopup.arguments.length == 0 ){
+                lm = CLinkManager.getInstance( shareProductURL );
+        }else{
+                lm = CLinkManager.getInstance(openSharePopup.arguments[0]);
+        }
+        if(openSharePopup.arguments.length >1){
+            lm.setURLParameter( IParameterConstants.PRD_TYPE, openSharePopup.arguments[1]);
+        }else{
+            lm.setURLParameter( IParameterConstants.PRD_TYPE, "store");
+        }
+        windowProperties = 'width=625,height=510,resizable,scrollbars=yes' ;
+        shareWindow = window.open(lm.getURL(), null,windowProperties);
+        shareWindow.top
+    }
+
+    function openSharePopupie()
+    {
+       var lm = CLinkManager.getInstance( shareProductURL );
+       lm.setURLParameter( IParameterConstants.PRD_TYPE, "store" );
+       setWindowProperties('width=620,height=510,resizable,scrollbars=yes');
+       openWindow(lm.getURL());
+    }
+
+    function trackStoreBestSellers(sObj,linkName)
+    {
+      
+        s_objectID = "header spotlight_link_" + linkName;
+        //s.tl(sObj,'o',true);
+      
+
+    }
+
+    function trackStoreNav(sObj,linkName)
+    {
+      
+        s_objectID = "left nav_" + linkName;
+        //s.tl(sObj,'o',true);
+      
+    }
+
+    function trackStoreMainArea(sObj,linkName)
+    {
+      
+        s_objectID = "main area_tile_" + linkName;
+        //s.tl(sObj,'o',true);
+      
+    }
+</script>
+
+</head>
+
+<script type="text/javascript">
+    if (typeof(lpLanguage)=='undefined')    var lpLanguage='english';
+    if (typeof(lpCountry)=='undefined')     var lpCountry='us';
+    if (typeof(lpUnit)=='undefined')        var lpUnit="snapfish-" + lpCountry;
+</script>
+<SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/javascript/snapfish_mtagconfig.js"></SCRIPT><body bgcolor="#3399cc" link="#0033cc" aLink="#ffcc00" vLink="#3399cc" text="#000000"
+      topMargin="0" leftMargin="0" marginheight="0" marginwidth="0" >
+<script language="Javascript">
+var sAccount = "hpsnapfishprod";
+var emiOmnAccount = "encoresfdev";
+
+emiOmnAccount = "encoresfprod";
+</script>
+<span style="display:none"><script src="http://static.snapfish.com/MD5=9f44b6c47645023430356b82de53411f/default/javascript/omniture/s_code.js"></script></span>
+<span style="display:none">
+<!-- SiteCatalyst code version: H.3.
+Copyright 1997-2005 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript"><!--
+var clickMapTimeOut = 200;
+
+s.currencyCode = "USD";
+
+s.pageNamePrefix = "US:en:" ;
+var pagePrefix = "US:en:" ;
+
+s.server = "sf3-fc5";
+
+    s.eVar14 = "no";
+  
+    s.pageName = s.pageNamePrefix+"Store:Logged Out: Store";    
+  
+    s.prop6 = "no";
+
+    s.prop5 = "no";
+
+  s.prop7 = "snapfish_us";
+  s.eVar7 = "snapfish_us";
+
+  s.prop9 = "no";
+
+s.prop10 = "snapfish";
+s.eVar11 = "FDR";
+s.eVar13 = "snapfish";
+
+  s.prop11 = "no";
+
+// latest cookie campaign
+
+
+if(((typeof doFlashTracking) != "undefined")
+    && (doFlashTracking == true)
+    && ((typeof theFlashVersion) != "undefined")
+    && (theFlashVersion != "")){
+  //flash detection done in album.jsp for Snapfish US and Snapfish UK
+  s.prop16 = theFlashVersion;
+  //alert("FlashVersion installed="+theFlashVersion);
+}
+//--></script>
+</span>
+
+<!-- Start Global mbox include -->
+<script type="text/javascript">
+    function setCampaignRecipeInfo(tntRecipe, tntCampaign)
+    {
+      var recipe = tntRecipe;
+      var campaign = tntCampaign;
+      if(typeof(s)!=undefined && s != null)
+      {
+        try
+        {
+          s.linkTrackVars='eVar24,eVar25';
+          /* Page Version */
+          /* TT Recipe */
+          if(typeof(recipe) != "undefined")
+          {
+            s.eVar24=recipe;
+          }
+          /* TT Iteration */
+          if(typeof(campaign) != "undefined")
+          {
+            s.eVar25=campaign;
+          }
+          s.tl(this,'o','link ID');
+        }
+        catch(e)
+        {
+        }
+      }
+    }    
+  </script>  
+  <!-- End Global mbox include -->
+
+<!-- Pixel Tracking code Generation starts -->
+ <!-- Pixel Tracking code Generation ends -->
+<!-- Start of Live person variables -->
+<script type="text/javascript">
+    // Variables submission using lpAddVars
+    lpAddVars('visitor','VisitorType',s.prop2);
+    lpAddVars('visitor','ImageActive',s.prop3);
+    lpAddVars('visitor','Purchased',s.prop4);
+    lpAddVars('page','PageName',s.pageName);
+
+    lpAddVars('page','language',lpLanguage);
+    lpAddVars('page','Country',lpCountry);
+
+</script>
+<!-- End of Live person variables -->
+<form name="">
+<div align=center>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+<!--
+  var isNetscape = false;
+  //implemented for netscape only.
+  if(isNetscape)
+    window.document.onclick=__sub_page_loaded;
+
+  function __sub_page_loaded(evt){
+
+    if(typeof(checkPageCompletlyInitialized) != "undefined" && checkPageCompletlyInitialized == true){
+    if(typeof(__isPageCompletlyInitialized) != "undefined")
+    {
+      if( __isPageCompletlyInitialized){
+          //don't do anything
+      }
+        else if( __ins_sub_onload_triggered ){
+        //just call this function
+        __sub_onload() ;
+            alert("Wait till the page is completely loaded.");
+
+      }
+    }
+    else{
+      alert("Wait till the page is completely loaded.");
+      return false;
+    }
+  }
+    //Activation popup
+    if( typeof(handleClick) == "function"
+        || typeof(handleClick) == "object" )
+    {
+        handleClick(evt) ;
+    }
+
+  }//end of __sub_page_loaded
+
+//-->
+</SCRIPT>
+<div style="height:20;">&nbsp;</div>
+<table width=778 cellpadding=0 cellspacing=0 border=0>
+<tr>
+   <td bgcolor="#3399cc" width=6><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/spacer.gif" width=6 height=1></td>
+   <td colspan=3>
+      <script language="javascript">
+  function trackNav(sObj, linkName)
+  {
+      
+        setTimeout(function(){trackOmnitureNTnT(sObj, linkName);}, 2000);
+      
+  }
+
+  function trackOmnitureNTnT(sObj, linkName)
+  {
+    s_objectID = linkName;
+      s.linkTrackVars='eVar26';
+    s.eVar26=s_objectID + "_" + s.pageName;
+    s.tl(sObj,'o',linkName);
+  }
+</script>
+<map name="tabs">
+<area id="homeTabId" shape="rect" coords="5,0,88,21" onClick="javascript:trackNav(this,'tab_home');"  href ="http://www.snapfish.com/snapfish/welcome"  alt = " home " >
+<area id="photoTabId" shape="rect" coords="90,0,170,21" onClick="javascript:trackNav(this,'tab_photos');"  href ="http://www.snapfish.com/snapfish/photolibrary"  alt = " photos " >
+<area id="storeTabId" shape="rect" coords="174,0,254,21" onClick="javascript:trackNav(this,'tab_store');"  href ="http://www.snapfish.com/snapfish/store"  alt = " store " >
+<area id="sharingTabId" shape="rect" coords="258,0,338,21" onClick="javascript:trackNav(this,'tab_tips');"  href ="http://www.snapfish.com/snapfish/photosharing"  alt = " sharing " >
+</map>
+<style type="text/css">
+a.header:link {color:#ffffff; text-decoration: none;}
+a.header:visited { text-decoration: none;}
+</style>
+<!--begin header include-->
+<div class="headercontainer">
+	<div id="layersDiv" name="layersDiv"></div>
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<link rel="stylesheet" type="text/css" href="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/styles/snapfish/snapfish_us/global.css" />
+<SCRIPT LANGUAGE="JAVASCRIPT">
+var __imageHost = 'http://static.snapfish.com';
+</SCRIPT>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="imagetoolbar" content="no" />
+<script language="javascript">
+
+    window.cookiedomain = "snapfish.com" ;
+
+    window.cookiesuffix = ".snapfish_us.prd" ;
+    window.cookienewpath = "/snapfish";
+	
+</script>
+
+<SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/javascript/util/mbox.js"></SCRIPT><LINK REL="SHORTCUT ICON" HREF="/default/icons/snapfish/snapfish.ico">
+<LINK REL="ICON" HREF="/default/icons/snapfish/snapfish.ico" />
+<script type="text/javascript">
+document.write('<SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=6c9ce738d1445d282bfcfa446ca66e21/default/javascript/util/common.js"><\/SCRIPT>');</script>
+
+
+<link rel="stylesheet" type="text/css" href="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/styles/snapfish/snapfish_us/util/layer.css" />
+<SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=6309c6dd2ddf6fb78a4cbf23761aecd4/default/javascript/util/layer.js"></SCRIPT><SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=8109821fa6b9e8ee9f066bb23d625cf9/default/javascript/core/CLinkManager.js"></SCRIPT><SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=9f5d4958d2b8229fc024a74de45028e5/default/javascript/core/CCookie.js"></SCRIPT><script language="javascript">
+
+
+var inputURL = "/snapfish/store";
+var cobrand = "snapfish";
+
+  function openRegOrLogin(url, clickLocation, params, showLayer)
+  {
+    var slCookie = CMultiNVPairCookie.getInstance("SF_SESSION_COOKIE");
+     if(slCookie.getValue("authcode") != null){
+        document.location.href = url;
+        return;
+      }
+    var hasParams = (arguments.length > 2 ? true : false);
+    var isRegLoginModule = "true";
+    if(arguments.length > 3)
+    {
+      isRegLoginModule = arguments[3];
+    }
+    var currentLM= CLinkManager.getInstance(url);
+    if(isRegLoginModule == "true")
+    {
+      currentLM.setURLParameter("module","true");
+      
+      if(url.indexOf('login',0) != -1)
+      {
+        if(hasParams)
+        {
+          params.type = 'iframe';
+          params.src = fixUrl(currentLM.getURL());
+          CLayer.openLayer('regLoginLayer', params);
+        }
+        else
+          CLayer.openLayer('regLoginLayer',{type:'iframe',src:fixUrl(currentLM.getURL()),width:'376',height:'285',isMovable:'true'});
+      }
+      else if(url.indexOf('registration',0) != -1)
+      {
+        
+        if(hasParams)
+        {
+          params.type = 'iframe';
+          params.src = fixUrl(currentLM.getURL());
+          CLayer.openLayer('regLoginLayer', params);
+        }
+        else
+        {
+        
+          CLayer.openLayer('regLoginLayer',{type:'iframe',src:fixUrl(currentLM.getURL()), width:'377',height:'390',isMovable:'true'});
+        
+        }
+      }
+      else
+      {
+           //opens layer in create product flow
+        
+          if(hasParams)
+          {
+            params.type = 'iframe';
+            params.src = fixUrl(currentLM.getURL());
+          CLayer.openLayer('regLoginLayer', params);
+          }
+          else
+            CLayer.openLayer('regLoginLayer',{type:'iframe',src:fixUrl(currentLM.getURL()),width:'376',height:'450',isMovable:'true'});
+        
+      }
+    }//end of if(isRegLoginModule == "true")
+    else
+    {
+      if(cobrand=="aarpmember"){
+        var targetURL = url+"/pns"+inputURL;
+        document.location.href=targetURL;
+        }else{
+      document.location.href=url;
+      }
+    }
+  }
+  
+  function fixUrl(url)
+  {
+    url = url.replace(/\/\//g, "/");
+    if(url.indexOf('://') == -1 && url.indexOf(':/') != -1)
+      url = url.replace(/:\//g, "://");
+  	return url;
+  }
+  
+  function onTileClick(url)
+    {
+    	openRegOrLogin(url);
+    }
+</script>
+<table  width="100%" bgcolor="#66cc33" cellPadding="0" cellSpacing="0" border="0">
+	  <tr>
+	    <td width="187" rowspan="2"><a href="http://www.snapfish.com/snapfish/welcome"><img src="http://static.snapfish.com/MD5=cce2be7de577b01acfb0077b7d09733d/default/images/header/logo-snappy.gif" width="214" height="58" border="0" alt=" snapfish by HP " /></a></td>
+	    <td width="380"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/header/logo-green.gif" border="0" alt=" snapfish by HP " /></td>
+	   <td align="right" rowspan="2">    
+	      <table cellPadding="0" cellSpacing="0" border="0">
+	        <tr>
+	          <td align="right"><font color="#ffffff">
+	           <a onClick="javascript:trackNav(this,'header_signup');" href="javascript:openRegOrLogin('http://www.snapfish.com/snapfish/registration','header_signup');"><font color="#ffffff">sign up!</font></a>
+						 
+	           &nbsp;|&nbsp;
+	           <a onClick="javascript:trackNav(this,'header_login');" href="javascript:openRegOrLogin('http://www.snapfish.com/snapfish/login','header_login')"><font color="#ffffff">log in</font></a>
+		        	   
+	           &nbsp;|&nbsp;
+	          <a onClick="javascript:trackNav(this,'header_help');" href="http://support.snapfish.com/cgi-bin/snapfish.cfg/php/xml_api/cci/answer_redirect.php?p_answer_label=helpindex&brand=3&brandHost=www2.snapfish.com"><font color="#ffffff">help</font></a>
+	           </td>
+	        </tr>
+	        <tr><td height="6"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/spacer.gif" width="1" height="1" border="0" alt="" /></td></tr>
+	      </table>
+	      
+	    </td>
+	    <td width="17" align="right" rowspan="2"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/header/header-right.gif" width="17" height="58" /></td>
+	  </tr>
+	  <tr><td><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/header/plain_us/tabs-store.gif" width="354" height="21" border="0" usemap="#tabs" /></td></tr>
+	</table>
+	</div>
+</td>
+   <td bgcolor="#3399cc" width=6><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/spacer.gif" width=6 height=1></td>
+</tr>
+<tr>
+   <td bgcolor="#3399cc" width=6><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/spacer.gif" width=6 height=1></td>
+   <td bgcolor="#FFFFFF"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/spacer.gif" width="26" height="1"></td>
+   <td bgcolor="#FFFFFF" valign="top">
+      <table width=726 cellpadding=0 cellspacing=0 border=0>
+         <tr><td height="25"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/spacer.gif" width="1" height="25"></td></tr>
+         <tr>
+         	<td width=182 valign=top>
+               <SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=6309c6dd2ddf6fb78a4cbf23761aecd4/default/javascript/util/layer.js"></SCRIPT><link rel="stylesheet" type="text/css" href="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/styles/snapfish/snapfish_us/util/layer.css" />
+<script>
+  function searchSubmit()
+  {
+        var q=document.getElementById("googleSrhQuery").value;
+        if(q == "search products" || q == '')
+        {
+           CLayer.openLayer('enterSearhTerm',{type:'div',src:'enterSearhTermDiv',width:'430',height:'450',top:'200',left:'150',isMovable:'false', layerTitle:'search'});
+           return;
+        }
+        var lm = CLinkManager.getInstance( "/snapfish/searchresults" );
+        lm.setURLParameter("q", q);
+        document.location.href = lm.getURL();
+   }
+   function clearText(field)
+   {
+        if (field.defaultValue == field.value)
+        {
+            field.value = '';
+        }
+   }
+   function submitSearchOnEnter(e)
+   {
+       if(document.all)
+       {
+                if(event.keyCode ==13)
+            {
+                document.getElementById('searchNow').onclick();
+                event.cancelBubble = true;
+                return false;
+            }
+        }
+        else
+        {
+            if(e.keyCode==13)
+            {
+                 document.getElementById('searchNow').onclick();
+                 return false;
+            }
+        }
+   }
+   document.onkeypress = submitSearchOnEnter;
+</script>
+
+<style type="text/css">
+.formstyle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  width: 131px;
+  height:22px;
+  background-color: e9f5fb;
+  border: 1px solid #8ac6f5;
+  padding:2px 7px;
+}
+.searchicon {
+  margin-top:1px;
+  width:22px;
+  float:right;
+}
+html>body .searchicon{margin-top:0px;}
+</style>
+
+<div style="width:160px;">
+  <div style="height:10px;"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/spacer.gif" width="1" height="10"></div>
+    <div style="padding-left:7px;">
+        <img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/store/h-store-logo.jpg" alt=" store " border="0" width="85" height="22">
+        </div>
+  <div style="height:8px;"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/spacer.gif" width="1" height="8"></div>
+  <div style="padding-left:7px; width:128px; float:left;"><input name="googleSrhQuery" class="formstyle" id="googleSrhQuery" type="text" class="formstyle" value="search products" size="17" maxlength="50" onFocus="clearText(this)" onBlur="clearText(this)"></div>
+  <div class="searchicon"><a id="searchNow" href="#" onclick="searchSubmit()"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/icon-search.gif" alt="search now" border="0" width="21" height="22"></a></div>    
+  <div style="clear:both;"></div>
+</div>
+
+<!-- start error div (when no key word entered) -->
+<div id="enterSearhTermDiv" style="display:none;">
+  <div style="align:center; padding:20px;">Please enter a search term and try again.</div>
+  <div style="margin:10px; float:right;"><a href="#" onclick="CLayer.closeLayer('enterSearhTerm');"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/buttons/ok-button.gif" alt=" ok " border="0" width="47" height="23"></a></div>
+  <div style="clear:both;"></div>
+</div>
+<!-- End error div (when no key word entered) -->
+<div class="nav-menu" style="width:160px;"><table class="menu-box-table" style="width:160px;" id="y">
+<tr>
+	<td></td>
+	<td style="font-size:0px;"><div style="font-size:0px;width:100%;"></div></td>
+	<td></td></tr>
+<tr>
+	<td></td>
+	<td><table class="menu-items-table">
+<tr id="">
+	<td class="menu-item-header-cell" colspan="3"><img width="112" height="14" src="http://render-2.snapfish.com:80/dynimage?render=%2F1%2FWebsite_snapfish_us%2Ftemplate%2Fs%2FStore_1000053%2F4.svg&amp;token.TITLE=featured" border="0" alt="featured"></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storepage/storePageId=storegraduation" class="menu-item-link">graduation</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storepage/storePageId=storefathersday" class="menu-item-link">father's day</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storepage/storePageId=Store_Offers_Page" class="menu-item-link">special offers</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storepage/storePageId=New+Products" class="menu-item-link">what's new</a></td></tr>
+<tr id="nav-all-products">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storeallproducts" class="menu-item-link">all products</a></td></tr>
+<tr id="">
+	<td class="menu-item-header-cell menu-item-header-space" colspan="3"><img width="112" height="14" src="http://render-2.snapfish.com:80/dynimage?render=%2F1%2FWebsite_snapfish_us%2Ftemplate%2Fb%2Fbest_sellers_6422016%2F0.svg&amp;token.TITLE=bestsellers" border="0"></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storeprints" class="menu-item-link">prints</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/photobookcategory" class="menu-item-link">photo books</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/cardsbrowsestyles/upc=photocard4x8/category=all_categories" class="menu-item-link">photo cards</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/cardsbrowsestyles/upc=5x7+folded+cards+rev2/category=all_categories" class="menu-item-link">photo greeting cards</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storefavorites" class="menu-item-link">see all bestsellers</a></td></tr>
+<tr id="">
+	<td class="menu-item-header-cell menu-item-header-space" colspan="3"><img width="112" height="14" src="http://render-2.snapfish.com:80/dynimage?render=%2F1%2FWebsite_snapfish_us%2Ftemplate%2Fr%2FRecipient_1000055%2F2.svg&amp;token.TITLE=" border="0"></td></tr>
+<tr id="nav-for-her">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storegiftsforher" class="menu-item-link">for her</a></td></tr>
+<tr id="nav-for-him">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storegiftsforhim" class="menu-item-link">for him</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storepage/storePageId=storeteens" class="menu-item-link">for teens</a></td></tr>
+<tr id="nav-for-kids">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storekids" class="menu-item-link">for kids</a></td></tr>
+<tr id="nav-pets">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storepets" class="menu-item-link">for the pet lover</a></td></tr>
+<tr id="">
+	<td class="menu-item-header-cell menu-item-header-space" colspan="3"><img width="112" height="14" src="http://render-2.snapfish.com:80/dynimage?render=%2F1%2FWebsite_snapfish_us%2Ftemplate%2Fo%2FOccasion_1000054%2F2.svg&amp;token.TITLE=gifts+by+occasion" border="0"></td></tr>
+<tr id="nav-baby">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storenewbaby" class="menu-item-link">baby</a></td></tr>
+<tr id="nav-wedding">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storewedding" class="menu-item-link">wedding</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storepage/storePageId=storekidsart" class="menu-item-link">kids' art</a></td></tr>
+<tr id="nav-party">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storeparty" class="menu-item-link">party</a></td></tr>
+<tr id="">
+	<td class="menu-item-header-cell menu-item-header-space" colspan="3"><img width="112" height="14" src="http://render-2.snapfish.com:80/dynimage?render=%2F1%2FWebsite_snapfish_us%2Ftemplate%2Fs%2Fshopbyprice_7018016%2F0.svg&amp;token.TITLE=shop+by+price" border="0"></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storepage/storePageId=storegiftsunder10" class="menu-item-link">Gifts under $10</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storepage/storePageId=storegiftsunder20" class="menu-item-link">Gifts under $20</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storepage/storePageId=storegiftsunder30" class="menu-item-link">Gifts under $30</a></td></tr>
+<tr id="">
+	<td class="menu-item-header-cell menu-item-header-space" colspan="3"><img width="112" height="14" src="http://render-2.snapfish.com:80/dynimage?render=%2F1%2FWebsite_snapfish_us%2Ftemplate%2Fc%2FCategory_1000056%2F2.svg&amp;token.TITLE=" border="0"></td></tr>
+<tr id="nav-calendars">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storecalendars" class="menu-item-link">calendars</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storepage/storePageId=storephotocanvases" class="menu-item-link">canvas prints</a></td></tr>
+<tr id="nav-cards">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storecards2" class="menu-item-link">cards</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storepage/storePageId=storeclothesaccessories" class="menu-item-link">clothing</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storepage/storePageId=storecollage" class="menu-item-link">collage gifts</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storeboutique" class="menu-item-link">designer boutique</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storedigitalframes" class="menu-item-link">digital photo frames</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storeframes" class="menu-item-link">frames</a></td></tr>
+<tr id="nav-gift-certificates">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storegiftcertificates" class="menu-item-link">gift certificates</a></td></tr>
+<tr id="nav-home-n-office">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storehomeoffice" class="menu-item-link">home & office</a></td></tr>
+<tr id="nav-jewelry-n-accessories">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storejewelry" class="menu-item-link">jewelry & accessories</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storepage/storePageId=storekitchengourmet" class="menu-item-link">kitchen & gourmet</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storepage/storePageId=storelife" class="menu-item-link">LIFE</a></td></tr>
+<tr id="nav-mousepads">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storemousepads" class="menu-item-link">mousepads</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storemugs" class="menu-item-link">mugs</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storepage/storePageId=Ornaments" class="menu-item-link">ornaments</a></td></tr>
+<tr id="nav-photo-books">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/photobookcategory" class="menu-item-link">photo books</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storephotoskins" class="menu-item-link">photo skins</a></td></tr>
+<tr id="nav-posters">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/posters" class="menu-item-link">posters</a></td></tr>
+<tr id="nav-prints-n-prepaids">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storeprints" class="menu-item-link">prints</a></td></tr>
+<tr id="nav-stationery">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storestationery" class="menu-item-link">stationery</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/storepage/storePageId=storecollections" class="menu-item-link">stationery collections</a></td></tr>
+<tr id="nav-store-pickup">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/showretailers" class="menu-item-link">pick-up in-store</a></td></tr>
+<tr id="nav-HP-printers-n-supplies">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/photography_products" class="menu-item-link">HP products</a></td></tr>
+<tr id="">
+	<td class="menu-item-left-margin-cell"></td>
+	<td class="menu-item-bullet-cell"><img width="8" height="14" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dj%3Djthgqagqwa4232373%3D60mrj" border="0"></td>
+	<td class="menu-item-link-cell"><a href="http://www.snapfish.com/snapfish/school" class="menu-item-link">tips and ideas</a></td></tr></table></td>
+	<td></td></tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td></tr></table></div></td>
+            <td><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/spacer.gif" width="18" height="1"></td>
+            <td valign="top">
+              <!-- all tables in the main area should be 746 or less -->
+        <!-- -------------------------- main area ------------------------------------ -->
+
+        <div style="display:none;" id="_auto96240"></div><script type="text/javascript" language="JavaScript">Component.addOnLoadHandler(function() {
+var dialog = new Dialog({'dialogClass':'snapfish-dialog','title':'','reloadSrcOnShow':false,'contentElementId':'_auto96240','deferredLoading':true});Component.addComponent('storePopupDialog', dialog);dialog.addButton({'action':'close','label':''});}
+);</script><table class="store-tiles-table" cellspacing="0"><col style="width:127px;"><col style="width:127px;"><col style="width:127px;">
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td></tr><col style="width:127px;">
+<tr>
+	<td class="store-tile-cell" colspan="4"><iframe marginheight="0" width="508" frameborder="0" height="36" src="/snapfish/adiframeinclude?__internal_ad__=MainStoreBannerAdUS" marginwidth="0" scrolling="no" border="0" id="dynamicSlotIFrame"></iframe></td></tr>
+<tr>
+	<td class="store-tile-cell" colspan="3"><iframe marginheight="0" width="381" frameborder="0" height="182" src="/snapfish/adiframeinclude?__internal_ad__=storeAd+pinkgives" marginwidth="0" scrolling="no" border="0" id="dynamicSlotIFrame"></iframe></td>
+	<td class="store-tile-cell" colspan="1"><iframe marginheight="0" width="127" frameborder="0" height="182" src="/snapfish/adiframeinclude?__internal_ad__=storeRight+pinkgives" marginwidth="0" scrolling="no" border="0" id="dynamicSlotIFrame"></iframe></td></tr>
+<tr><map name="Map7" id="Map">
+  <area shape="rect" coords="9,7,246,128" href="http://www.snapfish.com/snapfish/fe/c=SNAPFISH/l=en_US/s=SNAPFISH/w=SNAPFISH_US/p/store/cards/BrowseStyle?upc=photocard4x8st&category=wedding&s_c=0&s_otsc=IAD&s_otsi=mainstore_invitation_3.24.10&s_se=FDR#previousFilters=%7B%22designs%22%3A%5B%22wedding%22%2C%22graduation%22%2C%22party%22%5D%7D&selectPage=1&resultsPerPage=30" />
+</map>
+	<td class="store-tile-cell" colspan="2"><img width="254" height="138" usemap="#Map7" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dp%3DPpVvuaLpyvqub5b47a42b8%3C48248%3E21lsi" border="0"></td><map name="Map2" id="Map">
+  <area shape="rect" coords="9,10,246,131" href="http://www5.snapfish.com/snapfish/revieworderstore/prd=Magnet/prdtype=Photogift;District(Magnet4x6_cb/otsc=IAD/otsi=mainstore_magnettest_3.24.10" />
+</map>
+	<td class="store-tile-cell" colspan="2"><img width="254" height="138" usemap="#Map2" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dp%3DPpVvuaPiqvva6a56b33a9%3B54339%3D30mrj" border="0"></td></tr>
+<tr>
+	<td class="store-tile-cell" colspan="2"><a href="http://www.snapfish.com/snapfish/storepage/storePageId=Prints"><img width="254" height="138" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dp%3DPclpVvrthastlpwubhhd42b847%3C248%3E21lsi" border="0"></a></td><map name="Map1" id="Map">
+  <area shape="rect" coords="10,7,247,129" href="http://www.snapfish.com/snapfish/gifts/product=puzzle/otsc=IAD/otsi=mainstore_puzzletest_3.24.10" />
+</map>
+	<td class="store-tile-cell" colspan="2"><img width="254" height="138" usemap="#Map1" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dp%3DPpVvuaS%7C%7Dnva6a56b33a9%3B55339%3D30mrj" border="0"></td></tr>
+<tr>
+	<td class="store-tile-cell" colspan="4"><a href="http://www.snapfish.com/snapfish/storepage/storePageId=storecollage"><img width="508" height="138" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Df%3DFqondihIlhwubOdkqa7zbHHD42b848%3B248%3E31lsi" border="0"></a></td></tr>
+<tr>
+	<td class="store-tile-cell" colspan="2"><a href="http://www.snapfish.com/snapfish/storestationery"><img width="254" height="138" title="put your photos on stationery products from snapfish" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dv%3DVvdvlqqgu%7BbOdkqaige33a9396339%3D30mrj" border="0" alt="put your photos on stationery products from snapfish"></a></td>
+	<td class="store-tile-cell" colspan="2"><a href="http://www.snapfish.com/snapfish/photobookdetails/product=flipbook/"><img width="254" height="138" title="turn your prints into a fun flipbook with snapfish" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Di%3DInlrEqrmvaPclpbHHD42b8489248%3E21lsi" border="0" alt="turn your prints into a fun flipbook with snapfish"></a></td></tr>
+<tr>
+	<td class="store-tile-cell" colspan="2"><a href="http://www.snapfish.com/snapfish/storepage/storePageId=Jewellery"><img width="254" height="138" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dm%3DMgzgot%7Capclpscjgbustlpja5a44b33a9397339%3D30mrj" border="0"></a></td>
+	<td class="store-tile-cell" colspan="2"><a href="http://www.snapfish.com/snapfish/storemugs"><img width="254" height="138" title="put your photo on a mug from snapfish" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Dp%3DPwjubOdkqaIGE33a9399339%3D30mrj" border="0" alt="put your photo on a mug from snapfish"></a></td></tr>
+<tr>
+	<td class="store-tile-cell" colspan="4"><a href="http://www.snapfish.com/snapfish/photobookstyles/booksize=11x8/ordertype=PMB_DMB"><img width="508" height="138" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Ds%3DSjrvrdrqnubodkqrdihavrukqib4b35a42b8484248%3E41lsi" border="0"></a></td></tr>
+<tr>
+	<td class="store-tile-cell" colspan="2"><a href="http://www.snapfish.com/snapfish/revieworderstore/prd=PhotoPanel/prdtype=Photogift;PHOTOTHIS(PhotoPanel_cb;5x7/"><img width="254" height="138" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Ds%3DSjrvraScqgoubodkqrdihavrukqib4b35a42b848%3C248%3E21lsi" border="0"></a></td>
+	<td class="store-tile-cell" colspan="2"><a href="http://www.snapfish.com/snapfish/storepage/storePageId=Posters"><img width="254" height="138" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Ds%3DSqvvhtvapclpscjgbustlpja5a44b33a93%3A2339%3D30mrj" border="0"></a></td></tr>
+<tr>
+	<td class="store-tile-cell" colspan="2"><a href="http://www.snapfish.com/snapfish/storecards2"><img width="254" height="138" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Df%3Dfcufvapclpscjgbustlpja5a44b33a9392339%3D30mrj" border="0"></a></td>
+	<td class="store-tile-cell" colspan="2"><a href="http://snapfish.skinit.com/index.php?"><img width="254" height="138" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Ds%3DSjrvrunkqubodkqrdihavrukqib4b35a42b8494248%3E21lsi" border="0"></a></td></tr>
+<tr>
+	<td class="store-tile-cell" colspan="4"><a href="http://www.snapfish.com/snapfish/storepage/storePageId=storephotocanvases"><img width="508" height="138" src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Df%3DFcqxdubodkqrdihavrukqib4b35a42b8486248%3E31lsi" border="0"></a></td></tr>
+<tr>
+	<td class="store-tile-cell" colspan="4"><img width="508" height="51" title="Snapfish is now accepting PayPal for purchasing prints, cards and gifts." src="http://static.snapfish.com:80/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dlodih%3Ds%3DSc%7CrdnbOdkqUwtSiOyuDqpuaVW3%3Bb4%3B77248%3E21lsi" border="0" alt="Snapfish is now accepting PayPal for purchasing prints, cards and gifts."></td></tr></table><!-- ------------------------ end main area ---------------------------------- -->
+
+        <div style="width:486px; margin-top: 30px;" width="486" align="right">
+          <a href="mailto:?subject=I thought you'd enjoy these gift ideas!&body=http://www.snapfish.com/snapfish/store"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/store/forward_product/forward_products_to_friend.gif" width="202" height="12" alt=" share these gift ideas with a friend " border="0" align="right" /></a>
+          </div>
+        <!---------------------------- main store page ends  -------------------------------->
+
+</td>
+      </tr>
+      <tr><td bgcolor="#ffffff"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/spacer.gif" width=1 height=100></td></tr>
+   </table>
+   <img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/spacer.gif" width=726 height=1 border=0>
+   </td>
+   <td bgcolor="#FFFFFF" width=20>&nbsp;</td>
+   <td bgcolor="#3399cc" width=6>&nbsp;</td>
+</tr>
+<tr>
+   <td bgcolor="#3399cc" width=6>&nbsp;</td>
+   <td bgcolor="#FFFFFF" colspan=3>
+      <script type="text/javascript">
+
+function MRBAlert(targetURL)
+{
+  if(typeof(showAlertOverlay) == "function")
+  {
+    enableExitWarning();
+    showAlertOverlay(targetURL);
+  }
+  else
+  {
+    document.location.href = targetURL;
+  }
+}
+</script>
+<STYLE type="text/css">
+A.greyFooterLink:visited, A.greyFooterLink:link, A.greyFooterLink:active {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #666666;
+}
+</style>
+<!-- CR002012-->
+<!-- SNF0031244 -->
+<!-- end footer tabs-->
+<table width="100%" cellPadding=0 cellSpacing=0 border=0>
+  <tr>
+    <td bgcolor="#3399cc" class="LeftCurve"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/spacer.gif" width="11" height="11" border="0"></td>
+    <td bgcolor="#ffffff" width="100%"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/spacer.gif" width="55" height="1" border="0"></td>
+    <td align="right" bgcolor="#3399cc" class="rightcurve"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/spacer.gif" width="11" height="11" border="0"></td>
+  </tr>
+</table>
+<table width="100%" cellPadding=0 cellSpacing=0 border=0 bgcolor="#3399cc">
+  <tr><td height="10"></td></tr>
+  <tr>
+    <td>
+    <script type="text/javascript">
+
+
+function MRBAlert(targetURL)
+{
+  if(typeof(showAlertOverlay) == "function" )
+  {
+    enableExitWarning();
+    showAlertOverlay(targetURL);
+  }
+  else
+  {
+    document.location.href = targetURL;
+  }
+}
+</script>
+<style type="text/css">
+.linkwhite a
+{
+      color:#ffffff;
+}
+
+.linkwhite a:visited
+{
+      color:#ffffff;
+}
+
+.linkwhite a:active
+{
+      color:#ffffff;
+}
+
+.linkwhite a:link
+{
+      color:#ffffff;
+}
+A.greyFooterLink:visited, A.greyFooterLink:link, A.greyFooterLink:active {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #666666;
+}
+A.whiteFooterLink:visited, A.whiteFooterLink:link, A.whiteFooterLink:active {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #ffffff;
+}
+</style>
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" >
+  <tr>
+	  <td bgcolor="#3399cc" align="center">
+	  <div id="footer" class="linkwhite"><a href="http://www.snapfish.com/snapfish/store" class="linkwhite" onClick="javascript:trackNav(this,'footer_ourproducts');">our products</a> &nbsp;|&nbsp;
+	  <a href="http://www.snapfish.com/snapfish/howitworks" >how it works</a> &nbsp;|&nbsp;
+	  <a href="http://www.snapfish.com/snapfish/helppricing" >pricing</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	  <a href="/snapfish/infosnapfishmobile" >mobile</a> &nbsp;|&nbsp;
+	  <a href="http://www.snapfish.com/snapfish/termsAndConditions" >t&amp;c's</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	  <a href="http://www.snapfish.com/snapfish/privacy" >privacy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	  <a href="http://publisher.snapfish.com/ ">snapfish publisher</a><br />
+	  <a href="http://www.snapfish.com/snapfish/affiliate" >affiliate program</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	  <a href="http://www.snapfish.com/snapfish/siteindex" >site map</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	  <a onClick="javascript:trackNav(this,'footer_help');" class="linkwhite" href="http://support.snapfish.com/cgi-bin/snapfish.cfg/php/xml_api/cci/answer_redirect.php?p_answer_label=helpindex&brand=3&brandHost=www2.snapfish.com">help</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	  <a href="http://www.snapfish.com/snapfish/aboutUs" >about us</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	  <a href="http://www.snapfish.com/snapfish/customerservice" >customer service</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	  <a href="http://www.snapfish.com/snapfish/contact">contact us</a>
+	  </font>
+	  </div>
+	  </td>
+  </tr>
+  <tr><td bgcolor="#3399cc" height="12"><img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/spacer.gif" width="1" height="12" border="0" /></td></tr>
+
+</table>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+
+    window.previousOnLoad = window.onload;
+    window.onload = showDartScreens ;
+    var __isPageCompletlyInitialized = false ;
+    var __ins_sub_onload_triggered = false ;
+
+    //define this var in your jsp to true ,if want to check page
+    //completely loaded
+    if(typeof(checkPageCompletlyInitialized) != "undefined" && checkPageCompletlyInitialized == true){
+      if(typeof window.document.onmousedown == "function")
+      {
+          //It's handled in Drag-n-drop js file
+      }
+      else
+      {
+          //It's not handled, handle it here
+          window.document.onmousedown = __sub_pageLoad ;
+      }
+    }
+
+    function __sub_pageLoad()
+    {
+
+
+      if(! __isPageCompletlyInitialized)
+      {
+          if(__ins_sub_onload_triggered){
+            if( typeof(__sub_onload) == "function" || typeof(__sub_onload) == "object" ){
+                __sub_onload() ;
+            }
+          }
+          else{
+            //we will have to call this fn coz 'window.onload = showDartScreens' not working
+            //if we click before showDartScreens being called in IE.
+            showDartScreens();
+          }
+          //alert(" Wait till the page is completely loaded.");
+          return ;
+      }
+  }
+
+    function showDartScreens()
+    {
+        if (window.previousOnLoad)
+        {
+            window.previousOnLoad();
+        }
+
+    __ins_sub_onload_triggered = true ;
+
+    if( typeof(__sub_onload) == "function"
+            || typeof(__sub_onload) == "object" )
+        {
+            __sub_onload() ;
+        }
+        __isPageCompletlyInitialized = true ;
+
+    }   //end of showDartScreens()
+
+</SCRIPT>
+<span style="display:none">
+    <script type="text/JavaScript">
+	  <!--send the data into siteCatalyst-->
+      /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+      try
+      {
+        if(s)
+        {
+          var s_code=s.t();if(s_code)document.write(s_code);
+        }
+      } 
+	  catch(e){}
+    </script>
+    <!-- End SiteCatalyst code version: H.3. -->
+  </span>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<link rel="stylesheet" type="text/css" href="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/styles/snapfish/snapfish_us/global.css" />
+<script type="text/javascript">
+function changeCountryWithParam(websitename)
+{
+   var lm=CLinkManager.getInstance("http://www.snapfish.com/snapfish/changecountry");
+   lm.setURLParameter( "websiteInfo", websitename );
+   location.href = lm.getURL();
+}
+
+function MRBAlert(targetURL)
+{
+  if(typeof(showAlertOverlay) == "function")
+  {
+    enableExitWarning();
+    showAlertOverlay(targetURL);
+  }
+  else
+  {
+    document.location.href = targetURL;
+  }
+}
+</script>
+
+<table border="0" cellpadding="0" cellspacing="0" width="745" align="center" bgcolor="#3399cc">
+      <tr><td height="10"></td></tr>
+      <tr><td align="center">
+      <img src="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/images/homeredesign/worldwide_footer.gif" width="206" height="47" border="0" alt="" />
+      </td></tr>
+	    <tr><td height="10">&nbsp;</td></tr>
+	    <tr>
+	      <td align="center" width="753" colspan="3">	      
+	      	<div style='color:#ffffff'>
+	      <a href="http://www.snapfish.com.au/snapfishau/welcome" style='color:#ffffff'>
+				       Australia</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.be/snapfishbe/welcome/locale=nl_BE" style='color:#ffffff'>
+				       België - Nederlands</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.be/snapfishbe/welcome/locale=fr_BE" style='color:#ffffff'>
+				       Belgique - français</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.ca/snapfishca/welcome/locale=en_CA" style='color:#ffffff'>
+				       Canada - English</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.ca/snapfishca/welcome/locale=fr_CA" style='color:#ffffff'>
+				       Canada - français</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.dk/snapfishdk/welcome" style='color:#ffffff'>
+				       Danmark</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.de/snapfishde/welcome" style='color:#ffffff'>
+				       Deutschland</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.es/snapfishes/welcome" style='color:#ffffff'>
+				       España</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.fr/snapfishfr/welcome" style='color:#ffffff'>
+				       France</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.in/snapfishin/welcome" style='color:#ffffff'>
+				       India</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.ie/snapfishie/welcome" style='color:#ffffff'>
+				       Ireland</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.it/snapfishit/welcome" style='color:#ffffff'>
+				       Italia</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.nl/snapfishnl/welcome" style='color:#ffffff'>
+				       Nederland</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.co.nz/snapfishnz/welcome" style='color:#ffffff'>
+				       New Zealand</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.no/snapfishno/welcome" style='color:#ffffff'>
+				       Norge</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.at/snapfishat/welcome" style='color:#ffffff'>
+				       Österreich</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.pt/snapfishpt/welcome" style='color:#ffffff'>
+				       Portugal</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.ch/snapfishch/welcome/locale=de_CH" style='color:#ffffff'>
+				       Schweiz - Deutsch</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.com.sg/snapfishsg/welcome" style='color:#ffffff'>
+				       Singapore</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.ch/snapfishch/welcome/locale=fr_CH" style='color:#ffffff'>
+				       Suisse - français</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.se/snapfishse/welcome" style='color:#ffffff'>
+				       Sverige</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.ch/snapfishch/welcome/locale=it_CH" style='color:#ffffff'>
+				       Svizzera - italiano</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.co.uk/snapfishuk/welcome" style='color:#ffffff'>
+				       United Kingdom</a>
+		            
+		            &nbsp;|&nbsp;
+		        <b>
+		            United States</b>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.snapfish.jp/snapfishjp/welcome" style='color:#ffffff'>
+				       デジカメプリント</a>
+		            
+		            &nbsp;|&nbsp;
+		        <a href="http://www.kachayu.com/snapfishcn/welcome" style='color:#ffffff'>
+				       网上冲�?�</a>
+		            
+		            &nbsp;|&nbsp;
+		        </div></td>
+				    </tr>
+	        <tr><td height="20">&nbsp;</td></tr>
+    </table>
+  </td>
+  </tr>
+</table>
+
+</td>
+   <td bgcolor="#3399cc" width=6>&nbsp;</td>
+</tr>
+</table><p><br>
+</div>
+</form>
+</body>
+</html>
+
+</body>
+</html>
+GET http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/styles/snapfish/snapfish_us/global.css HTTP/1.0
+
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/store
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:06:43 GMT
+If-None-Match: "6459-d3c576c0"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919361|session#1273709478445-731792#1273711621|check#true#1273709821
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 19:06:43 GMT
+ETag: "6459-d3c576c0"
+Accept-Ranges: bytes
+Content-Type: text/css
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9897
+
+GET http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/javascript/util/mbox.js HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/store
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:03:30 GMT
+If-None-Match: "5b61-c8448480"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919361|session#1273709478445-731792#1273711621|check#true#1273709821
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 19:03:30 GMT
+ETag: "5b61-c8448480"
+Accept-Ranges: bytes
+Content-Type: application/x-javascript
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9897
+
+GET http://static.snapfish.com/232323232%7Ffp89%3A%3Eju%3Dfqqurnh%3Dduvgwu%3E%3D4%3DZgeulvhavpdrikvjbwv%3Dfuv%3Dv%3Dvhxubpdxbx6a42323%3A%3A%3D50fuv HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/store
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 13 Nov 2008 17:43:24 GMT
+If-None-Match: "26c-a63b4700"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919361|session#1273709478445-731792#1273711621|check#true#1273709821
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 13 Nov 2008 17:43:24 GMT
+ETag: "26c-a63b4700"
+Accept-Ranges: bytes
+Content-Type: text/css
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9898
+
+GET http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/ClientLibraries/InfoscopicWeb/core/InfoscopicWeb.js HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/store
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 18:42:54 GMT
+If-None-Match: "912-7e98a780"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919361|session#1273709478445-731792#1273711621|check#true#1273709821
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 18:42:54 GMT
+ETag: "912-7e98a780"
+Accept-Ranges: bytes
+Content-Type: application/x-javascript
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9898
+
+GET http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/ClientLibraries/InfoscopicWeb/dhtml/Dialog/Dialog.css HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/store
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 18:42:55 GMT
+If-None-Match: "8be-7ea7e9c0"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919361|session#1273709478445-731792#1273711621|check#true#1273709821
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 18:42:55 GMT
+ETag: "8be-7ea7e9c0"
+Accept-Ranges: bytes
+Content-Type: text/css
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9898
+
+GET http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/styles/snapfish/inline_popup.css HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/store
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:06:40 GMT
+If-None-Match: "87f-d397b000"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919361|session#1273709478445-731792#1273711621|check#true#1273709821
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 19:06:40 GMT
+ETag: "87f-d397b000"
+Accept-Ranges: bytes
+Content-Type: text/css
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9898
+
+GET http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/ClientLibraries/Console/Ticker/ticker.js HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/store
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 18:42:53 GMT
+If-None-Match: "42c7-7e896540"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919361|session#1273709478445-731792#1273711621|check#true#1273709821
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 18:42:53 GMT
+ETag: "42c7-7e896540"
+Accept-Ranges: bytes
+Content-Type: application/x-javascript
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9898
+
+GET http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/styles/snapfish/DynamicTicker.css HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/store
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:06:40 GMT
+If-None-Match: "170-d397b000"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919361|session#1273709478445-731792#1273711621|check#true#1273709821
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 19:06:40 GMT
+ETag: "170-d397b000"
+Accept-Ranges: bytes
+Content-Type: text/css
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9899
+
+GET http://static.snapfish.com/MD5=8109821fa6b9e8ee9f066bb23d625cf9/default/javascript/core/CLinkManager.js HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/store
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:02:39 GMT
+If-None-Match: "3544-c53a51c0"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919361|session#1273709478445-731792#1273711621|check#true#1273709821
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 19:02:39 GMT
+ETag: "3544-c53a51c0"
+Accept-Ranges: bytes
+Content-Type: application/x-javascript
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9899
+
+GET http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/javascript/snapfish_mtagconfig.js HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/store
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:03:28 GMT
+If-None-Match: "1756-c8260000"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919361|session#1273709478445-731792#1273711621|check#true#1273709821
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 19:03:28 GMT
+ETag: "1756-c8260000"
+Accept-Ranges: bytes
+Content-Type: application/x-javascript
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9899
+
+GET http://static.snapfish.com/MD5=9f44b6c47645023430356b82de53411f/default/javascript/omniture/s_code.js HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/store
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:03:25 GMT
+If-None-Match: "6c41-c7f83940"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919361|session#1273709478445-731792#1273711621|check#true#1273709821
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 19:03:25 GMT
+ETag: "6c41-c7f83940"
+Accept-Ranges: bytes
+Content-Type: application/x-javascript
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9899
+
+GET http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/ClientLibraries/InfoscopicWeb/dhtml/Dialog/Dialog.js HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/store
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 18:42:55 GMT
+If-None-Match: "3158-7ea7e9c0"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919361|session#1273709478445-731792#1273711621|check#true#1273709821
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 18:42:55 GMT
+ETag: "3158-7ea7e9c0"
+Accept-Ranges: bytes
+Content-Type: application/x-javascript
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9900
+
+GET http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/styles/snapfish/snapfish_us/util/layer.css HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/store
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:06:46 GMT
+If-None-Match: "e39-d3f33d80"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919361|session#1273709478445-731792#1273711621|check#true#1273709821
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 19:06:46 GMT
+ETag: "e39-d3f33d80"
+Accept-Ranges: bytes
+Content-Type: text/css
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9900
+
+GET http://static.snapfish.com/MD5=6309c6dd2ddf6fb78a4cbf23761aecd4/default/javascript/util/layer.js HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/store
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:03:30 GMT
+If-None-Match: "9bde-c8448480"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919361|session#1273709478445-731792#1273711621|check#true#1273709821
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 19:03:30 GMT
+ETag: "9bde-c8448480"
+Accept-Ranges: bytes
+Content-Type: application/x-javascript
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9900
+
+GET http://static.snapfish.com/MD5=9f5d4958d2b8229fc024a74de45028e5/default/javascript/core/CCookie.js HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/store
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:02:39 GMT
+If-None-Match: "3052-c53a51c0"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919361|session#1273709478445-731792#1273711621|check#true#1273709821
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 19:02:39 GMT
+ETag: "3052-c53a51c0"
+Accept-Ranges: bytes
+Content-Type: application/x-javascript
+Date: Wed, 12 May 2010 21:31:07 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:07 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9900
+
+GET http://static.snapfish.com/MD5=6c9ce738d1445d282bfcfa446ca66e21/default/javascript/util/common.js HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/store
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:03:30 GMT
+If-None-Match: "f7eb-c8448480"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919366|session#1273709478445-731792#1273711626|check#true#1273709826
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 19:03:30 GMT
+ETag: "f7eb-c8448480"
+Accept-Ranges: bytes
+Content-Type: application/x-javascript
+Date: Wed, 12 May 2010 21:31:09 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:09 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9898
+
+GET http://static.snapfish.com/MD5=6c9ce738d1445d282bfcfa446ca66e21/default/javascript/util/common.js HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/store
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:03:30 GMT
+If-None-Match: "f7eb-c8448480"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919366|session#1273709478445-731792#1273711626|check#true#1273709826
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 19:03:30 GMT
+ETag: "f7eb-c8448480"
+Accept-Ranges: bytes
+Content-Type: application/x-javascript
+Date: Wed, 12 May 2010 21:31:09 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:09 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9899
+
+GET http://www.snapfish.com/snapfish/adiframeinclude?__internal_ad__=MainStoreBannerAdUS HTTP/1.0
+Accept: application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, application/x-shockwave-flash, */*
+Referer: http://www.snapfish.com/snapfish/store
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+Host: www.snapfish.com
+Cookie: SF_SESSION_COOKIE.snapfish_us.prd=heyGbTbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj.fancsvfu.pbz%2Ffancsvfu%2Ffgber%21%25AIC_FRC%5E%21vachgheyvq%21%25RDHNYF%5E%213296%21%25AIC_FRC%5E%21jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21erserfuhfre%21%25RDHNYF%5E%21gehr%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000%21%25AIC_FRC%5E%21heyGlcr%21%25RDHNYF%5E%21ABA-FJVSG; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; JSESSIONID=D1E8FE3DFDFAF803D4656239E2CAB0BF; BIGipServer=3607704074.16415.000; SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919366|session#1273709478445-731792#1273711626|check#true#1273709826; BIGipServersf3-scw-pod2=3607704074.16415.0000; SF_SESSION_COOKIE.snapfish_us.prd=heyGbTbonpx!%25RDHNYF%5E!uggc%3A%2F%2Fjjj.fancsvfu.pbz%2Ffancsvfu%2Ffgber!%25AIC_FRC%5E!vachgheyvq!%25RDHNYF%5E!3296!%25AIC_FRC%5E!jrofvgrBvq!%25RDHNYF%5E!1000000!%25AIC_FRC%5E!pboenaqBvq!%25RDHNYF%5E!1000!%25AIC_FRC%5E!heyGlcr!%25RDHNYF%5E!ABA-FJVSG
+
+HTTP/1.1 200 OK
+Date: Thu, 13 May 2010 00:16:08 GMT
+Server: Apache-Coyote/1.1
+Expires: 0
+Pragma: no-cache
+Cache-Control: no-cache,must-revalidate,proxy-revalidate
+P3P: CP="ALL DSP COR CONi OUR BUS PHY ONL PUR DEM STA"
+Content-Type: text/html; charset=UTF-8
+Vary: Accept-Encoding
+Content-Length: 2272
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Set-Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; Domain=snapfish.com; Path=/
+Set-Cookie: SF_CisForCookie=SF_ThatIsGoodEnoughForMe!; Domain=snapfish.com; Path=/; Secure
+Set-Cookie: cms.snapfish_us.prd=""; Domain=snapfish.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/snapfish
+
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script language="javascript">
+
+    window.cookiedomain = "snapfish.com" ;
+
+    window.cookiesuffix = ".snapfish_us.prd" ;
+    window.cookienewpath = "/snapfish";
+	
+</script>
+
+<SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/javascript/util/mbox.js"></SCRIPT><SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=6c9ce738d1445d282bfcfa446ca66e21/default/javascript/util/common.js"></SCRIPT><script language="javascript">
+
+    function openAdWindow(clickURL, windowProps)
+    {
+        //to close suggestive selling ad on cart page
+        if(parent.adCloseFlag)
+        {
+            parent.adWindow = window.open(clickURL, 'snapfishAd', windowProps);
+        }
+        else
+        {
+            CPopup.open(clickURL, windowProps,'snapfishAd');
+        }
+    }
+
+    function openInlineAdWindow(src, title, width, clientHeight){
+        if( typeof window.parent.openInlinePopup != "undefined" ){
+        	window.parent.openInlinePopup(src, title, width, clientHeight);   
+        }
+    }    
+
+</script>
+
+</head>
+<body>
+
+
+
+
+<a name="__ad_linkname1"
+                      href="http://www.snapfish.com/click_thru?adOid=8335012&amp;redirectTo=http_xfc_xff_xffwww.snapfish.com_xff_xffstorepage_xffstorePageId_xfqstoregraduation_xffotsc_xfqIAD_xffotsi_xfqstorebanner1_storegrad_4.19.10" onClick="javascript:trackOnClick(this)"  target="_top"><img
+                          name="__ad_imagename1"
+                          src="http://static.snapfish.com/KPMNDTMMLVEQA/1000472/1082831/1271702548616"
+                          width="508"
+                          height="36" alt="" border=0></a>
+             <SCRIPT LANGUAGE="JavaScript">
+
+    window.document.onclick = handleOnClick ;
+
+    function handleOnClick()
+    {
+        //Activation popup
+        if( typeof window.parent.flowLinkClicked != "undefined" )
+        {
+            window.parent.flowLinkClicked = true ;
+        }
+    }
+
+    function trackOnClick(sObj)
+    {
+        // Clickmap tracking for ads
+        if( typeof window.parent.trackAd != "undefined")
+        {
+            window.parent.trackAd(sObj);
+        }
+    }
+
+</SCRIPT>
+</body>
+</html>
+
+
+
+GET http://www.snapfish.com/snapfish/adiframeinclude?__internal_ad__=storeAd+pinkgives HTTP/1.0
+Accept: application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, application/x-shockwave-flash, */*
+Referer: http://www.snapfish.com/snapfish/store
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+Host: www.snapfish.com
+Cookie: SF_SESSION_COOKIE.snapfish_us.prd=heyGbTbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj.fancsvfu.pbz%2Ffancsvfu%2Ffgber%21%25AIC_FRC%5E%21vachgheyvq%21%25RDHNYF%5E%213296%21%25AIC_FRC%5E%21jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21erserfuhfre%21%25RDHNYF%5E%21gehr%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000%21%25AIC_FRC%5E%21heyGlcr%21%25RDHNYF%5E%21ABA-FJVSG; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; JSESSIONID=D1E8FE3DFDFAF803D4656239E2CAB0BF; BIGipServer=3607704074.16415.000; SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919366|session#1273709478445-731792#1273711626|check#true#1273709826; BIGipServersf3-scw-pod2=3607704074.16415.0000; SF_SESSION_COOKIE.snapfish_us.prd=heyGbTbonpx!%25RDHNYF%5E!uggc%3A%2F%2Fjjj.fancsvfu.pbz%2Ffancsvfu%2Ffgber!%25AIC_FRC%5E!vachgheyvq!%25RDHNYF%5E!3296!%25AIC_FRC%5E!jrofvgrBvq!%25RDHNYF%5E!1000000!%25AIC_FRC%5E!pboenaqBvq!%25RDHNYF%5E!1000!%25AIC_FRC%5E!heyGlcr!%25RDHNYF%5E!ABA-FJVSG
+
+HTTP/1.1 200 OK
+Date: Thu, 13 May 2010 00:16:08 GMT
+Server: Apache-Coyote/1.1
+Expires: 0
+Pragma: no-cache
+Cache-Control: no-cache,must-revalidate,proxy-revalidate
+P3P: CP="ALL DSP COR CONi OUR BUS PHY ONL PUR DEM STA"
+Content-Type: text/html; charset=UTF-8
+Vary: Accept-Encoding
+Content-Length: 2270
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Set-Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; Domain=snapfish.com; Path=/
+Set-Cookie: SF_CisForCookie=SF_ThatIsGoodEnoughForMe!; Domain=snapfish.com; Path=/; Secure
+Set-Cookie: cms.snapfish_us.prd=""; Domain=snapfish.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/snapfish
+
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script language="javascript">
+
+    window.cookiedomain = "snapfish.com" ;
+
+    window.cookiesuffix = ".snapfish_us.prd" ;
+    window.cookienewpath = "/snapfish";
+	
+</script>
+
+<SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/javascript/util/mbox.js"></SCRIPT><SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=6c9ce738d1445d282bfcfa446ca66e21/default/javascript/util/common.js"></SCRIPT><script language="javascript">
+
+    function openAdWindow(clickURL, windowProps)
+    {
+        //to close suggestive selling ad on cart page
+        if(parent.adCloseFlag)
+        {
+            parent.adWindow = window.open(clickURL, 'snapfishAd', windowProps);
+        }
+        else
+        {
+            CPopup.open(clickURL, windowProps,'snapfishAd');
+        }
+    }
+
+    function openInlineAdWindow(src, title, width, clientHeight){
+        if( typeof window.parent.openInlinePopup != "undefined" ){
+        	window.parent.openInlinePopup(src, title, width, clientHeight);   
+        }
+    }    
+
+</script>
+
+</head>
+<body>
+
+
+
+
+<a name="__ad_linkname1"
+                      href="http://www.snapfish.com/click_thru?adOid=8622012&amp;redirectTo=http_xfc_xff_xffwww.snapfish.com_xff_xffstorepage_xffstorePageId_xfqstoregraduation_xffotsc_xfqIAD_xffotsi_xfqstoread2_graduation_5.10.10" onClick="javascript:trackOnClick(this)"  target="_top"><img
+                          name="__ad_imagename1"
+                          src="http://static.snapfish.com/KPMNDTMMLVEQA/1000472/1082830/1273539515040"
+                          width="381"
+                          height="182" alt="" border=0></a>
+             <SCRIPT LANGUAGE="JavaScript">
+
+    window.document.onclick = handleOnClick ;
+
+    function handleOnClick()
+    {
+        //Activation popup
+        if( typeof window.parent.flowLinkClicked != "undefined" )
+        {
+            window.parent.flowLinkClicked = true ;
+        }
+    }
+
+    function trackOnClick(sObj)
+    {
+        // Clickmap tracking for ads
+        if( typeof window.parent.trackAd != "undefined")
+        {
+            window.parent.trackAd(sObj);
+        }
+    }
+
+</SCRIPT>
+</body>
+</html>
+
+
+
+GET http://www.snapfish.com/snapfish/adiframeinclude?__internal_ad__=storeRight+pinkgives HTTP/1.0
+Accept: application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, application/x-shockwave-flash, */*
+Referer: http://www.snapfish.com/snapfish/store
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+Host: www.snapfish.com
+Cookie: SF_SESSION_COOKIE.snapfish_us.prd=heyGbTbonpx%21%25RDHNYF%5E%21uggc%3A%2F%2Fjjj.fancsvfu.pbz%2Ffancsvfu%2Ffgber%21%25AIC_FRC%5E%21vachgheyvq%21%25RDHNYF%5E%213296%21%25AIC_FRC%5E%21jrofvgrBvq%21%25RDHNYF%5E%211000000%21%25AIC_FRC%5E%21erserfuhfre%21%25RDHNYF%5E%21gehr%21%25AIC_FRC%5E%21pboenaqBvq%21%25RDHNYF%5E%211000%21%25AIC_FRC%5E%21heyGlcr%21%25RDHNYF%5E%21ABA-FJVSG; SF_PC_060100.snapfish_us.prd=ybpnyr%21%25RDHNYF%5E%21ra_HF; JSESSIONID=D1E8FE3DFDFAF803D4656239E2CAB0BF; BIGipServer=3607704074.16415.000; SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919366|session#1273709478445-731792#1273711626|check#true#1273709826; BIGipServersf3-scw-pod2=3607704074.16415.0000; SF_SESSION_COOKIE.snapfish_us.prd=heyGbTbonpx!%25RDHNYF%5E!uggc%3A%2F%2Fjjj.fancsvfu.pbz%2Ffancsvfu%2Ffgber!%25AIC_FRC%5E!vachgheyvq!%25RDHNYF%5E!3296!%25AIC_FRC%5E!jrofvgrBvq!%25RDHNYF%5E!1000000!%25AIC_FRC%5E!pboenaqBvq!%25RDHNYF%5E!1000!%25AIC_FRC%5E!heyGlcr!%25RDHNYF%5E!ABA-FJVSG
+
+HTTP/1.1 200 OK
+Date: Thu, 13 May 2010 00:16:08 GMT
+Server: Apache-Coyote/1.1
+Expires: 0
+Pragma: no-cache
+Cache-Control: no-cache,must-revalidate,proxy-revalidate
+P3P: CP="ALL DSP COR CONi OUR BUS PHY ONL PUR DEM STA"
+Content-Type: text/html; charset=UTF-8
+Vary: Accept-Encoding
+Content-Length: 2270
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Set-Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; Domain=snapfish.com; Path=/
+Set-Cookie: SF_CisForCookie=SF_ThatIsGoodEnoughForMe!; Domain=snapfish.com; Path=/; Secure
+Set-Cookie: cms.snapfish_us.prd=""; Domain=snapfish.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/snapfish
+
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script language="javascript">
+
+    window.cookiedomain = "snapfish.com" ;
+
+    window.cookiesuffix = ".snapfish_us.prd" ;
+    window.cookienewpath = "/snapfish";
+	
+</script>
+
+<SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=ba58a2dd92ab23fa6a7c06b6d8b7a5e2/default/javascript/util/mbox.js"></SCRIPT><SCRIPT LANGUAGE="javascript"  SRC="http://static.snapfish.com/MD5=6c9ce738d1445d282bfcfa446ca66e21/default/javascript/util/common.js"></SCRIPT><script language="javascript">
+
+    function openAdWindow(clickURL, windowProps)
+    {
+        //to close suggestive selling ad on cart page
+        if(parent.adCloseFlag)
+        {
+            parent.adWindow = window.open(clickURL, 'snapfishAd', windowProps);
+        }
+        else
+        {
+            CPopup.open(clickURL, windowProps,'snapfishAd');
+        }
+    }
+
+    function openInlineAdWindow(src, title, width, clientHeight){
+        if( typeof window.parent.openInlinePopup != "undefined" ){
+        	window.parent.openInlinePopup(src, title, width, clientHeight);   
+        }
+    }    
+
+</script>
+
+</head>
+<body>
+
+
+
+
+<a name="__ad_linkname1"
+                      href="http://www.snapfish.com/click_thru?adOid=8623012&amp;redirectTo=http_xfc_xff_xffwww.snapfish.com_xff_xffstorepage_xffstorePageId_xfqstoregraduation_xffotsc_xfqIAD_xffotsi_xfqstoread3_graduation_5.10.10" onClick="javascript:trackOnClick(this)"  target="_top"><img
+                          name="__ad_imagename1"
+                          src="http://static.snapfish.com/KPMNDTMMLVEQA/1000472/1082830/1273539593232"
+                          width="127"
+                          height="182" alt="" border=0></a>
+             <SCRIPT LANGUAGE="JavaScript">
+
+    window.document.onclick = handleOnClick ;
+
+    function handleOnClick()
+    {
+        //Activation popup
+        if( typeof window.parent.flowLinkClicked != "undefined" )
+        {
+            window.parent.flowLinkClicked = true ;
+        }
+    }
+
+    function trackOnClick(sObj)
+    {
+        // Clickmap tracking for ads
+        if( typeof window.parent.trackAd != "undefined")
+        {
+            window.parent.trackAd(sObj);
+        }
+    }
+
+</SCRIPT>
+</body>
+</html>
+
+
+
+GET http://www.snapfish.com/default/images/homeredesign/bottom-curve-left.png HTTP/1.0
+Accept: */*
+Proxy-Connection: Keep-Alive
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+If-Modified-Since: Thu, 29 Apr 2010 18:46:57 GMT
+If-None-Match: "c4-485648d148a40"
+Host: www.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919366|session#1273709478445-731792#1273711626|check#true#1273709826; BIGipServersf3-scw-pod2=3607704074.16415.0000; SF_SESSION_COOKIE.snapfish_us.prd=heyGbTbonpx!%25RDHNYF%5E!uggc%3A%2F%2Fjjj.fancsvfu.pbz%2Ffancsvfu%2Ffgber!%25AIC_FRC%5E!vachgheyvq!%25RDHNYF%5E!3296!%25AIC_FRC%5E!jrofvgrBvq!%25RDHNYF%5E!1000000!%25AIC_FRC%5E!pboenaqBvq!%25RDHNYF%5E!1000!%25AIC_FRC%5E!heyGlcr!%25RDHNYF%5E!ABA-FJVSG
+
+HTTP/1.1 304 Not Modified
+Date: Tue, 11 May 2010 17:07:56 GMT
+Server: Apache/2.2.11
+Last-Modified: Thu, 29 Apr 2010 18:46:57 GMT
+ETag: "c4-485648d148a40"
+Accept-Ranges: bytes
+Cache-Control: max-age=86400
+Expires: Wed, 12 May 2010 17:07:56 GMT
+Content-Type: image/png
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 112093
+
+GET http://static.snapfish.com/MD5=6c9ce738d1445d282bfcfa446ca66e21/default/javascript/util/common.js HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/adiframeinclude?__internal_ad__=MainStoreBannerAdUS
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Thu, 29 Apr 2010 19:03:30 GMT
+If-None-Match: "f7eb-c8448480"
+Host: static.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919366|session#1273709478445-731792#1273711626|check#true#1273709826
+
+HTTP/1.1 304 Not Modified
+Server: Apache/2.0.52 (Red Hat) mod_ssl/2.0.52 OpenSSL/0.9.7a
+Last-Modified: Thu, 29 Apr 2010 19:03:30 GMT
+ETag: "f7eb-c8448480"
+Accept-Ranges: bytes
+Content-Type: application/x-javascript
+Date: Wed, 12 May 2010 21:31:09 GMT
+Vary: Accept-Encoding
+Cache-Control: max-age=315360000
+Expires: Sat, 09 May 2020 21:31:09 GMT
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 9900
+
+GET http://www.snapfish.com/default/images/homeredesign/bottom-curve-right.png HTTP/1.0
+Accept: */*
+Proxy-Connection: Keep-Alive
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+If-Modified-Since: Thu, 29 Apr 2010 18:46:58 GMT
+If-None-Match: "c2-485648d23cc80"
+Host: www.snapfish.com
+Cookie: SF_Master_Cobrand_Name.snapfish_us.prd=snapfish; s_cc=true; s_sq=encoresfprod%3D%2526pid%253Dhttp%25253A//www.snapfish.com/snapfish/welcome%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55%26hpsnapfishprod%3D%2526pid%253DUS%25253Aen%25253ALogged%252520out%25253A%252520Home%25253A%252520New%25253A%252520B%2526pidt%253D1%2526oid%253Dhttp%25253A//www.snapfish.com/snapfish/store%2526ot%253DAREA%2526oi%253D55; s_vnum=1276298370478%26vn%3D1; s_invisit=true; mbox=PC#1273706370974-559183.17#1274919366|session#1273709478445-731792#1273711626|check#true#1273709826; BIGipServersf3-scw-pod2=3607704074.16415.0000; SF_SESSION_COOKIE.snapfish_us.prd=heyGbTbonpx!%25RDHNYF%5E!uggc%3A%2F%2Fjjj.fancsvfu.pbz%2Ffancsvfu%2Ffgber!%25AIC_FRC%5E!vachgheyvq!%25RDHNYF%5E!3296!%25AIC_FRC%5E!jrofvgrBvq!%25RDHNYF%5E!1000000!%25AIC_FRC%5E!pboenaqBvq!%25RDHNYF%5E!1000!%25AIC_FRC%5E!heyGlcr!%25RDHNYF%5E!ABA-FJVSG
+
+HTTP/1.1 304 Not Modified
+Date: Tue, 11 May 2010 17:07:57 GMT
+Server: Apache/2.2.11
+Last-Modified: Thu, 29 Apr 2010 18:46:58 GMT
+ETag: "c2-485648d23cc80"
+Accept-Ranges: bytes
+Cache-Control: max-age=86400
+Expires: Wed, 12 May 2010 17:07:57 GMT
+Content-Type: image/png
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Age: 112092
+
+GET http://snapfish.112.2o7.net/b/ss/hpsnapfishprod/1/H.17/s69223021016177?AQB=1&ndh=1&t=12/4/2010%2017%3A16%3A8%203%20420&ce=UTF-8&ns=snapfish&pageName=US%3Aen%3AStore%3ALogged%20Out%3A%20Store&g=http%3A//www.snapfish.com/snapfish/store&r=http%3A//www.snapfish.com/snapfish/welcome&cc=USD&server=sf3-fc5&c5=no&c6=no&c7=snapfish_us&v7=snapfish_us&c9=no&c10=snapfish&c11=no&v11=FDR&v13=snapfish&v14=no&c15=1&s=1600x1200&c=32&j=1.5&v=Y&k=Y&bw=1298&bh=689&ct=lan&hp=N&pid=US%3Aen%3ALogged%20out%3A%20Home%3A%20New%3A%20B&pidt=1&oid=http%3A//www.snapfish.com/snapfish/store&ot=AREA&oi=55&AQE=1 HTTP/1.0
+Accept: */*
+Referer: http://www.snapfish.com/snapfish/store
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Proxy-Connection: Keep-Alive
+Host: snapfish.112.2o7.net
+Cookie: s_vi=[CS]v1|25F59BC30514B92C-4000016EA0123209[CE]
+
+HTTP/1.1 200 OK
+Date: Thu, 13 May 2010 00:16:10 GMT
+Server: Omniture DC/2.0.0
+X-C: ms-4.2.6
+Expires: Wed, 12 May 2010 00:16:10 GMT
+Last-Modified: Fri, 14 May 2010 00:16:10 GMT
+Cache-Control: no-cache, no-store, must-revalidate, max-age=0, proxy-revalidate, no-transform, private
+Pragma: no-cache
+ETag: "4BEB44CA-0D39-4A9F6D64"
+Vary: *
+P3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR NID PSA OUR IND COM NAV STA"
+xserver: www240
+Content-Type: image/gif
+Content-Length: 43
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+

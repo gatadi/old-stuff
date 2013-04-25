@@ -1,0 +1,206 @@
+<NOSCRIPT ><meta http-equiv='refresh' content='0;URL=http://www.ttsvisas.com/JavascriptDisable.aspx'></NOSCRIPT ><script> vServerDate = '09/10/2005' </script>
+<HTML>
+	<HEAD>
+		<title>TT Services Web Appointment - Modify Appointment Reservation Details</title>
+		<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<script>history.forward();</script>
+		<LINK href="MyStyles.css" type="text/css" rel="stylesheet">
+			<style>A { TEXT-DECORATION: none }
+	A:hover { COLOR: hotpink; TEXT-DECORATION: none }
+	</style>
+			<SCRIPT language="JAVASCRIPT" src="Include/Validations.js"></SCRIPT>
+			<SCRIPT language="javascript">
+		function Checkfields()
+		{
+			var val;
+			
+			val = Trim(window.document.frmStartModify.txtDropboxNo.value);
+			if (val == "")
+			{
+				alert("Enter Receipt Number")
+				window.document.frmStartModify.txtDropboxNo.focus()
+				return false;
+			}
+			else
+			{
+				if (val.length <= 10)
+				{
+					alert("Please enter a valid Receipt Number");
+					window.document.frmStartModify.txtDropboxNo.focus();
+					window.document.frmStartModify.txtDropboxNo.select();
+					return false;
+				}
+				if (!isNumber(val))
+				{
+					alert("This field can accept only numbers");
+					window.document.frmStartModify.txtDropboxNo.focus();
+					window.document.frmStartModify.txtDropboxNo.select();
+					return false;
+				}
+			}
+			window.document.frmStartModify.txtDropboxNo.value = val;
+			
+			val = Trim(window.document.frmStartModify.txtEmail.value);
+			if (val == "")
+			{
+				alert("Enter Email address")
+				window.document.frmStartModify.txtEmail.focus();
+				return false;
+			}
+			else
+			{
+				if (!CheckIsmail(val))
+				{
+					alert("Please enter a valid email address");
+					window.document.frmStartModify.txtEmail.focus();
+					window.document.frmStartModify.txtEmail.select();
+					return false;
+				}
+			}
+			window.document.frmStartModify.txtEmail.value = val;
+			
+			val=Trim(window.document.frmStartModify.txtPassport.value);
+			if (val == "") 
+			{
+				alert("Enter a Passport Number");
+				document.frmStartModify.txtPassport.value = "";
+				document.frmStartModify.txtPassport.focus();
+				return false;
+			}
+			if (!isPassportNo(val))
+			{
+				alert("Please check the passport number you have entered");
+				document.frmStartModify.txtPassport.focus();
+				document.frmStartModify.txtPassport.select();
+				return false;
+			}
+			window.document.frmStartModify.txtPassport.value = val;
+			
+			val=Trim(window.document.frmStartModify.TxtAcceptInput.value);
+			if (val == "") 
+			{
+				alert("Enter the code shown");
+				document.frmStartModify.TxtAcceptInput.value = "";
+				document.frmStartModify.TxtAcceptInput.focus();
+				return false;
+			}
+			
+			return true;
+		}
+		
+		function window_onload() 
+		{
+			window.document.frmStartModify.txtDropboxNo.focus();
+		}
+		
+		function cmdNext_onclick()
+		{
+			if (Checkfields())
+			{
+				return true;
+				//window.document.frmStartModify.action = "CheckModify.aspx";
+				//window.document.frmStartModify.submit();
+			}
+			else
+			{
+				return false;
+			}
+		}
+			</SCRIPT>
+	</HEAD>
+	<BODY language="javascript" text="#000000" vLink="#663366" aLink="#8888aa" link="#003399"
+		bgColor="#ffffff" leftMargin="0" topMargin="5">
+		<form name="frmStartModify" method="post" action="StartModify.aspx" id="frmStartModify">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMTE3NTAyNjQ0MTt0PDtsPGk8MT47PjtsPHQ8O2w8aTwxPjtpPDEzPjs+O2w8dDw7bDxpPDA+Oz47bDx0PDtsPGk8MD47PjtsPHQ8O2w8aTwwPjtpPDE+Oz47bDx0PDtsPGk8MT47PjtsPHQ8cDxwPGw8VGV4dDs+O2w8RW50ZXIgWW91ciBSZXNlcnZhdGlvbiBEZXRhaWxzOz4+Oz47Oz47Pj47dDw7bDxpPDE+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPFRUIFNlcnZpY2VzIC0gV2ViIEFwcG9pbnRtZW50Oz4+Oz47Oz47Pj47Pj47Pj47Pj47dDxwPHA8bDxUZXh0Oz47bDwyQ1FSOEE7Pj47Pjs7Pjs+Pjs+Pjs+ykhJw8vpdPyR+RZJTx8z9gWGw20=" />
+
+			<TABLE height="26" cellSpacing="0" cellPadding="0" width="100%" border="0">
+				<tr>
+					<td><table id="UC1_Table1" cellspacing="0" cellpadding="0" width="100%" align="left" border="0" bgcolor="#003366">
+	<tr height="25">
+		<TD align="left" nowrap="nowrap" class="TopBar" height="25">
+			<span id="UC1_lblDesc" class="HeaderLable"><b><font face="Book Antiqua" color="White">Enter Your Reservation Details</font></b></span>
+		</TD>
+		<td align="right" nowrap="nowrap" class="TopBar" height="25">
+			<span id="UC1_lblTitle" class="HeaderLable"><b><font face="Book Antiqua" color="White">TT Services - Web Appointment</font></b></span>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" nowrap="nowrap" class="Verdana-10" bgcolor="White"><!--<MARQUEE scrolldelay=150>TTSVisas.com site will not be available between 15:00 - 17:00 Hrs (Indian Time) because of maintenance work.</MARQUEE>--></td>
+	</tr>
+</table>
+
+<br>
+</td>
+				</tr>
+				<tr>
+					<td align="center"><span id="lblInfo" class="BodyInfo"><b></b></span></td>
+				</tr>
+			</TABLE>
+			<table width="80%" align="center" border="0">
+				<tr>
+					<td align="center" colSpan="2"><span id="spnMessage" class="alertmsg"></span></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td class="BodyText" noWrap align="right">Web Appointment/DropBox receipt number <FONT color="red" size="1">
+							*</FONT> &nbsp;
+					</td>
+					&nbsp;
+					<td noWrap align="left"><input name="txtDropboxNo" type="text" maxlength="12" id="txtDropboxNo" /></td>
+				</tr>
+				<tr>
+					<td class="BodyText" noWrap align="right">Email address <FONT color="red" size="1">*</FONT>
+						<br>
+						(Enter the email address, you provided at the time of fixing an 
+						appointment)&nbsp;
+					</td>
+					&nbsp;
+					<td noWrap align="left"><input name="txtEmail" type="text" maxlength="60" id="txtEmail" /></td>
+				</tr>
+				<tr>
+					<td class="BodyText" noWrap align="right">Passport number <FONT color="red" size="1">*</FONT>
+						&nbsp;
+					</td>
+					<td noWrap align="left"><input name="txtPassport" type="text" maxlength="14" id="txtPassport" /></td>
+				</tr>
+				<tr>
+					<td class="BodyText" noWrap align="right">&nbsp;</td>
+					<td noWrap align="left" colSpan="2"><img id="HipCtrl" src="/StartModify.aspx?__formShieldID=HipCtrl&properties=aMp%2fGeweAJMhdqS%2fHHmf4lcmlh0jEJTcrYyIyTh%2bid1ATGGalSZQmwcWpdnuD2YAbpgpL64NFDyGcbQieO93jKi1aIa8Rpy%2bmaNq4cWDVTANX%2bszE8ya1M5GeqIkNU%2b6%2fGI7dryldFQFGHIIWHvgmCqLkMUv9wJyDmzvra%2fBNoRYsPuNB91yViPh8ZoF8YA4ves%2b9SzBMnb0W2ux1k%2f67ms%2bTJcGsFDMTk1axsON6M18LQfraZl2GtD0lKiXSgsOFMCQBprhQyM%3d" alt="Protected by FormShield" height="50px" width="250px" /></td>
+				</tr>
+				<tr>
+					<td class="BodyText" noWrap align="right">Enter the code shown<FONT color="red" size="1">*</FONT>
+						&nbsp;
+					</td>
+					<td noWrap align="left"><input name="TxtAcceptInput" type="text" id="TxtAcceptInput" /></td>
+					<td noWrap align="left"><span id="lblImageMsg" class="BodyInfo_Small"><b></b></span></td>
+				</tr>
+				<tr>
+					<td noWrap colSpan="3">&nbsp;</td>
+				</tr>
+				<tr>
+					<td class="SmallFontText" noWrap align="left"><FONT color="red" size="1">*</FONT>Required 
+						entries &nbsp;</td>
+					<td noWrap align="left"><input type="submit" name="cmdOk" value="Next >>" id="cmdOk" class="FlatButton" OnClick="javascript:return cmdNext_onclick();" /></td>
+				</tr>
+				<tr>
+					<td align="center" colSpan="3">
+						<hr SIZE="1">
+					</td>
+				</tr>
+				<!--<tr>
+					<td align="left" colSpan="3"><font class="SmallFontText">Note - The Modify feature 
+							permits only five logins per day for a receipt number.</font>
+					</td>
+				</tr>-->
+				<tr>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td noWrap align="center" colSpan="3"><a id="hypHome" class="Verdana-8" href="Default.htm">Home</a></td>
+				</tr>
+			</table>
+		</form>
+	</BODY>
+</HTML>

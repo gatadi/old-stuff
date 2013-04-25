@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script type="text/javascript" src="jquery.js"></script>
+
+	<style>
+		body { font-family: Arial; font-size: 16px; }
+		ul { width: 300px; }
+		ul,li { margin: 0; }
+		a { text-decoration: none; }
+		ul li { background: #3399ff; font-size: 18px; margin: 2px; }
+		ul li a { color: #ffffff; }
+		ul ul li a { color: #000000; }
+		ul { list-style: none; padding: 5px; }
+		ul ul { width: 290px; }
+		
+		#topmenu { border: 1px solid black; height: 160px; }
+		#topmenu ul, #topmenu ul li { background: #ffffff }
+		
+	</style>
+</head>
+
+<body>
+<ul id="topmenu">
+	<li><a href="#">Popular Libraries</a>
+		<ul>
+			<li><a href="http://jquery.com">jQuery</a></li>
+			<li><a href="http://ui.jquery.com">jQuery UI</a></li>
+			<li><a href="http://prototypejs.org">Prototype</a></li>
+	
+		</ul>
+	</li>
+	<li><a href="#">GUI Libraries</a>
+		<ul>
+			<li><a href="http://developer.yahoo.com/yui">YUI</a></li>
+			<li><a href="http://dojotoolkit.org">Dojo</a></li>
+			<li><a href="http://extjs.com">ExtJS</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Other Libraries</a>	
+		<ul>
+			<li><a href="http://mootools.net">MooTools</a></li>
+			<li><a href="http://www.smashingmagazine.com/2009/03/02/40-stand-alone-javascript-libraries-for-specific-purposes/">Others</a></li>
+			<li> </li>
+		</ul>
+	</li>
+</ul>
+
+	<script type="text/javascript">
+		console.log($("#topmenu").find("ul:first").children(0).next().children().attr('href'));
+	
+		$(function(){
+		   $("li ul").hide();
+		   $("li ul:first").show();
+		   $("body > ul > li > a").click(function(){
+		      $("ul > li > ul:visible").slideUp("slow");
+		      $(this).next().slideDown("slow");
+		      return false;
+		   });
+		});
+
+	</script>
+
+</body>
+</html>

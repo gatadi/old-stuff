@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<script type="text/javascript" src="jquery.js" ></script>
+	
+		<style type="text/css">
+			div {
+				height: 60px; width: 200px; border-radius: 5px; border: 1px solid blue;
+	          	box-shadow: 0px 5px 5px 0px #777; cursor: pointer; padding: 5px;
+			    text-align: center; vertical-align: middle; font: normal 18px Arial;
+			}
+			
+			div span { line-height: 60px; }
+			
+			#myDiv { background-color: #cff; margin: 50px auto; }
+			#div2  { background-color: #fcf; margin: 0px auto;  }
+			
+			
+		</style>
+	</head>
+	
+	<body>
+		<div id="myDiv"><span id="mySpan">Last Return (none)</span></div>
+		<div id="div2"><span id="mySpan2">Click to pass a message</span></div>
+		<script type="text/javascript">
+		  
+		function handler1() { return 'handler1 says hello'; }
+		function handler2(evt) { $('#mySpan').text(evt.result); }
+		$('#myDiv').click(handler1); 
+		$('#myDiv').click(handler2);
+		
+		var obj = {msg: 'message passed into handler3'};
+		function handler3(evt) { $('#mySpan2').text(evt.data.msg); }
+		$('#div2').bind('click', obj, handler3);
+		obj.msg = 'msg was changed';
+		
+		</script>	
+	</body>
+</html>

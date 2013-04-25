@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Strict type checking Example</title>
+		
+	<script type="text/javascript" src="../../scripts/utils.js"></script>
+	<script type="text/javascript">
+		
+		testFunction = function(person, array, str) {
+			
+			try {
+				utils.strict(arguments, [Person, Array, String]);
+				alert("Types ok.");
+			}
+			catch(error) {
+				alert(error);
+			}
+		};
+	
+		Person = function() {}
+	
+		testFunction(new Person(), [], "");
+		testFunction(new Person(), []);
+		testFunction(new Person(), {}, "");
+		testFunction({}, [], "");
+		testFunction(new Person(), [], 55);
+		
+	</script>
+</head>
+
+<body>
+
+</body>
+</html>

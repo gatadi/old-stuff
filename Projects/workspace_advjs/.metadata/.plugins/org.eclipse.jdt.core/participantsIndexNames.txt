@@ -1,0 +1,3 @@
+INDEX VERSION 1.126
+C:\workspace_advjs\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1025255880.index
+\advjs\src

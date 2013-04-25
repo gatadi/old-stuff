@@ -1,0 +1,38 @@
+Inv Softworks LLC   www.flexhex.com
+Copyright (c) 2005. All rights reserved.
+
+This utility removes directory junctions and can be called from a batch
+file or from a command line. In order to install the program just unpack
+it to any directory. To avoid specifying the full path every time,
+unpack the program to a directory that is listed in the PATH environment
+variable; the Windows directory is an example of an appropriate place.
+
+This command line utility supplements the article "NTFS Hard Links, Junctions,
+and Windows Shortcuts", which can be found at
+http://www.flexhex.com/docs/articles/hard-links.phtml
+
+
+Usage:
+  rj path
+
+
+Examples:
+
+  rj c:\all_photos
+
+Removes a directory junction (that is, a soft link) created by the
+companion LN utility. Returns an error if the specified directory is
+not a junction.
+
+
+Legalities:
+
+You can use this program without charge for any commercial or non-commercial
+purpose. You can distribute this program freely provided that you are
+distributing the original zip archive including this README file.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THIS SOFTWARE IS PROVIDED
+"AS IS" AND INV SOFTWORKS LLC DISCLAIMS ALL OTHER WARRANTIES AND CONDITIONS,
+EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, CONFORMANCE WITH
+DESCRIPTION, TITLE AND NON-INFRINGEMENT OF THIRD PARTY RIGHTS.
